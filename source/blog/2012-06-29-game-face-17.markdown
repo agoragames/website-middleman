@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **activity_feed**
+
+ [activity_feed](https://github.com/agoragames/activity_feed) is our library for doing activity feeds in Redis. You might know activity feeds by its other aliases, news feeds or timelines. We released version 2.0.0 of the library today. As discussed in [last week's Game Face](http://blog.agoragames.com/blog/2012/06/22/game-face-16/), we did a major rewrite of the library last week to make the code cleaner, more modular and offer more functionality in fewer lines of code. The major changes are a difference in namespacing for the library as well as supporting the [loading of activity feed items from any ORM (e.g. ActiveRecord) or ODM (e.g. Mongoid)](https://github.com/agoragames/activity_feed/tree/2.0.0#advanced-configuration-options). The library supports activity feeds, aggregate activity feeds, feeds between timestamps, trimming feeds, removing feeds and more.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

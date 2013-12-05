@@ -1,0 +1,13 @@
+<% # jQuery 2.* is API-compatible with 1.* but is optimized without hacks for IE 6/7/8 compatibility. %>
+<% # Use conditional comments to serve v1 to IE 6/7/8 and v2 to non-garbage browsers (everything else). %>
+<!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script>
+  if (!window.jQuery) {
+    document.write('<script type="text/javascript" src="<%= asset_path :js, 'vendor/jquery.min' %>"><' + '/script>');
+  }
+</script>

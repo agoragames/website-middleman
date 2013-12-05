@@ -1,0 +1,41 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **active_merchant**
+
+ Remember the [vindicia-api](https://github.com/agoragames/vindicia-api) gem from a few weeks ago that we open sourced? One of our ex-interns, Steven Davidovitz, developed a Vindicia Payment Gateway for the active_merchant gem. Check out his [pull request that adds this functionality](https://github.com/Shopify/active_merchant/pull/332).
+
+ Contributor(s): Steven Davidovitz ( [GitHub](https://github.com/steved555), [Twitter](https://twitter.com/#!/steved3298)), Tom Quackenbush ( [GitHub](https://github.com/tquackenbush/), [Twitter](https://twitter.com/#%21/tquackenbush))
+
+ **brewscribe**
+
+ The 0.2.0 release of the brewscribe gem this week adds a number of new classes: Mash, Carbonation, Equipment and Style as well as being able to parse Style listings and Recipe now following the type conversion system. If you use Ruby and Beersmith2, you should be involved with this project.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+
+ **constant-redefinition**
+
+ [constant-redefinition](https://github.com/czarneckid/constant-redefinition) had its first functional changes in over a year. You can now pass a block when defining or re-defining constants to have them unset or reset to their original value.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))
+
+ **kairos**
+
+ [Kairos](https://github.com/agoragames/kairos) is a new Python library for performing time-series data storage in Redis. Kairos is intended to replace RRD in situations where the scale of Redis is required, with as few dependencies on other packages as possible. It should work with [gevent](http://www.gevent.org/) out of the box.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#!/WashUffize))
+
+ **python-leaderboard**
+
+ [python-leaderboard](https://github.com/agoragames/python-leaderboard) is our port of our ruby [leaderboard](https://github.com/agoragames/leaderboard) library. The 1.1.5 release adds support for ascending (low-to-high) leaderboards.
+
+ Contributor(s): Vitaly Babiy ( [GitHub](https://github.com/vbabiy), [Twitter](https://twitter.com/#!/vitaly_babiy))
+
+  
+
+  
+
+  

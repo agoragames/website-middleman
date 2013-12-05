@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **capistrano**
+
+ [capistrano](https://github.com/capistrano/capistrano/) is a utility and framework for executing commands in parallel on multiple remote machines, via SSH. About 7 months ago, [we submitted a pull request to intelligently set the :scm setting](https://github.com/capistrano/capistrano/pull/233) depending on what version control directory was found. The 2.14.0 release incorporates this pull request.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **chefvm**
+
+ chefvm is a simple Chef environment manager, with usage inspired by wayneeseguin/rvm. We noticed that the "current and default" identifiers didn't match, so [we submitted a pull request to make sure they did match](https://github.com/trobrock/chefvm/pull/5/files). Swapping characters never felt so good!
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

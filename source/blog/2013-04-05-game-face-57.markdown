@@ -1,0 +1,35 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. There are quite a few changes in the 0.5.0 release, most notably more "Heart of the Swarm" support. Be sure to check out the [CHANGELOG](https://github.com/agoragames/bnet_scraper/blob/master/CHANGELOG.md) for all the details on new functionality in this release.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+
+ **chai**
+
+ [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. In 0.3.0, expectations have been improved on by not insisting that one knows how many times an expectation will be called unless explicitly set as well as assuming any arguments on an expectation unless explicitly set. Finally we fixed stubbing properties on an instance.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **forecast.io**
+
+ [forecast-ruby](https://github.com/darkskyapp/forecast-ruby) is a [forecast.io](https://developer.darkskyapp.com/docs/v2) API wrapper in Ruby. The gem now uses [Faraday](https://github.com/lostisland/faraday) to allow for swapping of the underlying HTTP library.
+
+ Contributor(s): Norbert Crombach ( [GitHub](https://github.com/norbert))
+
+ **tassadar**
+
+ [tassadar](https://github.com/agoragames/tassadar) is our fast Starcraft 2 replay parser written in pure Ruby. No release, but if you're doing development, [we did update things to use guard-rspec](https://github.com/agoragames/tassadar/pull/8).
+
+ Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))
+
+ **torus**
+
+ [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. As of 0.1.4, we have updated to kairos 0.1.5 with a bug fix for reading data from timeseries with relative time interval schemas. Aggregates can now cascade to other aggregates, with a simple failsafe on infinite loops.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

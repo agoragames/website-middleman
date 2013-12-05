@@ -1,0 +1,13 @@
+doctype html
+html lang='en'
+  head
+    == partial 'metadata'
+    == yield_content :head
+  body id=data.page.id
+    .outer-wrap
+      .inner-wrap
+        .wrap
+          == partial 'head'
+        == yield
+    == partial 'foot'
+    == yield_content :foot

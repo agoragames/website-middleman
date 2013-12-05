@@ -1,0 +1,19 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **errship**
+
+ [errship](https://github.com/agoragames/errship) is a Rails 3.1 engine for rendering error pages inside your layout. It supports i18n, custom exceptions, and Airbrake (Hoptoad) error tracking. This past week we integrated a number of [pull](https://github.com/agoragames/errship/pull/14) [requests](https://github.com/agoragames/errship/pull/13) with some fixes for template format and OmniAuth.
+
+ Contributor(s): Fabian Schwahn ( [GitHub](https://github.com/fschwahn)) and Phuong Nguyen ( [GitHub](https://github.com/phuong-nguyen))
+
+ **strumbar**
+
+ [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. With the release of 0.4.0, instrumentation is no longer loaded by default, there is a different configuration mechanism and default values for options are now stored on the configuration object instead of the `Strumbar` module.
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+
+  

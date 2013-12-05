@@ -1,0 +1,54 @@
+---
+title: June Recap
+author: David Czarnecki
+---
+As June comes to an end, we remember that it brought more to us than the official start of summer. Below is a high level view of just a few of the projects and events that took place this month.
+
+ **MLG Columbus**
+ Lets start off with our biggest event, MLG Columbus. This month’s Pro circuit was held during the weekend of June 3-5 in Columbus Ohio and obtained notable success. Throughout the weekend, nearly 15 thousand people showed up to support their favorite gamers. That however, was nothing near the 22.5 million people who streamed the event from their computers. With the major updates we made to our systems, we formulated the equation for a very successful pro circuit event that tromped the ones before it.
+
+ ﻿**Git**
+
+ This month we added a few new goodies to our Github portfolio accessible at github.com/agoragames. Some of which include:
+
+ [**Haigha**](https://github.com/agoragames/haigha)
+
+ Haigha provides a simple to use client library for interacting with AMQP brokers. It currently supports the 0.9.1 protocol and is integration tested against the latest RabbitMQ 2.4.1 (see [errata](http://dev.rabbitmq.com/wiki/Amqp091Errata)). Haigha is a descendant of py-amqplib and owes much to its developers.
+
+ The goals of haigha are performance, simplicity, and adherence to the form and function of the AMQP protocol. It adds a few useful features, such as the ChannelPool class and Channel.publish_synchronous, to ease use of powerful features in real-world applications.
+
+ By default, Haigha operates in a completely asynchronous mode, relying on callbacks to notify application code of responses from the broker. Where applicable, nowait defaults to True. The application code is welcome to call a series of methods, and Haigha will manage the stack and synchronous handshakes in the event loop.
+
+ [**Gondola**](https://github.com/agoragames/gondola)
+
+ Gondola is a ruby gem which aims to bridge the gap between two very prominent, open source, quality assurance tools, Selenium IDE and Sauce Labs. Many quality assurance professionals who don't have the necessary technical skills to write Selenium webdriver-based unit tests prefer to do their web regression testing using solely the Selenium IDE and then exporting those test cases by some means to Sauce Labs' system.
+
+ Gondola offers an easier and more convenient system for dispatching tests written in Selenium IDE to a Sauce Labs account. Gondola transforms the html that Selenium IDE produces by default and ships it to Sauce Labs across a number of browsers in parallel. Test suites and projects can be easily organized with simple file directory structures.
+
+ Beyond the console application that comes with the gem, Gondola offers a small API for integrating Gondola's features into custom web apps. This allows a user to bring Gondola's simplicity into an existing testing suite or a new web application. Specifically, we have a plan to write a sample Gondola web app to demonstrate its power.
+
+ We’ve also added updates to the projects that were the deliverables of previous months. Check out the Git page for a full list.
+
+
+
+
+
+ **Webby Awards**
+
+ The Webby Award is the leading international award honoring excellence on the Internet. This year we won two webby awards, one for lifestyle and another for the other for games.
+
+ **Mortal Kombat Fight Stick**
+
+ This classic trophy is a gift from Warner Bros for the work that we did on the latest Mortal Kombat game. Currently, we are powering the stats on their website and are responsible for the creation of their in-game chat features.
+
+ [**MLG.tv**](http://tv.majorleaguegaming.com)
+
+ So MLG.tv has received numerous updates and features over the course of this month. One of those, is the user generated content feature with options such as SSO/login integration_, _video uploads, user channels and a user videos page. We’ve also added video rating and moderation capabilities along with several addition improvements on the back end of the site.
+
+
+
+ **MLG Store**
+
+ There have been quite a few updates deployed to the MLG store, making it simple and enjoyable to get the things you want. We’ve also heightened security in order to protect your information and prevent fraud while fostering a painless checkout process.
+
+ These are just six of the things that went on during the sixth month of the year. Here at Agora we’re constantly working and implementing new back-end and front-end updates. Thank you to the team for a productive month and to you our followers for your support. For more detailed and on the spot update information, follow us on [Twitter](http://twitter.com/agoragames), [Facebook](http://www.facebook.com/agoragames) and [Github](http://www.github.com/agoragames).

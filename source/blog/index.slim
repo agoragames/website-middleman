@@ -1,0 +1,27 @@
+---
+title: Brain Matters
+---
+
+.wrap
+  article.clearfix
+    header
+      h1
+        | The
+        strong< Blog
+    section#blog-entries
+      - blog.articles.first(10).each do |article|
+        .blog-entry
+          .date-comments
+            .date
+              == article.date.strftime('%b %-d')
+          .blog-content
+            h2
+              a href=article.url
+                = article.title
+            .blog-author
+              | By
+              strong<= article.data.author
+            .blog-body
+              == article.body
+    aside#sidebar
+      == partial 'blog_archive'

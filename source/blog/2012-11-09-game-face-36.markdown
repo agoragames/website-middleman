@@ -1,0 +1,27 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time-series storage using a Redis backend. The 0.1.0 release integrates the beta-refactor branch. All types of timeseries are created with the Timeseries constructor. The arguments to the constructor have been changed to simplify and clarify their usage. In particular, a single timeseries implements only a single type (e.g. Histogram), read and write functions are shared by all intervals in a timeseries, and the count_only support is now the timeseries type `count`. Added exceptions. Only exception currently implemented is UnknownInterval.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. This week, we released 3.0.0.rc1, which integrates a number of proposals. This release removes :use_zero_index_for_rank_option as valid option for requesting data from the leaderboard, optional member data is stored in a single hash, it adds :sort_by as valid option for requesting data from the leaderboard and removes :with_scores and :with_ranks as valid options for requesting data from the leaderboard.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **stache**
+
+ [stache](https://github.com/agoragames/stache) is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 1.0.0.rc candidate integrates a [pull request for enhanced mustache functionality](https://github.com/agoragames/stache/pull/16) with support for class based layouts, loading .rb files, and rails helpers.
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and zombor ( [GitHub](https://github.com/zombor))
+
+  
+
+  

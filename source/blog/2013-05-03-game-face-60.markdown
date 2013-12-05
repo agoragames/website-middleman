@@ -1,0 +1,27 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **activity_feed**
+
+ [activity_feed](https://github.com/agoragames/activity_feed) is our Ruby gem for storing and managing activity feeds in Redis. The 2.3.0 release adds a check_item?(...) method to see if an item is in an activity feed.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **homebrew**
+
+ [homebrew](https://github.com/mxcl/homebrew) is the "missing package manager for OS X". We submitted a pull request that was [integrated for adding Redis 2.6.13 support](https://github.com/mxcl/homebrew/pull/19574).
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using a Redis backend and, as of 0.2.0, MongoDB. The latest release is a major refactor, and with the new MongoDB backend, supports many more use cases. The 0.2.1 release also includes optimizations for processing multiple transforms on each data set query.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+  
+
+  

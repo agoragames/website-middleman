@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. This week saw a slew of updates related to fixtures and test updates.
+
+ Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))

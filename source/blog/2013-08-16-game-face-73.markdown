@@ -1,0 +1,35 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **authy-ruby**
+
+ [authy-ruby](https://github.com/authy/authy-ruby) is a Ruby library to access the Authy API. We submitted [a pull request to simplify the gem](https://github.com/authy/authy-ruby/pull/7) as well as to fix some warnings with newer versions of RSpec when running the test suite.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **batsir**
+
+ [batsir](https://github.com/jwkoelewijn/batsir) is an execution platform for stage based filter queue execution. It's built around the excellent [Sidekiq](https://github.com/mperham/sidekiq) project. We submitted a [pull request to fix conditional notifiers](https://github.com/jwkoelewijn/batsir/pull/19). Hopefully that gets integrated soon. The pull request was a result of experimenting with batsir on one of our last Hack-a-Thons.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. The 1.0.0 release is here! We now have Ruby 2.0.0 compatibility.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion)) and Buddy Magsipoc ( [GitHub](https://github.com/keikun17), [Twitter](https://twitter.com/keikun17)).
+
+ **localshop**
+
+ [localshop](https://github.com/mvantellingen/localshop) is a pypi server which automatically proxies and mirrors pypi packages based upon packages requested. It also supports the uploading of local (private) packages. We submitted [a pull request to remove an extraneous semicolon](https://github.com/mvantellingen/localshop/pull/70) in one of the views. Hooray for one character fixes!
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **puma**
+
+ [puma](https://github.com/puma/puma) is a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack applications. We submitted a pull request that was integrated to DRY up, albeit in the slightest way, [where the gemspec gets it version information](https://github.com/puma/puma/pull/339).
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

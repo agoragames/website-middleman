@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ GitHub user, Greg Banks, submitted a patch to kairos, our Python library that provides time series storage using a Redis backend, to [add Python 2.6 support](https://github.com/agoragames/kairos/pull/1). Thanks Greg!
+
+ Contributor(s): Greg Banks ( [GitHub](https://github.com/gregbanks))
+
+ **tassadar**
+
+ We finally got around to pushing a gem of [tassadar](https://github.com/agoragames/tassadar), our pure Ruby library for parsing Starcraft 2 replay files. The 0.0.2 update converts serialized strings ASCII-8BIT => UTF-8. This was the source of serious encoding problems in replay parsing. Version 1.0 will be out in the next week or so.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))

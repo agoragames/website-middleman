@@ -1,0 +1,23 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. As of the 0.3.0 release, we have implemented support for Gregorian data intervals (daily, weekly, monthly, yearly) and there is a new API for Timeseries.series(). Check the README for more details.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The leaderboard (Ruby), [leaderboard-python](https://github.com/agoragames/leaderboard-python) and [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) libraries all saw updates this week. In leaderboard 3.1.0, we added support for a members_only option when making various leaderboard requests to only return the member data and not rank or score data. This same functionality was ported to leaderboard-coffeescript 1.1.0 and leaderboard-python 2.3.0.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Simon Zimmerman ( [GitHub](https://github.com/simonz05/)).
+
+ **torus**
+
+ [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. With the 0.3.0 release, we upgrade to kairos 0.3.0 to add support for Gregorian dates and date ranges to "/series", added support for UNIX timestamps or parsedatetime-compatible strings for 'start' and 'end' parameters to "/series" and added support for 'steps' parameter to "/series".
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

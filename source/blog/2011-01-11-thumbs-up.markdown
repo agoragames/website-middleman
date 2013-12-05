@@ -1,0 +1,19 @@
+---
+title: Thumbs Up
+author: David Czarnecki
+---
+In the process of investigating the potential use of the [thumbs_up gem](https://github.com/brady8/thumbs_up) (enable voting in your Rails 3 application) on a project today, I came across 2 opportunities to contribute back to the project.
+
+
+
+ Those opportunities are now realities in that: I forked the project on GitHub, made my changes, and [generated a pull request](https://github.com/brady8/thumbs_up/pull/7) for those changes to be integrated back into the thumbs_up project. So, what did I change?
+
+ - My first commit was a simple change to the documentation clarifying the use of one method. No brainer right?
+
+ - My second commit was a bit more involved and wasn't necessarily a change I thought had to be there, but might be nice to be included. It involved getting into some of the internals in how the database migration and model file are generated. If this commit isn't integrated, I won't lose any sleep over it. It was a great opportunity to learn about some of the internals of [Rails 3 generators](http://edgeguides.rubyonrails.org/generators.html) and [Thor](https://github.com/wycats/thor). I'm not going to lie in that before all was said and done, I wanted to shoot myself into the sun on a rocketship, but I'm over it now.
+
+Why am I writing this blog post? It just gives me a warm and fuzzy feeling (apart from the scotch), to know that I can contribute my day-to-day work back to the development community for others to benefit. So, thumbs up to that right?
+
+**UPDATE:** My changes (that now encompass the start of a test suite, have now been integrated into the thumbs_up gem. So d ' _ ' b to open source!
+
+You can find more hilarity over on my Twitter account, [CzarneckiD](http://twitter.com/czarneckid).

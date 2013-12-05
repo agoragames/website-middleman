@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **amico-python**
+
+ [amico-python](https://github.com/agoragames/amico-python) is our amico project, originally written in Ruby, ported to Python. Amico allows you to create relationships (e.g. friendships) backed by Redis. This version has 100% feature parity with the [original Ruby library](https://github.com/agoragames/amico).
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **tassadar**
+
+ [tassadar](https://github.com/agoragames/tassadar) is our Starcraft 2 replay parser written in pure Ruby. [A pull request was submitted](https://github.com/agoragames/tassadar/pull/2) to eliminate one of the native gems used in previous versions of tassadar. This would allow tassadar to be used with other Ruby implementations such as JRuby.
+
+ Contributor(s): Emmanuel Hadoux ( [GitHub](https://github.com/EHadoux))

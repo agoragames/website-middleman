@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper) is our Nokogiri-based scraper of Battle.net profiles. 0.1.0 was released today and replaces open-uri with Faraday. The other change is that a BnetScraper::InvalidProfileError is raised when unsuccessfully scraping.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+
+ **streak**
+
+ [streak](https://github.com/czarneckid/streak) is a gem for calculating win/loss streaks. The most recent 0.3.0 release encompasses a number of changes to use Redis hashes to store its data as well as being able to pass a custom set of keys to be used in the aggregate call if you want to track streaks on a different set of positive/negative things than what is setup in the configuration.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

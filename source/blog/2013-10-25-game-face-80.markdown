@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. [kairos](https://github.com/agoragames/kairos) now provides time series storage using Redis, Mongo or SQL backends. We did a couple of releases this past week. The 0.6.3 release added alpha support for SQL storage of time series data. The 0.7.0 release started adding in support for "discovery" endpoints for time series data as well as iteration handling and SQL data expiration support. As the backend support and test coverage increases, we've also provided a means to [target the execution of the test suite with environment variables](https://github.com/agoragames/kairos#id34).
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **strumbar**
+
+ [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. In the 0.2.0 and 0.3.0 releases, we added an instrument to start exploring stats gathering with Mongoid as well as adding a wrapper for gauge, set, and count and fixing a bug with `Strumbar::Client.decrement` .
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))

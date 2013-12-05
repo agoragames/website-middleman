@@ -1,0 +1,13 @@
+---
+title: 'Working at Agora #binary_review 1'
+author: An Intern
+---
+The following is a (long) binary review of Henryk's experience while working as an intern on the platform team at Agora:
+
+> For the last 9 months, I co-op'd with Agora as an engineer on the Platform Team. Overall, I'd say the experience was awesome. I had a lot of fun on this co-op. Working at Agora was awesome for many reasons, the people are really friendly, the actual work is difficult and fun, and culture around this company makes working here awesome. I got to do so much here, and learn so much, even putting the programming knowledge aside I've learned so much.
+
+ The people here are awesome. This needed to be repeated for great justice. Everyone here is very welcoming and friendly. They make an attempt to connect with you and help you whenever you're stuck. Everyone listens to what you say and then provides valuable feedback. I always felt like I could ask questions without hesitation. And whenever I did have a problem, I either had someone looking at my screen with me or explaining where I could go to find out more about my problem.
+
+ The work here is awesome. For the majority of my co-op, I redesigned and developed the hydra dashboard from the ground up. This was no easy task and required a lot of work. This also included many upgrades from the original that required even more work. I love that I was responsible for such a huge task and that I had so much to work on. Several things had to happen for this be to be complete, a well designed user account system; a better visualization of talking to hydra/simplifying complex data inputs; and getting a new design/layout integrated with the current functionality to mention a few things. Each of these required a sufficient amount of planning, design, and work. And I got to become very skilled with recursion in solving these problems. I learned so much here at this co-op, that I was even inspired to make my own website with the skills I developed here. As a result of working here, I feel like I can solve pretty much any problem if I just learn about it.
+
+ The culture here is awesome. I feel comfortable with everyone here, the environment is very relaxed. There's always amusing chat in campfire, we play video games, and we go to lunch for wings regularly. In all seriousness though, it's a very easy environment to settle into. Agora also has hackathons infrequently. These are days when you're part of a team and work for the whole day on one project as a team (come in at midnight if you want!). Even outside of work, you see people doing stuff. Whether it be at a local restaurant, or hosting barbecues, or playing halo on a friday night, it's a fun time working at Agora.

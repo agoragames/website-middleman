@@ -1,0 +1,23 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper) is a Nokogiri-based scraper of Battle.net profile information. The release this week adds a method to determine if the supplied profile is valid.
+
+ Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+
+ **hipchat-api**
+
+ [hipchat-api](https://github.com/czarneckid/hipchat-api) is a Ruby gem for interacting with the HipChat API. This past week saw a couple of releases to add support to the new message_format parameter when publishing messages to a room and to fix an issue in creating new users.
+
+ Contributor(s): Bradley Buda ( [GitHub](https://github.com/bradleybuda)) and Rodrigo Tassinari de Oliveira ( [GitHub](https://github.com/rtopitt)).
+
+ **redis_pagination**
+
+ [redis_pagination](https://github.com/czarneckid/redis_pagination) is a new Ruby gem released this week that provides simple pagination for Redis lists and sorted sets.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

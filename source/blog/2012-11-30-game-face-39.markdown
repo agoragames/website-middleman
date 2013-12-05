@@ -1,0 +1,31 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. In the 3.0.0.rc2 release, we are no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard. Work was also started on the 3.0.0.rc3 release which will add the rank_member_if and rank_member_if_in methods to allow you to rank a member in the leaderboard based on execution of a lambda.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **leaderboard-python**
+
+ [leaderboard-python](https://github.com/agoragames/leaderboard-python) is our leaderboard project, originally written in Ruby, ported to Python. The 2.1 release of leaderboard-python fixes a bug when requesting a list with an unknown member from the ranked_in_list method as well as no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **stache**
+
+ [stache](https://github.com/agoragames/stache) is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. We've released version 1.0. This includes:
+
+- Overhauled Mustache template engine. If you wish to have Mustache drive your entire template stack, you can invert control to it.
+
+- Fixed a bunch of problems with Handlebars access to the view namespace for helpers, etc.
+
+- New configuration option: you can now specify a wrapper namespace that Stache will look for your view classes in.
+
+Backwards compatibility should be fine; any regressions are bugs and should be reported. Huge thanks to all contributors!
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Kate Gengler ( [GitHub](https://github.com/kategengler))

@@ -1,0 +1,29 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **coffee_bean**
+
+ If you're starting a new project in any framework, you always end up generating a lot of boilerplate code. The [coffee_bean](https://github.com/czarneckid/coffee_bean) Ruby gem abstracts that for new CoffeeScript projects to help you get your new project started quicker and without you having to necessarily copy and remove "bits" from your other CoffeeScript projects.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+
+ **geocoder**
+
+ If you're doing any geocoding in Ruby, chances are you've come across the [geocoder](https://github.com/alexreisner/geocoder) gem. David Czarnecki [contributed a patch to only load the appropriate code](https://github.com/alexreisner/geocoder/commit/b418e0e4085ec3adc130ac14d51d96354dc41314) depending on whether you're using geocoder with ActiveRecord, Mongoid or MongoMapper.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+
+ **haigha**
+
+ We do a fair amount with AMQP in our middleware product and so we have written [haigha](https://github.com/agoragames/haigha), a AMQP libevent client in Python. 0.4.2 and 0.4.3 were released this week. These 2 releases encompass a number of important changes with respect to transport requirements, defaulting to gevent, notifications for channel close listeners and sending out heartbeat frames.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+
+ **weary**
+
+ [Weary](https://github.com/mwunsch/weary) is a "framework and DSL for building clients for (preferably RESTful) web service APIs" that is built around Rack. However, it only ships with one adapter for Ruby's Net::HTTP library. The Net:HTTP is demonstrably slower than other Ruby HTTP libraries, so Matthew Wilson decided to submit a [pull request to add Excon and Typhoeus adapters](https://github.com/mwunsch/weary/pull/2) to Weary.
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))

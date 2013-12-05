@@ -1,0 +1,10 @@
+---
+title: Suh-weet
+author: David Czarnecki
+---
+One of our engineers has been doing some work with RRDTool (Round Robin Database); and more specifically PYRRD.  He's using it to combine real time usage stats with a prediction algorithm so that we can pre-emptively allocate resources to different parts of the system.  Its real spiffy.
+
+ His additions to the PYRRD library just got commited to the trunk build, and he's credited in the readme.
+
+ [http://code.google.com/p/pyrrd/source/browse/trunk/ChangeLog](http://code.google.com/p/pyrrd/source/browse/trunk/ChangeLog)
+ [http://code.google.com/p/pyrrd/source/browse/trunk/README](http://code.google.com/p/pyrrd/source/browse/trunk/README)

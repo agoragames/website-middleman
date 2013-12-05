@@ -1,0 +1,19 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **confirm-with-reveal**
+
+ [confirm-with-reveal](https://github.com/agoragames/confirm-with-reveal) is a replacement for window.confirm() using the Reveal modal popup plugin from Zurb Foundation. See [example jsFiddle](http://jsfiddle.net/PtVNW/) for a demo.
+
+ Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+
+ **Ruby-MAPI-Wrapper**
+
+ [brightcove-api](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper) is a Ruby gem for interacting with the Brightcove Media API. This week we integrated a pull request to [ allow an UploadIO object to be passed to the post_io_streaming method](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper/pull/9).
+
+ Contributor(s): Mihail Szabolcs ( [GitHub](https://github.com/icebreaker/) )
+
+  

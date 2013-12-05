@@ -1,0 +1,25 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we're swell folks like that. Pretty simple right? Here goes...
+
+**node-amico**
+
+[node-amico](https://github.com/agoragames/node-amico) is our CoffeeScript port of the [amico](https://github.com/agoragames/amico) gem, which handles relationships (e.g. friendships) backed by Redis. Andrew Nordman ( [cadwallion](https://twitter.com/#!/cadwallion)) released 0.0.3 to update the package manifest to correctly identify the main file. Hot on his heels, David Czarnecki ( [czarneckid](https://twitter.com/#!/czarneckid)), ported over the "scope" functionality from the amico gem to support relationships for any number of things or "scopes" and 0.1.0 was released. Please note that 0.1.0 is API incompatible with previous releases.
+
+**stache**
+
+[stache](https://github.com/agoragames/stache) is a Rails 3.x compatible Mustache Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side JavaScript a little easier. Matthew Wilson ( [hypomodern](https://twitter.com/#!/hypomodern)) released 0.2.2 which integrated a [pull request from Jack Lawson](https://github.com/agoragames/stache/pull/11) ( [ajacksified](https://github.com/ajacksified)) to correctly use various stache configuration options instead of being hardcoded values.
+
+**haigha**
+
+[haigha](https://github.com/agoragames/haigha), our AMQP libevent client in Python, had a couple of issues opened this week that Aaron Westendorf ( [WashUffize](https://twitter.com/#!/WashUffize/)) is managing. Issue #8, [test_read_timestamp and test_write_timestamp failure on Mac OS](https://github.com/agoragames/haigha/issues/8), may be an issue with time zones. YUNO [timecop](https://github.com/jtrupiano/timecop) Python? We are also waiting on a pull request for issue #9, [haigha/gevent example](https://github.com/agoragames/haigha/issues/9), which modifies the "hello-world" example to work with [gevent](http://www.gevent.org/).
+
+**darksky**
+
+One of our ex-system engineers, Jason LaPorte ( [ironwallaby](https://twitter.com/#!/ironwallaby/)), left us earlier this year to join the [Dark Sky](http://darkskyapp.com) team, and [they've got an API](http://darkskyapp.com/api/) for short-term precipitation forecast data at geographical points inside the United States. David Czarnecki ( [czarneckid](https://twitter.com/#!/czarneckid)) released the [darksky gem](https://github.com/czarneckid/darksky) now that their API is in beta.
+
+**punchr**
+
+Punchfork is one of the sexiest sites for finding the best new recipes from popular sites like Serious Eats or Simply Recipes. And it should have a sexy API library right? Right. David Czarnecki has a Ruby gem for interacting with the [Punchfork API](http://punchfork.com/api) called [punchr](https://github.com/punchfork/punchr). Look for a first release of the gem very soon!

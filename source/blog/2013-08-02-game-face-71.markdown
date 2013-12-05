@@ -1,0 +1,35 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **chai**
+
+ [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. chai 0.3.7 fixes teardown of __new__ on types that overload the method.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. In kairos 0.4.2, we fixed the insert on count timeseries not supporting the intervals keyword argument.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **oembedr**
+
+ [oembedr](https://github.com/agoragames/oembedr) is our Lightweight, Flexible OEmbed Consumer Library. As of oembedr 1.1.1, we've merged a couple of pull requests to update some providers.
+
+ Contributor(s): Стас Сушков ( [GitHub](https://github.com/stas))
+
+ **sidekiq**
+
+ [Sidekiq](https://github.com/mperham/sidekiq) is a package for simple, efficient background processing for Ruby. We submitted a pull request that was merged to be able to [change the default number of retry attempts to be set for the RetryJobs middleware](https://github.com/mperham/sidekiq/pull/1091).
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **torus**
+
+ [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. In torus 0.4.3, we fixed matching when there's a list of expressions and a list of stat names. Also, command line arguments are now included when changing process title.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

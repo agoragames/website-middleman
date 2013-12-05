@@ -1,0 +1,21 @@
+---
+title: Hack-a-thon 10!
+author: Steven Flenory
+---
+We've reached a small milestone with our hack-a-thons here at Agora Games! We are fast approaching our 10th hack-a-thon, so I wanted to take a look back at some of the coolest projects that have come out of our hack-a-thons and share them with the world.
+
+ **[August 31st 2012 - David Czarnecki](https://twitter.com/CzarneckiD)** created an XBLA title in 24 hours! His use of Microsoft's XNA toolkit and APIs was pretty awesome for such a short development time. He actually deployed the game, and we got to demo it in the hack-a-thon wrap-up meeting that afternoon!
+
+ **[August 31st 2012 - Brad LaFountain](https://twitter.com/bradmlafountain)** worked on word game  that was to be used for internel Hydra tool development! The finished project was fun to play in the wrap-up meeting. This game helped lead to some Hydra Android SDK updates in the match service! Check out this screen shot from the game [Screenshot 1](https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/8q7rasx0xwbw1ac/black.png) and [Screenshot 2](https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/98vdx0gluv5umv6/bluuuue.png) . It's nice to note that Brad is continuing his work on this game still, and might even do more during this coming hack-a-thon.
+
+ **[June 22nd 2012 - Aaron Westendorf](https://twitter.com/WashUffize)** worked on a Python library for storing time series data in redis. He worked on simplifying the API so it's easier to integrate, which, as a producer, sounds pretty awesome.
+
+ **February 25th 2011 - Team Demo:** As Hydra grew as a project, we wanted to see just how easy it was for someone to integrate it into their community website. We found a couple in house engineers who were all front end folks, and whom have never integrated with Hydra before, and told them "You have 24 hrs to do it, let's see what you can do". ** [Mike Jodon](https://twitter.com/MikeJodon)** and ** [Steven Flenory](https://twitter.com/Dragonfist111)** provided some PSDs that we made in about 3 days, and the web engineers were given developer level access to hydra, that's it, then we told them to get going. In 24 hours, these 2 engineers managed to get up a page with functioning registration, leaderboards, profiles, and a community game powered by our statistics service.
+
+ So, what kind of project would you work on if you had 24hrs to work on anything you wanted? What kind of technology would you use?
+
+ Check out the other open source projects that Agora Games has worked on, and maybe use them as inspiration :)  [http://github.com/agoragames](http://github.com/agoragames)
+
+ Let us know what you would work on in the comments!
+
+  

@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. We released 0.4.0 this week to add some major functionality. collapse is now a keyword argument to series() for collapsing an entire timeseries into a single row. Transforms are performed after the collapse, allowing easy calculation of aggregates across an entire timeseries. We also added support in `get()` and `series()` for joining multiple timeseries into a single result by calling with a list of timeseries names rather than a single string. And finally we fixed an inconsistency in gauge type when collapsing or condensing gauge data. Value for an interval is the last recorded non-null gauge value now.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **sentry**
+
+ [Sentry](https://github.com/getsentry/sentry) is a realtime event logging and aggregation platform. It's pretty awesome and it's open source. As Rails 4 was released this week, we submitted [a pull request that adds Rails 4 as a Ruby project option](https://github.com/getsentry/sentry/pull/923). It was accepted and integrated, so at some point in the future, if you use Sentry, you should see that functionality.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

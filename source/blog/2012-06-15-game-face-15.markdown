@@ -1,0 +1,23 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **brightcove-api**
+
+ [brightcove-api](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper) is a gem for interacting with the [Brightcove Media API](http://docs.brightcove.com/en/media/). The release this week integrates a pull request that [allows post streaming when you have an file handle instead of a filename](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper/pull/8). Internal code documentation was also added.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid)) and keysolutions ( [GitHub](https://github.com/keysolutions))
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard) allows you to build leaderboards using Redis. This week we added the ability to store and retrieve optional member data alongside the leaderboard data. This is particularly useful if you wanted to, for example, store a member name if you were ranking member IDs in a leaderboard or if you wanted to store a timestamp for when a member was last ranked in a leaderboard.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid)) and John Gadbois ( [GitHub](https://github.com/jgadbois), [Twitter](https://twitter.com/#!/johngadbois))
+
+ **sandboxthatad**
+
+ [sandboxthatad](https://github.com/logankoester/sandboxthatad) is an experiment in using Google's [Caja Compiler](https://developers.google.com/caja/) to isolate ad network ads if they're not "playing nice", e.g. causing insecure content warnings by not using HTTPS for ads when your site is using HTTPS.
+
+ Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/#%21/logankoester))

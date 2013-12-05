@@ -1,0 +1,23 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **leaderboard-coffeescript**
+
+ [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) is our leaderboard project, originally written in Ruby, ported to CoffeeScript. We integrated a [comprehensive pull request](https://github.com/agoragames/leaderboard-coffeescript/pull/4) to ensure the passed callback function is triggered when operations fail or are otherwise unable to complete and to fix fetching the rank for the top member.
+
+ Contributor(s): David Wagner ( [GitHub](https://github.com/mnem))
+
+ **ProjectGen**
+
+ [ProjectGen](https://github.com/cadwallion/project_gen/) is a project generator tool that makes establishing new libraries and projects easier. It also has the option to delegate to existing tools like Bundler to not reinvent the wheel, but keep a consistent interface when not using these tools.
+
+ Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+
+ **tassadar**
+
+ [tassadar](https://github.com/agoragames/tassadar) is our fast Starcraft 2 replay parser written in pure Ruby. In 0.3.0, we integrated a pull request to be able to [initialize a replay by passing it the replay data instead of a filename](https://github.com/agoragames/tassadar/pull/4).
+
+ Contributor(s): Ben Kanouse ( [GitHub](https://github.com/BenKanouse))

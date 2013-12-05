@@ -1,0 +1,13 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **kairos**
+
+ Kairos provides time series storage using Redis, Mongo or SQL backends. Kairos is intended to replace RRD and Whisper in situations where the scale and flexibility of other data stores is required. Add Cassandra support to the list of backends supported with the 0.8.0 release. We also added limits when querying properties of a SQL stat, changed behavior of sets to include storage of all datapoints, positive or negative and added a table name option to SQL stores.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+  

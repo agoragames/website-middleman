@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **vindicia-api**
+
+ [vindicia-api](https://github.com/agoragames/vindicia-api) is a wrapper for making calls to Vindicia's CashBox SOAP API. We integrated [a pull request to freeze the version of the savon gem](https://github.com/agoragames/vindicia-api/pull/4) used by the library. As noted, the code needs an update to work with the latest 2.x version of savon. But, this at least keeps the current version working. We'll cut a formal release shortly.
+
+ Contributor(s): Felipe Madrigal ( [GitHub](https://github.com/Madrigal))

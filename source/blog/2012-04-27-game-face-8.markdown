@@ -1,0 +1,70 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **activity_feed**
+
+ [activity_feed](https://github.com/agoragames/activity_feed/) is a gem for doing activity feeds (aka activity streams, aka timelines) in Redis. GitHub user, jc00ke, submitted a [pull request to cleanup the README](https://github.com/agoragames/activity_feed/pull/4) and remove the irb output.
+
+ Contributor(s): Jesse Cooke ( [GitHub](https://github.com/jc00ke/), [Twitter](https://twitter.com/#!/jc00ke))
+
+ **brightcove-api**
+
+ [brightcove-api](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper) is a gem for interacting with the [Brightcove Media API](http://docs.brightcove.com/en/media/). The README got a cleanup to remove irb output.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))
+
+ **haigha**
+
+ [haigha](https://github.com/agoragames/haigha/) is a simple to use client library for interacting with AMQP brokers. The [0.5.0 release](https://github.com/agoragames/haigha/blob/master/CHANGELOG) offers a number of enhancements
+
+- Fix message reading in basic.get
+- Added optional open_cb kwarg to Connection constructor
+- Added optional callback to basic.consume for notifications when broker has registered the consumer
+- Moved channel state out of ChannelClass and into Channel to fix access problems after Channel has been cleaned up
+- Added support for Channel open notification listeners
+- All AMQP timestamps are in UTC
+- Most exceptions will now propagate to user code, fixing problems with gevent.GreenletExit and SystemExit
+- Preliminary support for synchronous clients
+
+ 
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+
+ **hipchat-api**
+
+ [hipchat-api](https://github.com/czarneckid/hipchat-api) is a gem for interacting with the HipChat API. The README got a cleanup to remove irb output.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) is a library that provides time series storage using a Redis backend. The [0.0.6 release](https://github.com/agoragames/kairos/blob/master/CHANGELOG) added "optional compression on a series which will count unique hits on a value within an interval. Exact time resolution is traded in favor of a (possible) significant reduction in storage requirements. The resolution of the compression is up to the user in how they cast the data on insert."
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard) is a gem that allows you to develop leaderboards for your application or game, where the leaderboards are backed by Redis. The [2.0.6 release](https://github.com/agoragames/leaderboard/blob/master/CHANGELOG.markdown) adds an "accessor for the reverse option so that you can set reverse after creating a leaderboard to see results in either highest-to-lowest or lowest-to-highest order."
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))
+
+ **silver_spoon**
+
+ [silver_spoon](https://github.com/agoragames/silver_spoon) is a new gem for doing entitlements in Redis. It is a "simple semantic wrapper around Redis hashes for adding, removing, retrieving and checking existence of entitlements."
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))
+
+ **strumbar**
+
+[strumbar](https://github.com/agoragames/strumbar) is another new gem that acts as "a wrapper around ActiveSupport::Notifications with pre-configurations for basic instrumentation to be sent to statsd." Current instrumentations exist for ActionController, ActiveRecord and Redis.
+
+Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion)) and Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
+
+ **tasty**
+
+ [tasty](https://github.com/czarneckid/tasty) is a gem for interacting with the [del.icio.us API](http://www.delicious.com/help/api/). The README got a cleanup to remove irb output.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#!/czarneckid))

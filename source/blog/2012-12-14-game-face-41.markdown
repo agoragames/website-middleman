@@ -1,0 +1,81 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ [In 2011, we open sourced 22 projects](http://blog.agoragames.com/blog/2012/01/09/2011-open-source-projects/). In 2012, we open sourced 33 projects. We're looking forward to 2013! You can find all of our open source projects from us on the [Agora Games GitHub organization](https://github.com/agoragames/).
+
+ Here's a look back at all the 33 projects that we open sourced in 2012 (in alphabetical order):
+
+- [action_pusher](https://github.com/agoragames/action_pusher) - Render views to Pusher from anywhere in your application. Pusher users often want to transmit JSON or HTML to the browser upon model events, but models have no business generating either. ActionPusher allows you to render data to Pusher using your existing view templates from an observer or model.
+- [amico](https://github.com/agoragames/amico/) - Relationships (e.g. friendships) backed by Redis.
+- [beta](https://github.com/agoragames/beta) - Beta is an access control library that uses a Redis whitelist to control authorization. It relies upon the Rails.env variable to check against its list of environments to trigger on.
+- [blackjack](https://github.com/cadwallion/blackjack) - The classic card game written using Gosu.
+- [bnet_scraper](https://github.com/agoragames/bnet_scraper) - BnetScraper is a Nokogiri-based scraper of Battle.net profile information. Currently this only includes Starcraft2.
+- [bracketeer](https://github.com/agoragames/bracketeer) - Bracketeer is a BracketTree template creation tool that uses d3js to visually create new bracket templates.
+- [bracket_tree](https://github.com/agoragames/bracket_tree) - BracketTree is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. For more information on the data specification, please read the [BracketTree Data Specification](https://github.com/agoragames/bracket_tree/wiki/BracketTree-Data-Specification).
+- [bracket_tree.renderer](https://github.com/agoragames/bracket_tree.renderer) - BracketTree.Renderer is a d3-based bracket rendering system for all BracketTree tournaments. It is designed to interpret the BracketTree data visually based on the Renderer selected. There are a number of renderers built-in, as well as the ability to create your own.
+- [brewscribe](https://github.com/cadwallion/brewscribe) - Brewscribe is a Beersmith2 (.bsmx) file parser.
+- [coffee_bean](https://github.com/czarneckid/coffee_bean) - A ruby gem for kickstarting a CoffeeScript project.
+- [darksky](https://github.com/darkskyapp/darksky-ruby) - Ruby gem for retrieving data from the [Dark Sky API](https://developer.darkskyapp.com/docs/). The Dark Sky API lets you query for short-term precipitation forecast data at geographical points inside the United States.
+- [gamercard](https://github.com/hypomodern/gamercard) - Retrieves and parses an Xbox Live Gamercard for a player, providing a hash of the relevant data about the player or the raw HTML.
+- [gem_repackager](https://github.com/cadwallion/gem_repackager) - Have you ever been without internet and needed a gem but it's in the wrong RVM gemset? How about attempting to correct a problem with a production environment and need to clone the exact gems available? Perhaps you are attempting a full app stack backup for compliance purposes? Gem::Repackager packages one or more of your installed gems back into .gem files for easy transportation. Gem::Repackager comes with a command-line utility to facilitate, with easy extensibility in the code as well.
+- [GWFSelect-for-jQuery-UI](https://github.com/agoragames/GWFSelect-for-jQuery-UI) - Based very loosely on Tom Moor's plugin for selecting Google's hosted fonts from a dynamically-generated drop-down list. This version uses jQuery UI's widget factory to provide the standard tools for accessing and manipulating the plugin's state programmatically.
+- [kairos](https://github.com/agoragames/kairos) - Kairos provides time series storage using a Redis backend. Kairos is intended to replace RRD in situations where the scale of Redis is required, with as few dependencies on other packages as possible. It should work with gevent out of the box.
+- [leaderboard_factory](https://github.com/agoragames/leaderboard_factory) - Helpful tools for defining a bunch of leaderboards associated with your objects. Builds on the [leaderboard](https://github.com/agoragames/leaderboard) gem.
+- [node-amico](https://github.com/agoragames/node-amico/) - This is a NodeJS port of [amico](https://github.com/agoragames/amico) using CoffeeScript.
+- [node-darksky](https://github.com/awestendorf/node-darksky) - A node.js module for integrating with the [Dark Sky API](https://developer.darkskyapp.com/docs/).
+- [oembedr](https://github.com/agoragames/oembedr) - Lightweight, Flexible OEmbed Consumer Library.
+- [php-bracket_tree](https://github.com/agoragames/php-bracket_tree) - BracketTree is a Tree-based bracketing system designed to aid in the creation and representation of tournament brackets. It uses a binary tree under the hood to maintain the bracket, and the BracketTree Data Specification to control progression and standardize representation. This is a port of the original Ruby client.
+- [prometheus](https://github.com/logankoester/prometheus) - Prometheus is a lightweight, modular framework built on Thor to quickly create beautiful command-line interfaces for your gems. It provides a standardized layout with generators, smart configuration, and an interactive console to work with your tasks.
+- [punchr](https://github.com/punchfork/punchr) - Ruby gem for interacting with the Punchfork API.
+- [rduration](https://github.com/hypomodern/rduration) - Simple utility for parsing durations from strings and comparing them. Basic math is also supported.
+- [redis_pagination](https://github.com/czarneckid/redis_pagination) - Simple pagination for Redis lists and sorted sets.
+- [seed_list](https://github.com/agoragames/seed_list) - Seed management for tournament brackets.
+- [silver_spoon](https://github.com/agoragames/silver_spoon) - Entitlements in Redis. A simple semantic wrapper around Redis hashes for adding, removing, retrieving and checking existence of entitlements.
+- [snake_skin](https://github.com/cadwallion/snake_skin) - Python package skeleton tool, similar to the `bundle gem` command in Bundler.
+- [spinel](https://github.com/cadwallion/spinel) - Spinel is a new free and open source game engine under development that utilizes mruby as its integral scripting layer. Under the hood is C/C++, however wherever possible the engine uses Ruby.
+- [streak](https://github.com/czarneckid/streak) - streak is a gem for calculating win/loss streaks. It uses Redis as its backend for collecting the data.
+- [streak-coffeescript](https://github.com/czarneckid/streak-coffeescript) - streak is a library for calculating win/loss streaks. It uses Redis as its backend for collecting the data. This is a CoffeeScript port of the [original streak Ruby gem](https://github.com/czarneckid/streak).
+- [streak-python](https://github.com/czarneckid/streak-python) - streak is a library for calculating win/loss streaks. It uses Redis as its backend for collecting the data. This is a Python port of the [original streak Ruby gem](https://github.com/czarneckid/streak).
+- [strumbar](https://github.com/agoragames/strumbar) - Strumbar is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd.
+- [windbag](https://github.com/agoragames/windbag) - Windbag is an event notification system for Rails. Using Windbag with model observers, you can notify users about changes they're interested in over a variety of transports (WebSockets, email, SMS, Twitter, etc).
+
+ 
+
+ Breakdown by language: Ruby (22), Python (3), CoffeeScript (3), JavaScript (2), C++ (2), PHP (1)
+
+ Open source contributors from our engineers (in alphabetical order):
+- David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+- Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))
+- Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+- Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+- Tom Quackenbush ( [GitHub](https://github.com/tquackenbush), [Twitter](https://twitter.com/tquackenbush))
+- Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+- Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
+
+ 
+
+ Thank you to all the external contributors to our various projects (in alphabetical order):
+- Jason Baker ( [GitHub](https://github.com/jasonbaker))
+- Skip Baney ( [GitHub](https://github.com/twelvelabs))
+- Greg Banks ( [GitHub](https://github.com/gregbanks))
+- Jon Barber ( [GitHub](https://github.com/sneakybeaky))
+- Bradley Buda ( [GitHub](https://github.com/bradleybuda))
+- Jesse Cooke ( [GitHub](https://github.com/jc00ke/), [Twitter](https://twitter.com/#%21/jc00ke))
+- Steven Davidovitz ( [GitHub](https://github.com/steved555), [Twitter](https://twitter.com/#%21/steved3298))
+- John Gadbois ( [GitHub](https://github.com/jgadbois), [Twitter](https://twitter.com/#%21/johngadbois))
+- Paul Gallagher ( [GitHub](https://github.com/tardate))
+- Kate Gengler ( [GitHub](https://github.com/kategengler))
+- Joey Imbasciano ( [GitHub](https://github.com/joeyimbasciano))
+- Seb Jacobs ( [GitHub](https://github.com/sebjacobs))
+- keysolutions ( [GitHub](https://github.com/keysolutions))
+- Vitaly Krugl ( [GitHub](https://github.com/vitaly-krugl))
+- Jeffrey Lee ( [GitHub](https://github.com/jlee42))
+- Szymon Nowak ( [GitHub](https://github.com/szimek))
+- Rodrigo Tassinari de Oliveira ( [GitHub](https://github.com/rtopitt))
+- Chris Roby ( [Twitter](https://twitter.com/croby))
+- Marian Rudzynski ( [GitHub](https://github.com/fx))
+- Stephen Sugden ( [GitHub](https://github.com/grncdr/))
+- zombor ( [GitHub](https://github.com/zombor))

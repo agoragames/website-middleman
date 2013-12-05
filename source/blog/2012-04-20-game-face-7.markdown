@@ -1,0 +1,41 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **bnet_scraper**
+
+ [bnet_scraper](https://github.com/agoragames/bnet_scraper), our Nokogiri-based scraper of Battle.net profiles, got an update this week to allow you to [check if Battle.net is online for a given region](https://github.com/agoragames/bnet_scraper/pull/3). This is available in the 0.0.2 release.
+
+ Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/#!/logankoester))
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) is one of our newer libraries and is a Python module for storing time-series data in Redis. Version 0.0.5 was released this week which added an optional prefix for time-series keys.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+
+ **prometheus**
+
+ [prometheus](https://github.com/logankoester/prometheus) is a lightweight, modular framework built on [Thor](https://github.com/wycats/thor) to quickly create beautiful command-line interfaces for your gems. It provides a standardized layout with generators, smart configuration, and an interactive console to work with your tasks.
+
+ Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/#!/logankoester))
+
+ **rduration**
+
+ [rduration](https://github.com/hypomodern/rduration) is a simple utility for parsing durations from strings and comparing them. Basic math is also supported.
+
+ Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
+
+ **redistat**
+
+ [redistat](https://github.com/jimeh/redistat) is a pretty bad-ass library for doing statistics storage and querying in Redis. David Czarnecki contributed a patch to allow for a [configurable group separator](https://github.com/jimeh/redistat/pull/14) when storing and querying statistics in Redis. This is available in the 0.5.0 release of redistat.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+
+ **streak**
+
+ [streak](https://github.com/czarneckid/streak) is a gem for calculating win/loss streaks. It uses Redis as its backend for collecting the data. streak is configurable with respect to its keys to allow for tracking other positive/negative things in a game like wins and losses, kills and deaths, etc.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

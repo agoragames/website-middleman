@@ -1,0 +1,44 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **activity_feed**
+
+ [activity_feed](https://github.com/agoragames/activity_feed) is our Ruby gem for storing and managing activity feeds in Redis. In the 2.2.1 update, we added total_pages and total_items methods as aliases for total_pages_in_feed and total_items_in_feed, respectively.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **amico**
+
+ [amico](https://github.com/agoragames/amico) is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. We actually did 2 releases this week with 2.2.0 and 2.3.0 shortly thereafter. We added a clear(id, scope = Amico.default_scope_key) method to clear all relationships (in either direction) stored for an individual.
+
+ We also added the following methods for the blocked by relationship:
+
+- blocked_by?(id, blocked_by_id, scope = Amico.default_scope_key)
+- blocked_by(id, page_options = default_paging_options, scope = Amico.default_scope_key)
+- blocked_by_count(id, scope = Amico.default_scope_key)
+- blocked_by_page_count(id, page_size = Amico.page_size, scope = Amico.default_scope_key)
+
+In addition, the  following methods were added for the pending with relationship:
+- pending_with?(id, blocked_by_id, scope = Amico.default_scope_key)
+- pending_with(id, page_options = default_paging_options, scope = Amico.default_scope_key)
+- pending_with_count(id, scope = Amico.default_scope_key)
+- pending_with_page_count(id, page_size = Amico.page_size, scope = Amico.default_scope_key)
+
+Thanks to [Skip Baney](https://github.com/twelvelabs) for all the work on this releases.
+
+ Contributor(s): Skip Baney ( [GitHub](https://github.com/twelvelabs))
+
+ **chai**
+
+ [chai](https://github.com/agoragames/chai) – provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. The 0.2.0 release integrates a pull request from GitHub user, [Jason Baker](https://github.com/jasonbaker), to add a  __wrapped__ attribute to chai decorated test methods. This is useful as it allows someone to get at the wrapped test method to do introspection.
+
+ Contributor(s): Jason Baker ( [GitHub](https://github.com/jasonbaker))
+
+ **haigha**
+
+ [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In the 0.5.6 release, we only catch Exception subclasses in Connection and Channel. Thanks to GitHub user, [Vitaly Krugl](https://github.com/vitaly-krugl), for the issue that this release addresses and the discussion.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize)) and Vitaly Krugl ( [GitHub](https://github.com/vitaly-krugl))

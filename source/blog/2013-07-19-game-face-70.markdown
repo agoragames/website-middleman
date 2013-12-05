@@ -1,0 +1,43 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ We actually updated all of our Ruby gem projects to explicitly call out the MIT license in the gemspec as the license used in those projects.
+
+ **activity_feed**
+
+ [activity_feed](https://github.com/agoragames/activity_feed) is our Ruby gem for storing and managing activity feeds in Redis. We did a major version bump to 3.0.0 and then to 3.0.1. The major change was in the item_loader configuration property, which was renamed to items_loader and now is passed a list of IDs to have them loaded from the database instead of a record at a time. We also added a number of useful aliases for operations like grabbing, trimming and expiring feeds.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **haigha**
+
+ [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In 0.5.12, we fixed issue #31, wherein a channel is closed on a synchronous transport while reading frames and waiting for the synchronous callback to be executed.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **kairos**
+
+ [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. In the 0.4.1 release, we added support for inserting data into multiple intervals with a single call to insert() as well as adding support for set types when using Redis storage.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+ **leaderboard**
+
+ [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The leaderboard (Ruby), [leaderboard-python](https://github.com/agoragames/leaderboard-python) and [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) libraries all saw updates this week. In leaderboard 3.3.0, we added a method to be able to rank a member across a list of leaderboard. This same functionality was ported to leaderboard-coffeescript 1.3.0 and leaderboard-python 2.5.0.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **localshop**
+
+ [localshop](https://github.com/mvantellingen/localshop) is a pypi server which automatically proxies and mirrors pypi packages based upon packages requested. We submitted a small pull request that was integrated to [fix the directions for installing honcho](https://github.com/mvantellingen/localshop/pull/67).
+
+ Contributor(s): Vitaly Babiy ( [GitHub](https://github.com/vbabiy), [Twitter](https://twitter.com/vitaly_babiy))
+
+ **torus**
+
+ [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. As of 0.4.1, we added a "rolling" option to schemas, allowing data to be inserted into multiple intervals at a time. This increases storage space but supports rapid calculation of aggregates over pre-determined interval ranges.
+
+ Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

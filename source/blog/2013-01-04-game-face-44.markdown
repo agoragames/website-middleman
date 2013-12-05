@@ -1,0 +1,23 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+ **amico**
+
+ [amico](https://github.com/agoragames/amico) is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. The 2.3.2 release fixed an issue where the call to reciprocated? in the internal method add_following_followers_reciprocated was not passing along the scope.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **strumbar**
+
+ [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. We updated the library to use the latest statsd-ruby library, since we were using an out-of-date version. A new release of strumbar will be cut shortly.
+
+ Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+ **tassadar-server**
+
+ [tassadar-server](https://github.com/agoragames/tassadar-server) is a new project released in 2013! This simple rack-based web service uses the pure-ruby [Tassadar](https://github.com/agoragames/tassadar) library to parse uploaded Starcraft II replay files and send a JSON response. This service is designed to enable Tassadar in polyglot or browser-based projects where Ruby may not be the significant language.
+
+ Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))

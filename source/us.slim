@@ -1,0 +1,78 @@
+.wrap
+  article.clearfix
+    header.center.clean
+      h1
+        strong Team
+      .callout
+        a.laurel.scroll href="#contact"
+    section.clearfix
+      .section-header
+        p
+          span
+            | The
+            strong Team
+            = image_tag 'icon-down.png', alt: ''
+      ul.headshot-list
+        li
+          = image_tag "content/aaron_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Aaron
+        li
+          = image_tag "content/andrew2_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Andrew
+        li
+          = image_tag "content/Brad_200_190_ffffff_all_50.jpg", alt: "", height: "190", width: "200"
+          span.team-member-name Brad
+        li
+          = image_tag "content/david_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name David
+        li
+          = image_tag "content/dandrade_190_200_1_190_200_ffffff_all_50.png", alt: "", height: "200", width: "190"
+          span.team-member-name David A
+        li
+          = image_tag "content/elliott_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Elliott
+        li
+          = image_tag "content/jack_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Jack
+        li
+          = image_tag "content/sam_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Sam
+        li
+          = image_tag "content/Steve-New-BW_190_200_ffffff_all_50.png", alt: "", height: "200", width: "190"
+          span.team-member-name Steve
+        li
+          = image_tag "content/vitaly_200_200_ffffff_all_50.jpg", alt: "", height: "200", width: "200"
+          span.team-member-name Vitaly
+    section#contact.clearfix
+      .section-header
+        p
+          span
+            strong Contact
+            | Us
+            img src="http://www.agoragames.com/assets/images/icon-down.png"
+      form#contact-form.simple action="http://www.agoragames.com/" method="post" name="a"
+        .hiddenFields
+          input name="ACT" type="hidden" value="26"
+          input name="URI" type="hidden" value="us"
+          input name="XID" type="hidden" value="26d01774cd9ffc898d344a1c2f7d97c7bef95cfb"
+          input name="status" type="hidden" value="open"
+          input name="return" type="hidden" value="thank-you"
+          input name="redirect_on_duplicate" type="hidden" value=""
+          input name="RET" type="hidden" value="http://www.agoragames.com/us"
+          input name="form_name" type="hidden" value="Contact"
+          input name="params_id" type="hidden" value="34760"
+          input name="site_id" type="hidden" value="1"
+        .block
+          .text
+            input#input-name name="name" placeholder="Name" type="text"
+          .text
+            input#input-email name="email" placeholder="Email" type="email"
+          .text
+            input#input-company name="company" placeholder="Company" type="text"
+          .text
+            input#input-phone name="phone" placeholder="Phone" type="text"
+        .block-last
+          .textarea
+            textarea name="message"
+        .submit.right
+          input type="submit" value="Submit"
