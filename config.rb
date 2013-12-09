@@ -4,12 +4,12 @@ set :images_dir, 'assets/images'
 set :fonts_dir, 'assets/fonts'
 
 set :layouts_dir, 'templates/layouts'
-ignore "templates/layouts/*"
-
 set :partials_dir, 'templates/partials'
-ignore "templates/partials/*"
+
+set :relative_links, true
 
 activate :asset_hash
+activate :relative_assets
 activate :automatic_image_sizes
 
 activate :blog do |blog|
@@ -33,10 +33,12 @@ end
 
 configure :build do
 
+  ignore "templates/layouts/*"
+  ignore "templates/partials/*"
+
   Slim::Engine.set_default_options :pretty => false
 
   activate :minify_css
   activate :minify_javascript
-  activate :relative_assets
 
 end
