@@ -12,7 +12,7 @@ author: Jason LaPorte
 
  Let me give you a sense of where we started: the code was in [version control](http://en.wikipedia.org/wiki/Revision_control), but only in the technical sense of the word; in reality, [SVN](http://en.wikipedia.org/wiki/Apache_Subversion) was being used more as an excessively complicated [rsync](http://en.wikipedia.org/wiki/Rsync)—it was a means to transport code from one developer machine to many web servers. The repository was over two gigabytes in size, about a third of which was PHP code, and the remainder being static assets. (And this is in addition to static assets housed elsewhere, such as on our CDN.) There were at least four PHP frameworks and three CMSs. Some of the code was object-oriented PHP5, but plotting a class diagram would have required at least four dimensions. If you think you've seen spaghetti code, think again: walking into this mess was like walking into the alien hive.
 
- [ ![](/uploads/2011/09/ripley-nest.jpg "ripley-nest") ](/uploads/2011/09/ripley-nest.jpg)
+ ![](uploads/2011/09/ripley-nest.jpg "ripley-nest")
 
  There is no magic in refactoring. When the scale is monumental, you should fully expect nothing other than a long, tedious trek. On any journey, though, you'll need a guide. Here are some of the rules of thumb that I've been going by:
 -

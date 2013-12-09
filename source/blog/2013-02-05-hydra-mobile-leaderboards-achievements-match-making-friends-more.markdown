@@ -6,7 +6,7 @@ author: Elliott Haase
 
 _Player Stats, Achievements, Push Notifications, Leaderboards & Match-Making for your Unity3d Android & iOS Game!_
 
-[ ![](/uploads/2013/01/hydraHeader-22.png) ](/uploads/2013/01/hydraHeader-22.png)
+![](uploads/2013/01/hydraHeader-22.png)
 
 Here at [Agora Games](http://www.agoragames.com/), we've been working on an online service platform called  [Hydra](http://hydra.agoragames.com/). This platform is used to power in-game and web-based features, such as player stats, leaderboards & achievements for lots of popular titles (Guitar Hero series, Saints Row 3, Mortal Kombat, etc). We have developed a mobile-focused version of our platform so that you can take advantage of all of these great features in your Android and iOS Unity3d games!
 

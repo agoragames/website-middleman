@@ -22,21 +22,18 @@ sourcetype="syslog" foo | rex field=_raw "[0-9a-z]{2} err \[(?<service>.\*?)\]"
 2. **Extracting only those results that have a particular field**
 
  So you've created a regex to extract certain fields from your result set but the results that don't match your regex are still in the result set.  How do you filter those out?  The solution is actually pretty simple:
-<your_original_search> | rex <your regex> | search your_field="\*"
+
+    <your_original_search> | rex <your regex> | search your_field="\*"
+
  Likewise you can find those that didn't match by negating the lookup:
 
- ``
-
     <your_original_search> | rex <your regex> | search NOT your_field="*"
-``  
+
 3. **Changing indices for search**
 
  By default your searches will only hit the 'main' index.  If you've created your own index it won't be searched by default.  To use your index in a particular search just add it to the search string:
 
- ``
-
     index=my_index foo NOT bar
-``  
 
  To add your index to the default list so you don't have to modify every search you'll need to modify your roles a bit.  Visit the Roles page in the Manager, select your role (probably user or admin if you haven't made any modifications here, and scroll down to the 'Default indexes' list.
 4. **Displaying the body of a message in an event table**
@@ -45,14 +42,9 @@ sourcetype="syslog" foo | rex field=_raw "[0-9a-z]{2} err \[(?<service>.\*?)\]"
 
  Search:
 
- ``
-
     sourcetype="syslog" err | rex field=_raw "[0-9a-z]{2} err \[(?<service>.*?)\] (?<body>.*)"
-``  
 
  Event Table:
-
- ``
 
     <table>
     <title>Most recent service errors</title>
@@ -60,16 +52,17 @@ sourcetype="syslog" foo | rex field=_raw "[0-9a-z]{2} err \[(?<service>.\*?)\]"
     <option name="count">5</option>
     <fields>_time,host,body</fields>
     </table>
-``  
+
 The events table:
- ![events](/uploads/2009/10/events.png) 5. **Changing the default app**
+
+![events](uploads/2009/10/events.png)
+
+5. **Changing the default app**
 
  With a normal install the launcher is the default app.  This gets kind of annoying after a while.  To change it to your own app you can adjust the default_namespace option in $SPLUNK_HOME/etc/apps/user-prefs/local/user-prefx.conf.
 
- ``
-
     default_namespace = my_app
-``  
+
 6. **Email alerts**
 
  Email alerts are built around scheduled searches.  When saving or editing a search you're given the option to provide a schedule for it.  Change this option so that the search is run on some interval and additional options will appear including one to send an email alert.  Additionally you can modify the search to only include a certain time range.  These features are very handy when used in combination.  Schedule your search to run every 30 minutes and adjust the start time to -30m and you'll get alerts about all errors that occurred during that time.
@@ -79,16 +72,11 @@ The events table:
 
  Took me a while to sort out this one.  The first thing you need to do is group your data into larger time periods.  If you have one column for each second your graph is going to be pretty useless.  Instead you should consolidate your data into large groups such as one per minute or one per hour.  I've found that dividing your time range by roughly 30 gives the best graphs.  To actually perform this grouping you need to add the 'span' option to your search:
 
- ``
-
     sourcetype="syslog" foo NOT bar | timechart span=1h count
-``  
 
  This will produce a count of all the items containing foo and not bar for syslog in intervals of one hour.
 
  Next you need to stack the resulting groups.  Annoyingly this is done at the view layer.  In my case I was adding it to my dashboard.  The relevant lines looked similar to the following:
-
- ``
 
     <chart>
     <searchName>Service errors in the last 24 hours</searchName>
@@ -96,12 +84,13 @@ The events table:
     <option name="charting.chart">column</option>
     <option name="charting.chart.stackMode">stacked</option>
     </chart>
-``  
 
  There is a reference for all these options in the Splunk docs.  Search for 'Custom charting configurations'.
 
  The end result looks something like this:
- ![errors](/uploads/2009/10/errors.png)
+
+ ![errors](uploads/2009/10/errors.png)
+
 8. **Edit everything manually**
 
  The Splunk Manager interface is rather clunky (not entirely the developer's fault, there are a lot of interdependent options) so after a while you'll likely get sick of it.  That's perfectly fine.  All the options are written out to config files per app.  All your changes are written out to $SPLUNK_HOME/etc/apps/<your_app>/local and override those options in $SPLUNK_HOME/etc/apps/<your_app>/default.  The default directory can be used as a handy reference for available options as well.  Note that some system wide options such as indices and roles are written out to $SPLUNK_HOME/etc/system/local.
@@ -112,16 +101,10 @@ The events table:
 
  As mentioned previously our Splunk setup is largely based on syslog but because we want to have raw syslog files in addition to having them indexed by Splunk we allow syslog to write the logs to disk and then have Splunk watch the created files.  Some information such as facility and log level get lost during this process with most default syslog configurations.  To resolve this we did a little bit of reconfiguring to our syslog installs.First, it's important to note that we actually use syslog-ng rather than vanilla syslog.  Syslog-ng has some handy options for templating output as of 1.5.3.  For each destination you can specify a template function:
 
- ``
-
     destination df_syslog { file("/var/log/syslog" template("$FULLDATE $FULLHOST $TAG $LEVEL $MESSAGE\n") template_escape(no)); };
-``  
 
  FULLDATE includes the year in the timestamp.  FULLHOST provides the hostname.  TAG is a hex encoding of the facility and level.  $LEVEL is a text representation of the level.  $MESSAGE is obviously just the message.  The template_escape(no) directive says that quotes should not be escaped.  Also note the newline at the end of the template.  Without it your output will be rather unreadable.
 
  And for reference the default appears to be similar to:
 
- ``
-
     "$DATE $FULLHOST $MESSAGE\n" template_escape(no)
-``  

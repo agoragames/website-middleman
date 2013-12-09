@@ -2,7 +2,7 @@
 title: Agora Games at Global Game Jam 2013
 author: Elliott Haase
 ---
-[ ![](/uploads/2013/01/ggjnewsletter.png) ](/uploads/2013/01/ggjnewsletter.png)
+![](uploads/2013/01/ggjnewsletter.png)
 
 The Global Game Jam (GGJ) is the world's largest game jam event. Think of it as a hackathon focused on game development. It is the growth of an idea that in today's heavily connected world, we could com together, be creative, share experiences and express ourselves in a multitude of ways using videos - it if very universal.
 
@@ -12,13 +12,13 @@ The theme for this year's GGJ was "Heartbeat". There some projects that dealt wi
 
 Agora Games is a big believer in shared knowledge in the gaming and tech industry, which is evident by our extensive catalog of open sourced projects. We have been a proud sponsor of our local GGJ for a couple years now, and each year we send over a few people to check out the action and talk with the teams. Check out some photos below!
 
-[ ![](/uploads/2013/01/igdaclarke-300x200.png) ](/uploads/2013/01/igdaclarke.png)
+![](uploads/2013/01/igdaclarke-300x200.png)
 
 Above, Clarke Foley (standing) and Mike Jodon (ball cap) from Agora Games meet with a team that was working on a game that adjusted to how fast or slow you  moved in game.
 
 Below, Cat Musgrove and Issam Khalil show off their certificates for being awesome at this year's GGJ
 
-[ ![](/uploads/2013/01/isamkatigda-300x200.png) ](/uploads/2013/01/isamkatigda.png)
+![](uploads/2013/01/isamkatigda-300x200.png)
 
 If you want more information on any of the teams mentioned here, please click below.
 

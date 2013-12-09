@@ -8,7 +8,7 @@ Applications go through various stages of development.  The shining moments for
 
  Boston is a city in Massachusetts that was founded a whole buncha years ago.  Back in the day, the guys pushing wagons around, and mules laden with baggage didn't care about paths that they plodded into the ground.  All they cared about was getting their goods to where ever they needed to be.  If there was a ginormous rock in the way, they could just path around it.  After a while, cars started getting pretty cool.  Cars need roads, so all the roads were built right on top of those paths.
 
- [ ![](/uploads/2008/11/boston.jpg) ](/uploads/2008/11/boston.jpg)
+ ![](uploads/2008/11/boston.jpg)
 
  At that time, it was easier to just build a road on top of the path.  No one knew the windy mess of wagon-path converted roads would cause tons of lost tourists and traffic accidents today.  It might have been better to just nuke the ginormous rock out of the way, and make the road straight.  Unfortunately, that ginormous rock is some type of historical monument now, so it's not possible anymore.
 

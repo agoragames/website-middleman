@@ -4,7 +4,7 @@ author: David Czarnecki
 ---
 I thought if you didn't use Rails sessions, that Rails wouldn't create a session cookie?
 
- [ ![](/uploads/2010/09/cookie-monster3-7769871237963363-300x290.jpg "cookie-monster3-7769871237963363") ](/uploads/2010/09/cookie-monster3-7769871237963363.jpg)
+ ![](uploads/2010/09/cookie-monster3-7769871237963363-300x290.jpg)
 
  In any event, one of our engineers had put together a simple Rack middleware for destroying cookies.
 

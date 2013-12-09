@@ -10,4 +10,4 @@ author: David Czarnecki
 
  Prizes, giveaways, raffles.
 
- [ ![](/uploads/2008/08/bombers-large.png "bombers-large") ](/uploads/2008/08/bombers-large.png)
+ ![](uploads/2008/08/bombers-large.png)

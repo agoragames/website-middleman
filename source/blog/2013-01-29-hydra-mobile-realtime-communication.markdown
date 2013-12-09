@@ -2,7 +2,7 @@
 title: Hydra Mobile - Realtime Communication
 author: Elliott Haase
 ---
-[ ![](/uploads/2013/01/hydramobile-1024x341.jpg) ](/uploads/2013/01/hydramobile.jpg)
+![](uploads/2013/01/hydramobile-1024x341.jpg)
 
 Hydra Mobile is the newest product from Agora Games and each week or so we’ll be releasing detailed information about features, an update from the beta, and anything else that you folks might want to know about Hydra Mobile. If we’re not talking about what you want to know about, let us know, and we’ll get that information to you info@agoragames.com.
 

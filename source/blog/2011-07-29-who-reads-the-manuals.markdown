@@ -4,7 +4,7 @@ author: Leslie Brezslin
 ---
 So I recently ordered my own copy of Mortal Kombat and it arrived just a few days ago. Once in my impatient hands, I savagely tore open its containing box without a fragment of mercy; ending with something similar to this:
 
- [ ![](/uploads/2011/07/wool_box1-150x150.jpg) ](/uploads/2011/07/wool_box1.jpg)
+ ![](uploads/2011/07/wool_box1-150x150.jpg)
 
  After that, I proceeded to remove the inferior plastic barrier that stood between me and the future of gory deaths that I’d be responsible for. Having taken care of the plastic with my razor sharp teeth, I pried open the casing open to reveal a fairly well decorated DVD and a booklet on the side. Naturally the booklet never experienced the faintest drop of my attention, but the DVD was pampered with the greatest of care. I removed it from its casing, popped it into my PS3 and enjoyed the awkwardly menacing side of me that enjoyed achieving the bloodiest of fatalities.
 

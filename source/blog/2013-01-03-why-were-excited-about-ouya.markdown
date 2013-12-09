@@ -10,7 +10,7 @@ There has been a lot of talk these days about the new, kick-starter funded conso
 
  Yesterday, we received our Ouya dev kit in the mail, and immediately began uploading our own games.  We learned that not only does our new platform Hydra Mobile complement the Ouya model of being accessible to all developers, but it also is supported right out of the box!  We had our games running smoothly on our Ouya with profile stats, leaderboards, achievements & match-making.
 
- [ ![](/uploads/2013/01/ouya-1-1024x576.jpg) ](/uploads/2013/01/ouya-1.jpg)
+ ![](uploads/2013/01/ouya-1-1024x576.jpg)
 
  We are in full support of the Ouya team, and we look forward to supporting them in Hydra! [Sign up for our beta](http://hydra.agoragames.com) now and see how you can integrate online services for Ouya!
 

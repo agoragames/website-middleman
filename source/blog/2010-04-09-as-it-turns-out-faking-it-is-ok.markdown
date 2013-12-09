@@ -4,7 +4,7 @@ author: David Czarnecki
 ---
 This post is totally SFW. That's all your going to get in this teaser.
 
- ![when_harry_met_sally](/uploads/2010/04/themarketingblog_e_a001438922.JPG "when_harry_met_sally")
+ ![when_harry_met_sally](uploads/2010/04/themarketingblog_e_a001438922.JPG "when_harry_met_sally")
 
  I just inherited an application and was adding some tests and noticed that one of the tests was randomly failing. As I dug in more, this particular controller test, in executing the controller's index method, was actually calling out on the intertubes to request some data. For an integration test that's probably OK, but my view is that unit and functional tests should be self-contained.
 

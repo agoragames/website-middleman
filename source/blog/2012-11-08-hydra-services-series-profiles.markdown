@@ -50,17 +50,23 @@ Each one of these services will get a write up similar to this one, which will e
 
   
 * * *
+
 **Saints Row: The Third - Released for XBOX360, PS3 and PC**
 Saints Row's sandbox style gameplay made it a perfect fit for Hydra integration. Having a game where you could literally play forever and rack up stats, made the profile service a great feature for the community. While playing, you're always getting money, always racking up kills, and always doing something insane. The Profile service here was used to track both single player and multi-player stats. 
 
-[ ![](/uploads/2012/11/Screen-Shot-2012-11-06-at-2.39.47-PM2-300x257.png) ](/uploads/2012/11/Screen-Shot-2012-11-06-at-2.39.47-PM2.png) Saints Row really blew out their profiles on the community website. If there was a stat that a user wanted to see, it was more than likely on their profile. Users were even able to compare their stats to anyone else that was linked to the website, which is a feature that most users want today.
+  ![](uploads/2012/11/Screen-Shot-2012-11-06-at-2.39.47-PM2-300x257.png)
 
- Saints Row also made it so you knew where you stacked up against the rest of the community. They let you know the community average, and which percentile you are in for each stat in the Game Performance center.
+Saints Row really blew out their profiles on the community website. If there was a stat that a user wanted to see, it was more than likely on their profile. Users were even able to compare their stats to anyone else that was linked to the website, which is a feature that most users want today.
+
+Saints Row also made it so you knew where you stacked up against the rest of the community. They let you know the community average, and which percentile you are in for each stat in the Game Performance center.
 
 **Mortal Kombat - Released for XBOX360 and PS3**
  You can't call yourself a gamer if you haven't played Mortal Kombat. Everyone remembers the first arcade machines showing up in their local arcades and video rental stores. In 2011, the latest version of this timeless franchise  was released to the masses with much acclaim. With so many fighters in game, and more released on DLC, it was an honor to have this title's stats being powered by Hydra. 
 
-[ ![](/uploads/2012/11/Screen-Shot-2012-11-12-at-2.23.38-PM1-300x272.png) ](/uploads/2012/11/Screen-Shot-2012-11-12-at-2.23.38-PM1.png)Mortal Kombat used the profile service to achieve a really granular type of profile for its users. There where stats based on a player's over-all career in the game, as well as stats to show a user's "best" at some key stats.
+  ![](uploads/2012/11/Screen-Shot-2012-11-12-at-2.23.38-PM1-300x272.png)
 
- One of the more granular uses of the stats was to show wins by each character that you as a player have used. They then took that and broke it out by 1 on 1, 2 on 2, and co-op matches. I don't think I've seen this done with any other fighting game's stats, so it was nice to see something so new and detailed.
+Mortal Kombat used the profile service to achieve a really granular type of profile for its users. There where stats based on a player's over-all career in the game, as well as stats to show a user's "best" at some key stats.
+
+One of the more granular uses of the stats was to show wins by each character that you as a player have used. They then took that and broke it out by 1 on 1, 2 on 2, and co-op matches. I don't think I've seen this done with any other fighting game's stats, so it was nice to see something so new and detailed.
+
 As you can see, the Profile Service has powered some of the largest titles and franchises in gaming history. If you want to check out some of the other titles we've worked with, check it [our portfolio here](http://www.agoragames.com/portfolio/).  If we can help these games be successes, just imagine what we can do for you! If you're interested in using Hydra, [go here and leave us your email](http://hydra.agoragames.com/) and we'll contact you!

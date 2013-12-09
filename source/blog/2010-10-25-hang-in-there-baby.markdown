@@ -2,7 +2,7 @@
 title: Hang In There Baby
 author: David Czarnecki
 ---
-[ ![](/uploads/2010/10/Hang-in-There-baby-Inspiration_0E75780C.jpg "Hang In There Baby") ](/uploads/2010/10/Hang-in-There-baby-Inspiration_0E75780C.jpg)
+![](uploads/2010/10/Hang-in-There-baby-Inspiration_0E75780C.jpg)
 
  How long should you keep a git fork around?
 

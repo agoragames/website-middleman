@@ -12,4 +12,8 @@ An overly sized brick that weighed a ton in my hands, comprising of a 2D, black 
 
   
 
-[ ![](/uploads/2011/07/gameboy-150x150.jpg) ](/uploads/2011/07/gameboy.jpg) [ ![](/uploads/2011/07/gamegear-150x150.jpg) ](/uploads/2011/07/gamegear.jpg) [ ![](/uploads/2011/07/lynx-150x150.jpg) ](/uploads/2011/07/lynx.jpg)
+![](uploads/2011/07/gameboy-150x150.jpg)
+
+![](uploads/2011/07/gamegear-150x150.jpg)
+
+![](uploads/2011/07/lynx-150x150.jpg)

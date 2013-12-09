@@ -2,7 +2,7 @@
 title: The Misunderstood Art
 author: Christian Arca
 ---
-[ ![](/uploads/2009/01/blogimage.jpg "blogimage") ](/uploads/2009/01/blogimage.jpg)
+![](uploads/2009/01/blogimage.jpg)
 
  Note: This editorial does not express the feelings of Agora Games as a company, and is solely the opinion of the author.
 

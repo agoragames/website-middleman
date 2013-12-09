@@ -10,11 +10,11 @@ I've noticed that there are some who hesitate when it comes to positively correl
 
  Painting, a classic art, liberates the trappings of the imagination by providing a platform for recreation and self-expression. Painting has gone from cave walls to the Mona Lisa over the years and below is an example by Johannes Vermeer called “the view of Delft”:
 
-[ ![](/uploads/2011/07/Vermeer-view-of-delft-300x250.jpg) ](/uploads/2011/07/Vermeer-view-of-delft.jpg)
+ ![](uploads/2011/07/Vermeer-view-of-delft-300x250.jpg)
 
 Now consider this work from one of the scenes in Brink:
 
-[ ![](/uploads/2011/07/City-from-brink-300x136.jpg) ](/uploads/2011/07/City-from-brink.jpg)
+ ![](uploads/2011/07/City-from-brink-300x136.jpg)
 
 This is an artist’s imagination of a world that doesn’t even exist. Regardless of the tools used to create it, the realism and openness to interpretation is at least similar to that of Vermeer. I regard re-creation and imagination as residing on two different planes of creativity. In my opinion, to paint something as it is in front of you isn’t as challenging as painting something as it could be. The interactivity of that world that games allow, tell a story but its brilliance isn’t limited to there. Lets take a motion picture. In this example, we’ll use a scene in a movie that derived from the book “Black Hawk Down” by _Mark Bowden._
  http://www.youtube.com/watch?v=iEGSQl9dDG0

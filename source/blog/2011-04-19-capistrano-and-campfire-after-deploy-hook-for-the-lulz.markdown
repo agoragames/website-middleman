@@ -8,10 +8,10 @@ We recently started using [capistrano-mountaintop](https://github.com/technicalp
 
  Success results in:
 
- [ ![](/uploads/2011/04/Screen-shot-2011-04-19-at-2.44.39-PM-300x292.png "Deploy Successful") ](/uploads/2011/04/Screen-shot-2011-04-19-at-2.44.39-PM.png)
+ ![](uploads/2011/04/Screen-shot-2011-04-19-at-2.44.39-PM-300x292.png "Deploy Successful")
 
  Failure results in:
 
- [ ![](/uploads/2011/04/Screen-shot-2011-04-19-at-2.44.51-PM-300x292.png "Deploy Failure") ](/uploads/2011/04/Screen-shot-2011-04-19-at-2.44.51-PM.png)
+ ![](uploads/2011/04/Screen-shot-2011-04-19-at-2.44.51-PM-300x292.png "Deploy Failure")
 
  You can find more hilarity over on my Twitter account, [CzarneckiD](http://twitter.com/czarneckid).

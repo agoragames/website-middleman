@@ -26,7 +26,7 @@ Our first task was to choose the core set of technologies and the basic processi
 - Protocol translators to bridge external traffic to AMQP via a simple binary protocol
 - libevent for as many as IO operation as possible
 
-![](/uploads/2010/06/lifting_the_tail.png "lifting the tail")
+![](uploads/2010/06/lifting_the_tail.png "lifting the tail")
  
 
 We chose Python from the suitable dyanmic languages primarily for its memory management and speed.  We were shifting to a single-threaded multi-process environment where memory costs are high and performance paramount, and Python has an extensive pedigree in this area.  We did choose to sacrifice some memory by adhering to a single-threaded model in order to keep the application stack simple and use the kernel for all context switching.

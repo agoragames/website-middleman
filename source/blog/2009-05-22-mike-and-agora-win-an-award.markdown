@@ -8,6 +8,6 @@ author: Mike DelPrete
 
  Click the picture to see it bigger! (the glass award looks a little dangerous, doesn't it?  What if Mike tripped on his way down from the podium and the glass tip got stuck in his eye?  I guess that concern falls under the "worrying about something that is unlikely to happen."  It looks dangerous, though.)
 
- [ ![](/uploads/2009/05/agora-games-pioneer-bank1.jpg "agora-games-pioneer-bank1") ](/uploads/2009/05/agora-games-pioneer-bank1.jpg)
+ ![](uploads/2009/05/agora-games-pioneer-bank1.jpg)
 
  _From Left to Right:_  Some SBA Guy, Eric from Pioneer Bank (is Awesome), Mike (also Awesome), Some SBA Guy

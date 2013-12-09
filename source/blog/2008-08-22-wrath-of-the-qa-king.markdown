@@ -8,4 +8,4 @@ Dave is our QA Lead here at Agora.
 
  Daily standup meetings _just_ got interesting :)
 
- [ ![](/uploads/2008/08/dave_qa_frostmourne.png "dave_qa_frostmourne") ](/uploads/2008/08/dave_qa_frostmourne.png)
+ ![](uploads/2008/08/dave_qa_frostmourne.png "dave_qa_frostmourne")

@@ -35,4 +35,4 @@ David-Czarneckis-iMac:application-playground dczarnecki$
 
  If you're looking for a better read, then check out the following book, "Paint It Black: A Guide to Gothic Homemaking".
 
- [ ![Paint it Black](/uploads/2010/03/41Jbbh8d2SL._BO2204203200_PIsitb-sticker-arrow-clickTopRight35-76_AA300_SH20_OU01_.jpg "Paint it Black") ](http://www.amazon.com/Paint-Black-Guide-Gothic-Homemaking/dp/1578633613/ref=sr_1_1?ie=UTF8&s=books&qid=1269982528&sr=1-1)
+ [![Paint it Black](uploads/2010/03/41Jbbh8d2SL._BO2204203200_PIsitb-sticker-arrow-clickTopRight35-76_AA300_SH20_OU01_.jpg "Paint it Black")](http://www.amazon.com/Paint-Black-Guide-Gothic-Homemaking/dp/1578633613/ref=sr_1_1?ie=UTF8&s=books&qid=1269982528&sr=1-1)

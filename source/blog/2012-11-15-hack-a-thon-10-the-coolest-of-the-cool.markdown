@@ -14,7 +14,7 @@ Here at  [Agora Games](http://www.agoragames.com/), we try to do semi-regular H
 
  This is something that the users of MLG have been asking for, and since we like to please, Kirk is just about ready to release this to the world. In 24 hours, Kirk was able to get a working version of this up on our staging environment. Since this is such a cool product, work will be completed on this in the next couple days, and the users will love it.
 
-[ ![](/uploads/2012/11/Screen-Shot-2012-11-14-at-2.42.51-PM-272x300.png) ](/uploads/2012/11/Screen-Shot-2012-11-14-at-2.42.51-PM.png)
+ ![](uploads/2012/11/Screen-Shot-2012-11-14-at-2.42.51-PM-272x300.png)
 
  
 
