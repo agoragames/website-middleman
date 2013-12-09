@@ -15,7 +15,7 @@ August 4th 3:00 PM: Excitement looms in their eyes as they await the fourth comi
 
  Agust 4th 7:00PM: Although four hours have passed, the Agorians are still hard at work. Their determination prevents any pesky amount of noise or discomfort from discouraging them and preventing the success of the vision at hand. They have a task to fulfill and intend to do so. Bright eyed and in high spirit, they continue to bang away at their instruments.
 
- ![](uploads/2011/08/P1000440-1024x767.jpg)
+ ![](uploads/2011/08/P1000440-300x224.jpg)
 
  Some have even been inspired to a level where chairs are irrelevant; working while standing up, an unnecessary yet amazing triumph.
 
