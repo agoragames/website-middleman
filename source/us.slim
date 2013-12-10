@@ -50,29 +50,21 @@
             strong> Contact
             | Us
             img src="http://www.agoragames.com/assets/images/icon-down.png"
-      form#contact-form.simple action="http://www.agoragames.com/" method="post" name="a"
-        .hiddenFields
-          input name="ACT" type="hidden" value="26"
-          input name="URI" type="hidden" value="us"
-          input name="XID" type="hidden" value="26d01774cd9ffc898d344a1c2f7d97c7bef95cfb"
-          input name="status" type="hidden" value="open"
-          input name="return" type="hidden" value="thank-you"
-          input name="redirect_on_duplicate" type="hidden" value=""
-          input name="RET" type="hidden" value="http://www.agoragames.com/us"
-          input name="form_name" type="hidden" value="Contact"
-          input name="params_id" type="hidden" value="34760"
-          input name="site_id" type="hidden" value="1"
+      form#contact-form.simple.wufoo action="https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public" method="post" autocomplete="off" enctype="multipart/form-data"
+        .hide
+          textarea name="comment" id="comment" rows="1" cols="1"
+          input type="hidden" id="idstamp" name="idstamp" value="cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw="
         .block
           .text
-            input#input-name name="name" placeholder="Name" type="text"
+            input#input-name name="Field4" placeholder="Name" type="text"
           .text
-            input#input-email name="email" placeholder="Email" type="email"
+            input#input-email name="Field5" placeholder="Email" type="email"
           .text
-            input#input-company name="company" placeholder="Company" type="text"
+            input#input-company name="Field6" placeholder="Company" type="text"
           .text
-            input#input-phone name="phone" placeholder="Phone" type="text"
+            input#input-phone name="Field8" placeholder="Phone" type="text"
         .block-last
           .textarea
-            textarea name="message"
+            textarea name="Field9"
         .submit.right
           input type="submit" value="Submit"

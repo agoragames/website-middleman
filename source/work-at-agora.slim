@@ -2,7 +2,7 @@
   article.clearfix
     header.center.clean
       h1
-        strong Work
+        strong> Work
         | at Agora
       .section-header
         p
@@ -26,7 +26,7 @@
     section#positions.clearfix
       h2.subhead.center
         | Available
-        strong Positions
+        strong< Positions
       .button-outer
         .table
           ul.inline-buttons
@@ -154,49 +154,38 @@
             | or in an awesome remote office.
           .break-down
             = image_tag "http://www.agoragames.com/assets/images/icon-down.png"
-          h3 Submit an Application
-          form#apply-form.box action="http://www.agoragames.com/" enctype="multipart/form-data" method="post" name="a"
-            .hiddenFields
-              input name="ACT" type="hidden" value="26"
-              input name="URI" type="hidden" value="work-at-agora"
-              input name="XID" type="hidden" value="0db94457162fd59741cb93ef0833251043529abc"
-              input name="status" type="hidden" value="open"
-              input name="return" type="hidden" value="thank-you"
-              input name="redirect_on_duplicate" type="hidden" value=""
-              input name="RET" type="hidden" value="http://www.agoragames.com/work-at-agora"
-              input name="form_name" type="hidden" value="Applications"
-              input name="params_id" type="hidden" value="34762"
-              input name="site_id" type="hidden" value="1"
+          form#apply-form.box.wufoo action="https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public" method="post" autocomplete="off" enctype="multipart/form-data"
+            h3 Submit an Application
+            .hide
+              textarea name="comment" id="comment" rows="1" cols="1"
+              input type="hidden" id="idstamp" name="idstamp" value="cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw="
             p
               strong Position you&rsquo;d like to apply for:
-            ul.radio
-              li
-                label
-                  input name="position" type="radio" value="Hydra Engineer"
-                  | Hydra Engineer
-              li
-                label
-                  input name="position" type="radio" value="System Administrator"
-                  | System Administrator
+            .radio-set
+              ul.radio
+                li
+                  label
+                    input name="Field10" type="radio" value="Hydra Engineer"
+                    | Hydra Engineer
+                li
+                  label
+                    input name="Field10" type="radio" value="System Administrator"
+                    | System Administrator
             .text
-              input#input-name name="name" placeholder="Name" type="text"
+              input#input-name name="Field4" placeholder="Name" type="text"
             .text
-              input#input-email name="email" placeholder="Email" type="email"
+              input#input-email name="Field5" placeholder="Email" type="email"
             #conditional
               .text
-                input#input-twitter name="twitter" placeholder="Twitter" type="text"
+                input#input-twitter name="Field11" placeholder="Twitter" type="text"
               .text
-                input#input-github name="github" placeholder="Github" type="text"
+                input#input-github name="Field12" placeholder="Github" type="text"
               .text
-                input#input-website name="website" placeholder="Blog/Website" type="text"
-            .file-upload
-              p
-                strong> Upload your resume:
-                input name="file1" type="file"
+                input#input-website name="Field15" placeholder="Blog/Website" type="text"
             .textarea
               p
                 strong Cover letter or introduction:
-              textarea name="message"
+              textarea name="Field9"
             .submit
               input type="submit" value="Submit"
     section#perks.clearfix
