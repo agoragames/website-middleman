@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width" name="viewport"><title>Automatic Deploy Notifications</title><link href="../assets/images/favicon.ico" rel="shortcut icon"><link href="../assets/stylesheets/all-dc5d1bf2.css" media="all" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="../assets/javascripts/vendor/html5shiv-8b3747c5.js" type="text/javascript"></script><![endif]--></head><body><div class="outer-wrap"><div class="inner-wrap"><div class="wrap"><header class="clearfix" id="page"><a href="/"><img alt="Agora Games" id="logo" src="../assets/images/agora-games-logo-e99b2824.png"></a><nav><ul><li><a href="https://hydra.agoragames.com/">Products</a></li><li><a href="../portfolio.html">Customers</a></li><li><a href="../us.html">Team</a></li><li><a href="../community.html">Community</a></li><li><a href="../work-at-agora.html">Jobs</a></li><li><a href="./">Blog</a></li></ul></nav></header></div><div class="wrap"><article class="clearfix"><header><h1>The <strong>Blog</strong></h1></header><section id="blog-entry"><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2>Automatic Deploy Notifications</h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>When we make a deploy to our staging or production environments there are about 5 people who <strong>need</strong> to know and about 25 who <strong>want</strong> to know. Often someone is forgotten or the email doesn't go out at all and we get a phone call (which no one likes).</p>
+
+<p>The solution? Capistrano recipes to the rescue!</p>
+
+<p><code>ruby
+before 'deploy', 'deploy:notify'
+</code></p>
+
+<p>No matter what happens, if we're deploying people are going to know about it.</p>
+
+<p>Here's that task:</p>
+
+<p>```ruby
+namespace :deploy do
+  desc "sends a notification email letting everyone know we're deploying"
+  task :notify do
+    deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
+    stage_name = stage.to_s.upcase
+    action_mailer_with_temporary_delivery_method do
+      mail = TMail::Mail.new
+      mail.subject = "Super Fantastic Project Pending Deploy [#{deployment_name} #{stage}]"
+      mail.to      = "superproject-deploy@lists.yourcompany.com"
+      mail.from    = ActionMailer::Base.smtp_settings[:user_name]
+      mail.date    = Time.now
+      mail.body    = ActionMailer::Utils.normalize_new_lines(%Q(
+Hello everyone,</p>
+
+<p>We're making a deploy to the #{stage} environment. The #{stage} site may (or may not) be
+unavailable for a few minutes sometime within the next 30 minutes (depending on how long
+it takes to upload the changes).</p>
+
+<p>This message is automated.</p>
+
+<p>———————- debugging information ———————-
+#{variables}
+))
+      ActionMailer::Base.deliver(mail)
+      # puts mail.body
+    end
+  end
+end
+```</p>
+
+<p>Now, what's going on here? First, apologies to DHH but I'm not smart enough to figure out how to make the Rails email system work so we just use TMail directly. Which is fine, but we use ARMailer which puts all of our email in a queue and it gets delivered by a cron job every 5 minutes or so. This usually works pretty well but in this case we have two problems though. The first is this is run on the deployer's machine, which may not have access to the database where it needs to queue up the email. Plus, when we deploy we disable the crons and we don't turn them back on until we're satisfied everything is working. If we used ARMailer for this particular email, the site may be down and no one would know; defeats the purpose of the notification.</p>
+
+<p>action_mailer_with_temporary_delivery_method addresses this problem:</p>
+
+<p><code>ruby
+def action_mailer_with_temporary_delivery_method
+  existing_delivery_method = ActionMailer::Base.delivery_method
+  existing_smtp_settings = ActionMailer::Base.smtp_settings
+  begin
+    ActionMailer::Base.delivery_method = :smtp
+    ActionMailer::Base.smtp_settings = {
+      :address =&gt; "smtp.gmail.com",
+      :port =&gt; "587",
+      :domain =&gt; "your.domain.com",
+      :authentication =&gt; :plain,
+      :user_name =&gt; "do-not-reply@your.domain.com",
+      :password =&gt; "PASSword"
+    }
+    yield
+  ensure
+    ActionMailer::Base.delivery_method = existing_delivery_method
+    ActionMailer::Base.smtp_settings = existing_smtp_settings
+  end
+end
+</code></p>
+
+<p><code>action_mailer_with_temporary_delivery_method</code> temporarily sets up ActionMailer to use SMTP (with gmail) to send out our notification. When we're done, it sets it back to whatever it was set to before.</p>
+
+<p>We've hurdled the actual message delivery, but how can we make that notification message itself more useful to the internal group? We do two things. The first is to sort out exactly what we're deploying and where we're deploying it to:</p>
+
+<p><code>ruby
+  deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
+  stage_name      = stage.to_s.upcase
+</code></p>
+
+<p>application and stage are set in our regular deploy script with:</p>
+
+<p><code>ruby
+  set :application, 'superproject-staging'
+</code></p>
+
+<p><code>:stage</code>  is more complicated but essentially the same (in this example it would be 'staging')</p>
+
+<p>The second pieces is  <code>variables</code> . Capistrano 2.3 has an instance variable available to all tasks named  <code>@variables</code> . We were just inspecting that for a while but it has a lot of procs for determining some of the values. Now we do this:</p>
+
+<p><code>ruby
+def variables
+  result = []
+  @variables.reject { |k,v| k.to_s.downcase.eql?('password') }.each_pair do |key, value|
+    # since we're going to be printing this out, we don't want to see garbage like
+    # "#"
+value = value.is_a?(Proc) ? value.call : value
+value = value.is_a?(Array) ? value.join(", ") : value
+result
+</code></p>
+
+<p>Which gives you some better output:</p>
+
+<p><code>
+---------------------- debugging information ----------------------
+ application : superproject-staging
+ available_stages : staging, production, qa
+ cron_file : config/cron/staging_cron.conf
+ cron_role : utility
+ cron_role_only_clause :
+ current_dir : current
+ current_path : /home/www-data/superproject-staging/current
+ current_release : /home/www-data/superproject-staging/releases/20090220155729
+ current_revision : 32024
+ default_environment :
+ default_run_options : ptytrue
+ deploy_to : /home/www-data/superproject-staging
+ deploy_via : checkout
+ keep_releases : 7
+ latest_release : /home/www-data/superproject-staging/releases/20090220162352
+ latest_revision : 32024
+ logger : #&lt;Capistrano::Logger:0x1214e30&gt;
+ memcache_extra_options :
+ memcache_memory : 64
+ memcache_pid_file : /home/www-data/superproject-staging/shared/log/memcache.pid
+ memcache_port : 20109
+ memcache_role : app
+ memcache_user : root
+ migrate_plugin_role : db
+ migrate_plugin_role_only_clause : primarytrue
+ mongrel_address : 0.0.0.0
+ mongrel_environment : staging
+ mongrel_instances : 8
+ .
+ .
+ .
+ .
+ etc
+</code></p>
+
+<p>Prettier examples are available at <a href="http://pastie.org/395233">pastie</a>. Drop that in <code>config/recipes/notification.rb</code> and in your normal <code>config/deploy.rb</code> include this:</p>
+
+<p><code>
+load 'config/recipes/notification
+</code></p>
+</div></div></div></section><aside id="sidebar"><div class="block" id="block-archive"><h2>Blog archives</h2><h3>2013</h3><ul><li><a href="2013/11.html">November 2013</a></li><li><a href="2013/10.html">October 2013</a></li><li><a href="2013/09.html">September 2013</a></li><li><a href="2013/08.html">August 2013</a></li><li><a href="2013/07.html">July 2013</a></li><li><a href="2013/06.html">June 2013</a></li><li><a href="2013/05.html">May 2013</a></li><li><a href="2013/04.html">April 2013</a></li><li><a href="2013/03.html">March 2013</a></li><li><a href="2013/02.html">February 2013</a></li><li><a href="2013/01.html">January 2013</a></li></ul><h3>2012</h3><ul><li><a href="2012/12.html">December 2012</a></li><li><a href="2012/11.html">November 2012</a></li><li><a href="2012/10.html">October 2012</a></li><li><a href="2012/09.html">September 2012</a></li><li><a href="2012/08.html">August 2012</a></li><li><a href="2012/07.html">July 2012</a></li><li><a href="2012/06.html">June 2012</a></li><li><a href="2012/05.html">May 2012</a></li><li><a href="2012/04.html">April 2012</a></li><li><a href="2012/03.html">March 2012</a></li><li><a href="2012/02.html">February 2012</a></li><li><a href="2012/01.html">January 2012</a></li></ul><h3>2011</h3><ul><li><a href="2011/10.html">October 2011</a></li><li><a href="2011/09.html">September 2011</a></li><li><a href="2011/08.html">August 2011</a></li><li><a href="2011/07.html">July 2011</a></li><li><a href="2011/06.html">June 2011</a></li><li><a href="2011/05.html">May 2011</a></li><li><a href="2011/04.html">April 2011</a></li><li><a href="2011/03.html">March 2011</a></li><li><a href="2011/02.html">February 2011</a></li><li><a href="2011/01.html">January 2011</a></li></ul><h3>2010</h3><ul><li><a href="2010/12.html">December 2010</a></li><li><a href="2010/11.html">November 2010</a></li><li><a href="2010/10.html">October 2010</a></li><li><a href="2010/09.html">September 2010</a></li><li><a href="2010/08.html">August 2010</a></li><li><a href="2010/07.html">July 2010</a></li><li><a href="2010/06.html">June 2010</a></li><li><a href="2010/05.html">May 2010</a></li><li><a href="2010/04.html">April 2010</a></li><li><a href="2010/03.html">March 2010</a></li><li><a href="2010/02.html">February 2010</a></li><li><a href="2010/01.html">January 2010</a></li></ul><h3>2009</h3><ul><li><a href="2009/12.html">December 2009</a></li><li><a href="2009/11.html">November 2009</a></li><li><a href="2009/10.html">October 2009</a></li><li><a href="2009/09.html">September 2009</a></li><li><a href="2009/08.html">August 2009</a></li><li><a href="2009/07.html">July 2009</a></li><li><a href="2009/06.html">June 2009</a></li><li><a href="2009/05.html">May 2009</a></li><li><a href="2009/04.html">April 2009</a></li><li><a href="2009/03.html">March 2009</a></li><li><a href="2009/02.html">February 2009</a></li><li><a href="2009/01.html">January 2009</a></li></ul><h3>2008</h3><ul><li><a href="2008/11.html">November 2008</a></li><li><a href="2008/10.html">October 2008</a></li><li><a href="2008/09.html">September 2008</a></li><li><a href="2008/08.html">August 2008</a></li></ul></div></aside></article></div></div></div><footer><div class="outer-wrap"><div class="wrap"><div id="copyright"><img alt="Agora Games" src="../assets/images/agora-logo-agga-7c1d9a1f.png"> <a href="http://majorleaguegaming.com" target="_blank"><img alt="Major League Gaming" src="../assets/images/mlg-logo-28545055.png"></a><a href="mailto:info@agoragames.com" id="email-us">Email Us</a><p>359 Broadway, Third Floor, Troy, NY 12180</p><p class="dim">&copy; 2013 Agora Games. All Rights Reserved.</p></div></div></div></footer><div class="hide"><iframe id="wufoo-iframe" src="javascript:void(0)"></iframe><a id="wufoo-thanks" href="../thanks.html"></a></div><!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script>
+  if (!window.jQuery) {
+    document.write('<script type="text/javascript" src="../assets/javascripts/vendor/jquery.min-199fc76d.js"><' + '/script>');
+  }
+</script>
+<script src="../assets/javascripts/all-426906ea.js" type="text/javascript"></script></body></html>
