@@ -25,6 +25,6 @@ $(function(){
 	$("#what-we-do-blocks .pad").equalHeights();
 	// $("#open-source li a").equalHeights(100, 200);
 
-	$.localScroll();
+	// $.localScroll();
 
 });
