@@ -13,7 +13,7 @@ set :partials_dir, 'templates/partials'
 
 activate :blog do |blog|
   blog.prefix = "blog"
-  blog.permalink = ":year-:month-:day-:title"
+  blog.permalink = ":year/:month/:day/:title"
   blog.layout = "blog"
   blog.default_extension = ".markdown"
 
