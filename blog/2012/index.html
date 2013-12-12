@@ -1,0 +1,1326 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width" name="viewport"><title>Brain Matters</title><link href="../../assets/images/favicon.ico" rel="shortcut icon"><link href="../../assets/stylesheets/all-dc5d1bf2.css" media="all" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="../../assets/javascripts/vendor/html5shiv-8b3747c5.js" type="text/javascript"></script><![endif]--></head><body><div class="outer-wrap"><div class="inner-wrap"><div class="wrap"><header class="clearfix" id="page"><a href="/"><img alt="Agora Games" id="logo" src="../../assets/images/agora-games-logo-e99b2824.png"></a><nav><ul><li><a href="https://hydra.agoragames.com/">Products</a></li><li><a href="/portfolio/">Customers</a></li><li><a href="/us/">Team</a></li><li><a href="/community/">Community</a></li><li><a href="/work-at-agora/">Jobs</a></li><li><a href="/blog/">Blog</a></li></ul></nav></header></div><div class="wrap"><article class="clearfix"><header><h1>2012</h1></header><section id="blog-entries"><div class="blog-entry"><div class="date-comments"><div class="date">Dec 28</div></div><div class="blog-content"><h2><a href="/blog/2012-12-28-game-face-43/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>leaderboard-coffeescript</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard-coffeescript">leaderboard-coffeescript</a> is our leaderboard project, originally written in Ruby, ported to CoffeeScript. Both this version and the <a href="https://github.com/agoragames/leaderboard-python">leaderboard-python</a> port have 100% feature parity with the <a href="https://github.com/agoragames/leaderboard">original Ruby library</a>. We will do a formal 1.0.0 release of this library once we work out what to do with respect to naming since there is an existing leaderboard library available from the Node Package Manager.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Dec 21</div></div><div class="blog-content"><h2><a href="/blog/2012-12-21-game-face-42/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>gamertag</strong></p>
+
+<p><a href="https://github.com/barisbalic/gamertag">gamertag</a> is an interface for accessing your XBOX Live profile and game data. In the 1.0.3 release, we removed the version numbers in the dependencies and development dependencies for the gem. We also merged a pull request to escape user input when creating an URI.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>) and Pedro Nascimento ( <a href="https://github.com/lunks">GitHub</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. We released version 3.0.1 this week to fix a bug in remove_member that would remove all of the optional member data.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>leaderboard-python</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard-python">leaderboard-python</a> is our leaderboard project, originally written in Ruby, ported to Python. We released 2.2.1 that updates the remove_member method to also remove the optional member data for the member being removed.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Dec 14</div></div><div class="blog-content"><h2><a href="/blog/2012-12-14-game-face-41/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><a href="http://blog.agoragames.com/blog/2012/01/09/2011-open-source-projects/">In 2011, we open sourced 22 projects</a>. In 2012, we open sourced 33 projects. We're looking forward to 2013! You can find all of our open source projects from us on the <a href="https://github.com/agoragames/">Agora Games GitHub organization</a>.</p>
+
+<p>Here's a look back at all the 33 projects that we open sourced in 2012 (in alphabetical order):</p>
+
+<ul>
+  <li><a href="https://github.com/agoragames/action_pusher">action_pusher</a> - Render views to Pusher from anywhere in your application. Pusher users often want to transmit JSON or HTML to the browser upon model events, but models have no business generating either. ActionPusher allows you to render data to Pusher using your existing view templates from an observer or model.</li>
+  <li><a href="https://github.com/agoragames/amico/">amico</a> - Relationships (e.g. friendships) backed by Redis.</li>
+  <li><a href="https://github.com/agoragames/beta">beta</a> - Beta is an access control library that uses a Redis whitelist to control authorization. It relies upon the Rails.env variable to check against its list of environments to trigger on.</li>
+  <li><a href="https://github.com/cadwallion/blackjack">blackjack</a> - The classic card game written using Gosu.</li>
+  <li><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a> - BnetScraper is a Nokogiri-based scraper of Battle.net profile information. Currently this only includes Starcraft2.</li>
+  <li><a href="https://github.com/agoragames/bracketeer">bracketeer</a> - Bracketeer is a BracketTree template creation tool that uses d3js to visually create new bracket templates.</li>
+  <li><a href="https://github.com/agoragames/bracket_tree">bracket_tree</a> - BracketTree is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. For more information on the data specification, please read the <a href="https://github.com/agoragames/bracket_tree/wiki/BracketTree-Data-Specification">BracketTree Data Specification</a>.</li>
+  <li><a href="https://github.com/agoragames/bracket_tree.renderer">bracket_tree.renderer</a> - BracketTree.Renderer is a d3-based bracket rendering system for all BracketTree tournaments. It is designed to interpret the BracketTree data visually based on the Renderer selected. There are a number of renderers built-in, as well as the ability to create your own.</li>
+  <li><a href="https://github.com/cadwallion/brewscribe">brewscribe</a> - Brewscribe is a Beersmith2 (.bsmx) file parser.</li>
+  <li><a href="https://github.com/czarneckid/coffee_bean">coffee_bean</a> - A ruby gem for kickstarting a CoffeeScript project.</li>
+  <li><a href="https://github.com/darkskyapp/darksky-ruby">darksky</a> - Ruby gem for retrieving data from the <a href="https://developer.darkskyapp.com/docs/">Dark Sky API</a>. The Dark Sky API lets you query for short-term precipitation forecast data at geographical points inside the United States.</li>
+  <li><a href="https://github.com/hypomodern/gamercard">gamercard</a> - Retrieves and parses an Xbox Live Gamercard for a player, providing a hash of the relevant data about the player or the raw HTML.</li>
+  <li><a href="https://github.com/cadwallion/gem_repackager">gem_repackager</a> - Have you ever been without internet and needed a gem but it's in the wrong RVM gemset? How about attempting to correct a problem with a production environment and need to clone the exact gems available? Perhaps you are attempting a full app stack backup for compliance purposes? Gem::Repackager packages one or more of your installed gems back into .gem files for easy transportation. Gem::Repackager comes with a command-line utility to facilitate, with easy extensibility in the code as well.</li>
+  <li><a href="https://github.com/agoragames/GWFSelect-for-jQuery-UI">GWFSelect-for-jQuery-UI</a> - Based very loosely on Tom Moor's plugin for selecting Google's hosted fonts from a dynamically-generated drop-down list. This version uses jQuery UI's widget factory to provide the standard tools for accessing and manipulating the plugin's state programmatically.</li>
+  <li><a href="https://github.com/agoragames/kairos">kairos</a> - Kairos provides time series storage using a Redis backend. Kairos is intended to replace RRD in situations where the scale of Redis is required, with as few dependencies on other packages as possible. It should work with gevent out of the box.</li>
+  <li><a href="https://github.com/agoragames/leaderboard_factory">leaderboard_factory</a> - Helpful tools for defining a bunch of leaderboards associated with your objects. Builds on the <a href="https://github.com/agoragames/leaderboard">leaderboard</a> gem.</li>
+  <li><a href="https://github.com/agoragames/node-amico/">node-amico</a> - This is a NodeJS port of <a href="https://github.com/agoragames/amico">amico</a> using CoffeeScript.</li>
+  <li><a href="https://github.com/awestendorf/node-darksky">node-darksky</a> - A node.js module for integrating with the <a href="https://developer.darkskyapp.com/docs/">Dark Sky API</a>.</li>
+  <li><a href="https://github.com/agoragames/oembedr">oembedr</a> - Lightweight, Flexible OEmbed Consumer Library.</li>
+  <li><a href="https://github.com/agoragames/php-bracket_tree">php-bracket_tree</a> - BracketTree is a Tree-based bracketing system designed to aid in the creation and representation of tournament brackets. It uses a binary tree under the hood to maintain the bracket, and the BracketTree Data Specification to control progression and standardize representation. This is a port of the original Ruby client.</li>
+  <li><a href="https://github.com/logankoester/prometheus">prometheus</a> - Prometheus is a lightweight, modular framework built on Thor to quickly create beautiful command-line interfaces for your gems. It provides a standardized layout with generators, smart configuration, and an interactive console to work with your tasks.</li>
+  <li><a href="https://github.com/punchfork/punchr">punchr</a> - Ruby gem for interacting with the Punchfork API.</li>
+  <li><a href="https://github.com/hypomodern/rduration">rduration</a> - Simple utility for parsing durations from strings and comparing them. Basic math is also supported.</li>
+  <li><a href="https://github.com/czarneckid/redis_pagination">redis_pagination</a> - Simple pagination for Redis lists and sorted sets.</li>
+  <li><a href="https://github.com/agoragames/seed_list">seed_list</a> - Seed management for tournament brackets.</li>
+  <li><a href="https://github.com/agoragames/silver_spoon">silver_spoon</a> - Entitlements in Redis. A simple semantic wrapper around Redis hashes for adding, removing, retrieving and checking existence of entitlements.</li>
+  <li><a href="https://github.com/cadwallion/snake_skin">snake_skin</a> - Python package skeleton tool, similar to the <code>bundle gem</code> command in Bundler.</li>
+  <li><a href="https://github.com/cadwallion/spinel">spinel</a> - Spinel is a new free and open source game engine under development that utilizes mruby as its integral scripting layer. Under the hood is C/C++, however wherever possible the engine uses Ruby.</li>
+  <li><a href="https://github.com/czarneckid/streak">streak</a> - streak is a gem for calculating win/loss streaks. It uses Redis as its backend for collecting the data.</li>
+  <li><a href="https://github.com/czarneckid/streak-coffeescript">streak-coffeescript</a> - streak is a library for calculating win/loss streaks. It uses Redis as its backend for collecting the data. This is a CoffeeScript port of the <a href="https://github.com/czarneckid/streak">original streak Ruby gem</a>.</li>
+  <li><a href="https://github.com/czarneckid/streak-python">streak-python</a> - streak is a library for calculating win/loss streaks. It uses Redis as its backend for collecting the data. This is a Python port of the <a href="https://github.com/czarneckid/streak">original streak Ruby gem</a>.</li>
+  <li><a href="https://github.com/agoragames/strumbar">strumbar</a> - Strumbar is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd.</li>
+  <li><a href="https://github.com/agoragames/windbag">windbag</a> - Windbag is an event notification system for Rails. Using Windbag with model observers, you can notify users about changes they're interested in over a variety of transports (WebSockets, email, SMS, Twitter, etc).</li>
+</ul>
+
+<p> </p>
+
+<p>Breakdown by language: Ruby (22), Python (3), CoffeeScript (3), JavaScript (2), C++ (2), PHP (1)</p>
+
+<p>Open source contributors from our engineers (in alphabetical order):
+- David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)
+- Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/logankoester">Twitter</a>)
+- Jack Letourneau ( <a href="https://github.com/jletourneau/">GitHub</a>, <a href="https://twitter.com/jlet">Twitter</a>)
+- Andrew Nordman ( <a href="https://github.com/cadwallion">GitHub</a>, <a href="https://twitter.com/cadwallion">Twitter</a>)
+- Tom Quackenbush ( <a href="https://github.com/tquackenbush">GitHub</a>, <a href="https://twitter.com/tquackenbush">Twitter</a>)
+- Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>)
+- Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/hypomodern">Twitter</a>)</p>
+
+<p> </p>
+
+<p>Thank you to all the external contributors to our various projects (in alphabetical order):
+- Jason Baker ( <a href="https://github.com/jasonbaker">GitHub</a>)
+- Skip Baney ( <a href="https://github.com/twelvelabs">GitHub</a>)
+- Greg Banks ( <a href="https://github.com/gregbanks">GitHub</a>)
+- Jon Barber ( <a href="https://github.com/sneakybeaky">GitHub</a>)
+- Bradley Buda ( <a href="https://github.com/bradleybuda">GitHub</a>)
+- Jesse Cooke ( <a href="https://github.com/jc00ke/">GitHub</a>, <a href="https://twitter.com/#%21/jc00ke">Twitter</a>)
+- Steven Davidovitz ( <a href="https://github.com/steved555">GitHub</a>, <a href="https://twitter.com/#%21/steved3298">Twitter</a>)
+- John Gadbois ( <a href="https://github.com/jgadbois">GitHub</a>, <a href="https://twitter.com/#%21/johngadbois">Twitter</a>)
+- Paul Gallagher ( <a href="https://github.com/tardate">GitHub</a>)
+- Kate Gengler ( <a href="https://github.com/kategengler">GitHub</a>)
+- Joey Imbasciano ( <a href="https://github.com/joeyimbasciano">GitHub</a>)
+- Seb Jacobs ( <a href="https://github.com/sebjacobs">GitHub</a>)
+- keysolutions ( <a href="https://github.com/keysolutions">GitHub</a>)
+- Vitaly Krugl ( <a href="https://github.com/vitaly-krugl">GitHub</a>)
+- Jeffrey Lee ( <a href="https://github.com/jlee42">GitHub</a>)
+- Szymon Nowak ( <a href="https://github.com/szimek">GitHub</a>)
+- Rodrigo Tassinari de Oliveira ( <a href="https://github.com/rtopitt">GitHub</a>)
+- Chris Roby ( <a href="https://twitter.com/croby">Twitter</a>)
+- Marian Rudzynski ( <a href="https://github.com/fx">GitHub</a>)
+- Stephen Sugden ( <a href="https://github.com/grncdr/">GitHub</a>)
+- zombor ( <a href="https://github.com/zombor">GitHub</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Dec 7</div></div><div class="blog-content"><h2><a href="/blog/2012-12-07-game-face-40/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a> is our simple to use client library for interacting with AMQP brokers. We released 0.5.9 this week with <a href="https://github.com/agoragames/haigha/pull/28">support for array lists in headers</a>.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>) and Joey Imbasciano ( <a href="https://github.com/joeyimbasciano">GitHub</a>)</p>
+
+<p><strong>hipchat-api</strong></p>
+
+<p><a href="https://github.com/czarneckid/hipchat-api">hipchat-api</a> is a Ruby gem for interacting with the HipChat API. In the 1.0.5 release, support was added for the rooms_topic and users_undelete API methods.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. We released version 3.0.0 this week which incorporates the following changes:</p>
+
+<ul>
+  <li>Added rank_member_if and rank_member_if_in methods that allow you to rank a member in the leaderboard based on execution of a lambda.</li>
+  <li>
+    <p>No longer cast scores to a floating point automatically. If requesting a score for an unknown member in the leaderboard, return <code>nil</code> . Under the old behavior, a <code>nil</code> score gets returned as 0.0. This is misleading as 0.0 is a valid score.</p>
+  </li>
+  <li>
+    <p>Removes <code>:use_zero_index_for_rank_option</code> as valid option for requesting data from the leaderboard. <a href="https://github.com/agoragames/leaderboard/pull/27">Original proposal</a></p>
+  </li>
+  <li>
+    <p>Optional member data is stored in a single hash. <a href="https://github.com/agoragames/leaderboard/pull/26">Original proposal</a></p>
+  </li>
+  <li>
+    <p>Adds <code>:sort_by</code> as valid option for requesting data from the leaderboard. <a href="https://github.com/agoragames/leaderboard/pull/30">Original proposal</a></p>
+  </li>
+  <li>Removes <code>:with_scores</code> and <code>:with_ranks</code> as valid options for requesting data from the leaderboard</li>
+</ul>
+
+<p> </p>
+
+<p>A version jump to 3.0.0 was required since the storage of optional member data for a leaderboard was backwards incompatible with the 2.x release.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>leaderboard-python</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard-python">leaderboard-python</a> is our leaderboard project, originally written in Ruby, ported to Python. We released version 2.2.0 this week, which has functional parity with the Ruby library. You would be able to use either library to interact with leaderboard data in Redis. Going forward, we will try as best we can to always maintain functional parity between the Ruby and Python implementations.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>stache</strong></p>
+
+<p><a href="https://github.com/agoragames/stache">stache</a> is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. We integrated a pull request to be able to <a href="https://github.com/agoragames/stache/pull/22">use template files without format in extension for mustache</a>.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/hypomodern">Twitter</a>) and Kate Gengler ( <a href="https://github.com/kategengler">GitHub</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Dec 3</div></div><div class="blog-content"><h2><a href="/blog/2012-12-03-benchmarking-redis-transactions/">Benchmarking Redis Transactions</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>I recently released version 3.0.0 of our <a href="https://github.com/agoragames/leaderboard">leaderboard</a> library. The library is a semantic wrapper around Redis sorted sets to store and interact with the leaderboard data. When I first released the library, I had put a section in the README on <a href="https://github.com/agoragames/leaderboard#performance-metrics">Performance Metrics</a>. This provided a useful benchmark from which to gauge performance regressions that might be introduced when adding new functionality.</p>
+
+<p>I re-ran the benchmarks on my MacBook Pro, 2.5 GHz Intel Core i7, 8 GB 1333 MHz DDR3, Mountain Lion 10.8.2, Ruby 1.9.3-p327, Redis 2.6.7, redis gem 3.0.2, Redis persistence disabled.</p>
+
+<p>By default, the code will <a href="https://github.com/agoragames/leaderboard/blob/master/lib/leaderboard.rb#L108-L128">use a Redis transaction to rank a member</a> in the leaderboard. This is to accommodate being able to optionally store data alongside the leaderboard. However, in hindsight, the common case may just be ranking (or updating) a  member in the leaderboard without this data.</p>
+
+<p>Time to insert 10 million records w/ Redis transactions per insert: <strong>23 minutes</strong></p>
+
+<p>It seems like Redis transactions, where they're really not needed, is having a performance impact. I removed the transaction parts of the rank_member method in the library temporarily and re-ran the benchmark code.</p>
+
+<p>Time to insert 10 million records w/o Redis transactions per insert: <strong>13 minutes</strong></p>
+
+<p>This number makes more sense to me and is inline with the original benchmark time of 15 minutes accounting for faster hardware, updated Redis version and updated Redis client library. Awhile back, however, I specifically added a few methods to do <a href="https://github.com/agoragames/leaderboard/blob/master/lib/leaderboard.rb#L221-L242">bulk insert of member data in a leaderboard</a>. I modified and re-ran the benchmark code to rank members in the leaderboard, 1 million per transaction.</p>
+
+<p>Time to insert 10 million records w/ Redis transaction inserting 1 million records at a time: <strong>7 minutes</strong></p>
+
+<p>When I initially re-ran the benchmark against the leaderboard 3.0.0 code, it felt slower, but I needed actual numbers to backup that feeling. Now I can benchmark the code again if I decide to add in a conditional to not use a Redis transaction in the rank_member method if optional data is not supplied.</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 30</div></div><div class="blog-content"><h2><a href="/blog/2012-11-30-game-face-39/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. In the 3.0.0.rc2 release, we are no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard. Work was also started on the 3.0.0.rc3 release which will add the rank_member_if and rank_member_if_in methods to allow you to rank a member in the leaderboard based on execution of a lambda.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>leaderboard-python</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard-python">leaderboard-python</a> is our leaderboard project, originally written in Ruby, ported to Python. The 2.1 release of leaderboard-python fixes a bug when requesting a list with an unknown member from the ranked_in_list method as well as no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>stache</strong></p>
+
+<p><a href="https://github.com/agoragames/stache">stache</a> is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. We've released version 1.0. This includes:</p>
+
+<ul>
+  <li>
+    <p>Overhauled Mustache template engine. If you wish to have Mustache drive your entire template stack, you can invert control to it.</p>
+  </li>
+  <li>
+    <p>Fixed a bunch of problems with Handlebars access to the view namespace for helpers, etc.</p>
+  </li>
+  <li>
+    <p>New configuration option: you can now specify a wrapper namespace that Stache will look for your view classes in.</p>
+  </li>
+</ul>
+
+<p>Backwards compatibility should be fine; any regressions are bugs and should be reported. Huge thanks to all contributors!</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/hypomodern">Twitter</a>) and Kate Gengler ( <a href="https://github.com/kategengler">GitHub</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 23</div></div><div class="blog-content"><h2><a href="/blog/2012-11-23-game-face-38/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p>Happy Thanksgiving to those of you celebrating!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 16</div></div><div class="blog-content"><h2><a href="/blog/2012-11-16-game-face-37/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>CHAP Links Library</strong></p>
+
+<p><a href="https://github.com/almende/chap-links-library">CHAP links library</a> is a web based visualization library for displaying graphs, networks, and timelines. A pull request was submitted and integrated to <a href="https://github.com/almende/chap-links-library/pull/43">fix a bug where timeline events shift position when updated</a>.</p>
+
+<p>Contributor(s): Jack Letourneau ( <a href="https://github.com/jletourneau/">GitHub</a>, <a href="https://twitter.com/jlet">Twitter</a>)</p>
+
+<p><strong>leaderboard-python</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard-python">leaderboard-python</a> is our leaderboard project, originally written in Ruby, ported to Python. The 2.0.0 release of leaderboard-python brings the Python library up to feature party with the Ruby library. Internal code documentation and code samples in the README were also added.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>spinel</strong></p>
+
+<p><a href="https://github.com/cadwallion/spinel">Spinel</a> is a new free and open source game engine under development that utilizes <a href="https://github.com/mruby/mruby/">mruby</a> as its integral scripting layer. Under the hood is C/C++, however wherever possible the engine uses Ruby. It is in <em>EARLY DEVELOPMENT</em>. What you see is the result of initial research taken place during an Agora Games Hackathon in 24 hours.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/cadwallion">GitHub</a>, <a href="https://twitter.com/cadwallion">Twitter</a>)</p>
+
+<p><strong>sure</strong></p>
+
+<p><a href="https://github.com/gabrielfalcao/sure">sure</a> is a utility belt for automated testing in python (inspired by <a href="https://github.com/visionmedia/should.js/">should.js</a>). A pull request was submitted and integrated to <a href="https://github.com/gabrielfalcao/sure/pull/21">add {X}.should.be.greater_than_or_equal_to(Y) and {Y}.should.be.lower_than_or_equal_to(X) methods</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>timecop</strong></p>
+
+<p><a href="https://github.com/travisjeffery/timecop">timecop</a> is a gem providing "time travel" and "time freezing" capabilities, making it dead simple to test time-dependent code. A pull request was submitted and integrated to <a href="https://github.com/travisjeffery/timecop/pull/48">update the homepage and rubyforge_project values</a> in the gemspec. Just tidying up a bit.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 15</div></div><div class="blog-content"><h2><a href="/blog/2012-11-15-hack-a-thon-10-the-coolest-of-the-cool/">Hack-a-thon 10! The coolest of the cool.</a></h2><div class="blog-author">By <strong>Steven Flenory</strong></div><div class="blog-body"><p>Here at  <a href="http://www.agoragames.com/">Agora Games</a>, we try to do semi-regular Hack-a-thons in the office. Over the last year, we've started trying to do them about once every 2-3 months. This seems to keep them fresh and fun, but still something that doesn't interfere with day to day work needs.</p>
+
+<p>Hackathons have been around since the late 90s, so they've been around for awhile  in the tech field. The idea of a hackathon, as it pertains to Agora, is to give our employees 24 hours to work on anything they want as long as it relates to our business in some way.</p>
+
+<p>Our most recent hackathon took place this past week Thursday 8th - Friday 9th. It started at 4pm on Thursday with a nice kick-off meeting where everyone announced their projects or joined a team as a free agent (if they didn't have their own project).  Everything ended on Friday at 4pm with the demo session. There were a lot of cool projects, but I wanted to point out some of the way cool ones that were showcased.</p>
+
+<p><strong>Gamebattles Match History -  <a href="https://twitter.com/KrussB">Kirk Becker</a></strong></p>
+
+<p>A portion of Agora developers make up the tech arm of Major League Gaming, and a couple of people worked on MLG specific projects. One of these projects focused on adding in a page that displays a user's individual Match History.</p>
+
+<p>This is something that the users of MLG have been asking for, and since we like to please, Kirk is just about ready to release this to the world. In 24 hours, Kirk was able to get a working version of this up on our staging environment. Since this is such a cool product, work will be completed on this in the next couple days, and the users will love it.</p>
+
+<p><img alt="" alt="" width="272" height="300" src="../../assets/images/uploads/2012/11/Screen-Shot-2012-11-14-at-2.42.51-PM-272x300-741f640b.png" /></p>
+
+<p> </p>
+
+<p><strong>Podium - <a href="https://twitter.com/CzarneckiD">David Czarnecki</a></strong></p>
+
+<p>David wanted to take this hackathon to explore the use of ProMotion and Formation iOS libraries for application development. Working with these two libraries, He wanted to move to a higher level from hand-writing the interactions in iOS development.</p>
+
+<p>The work done by David is available for review in the following links below. Please note that the iOS coponent requires RubyMotion</p>
+
+<p>Podium API -  <a href="https://github.com/czarneckid/podium-api">https://github.com/czarneckid/podium-api</a>
+ Podium iOS -  <a href="https://github.com/czarneckid/podium-ios">https://github.com/czarneckid/podium-ios</a></p>
+
+<p><a href="https://github.com/clayallsopp/formotion">https://github.com/clayallsopp/formotion</a>
+ <a href="https://github.com/clearsightstudio/ProMotion">https://github.com/clearsightstudio/ProMotion</a></p>
+
+<p> </p>
+
+<p><strong>Seraph - Brennan Frydl</strong></p>
+
+<p>Brennan made a mini web framework in the spirit of Rails, but running on em-synchrony. This uses tilt for templates, rack-mounts parser for routing, and doesn't make any assumptions about the data/ORM layer! Much like node.js, it handles situations where requests need significant amounts of time. Rather than using CPU, it'll make calls to external web services.</p>
+
+<p>Basic configuration was complete within the 24 hour timeframe, and a nice demo was given which showed the performance improvements when compared to Rails. After looking at the product for another day, it appears as though this is going to be re-written and possibly used in the future here at Agora! Nice!</p>
+
+<p><a href="https://github.com/bfrydl/seraph">Check it out here </a></p>
+
+<p><strong>Notification Bar - <a href="https://twitter.com/jlet">Jack Letourneau</a></strong></p>
+
+<p>Jack created a basic UI for defining time-based notifications using a zoomable/scrollable timeline widget and a WYSIWYG content editor. There was also the creation of a jQuery based widget for popping up notifications onto the top edge of the browser window.</p>
+
+<p>This is something that we've been thinking about doing for our Hydra mobile product, so it was awesome that this was something that got worked on during a hackathon. Development for this item has also continued since the hackathon, which is a beautiful thing.</p>
+
+<p>In all, this was a really successful hackathon for Agora Games. A couple of the projects that were worked on by our engineers are actually going to be utilized in future products across both Major League Gaming and Agora Games. I call that a success!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 9</div></div><div class="blog-content"><h2><a href="/blog/2012-11-09-game-face-36/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> provides time-series storage using a Redis backend. The 0.1.0 release integrates the beta-refactor branch. All types of timeseries are created with the Timeseries constructor. The arguments to the constructor have been changed to simplify and clarify their usage. In particular, a single timeseries implements only a single type (e.g. Histogram), read and write functions are shared by all intervals in a timeseries, and the count_only support is now the timeseries type <code>count</code>. Added exceptions. Only exception currently implemented is UnknownInterval.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. This week, we released 3.0.0.rc1, which integrates a number of proposals. This release removes :use_zero_index_for_rank_option as valid option for requesting data from the leaderboard, optional member data is stored in a single hash, it adds :sort_by as valid option for requesting data from the leaderboard and removes :with_scores and :with_ranks as valid options for requesting data from the leaderboard.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>stache</strong></p>
+
+<p><a href="https://github.com/agoragames/stache">stache</a> is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 1.0.0.rc candidate integrates a <a href="https://github.com/agoragames/stache/pull/16">pull request for enhanced mustache functionality</a> with support for class based layouts, loading .rb files, and rails helpers.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/hypomodern">Twitter</a>) and zombor ( <a href="https://github.com/zombor">GitHub</a>)</p>
+
+<p> </p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 8</div></div><div class="blog-content"><h2><a href="/blog/2012-11-08-hydra-services-series-profiles/">Hydra Services Series: Profiles</a></h2><div class="blog-author">By <strong>Mike Jodon</strong></div><div class="blog-body"><p>Have you ever thought to yourself "Self, I wish there was a way for me to read about each service that Agora Games was working on so, I could get a better idea of cool ways to integrate Hydra into MY game". Well wish no more. Over the next couple of weeks, I'll be putting up posts which outline each individual service that is offered under our Hydra product.</p>
+
+<p>"But <a href="https://twitter.com/MikeJodon">Mike Jodon</a>, I'm a mobile developer, what can I have to read?" Fear not. All of the services that I cover in this series will be, or currently are, being developed for release in our mobile SDKs! So iOS, Android, Unity mobile, you will all eventually have these great tools too! Check out hydra.agoragames.com if you want more information about Hydra mobile, or to sign up for the beta program!</p>
+
+<p>Let's get started!</p>
+
+<p><strong>Profile Service:</strong></p>
+
+<p>The profile service is the most key feature that a game can have for its users. Users love to see their stats for a game that they are playing. They love seeing how they match up against other players, and they love being able to have other players in that game see how good they are doing. A lot of what makes gaming fun (whether it's casual or hardcore), is the element of competition. Whether you're playing Mortal Kombat, Call of Duty, or Farmville, you want your stats to be better than everyone else playing that game.</p>
+
+<p>So what is a profile? How have other clients used the service before, and what else can you do with the service? All of these are answered in this post.</p>
+
+<p>The profile service stores lifetime stats for each user who is online while playing your game. This is where all player specific data will be stored. If your game tracks a stat and stores it within the Hydra profile service, then Hydra can empower you to make other awesome features happen (based on that important profile data). The Profile service helps power a lot of other awesome features, which will also be described below.</p>
+
+<p>So what's usually stored in the Profile for a user? Well that depends what your game is sending, but typically there are some things that we see from almost all titles using Hydra:</p>
+
+<ul>
+  <li>Basic player identifiers, such as their XBL, PSN, Steam name, GFWL name or whatever platform you're using. You'll also find the player name and platform account id if the platform supports that</li>
+  <li>Lifetime profile stats, like kills, time played, XP, level/rank, or literally ANY OTHER stat you have in your game</li>
+  <li>Load out information, which is something that is specified by the game. Some games have special load outs like "commando" or "ace pilot" or if you're making a racing game, it could save that car load out the player is using.</li>
+</ul>
+
+<p> </p>
+
+<p>Again, if it's in your game and it's being sent to hydra, it'll be in that specific player's profile for use by your team. Everything depends on what you game is sending. There's almost limitless possibilities to what the Profile service can do.</p>
+
+<p> 
+* * *
+ </p>
+
+<p>"Hey Mike, this is all good stuff. What other services can the profile service help power?" Great question! Let's take a look below.</p>
+
+<p>Data from the profile service can be user to power, or help power, the following services, depending on your game structure and data setups:
+- Feed Service
+- Challenge Service
+- Leaderboards
+- Statistics Service
+- Notifications Service
+- Clan Services
+- Tournament Service
+- User Generated Content
+- Global Feed Service
+- Inventory Service</p>
+
+<p>Each one of these services will get a write up similar to this one, which will explain exactly what they are and how they've been used in the past. Stay tuned for that!</p>
+
+<p>"Can you give some awesome examples of how the profile service was used in previous titles?" Great question! I'm going to show you a bunch of examples now! Again, EVERYTHING I'm about to show you was built using the Hydra Profile service.</p>
+
+<p> 
+* * *</p>
+
+<p><strong>Saints Row: The Third - Released for XBOX360, PS3 and PC</strong>
+Saints Row's sandbox style gameplay made it a perfect fit for Hydra integration. Having a game where you could literally play forever and rack up stats, made the profile service a great feature for the community. While playing, you're always getting money, always racking up kills, and always doing something insane. The Profile service here was used to track both single player and multi-player stats. </p>
+
+<p><img alt="" alt="" width="300" height="257" src="../../assets/images/uploads/2012/11/Screen-Shot-2012-11-06-at-2.39.47-PM2-300x257-91619748.png" /></p>
+
+<p>Saints Row really blew out their profiles on the community website. If there was a stat that a user wanted to see, it was more than likely on their profile. Users were even able to compare their stats to anyone else that was linked to the website, which is a feature that most users want today.</p>
+
+<p>Saints Row also made it so you knew where you stacked up against the rest of the community. They let you know the community average, and which percentile you are in for each stat in the Game Performance center.</p>
+
+<p><strong>Mortal Kombat - Released for XBOX360 and PS3</strong>
+ You can't call yourself a gamer if you haven't played Mortal Kombat. Everyone remembers the first arcade machines showing up in their local arcades and video rental stores. In 2011, the latest version of this timeless franchise  was released to the masses with much acclaim. With so many fighters in game, and more released on DLC, it was an honor to have this title's stats being powered by Hydra. </p>
+
+<p><img alt="" alt="" width="300" height="272" src="../../assets/images/uploads/2012/11/Screen-Shot-2012-11-12-at-2.23.38-PM1-300x272-9a953dd2.png" /></p>
+
+<p>Mortal Kombat used the profile service to achieve a really granular type of profile for its users. There where stats based on a player's over-all career in the game, as well as stats to show a user's "best" at some key stats.</p>
+
+<p>One of the more granular uses of the stats was to show wins by each character that you as a player have used. They then took that and broke it out by 1 on 1, 2 on 2, and co-op matches. I don't think I've seen this done with any other fighting game's stats, so it was nice to see something so new and detailed.</p>
+
+<p>As you can see, the Profile Service has powered some of the largest titles and franchises in gaming history. If you want to check out some of the other titles we've worked with, check it <a href="http://www.agoragames.com/portfolio/">our portfolio here</a>.  If we can help these games be successes, just imagine what we can do for you! If you're interested in using Hydra, <a href="http://hydra.agoragames.com/">go here and leave us your email</a> and we'll contact you!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 6</div></div><div class="blog-content"><h2><a href="/blog/2012-11-06-saints-row-the-third-launches-goty-edition-where-agora-fits-in/">Saints Row: The Third launches GOTY Edition - Where Agora fits in</a></h2><div class="blog-author">By <strong>Mike Jodon</strong></div><div class="blog-body"><p>Agora Games is proud to have had our Hydra product be a part of <a href="http://www.saintsrow.com/">Saint Row: The Third</a>. With the launch of the Game of The Year edition today in North America (the rest of the world gets it on Nov. 16th), I wanted to run down some of the real cool things that Hydra was used for to help make this title a huge success! Keep in mind that there are a lot more services being used by SR3, but I thought these were a few of the coolest!</p>
+
+<p><strong>Profiles</strong></p>
+
+<p>Utilizing our profile service, the web team was able to put together an awesome user experience for the fans.  We made it possible for a user to create an account in game, then go right to the community website and login with those credentials.  On the <a href="http://www.saintsrow.com/community">SR3 community website</a> users were able to check out their stats and see how they stacked up against the rest of the world. Profiles are used to track a player's lifetime stats and many other essential player data points (game progress, achievements unlocked, etc). So anytime you're signed in online, and play SR3, your profile is being tracked by Agora Games!</p>
+
+<p>Check out these screen shots of the SR3 user profile page! <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/22229/rfn0a7avwm85dgl/Screen%20Shot%202012-11-06%20at%202.39.13%20PM.png">Profile Pic 1</a> <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/5oat09clo0nnxw8/Screen%20Shot%202012-11-06%20at%202.39.47%20PM.png">Profile Pic 2</a></p>
+
+<p>As you can see, there is a ton of data being tracked on a per player basis. Everything from total kills, money earned, missions complete and hundreds other. Almost every stat has a "Community Average" where it shows how you stack up against the community as a whole. In Profile Pic 2, you can even see that you can compare your stats to anyone in the community!</p>
+
+<p><strong>Leaderboards</strong></p>
+
+<p>Leaderboards are one of the most utilized Hydra services. While first party integration does have SOME leaderboards, they are limited to 1st party restrictions. Agora gives you the chance to really blow out your game's leaderboards. Any stat you have in game, we can make it into a leaderboard. Want to combine stats to make multi-value leaderboards? We'll do that too. We can even make a leaderboard that shows how many kills players got on a Tuesday with a handgun while in a car, and then tell you which was their favorite car while doing it! If it's in your game data, we'll provide the magic.</p>
+
+<p>Here is an example of what Saints Row did with <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/idi0lh4k461vok3/Screen%20Shot%202012-11-06%20at%203.16.00%20PM.png">their leaderboards. </a> As you can see, this leaderboard is tracking how much cash a user earned, per hour of game play. So we're combining multiple stats to get 1 stat for a totally unique leaderboard. That's some mighty fine calculations there!</p>
+
+<p><strong>User Generated Content</strong></p>
+
+<p>One of the big things that we did with the SR3 title was User Generated Content (or UGC). If you've played the game, and millions of you have (we track that too!), you know that you get to create and customize your own characters to play with in game. But what made this feature truly awesome is, you could <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/22229/8jdre3s0v51nqqq/BigBarbraingame.png">create a character in-game</a>. That character would then get <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/22229/cqwficw4tw42z4p/Screen%20Shot%202012-11-06%20at%203.52.34%20PM.png">uploaded to the website,</a> where other users could download it to their console and play with it in their game!</p>
+
+<p>We even helped the Volition team power their Initiation Station pre-launch demo, which allowed users to create in-game characters prior to the actual game launch. Users could then download those characters into the full-title when they picked it up on launch day.</p>
+
+<p><strong>Global Feed Service</strong></p>
+
+<p>One of the other really cool features we did was called the Global Feed Service. We were able to send the website near-realtime data which would populate a map of the the SR3 world (Steelport) with a live feed of what was happening in game. As something interesting happened in game, it popped up on the map on the website as an event. Hit someone in the privates? <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/22229/enxbofnjv0r9raj/Screen%20Shot%202012-11-06%20at%202.56.56%20PM.png">Put it on the big board!</a></p>
+
+<p>This was taken a step further when screenshots were added to the map. In the middle of an awesome battle with the cops, or midair in a jump over an airplane? <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/22229/xuxtsa6987k6h6b/Screen%20Shot%202012-11-06%20at%204.49.01%20PM.png">Take a screenshot.</a> The coordinates of where you are in game, as well as the image, are sent right to your map on the website!</p>
+
+<p>Impressed by what you see? Then do 2 things: 1. Go pick up SR3's GOTY edition. You get all the DLC and everything ever released for it, so it's a steal. And 2. hit us up at <a href="hydra.agoragames.com">hydra.agoragames.com</a> if you interested in getting any of these awesome features in your game!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 6</div></div><div class="blog-content"><h2><a href="/blog/2012-11-06-hack-a-thon-10/">Hack-a-thon 10!</a></h2><div class="blog-author">By <strong>Steven Flenory</strong></div><div class="blog-body"><p>We've reached a small milestone with our hack-a-thons here at Agora Games! We are fast approaching our 10th hack-a-thon, so I wanted to take a look back at some of the coolest projects that have come out of our hack-a-thons and share them with the world.</p>
+
+<p><strong><a href="https://twitter.com/CzarneckiD">August 31st 2012 - David Czarnecki</a></strong> created an XBLA title in 24 hours! His use of Microsoft's XNA toolkit and APIs was pretty awesome for such a short development time. He actually deployed the game, and we got to demo it in the hack-a-thon wrap-up meeting that afternoon!</p>
+
+<p><strong><a href="https://twitter.com/bradmlafountain">August 31st 2012 - Brad LaFountain</a></strong> worked on word game  that was to be used for internel Hydra tool development! The finished project was fun to play in the wrap-up meeting. This game helped lead to some Hydra Android SDK updates in the match service! Check out this screen shot from the game <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/8q7rasx0xwbw1ac/black.png">Screenshot 1</a> and <a href="https://s3.amazonaws.com/uploads.hipchat.com/9155/24388/98vdx0gluv5umv6/bluuuue.png">Screenshot 2</a> . It's nice to note that Brad is continuing his work on this game still, and might even do more during this coming hack-a-thon.</p>
+
+<p><strong><a href="https://twitter.com/WashUffize">June 22nd 2012 - Aaron Westendorf</a></strong> worked on a Python library for storing time series data in redis. He worked on simplifying the API so it's easier to integrate, which, as a producer, sounds pretty awesome.</p>
+
+<p><strong>February 25th 2011 - Team Demo:</strong> As Hydra grew as a project, we wanted to see just how easy it was for someone to integrate it into their community website. We found a couple in house engineers who were all front end folks, and whom have never integrated with Hydra before, and told them "You have 24 hrs to do it, let's see what you can do". ** <a href="https://twitter.com/MikeJodon">Mike Jodon</a>** and ** <a href="https://twitter.com/Dragonfist111">Steven Flenory</a>** provided some PSDs that we made in about 3 days, and the web engineers were given developer level access to hydra, that's it, then we told them to get going. In 24 hours, these 2 engineers managed to get up a page with functioning registration, leaderboards, profiles, and a community game powered by our statistics service.</p>
+
+<p>So, what kind of project would you work on if you had 24hrs to work on anything you wanted? What kind of technology would you use?</p>
+
+<p>Check out the other open source projects that Agora Games has worked on, and maybe use them as inspiration :)  <a href="http://github.com/agoragames">http://github.com/agoragames</a></p>
+
+<p>Let us know what you would work on in the comments!</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 2</div></div><div class="blog-content"><h2><a href="/blog/2012-11-02-game-face-35/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>gevent</strong></p>
+
+<p><a href="https://github.com/SiteSupport/gevent">gevent</a> is a coroutine-based Python networking library. In the 1.0rc1 release this week, <a href="https://github.com/SiteSupport/gevent/commit/3834eac242403eae261be30a8c6737af2f8a5dab">a patch originally contributed</a> by one of our engineers, Aaron Westendorf, was integrated into the pywysgi component.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>)</p>
+
+<p><strong>homebrew</strong></p>
+
+<p>homebrew is the missing package manager for OS X. This week, <a href="https://github.com/mxcl/homebrew/commit/c31fdf1825d1c7154416a4083a1aa8a68cf7c420">a small patch was contributed</a> to bump the Redis version to 2.6.2.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>snake_skin</strong></p>
+
+<p><a href="https://github.com/cadwallion/snake_skin">SnakeSkin</a> is a Python package skeleton tool designed to bootstrap new Python libraries. If you come from the Ruby world, this is built after the bundle gem command in Bundler.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/cadwallion">GitHub</a>, <a href="https://twitter.com/cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Oct 26</div></div><div class="blog-content"><h2><a href="/blog/2012-10-26-game-face-34/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. Another version 3 feature proposal pull request was added to add a :sort_by option to that would be appropriate for the ranked_in_list call to sort by either score (:score) or rank (:rank) when returning results. This may be useful when you're retrieving a list of ranked friends and would like them sorted in a particular way.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Oct 19</div></div><div class="blog-content"><h2><a href="/blog/2012-10-19-game-face-33/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>vindicia-api</strong></p>
+
+<p><a href="https://github.com/agoragames/vindicia-api/">vindicia-api</a> is a wrapper for creating queries to the Vindicia CashBox API. No functional changes in the 0.0.6 release, but we did change an underlying requirement to use the activesupport gem instead of the active_support gem. This was causing issues with bundling in another project where the vindicia-api gem was being used.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/cadwallion">GitHub</a>, <a href="https://twitter.com/cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Oct 12</div></div><div class="blog-content"><h2><a href="/blog/2012-10-12-game-face-32/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a> is our simple to use client library for interacting with AMQP brokers. The 0.5.8 release merges a number of pull requests for some example code as well as supressing a DeprecationWarning with the latest gevent.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>) and Vitaly Krugl ( <a href="https://github.com/vitaly-krugl">GitHub</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. In the 2.5.0 release, we added members_from_rank_range and members_from_rank_range_in methods to be able to retrieve members from the leaderboard in a given rank range.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Oct 5</div></div><div class="blog-content"><h2><a href="/blog/2012-10-05-game-face-31/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>blackjack</strong></p>
+
+<p><a href="https://github.com/cadwallion/blackjack">blackjack</a> is the classic card game written using Gosu. It is being developed as part of a talk being given at RubyConf 2012, "Game Development and Ruby".</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/Cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Sep 28</div></div><div class="blog-content"><h2><a href="/blog/2012-09-28-game-face-30/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper/">bnet_scraper</a> is our Nokogiri-based scraper of Battle.net profiles. The 0.3.0 and 0.3.1 releases encompass changes to add portrait name scraping to ProfileScraper as well as to throw BnetScraper::InvalidProfileError when instantiating a scraper with a poorly formatted profile URL.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/Cadwallion">Twitter</a>) and Marian Rudzynski ( <a href="https://github.com/fx">GitHub</a>).</p>
+
+<p><strong>gem_repackager</strong></p>
+
+<p><a href="https://github.com/cadwallion/gem_repackager">gem_repackager</a> packages one or more of your installed gems back into .gem files for easy transportation. You might use this if you ever been without internet and needed a gem but it's in the wrong RVM gemset? How about attempting to correct a problem with a production environment and need to clone the exact gems available? Perhaps you are attempting a full app stack backup for compliance purposes?</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/Cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Sep 21</div></div><div class="blog-content"><h2><a href="/blog/2012-09-21-game-face-29/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a> is our simple to use client library for interacting with AMQP brokers. In the 0.5.7 release, we fixed exception in handling in SocketTransport when sendall() raises a socket error. Also fixed was re-raising of exception on SocketTransport.read() so that it always marks the transport as closed.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. We are starting to think about functionality for version 3.0.0 and have opened <a href="https://github.com/agoragames/leaderboard/pulls">a couple of pull requests for version 3 proposals</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>weary</strong></p>
+
+<p><a href="https://github.com/mwunsch/weary">weary</a> is a framework and DSL for building RESTful web service clients. Awhile back, we submitted a <a href="https://github.com/mwunsch/weary/pull/2">pull request to add Excon and Typhoeus adapters</a>. These have been integrated into the 1.1.0 release.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/hypomodern">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Sep 14</div></div><div class="blog-content"><h2><a href="/blog/2012-09-14-game-face-28/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>amico</strong></p>
+
+<p><a href="https://github.com/agoragames/amico">amico</a> is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. The 2.3.1 release simply wrapped a few operations in Redis multi/exec blocks to be consistent with the rest of the library.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>chai</strong></p>
+
+<p><a href="https://github.com/agoragames/chai">chai</a> – provides a very easy to use api for mocking/stubbing your python objects, patterned after the <a href="http://mocha.rubyforge.org/">Mocha</a> library for Ruby. In the 0.2.2 release, UnexpectedCall is now a BaseException which is re-raised as an AssertionError in Chai metaclass <code>test_wrapper</code> method. This decreases the chance that UnexpectedCall will be caught by the application code being tested.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/WashUffize">Twitter</a>)</p>
+
+<p><strong>vindicia-api</strong></p>
+
+<p><a href="https://github.com/agoragames/vindicia-api/">vindicia-api</a> is a wrapper for creating queries to the Vindicia CashBox API. While we had open sourced the code about 6 months ago, we forgot to cut a gem release to RubyGems. This is just an FYI that you can now find the <a href="https://rubygems.org/gems/vindicia-api">vindicia-api on RubyGems</a>.</p>
+
+<p>Contributor(s): Tom Quackenbush ( <a href="https://github.com/tquackenbush">GitHub</a>, <a href="https://twitter.com/tquackenbush">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Sep 7</div></div><div class="blog-content"><h2><a href="/blog/2012-09-07-game-face-27/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>chai</strong></p>
+
+<p><a href="https://github.com/agoragames/chai">chai</a> – provides a very easy to use api for mocking/stubbing your python objects, patterned after the <a href="http://mocha.rubyforge.org/">Mocha</a> library for Ruby. The 0.2.1 release this week allows variables in returns(), effectively treating the variable as a regular expression capture.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 31</div></div><div class="blog-content"><h2><a href="/blog/2012-08-31-game-face-26/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed">activity_feed</a> is our Ruby gem for storing and managing activity feeds in Redis. In the 2.2.1 update, we added total_pages and total_items methods as aliases for total_pages_in_feed and total_items_in_feed, respectively.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>amico</strong></p>
+
+<p><a href="https://github.com/agoragames/amico">amico</a> is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. We actually did 2 releases this week with 2.2.0 and 2.3.0 shortly thereafter. We added a clear(id, scope = Amico.default_scope_key) method to clear all relationships (in either direction) stored for an individual.</p>
+
+<p>We also added the following methods for the blocked by relationship:</p>
+
+<ul>
+  <li>blocked_by?(id, blocked_by_id, scope = Amico.default_scope_key)</li>
+  <li>blocked_by(id, page_options = default_paging_options, scope = Amico.default_scope_key)</li>
+  <li>blocked_by_count(id, scope = Amico.default_scope_key)</li>
+  <li>blocked_by_page_count(id, page_size = Amico.page_size, scope = Amico.default_scope_key)</li>
+</ul>
+
+<p>In addition, the  following methods were added for the pending with relationship:
+- pending_with?(id, blocked_by_id, scope = Amico.default_scope_key)
+- pending_with(id, page_options = default_paging_options, scope = Amico.default_scope_key)
+- pending_with_count(id, scope = Amico.default_scope_key)
+- pending_with_page_count(id, page_size = Amico.page_size, scope = Amico.default_scope_key)</p>
+
+<p>Thanks to <a href="https://github.com/twelvelabs">Skip Baney</a> for all the work on this releases.</p>
+
+<p>Contributor(s): Skip Baney ( <a href="https://github.com/twelvelabs">GitHub</a>)</p>
+
+<p><strong>chai</strong></p>
+
+<p><a href="https://github.com/agoragames/chai">chai</a> – provides a very easy to use api for mocking/stubbing your python objects, patterned after the <a href="http://mocha.rubyforge.org/">Mocha</a> library for Ruby. The 0.2.0 release integrates a pull request from GitHub user, <a href="https://github.com/jasonbaker">Jason Baker</a>, to add a  <strong>wrapped</strong> attribute to chai decorated test methods. This is useful as it allows someone to get at the wrapped test method to do introspection.</p>
+
+<p>Contributor(s): Jason Baker ( <a href="https://github.com/jasonbaker">GitHub</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a> is our simple to use client library for interacting with AMQP brokers. In the 0.5.6 release, we only catch Exception subclasses in Connection and Channel. Thanks to GitHub user, <a href="https://github.com/vitaly-krugl">Vitaly Krugl</a>, for the issue that this release addresses and the discussion.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>) and Vitaly Krugl ( <a href="https://github.com/vitaly-krugl">GitHub</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 24</div></div><div class="blog-content"><h2><a href="/blog/2012-08-24-game-face-25/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed">activity_feed</a> is our Ruby gem for storing and managing activity feeds in Redis. In the 2.2.0 update, we added expire_feed and expire_feed_at methods to be able to set an expiration on a feed after a given number of seconds or at a given timestamp, respectively.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>amico</strong></p>
+
+<p><a href="https://github.com/agoragames/amico">amico</a> is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. We added a couple of convenience methods, count and page_count, to retrieve the count or the page count for the various types of relationships. This  functionality is available in the 2.1.0 release.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/czarneckid">Twitter</a>)</p>
+
+<p><strong>php-bracket_tree</strong></p>
+
+<p><a href="https://github.com/agoragames/php-bracket_tree">php-bracket_tree</a> is a PHP port of our <a href="https://github.com/agoragames/bracket_tree">bracket_tree</a> project. bracket_tree is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. For more information on the data specification, please read the <a href="https://github.com/agoragames/bracket_tree/wiki/BracketTree-Data-Specification">BracketTree Data Specification</a>.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/Cadwallion">Twitter</a>)</p>
+
+<p><strong>seed_list</strong></p>
+
+<p><a href="https://github.com/agoragames/seed_list">seed_list</a> is a new Ruby gem we released this week that provides seed management for tournament brackets. SeedList is designed for Rails-powered tournament engines that need to persist a 1-indexed ordered list of players (ranked low-to-high by skill or past performance) and then match them up appropriately in the first round of a bracket. Players are then matched up according to a strategy specified on a per-instance basis.</p>
+
+<p>Contributor(s): Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/logankoester">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 17</div></div><div class="blog-content"><h2><a href="/blog/2012-08-17-game-face-24/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed">activity_feed</a> is our Ruby gem for storing and managing activity feeds in Redis. This week we added a full_feed method to be able to retrieve an entire activity feed. Use this method wisely, or rather, sparingly! This is available in activity_feed 2.1.0.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>chai</strong></p>
+
+<p><a href="https://github.com/agoragames/chai">chai</a> - provides a very easy to use api for mocking/stubbing your python objects, patterned after the <a href="http://mocha.rubyforge.org/">Mocha</a> library for Ruby. The 0.1.23 release updates side_effect to be called with the arguments of the method call if it doesn't define its own arguments.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a> is our simple to use client library for interacting with AMQP brokers. The 0.5.5 release fixes a bug in the gevent transport.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>php-bracket_tree</strong></p>
+
+<p><a href="https://github.com/agoragames/bracket_tree">bracket_tree</a> is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. <a href="https://github.com/agoragames/php-bracket_tree">php-bracket_tree</a> is a PHP port of the original Ruby library.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 10</div></div><div class="blog-content"><h2><a href="/blog/2012-08-10-game-face-23/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper/">bnet_scraper</a> is our Nokogiri-based scraper of Battle.net profiles. The 0.2.1 release fixes a race condition for profile scraping for accounts playing in their first season.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>litmus_mailer</strong></p>
+
+<p><a href="https://github.com/logankoester/litmus_mailer">litmus_mailer</a> is an ActionMailer observer to update your Litmus tests each time an email is delivered. This week's 0.3.0 release adds non-multipart and SSL support.</p>
+
+<p>Contributor(s): Chris Roby ( <a href="https://twitter.com/croby">Twitter</a>)</p>
+
+<p><strong>strumbar</strong></p>
+
+<p><a href="https://github.com/agoragames/strumbar">strumbar</a> is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. This week we've fixed a critical issue in the built-in Redis instrumentation and added configuration options to explicitly load the desired built-in or custom instrumentations, as well as set the desired sample rate for each.</p>
+
+<p>Contributor(s): Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/#%21/logankoester">Twitter</a>)</p>
+
+<p><strong>tassadar</strong></p>
+
+<p><a href="https://github.com/agoragames/tassadar">tassadar</a> is a Starcraft 2 replay parser written in pure Ruby. Version 0.1.0 was released this week and updates the serialization strategy for Starcraft 2 release 1.5 compliance.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 3</div></div><div class="blog-content"><h2><a href="/blog/2012-08-03-game-face-22/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p>Did you notice that Game Face was recognized in the <a href="https://github.com/blog/1213-game-bytes-1"> first Game Bytes post on the GitHub blog</a>? Also, with the release of <a href="https://github.com/agoragames/leaderboard_factory">leaderboard_factory</a> this week, engineers here at Agora Games have open sourced a total of 25 projects in 2012!</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a> is a Nokogiri-based scraper of Battle.net profile information. The release this week adds a number of fixes and features: Adds domain remapping to regions, Fixes bug with EU profile scraping due to language selection, Parses new player stats (Career Wins, Most Played Type, Games This Season) and Parses new league stats (Current/Highest Solo/Team Leagues).</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. We added all_leaders and all_leaders_from methods to retrieve all members from a leaderboard. You may also use the aliases all_members or all_members_from. These methods may be helpful for situations in which you have a smaller leaderboard that you don't necessarily want to page through to display all the data.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p><strong>leaderboard_factory</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard_factory">leaderboard_factory</a> is a new gem that we extracted from one of our projects this week that helps you define and work with a bunch of leaderboards, from, e.g. an ActiveModel object. You can use it to define, for example, leaderboards available from a Player object where a few leaderboards are scoped to the player and one is scoped to the entire collection of players.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jul 27</div></div><div class="blog-content"><h2><a href="/blog/2012-07-27-game-face-21/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a> is a Nokogiri-based scraper of Battle.net profile information. The release this week adds checks to prevent parse issues with accounts that don't ladder.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>oembedr</strong></p>
+
+<p><a href="https://github.com/agoragames/oembedr">oembedr</a> is our Lightweight, Flexible OEmbed Consumer Library. This release encompasses pull requests that add Soundcloud as an OEmbed provider as well as to fix the endpoint for Vimeo.</p>
+
+<p>Contributor(s): Paul Gallagher ( <a href="https://github.com/tardate">GitHub</a>) and Seb Jacobs ( <a href="https://github.com/sebjacobs">GitHub</a>)</p>
+
+<p><strong>redis_pagination</strong></p>
+
+<p><a href="https://github.com/czarneckid/redis_pagination">redis_pagination</a> is a simple pagination library for Redis lists and sorted sets. Version 1.0.0 has been released, which adds a NonePaginator to handle non-existent keys.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jul 20</div></div><div class="blog-content"><h2><a href="/blog/2012-07-20-game-face-20/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a> is a Nokogiri-based scraper of Battle.net profile information. The release this week adds a method to determine if the supplied profile is valid.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>hipchat-api</strong></p>
+
+<p><a href="https://github.com/czarneckid/hipchat-api">hipchat-api</a> is a Ruby gem for interacting with the HipChat API. This past week saw a couple of releases to add support to the new message_format parameter when publishing messages to a room and to fix an issue in creating new users.</p>
+
+<p>Contributor(s): Bradley Buda ( <a href="https://github.com/bradleybuda">GitHub</a>) and Rodrigo Tassinari de Oliveira ( <a href="https://github.com/rtopitt">GitHub</a>).</p>
+
+<p><strong>redis_pagination</strong></p>
+
+<p><a href="https://github.com/czarneckid/redis_pagination">redis_pagination</a> is a new Ruby gem released this week that provides simple pagination for Redis lists and sorted sets.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jul 13</div></div><div class="blog-content"><h2><a href="/blog/2012-07-13-game-face-19/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. The release this week adds functionality to automatically expire a leaderboard either in a certain number of seconds or at a given time. One other utility method was added as well to be able to determine total pages in a leaderboard using a different page size.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p> </p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jul 6</div></div><div class="blog-content"><h2><a href="/blog/2012-07-06-game-face-18/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a> is our Nokogiri-based scraper of Battle.net profiles. 0.1.0 was released today and replaces open-uri with Faraday. The other change is that a BnetScraper::InvalidProfileError is raised when unsuccessfully scraping.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>streak</strong></p>
+
+<p><a href="https://github.com/czarneckid/streak">streak</a> is a gem for calculating win/loss streaks. The most recent 0.3.0 release encompasses a number of changes to use Redis hashes to store its data as well as being able to pass a custom set of keys to be used in the aggregate call if you want to track streaks on a different set of positive/negative things than what is setup in the configuration.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 29</div></div><div class="blog-content"><h2><a href="/blog/2012-06-29-game-face-17/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed">activity_feed</a> is our library for doing activity feeds in Redis. You might know activity feeds by its other aliases, news feeds or timelines. We released version 2.0.0 of the library today. As discussed in <a href="http://blog.agoragames.com/blog/2012/06/22/game-face-16/">last week's Game Face</a>, we did a major rewrite of the library last week to make the code cleaner, more modular and offer more functionality in fewer lines of code. The major changes are a difference in namespacing for the library as well as supporting the <a href="https://github.com/agoragames/activity_feed/tree/2.0.0#advanced-configuration-options">loading of activity feed items from any ORM (e.g. ActiveRecord) or ODM (e.g. Mongoid)</a>. The library supports activity feeds, aggregate activity feeds, feeds between timestamps, trimming feeds, removing feeds and more.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 22</div></div><div class="blog-content"><h2><a href="/blog/2012-06-22-game-face-16/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed">activity_feed</a> is our library for doing activity feeds in Redis. You might know activity feeds by its other aliases, news feeds or timelines. This week saw a major rewrite of the library to make the code cleaner, more modular and offer more functionality in fewer lines of code. A release candidate, 2.0.0.rc1, has been made <a href="https://rubygems.org/gems/activity_feed/versions/2.0.0.rc1">available on RubyGems</a>. You can also follow along with the <a href="https://github.com/agoragames/activity_feed/tree/2.0.0">2.0.0 branch on GitHub</a> for a short while before that will eventually become the master branch. The major changes are a difference in namespacing for the library as well as supporting the <a href="https://github.com/agoragames/activity_feed/tree/2.0.0#advanced-configuration-options">loading of activity feed items from any ORM (e.g. ActiveRecord) or ODM (e.g. Mongoid) using plain-old Ruby</a>. The library supports activity feeds, aggregate activity feeds, feeds between timestamps, trimming feeds, removing feeds and more. Any feedback on the 2.0.0 branch is appreciated.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> provides time-series storage using a Redis backend. During our Hack-A-Thon this week, we spent time on the <a href="https://github.com/agoragames/kairos/tree/beta-refactor">beta-refactor branch</a>. This is a major refactor to abstract various time-series types such as series, histogram and count. We are currently working on a release candidate and updated end-user documentation for this branch. We have had an uptick in interest in this library, so any feedback you have on it is welcomed.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard/">leaderboard</a> allows you to build leaderboards using Redis. This week we added functionality to retrieve members from the leaderboard that fall within a given score range as well as to retrieve a given member from the leaderboard at a specified position.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>) and John Gadbois ( <a href="https://github.com/jgadbois">GitHub</a>, <a href="https://twitter.com/#%21/johngadbois">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 15</div></div><div class="blog-content"><h2><a href="/blog/2012-06-15-game-face-15/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>brightcove-api</strong></p>
+
+<p><a href="https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper">brightcove-api</a> is a gem for interacting with the <a href="http://docs.brightcove.com/en/media/">Brightcove Media API</a>. The release this week integrates a pull request that <a href="https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper/pull/8">allows post streaming when you have an file handle instead of a filename</a>. Internal code documentation was also added.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>) and keysolutions ( <a href="https://github.com/keysolutions">GitHub</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard">leaderboard</a> allows you to build leaderboards using Redis. This week we added the ability to store and retrieve optional member data alongside the leaderboard data. This is particularly useful if you wanted to, for example, store a member name if you were ranking member IDs in a leaderboard or if you wanted to store a timestamp for when a member was last ranked in a leaderboard.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>) and John Gadbois ( <a href="https://github.com/jgadbois">GitHub</a>, <a href="https://twitter.com/#!/johngadbois">Twitter</a>)</p>
+
+<p><strong>sandboxthatad</strong></p>
+
+<p><a href="https://github.com/logankoester/sandboxthatad">sandboxthatad</a> is an experiment in using Google's <a href="https://developers.google.com/caja/">Caja Compiler</a> to isolate ad network ads if they're not "playing nice", e.g. causing insecure content warnings by not using HTTPS for ads when your site is using HTTPS.</p>
+
+<p>Contributor(s): Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/#%21/logankoester">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 8</div></div><div class="blog-content"><h2><a href="/blog/2012-06-08-game-face-14/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>capistrano</strong></p>
+
+<p><a href="https://github.com/capistrano/capistrano">capistrano</a> is one of those great tools that can help you simplify and automate deployment of web applications in distributed environments. However, it's default version control system is set to Subversion. Not that there aren't developers out there using Subversion, but when was the last time you used Subversion? We couldn't remember, so we submitted a <a href="https://github.com/capistrano/capistrano/pull/218">pull request to have the default SCM changed from Subversion to git</a>. It looks like this should get merged in with some other work. Fingers crossed!</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 1</div></div><div class="blog-content"><h2><a href="/blog/2012-06-01-game-face-13/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>homebrew</strong></p>
+
+<p><a href="https://github.com/mxcl/homebrew/">homebrew</a> is called the missing package manager for OS X. It's a great way to install software like git, MySQL, Riak, and more. We submitted a <a href="https://github.com/mxcl/homebrew/pull/12488">pull request to update the Redis formula to 2.4.14</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>redis-namespace</strong></p>
+
+<p><a href="https://github.com/defunkt/redis-namespace">redis-namespace</a> is a gem which can be used to namespace Redis keys. Although Redis 2.6 is still in-development, one of our engineers submitted a <a href="https://github.com/defunkt/redis-namespace/pull/40">pull request to add the new Redis 2.6 commands that should be namespaced</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 25</div></div><div class="blog-content"><h2><a href="/blog/2012-05-25-game-face-12/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bracket_tree</strong></p>
+
+<p><a href="https://github.com/agoragames/bracket_tree">bracket_tree</a> is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. For more information on the data specification, please read the <a href="https://github.com/agoragames/bracket_tree/wiki/BracketTree-Data-Specification">BracketTree Data Specification</a>.</p>
+
+<p>BracketTree builds upon the specification by providing Ruby classes for programmatically generating templates for brackets and generating brackets from those templates. It also contains a number of common bracket template types like Single Elimination and Double Elimination, with the ability to put your own extensions on their logic and representation.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> provides time series storage using a Redis backend. It's still under development and this week, version 0.0.7 was released which fixes an issue handling an interval without data.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>oembedr</strong></p>
+
+<p><a href="https://github.com/agoragames/oembedr">oembedr</a> is our Lightweight, Flexible OEmbed Consumer Library. At least we think it's all those things. This week we <a href="https://github.com/agoragames/oembedr/pull/2">added speakerdeck.com as an OEmbed endpoint</a>. We'll get a new release out soon enough.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>redis-namespace</strong></p>
+
+<p><a href="https://github.com/defunkt/redis-namespace">redis-namespace</a> is a gem which can be used to namespace Redis keys. However, the configuration of the current release's gemspec is incompatible with the 3.0.0 release of the <a href="https://github.com/redis/redis-rb">redis</a> gem. One of our engineers submitted a <a href="https://github.com/defunkt/redis-namespace/pull/39">pull request to test compatibility under the latest redis gem</a> and the current stable and forthcoming release of the Redis server. And hey, it looks like that pull request was integrated and is available in the redis-namespace 1.2.0 release.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>streak-python</strong></p>
+
+<p><a href="https://github.com/czarneckid/streak-python">streak-python</a> is a port of the <a href="https://github.com/czarneckid/streak">streak</a> Ruby gem, which is a library for calculating win/loss streak using Redis. streak-python is <a href="http://pypi.python.org/pypi/streak">available on PyPI</a> for inclusion as a library in your own Python applications.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>vines</strong></p>
+
+<p><a href="https://github.com/negativecode/vines">vines</a> is an XMPP chat server for Ruby. It can use a number of different storage backends such as CouchDB, MongoDB, or Redis, to store its internal data. We've been playing around with <a href="http://wiki.basho.com/Riak.html">Riak</a> internally and figured this would be a chance to contribute some Riak code back to the community, so a <a href="https://github.com/negativecode/vines/pull/15">pull request was opened to add a Riak storage adapter</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 18</div></div><div class="blog-content"><h2><a href="/blog/2012-05-18-game-face-11/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>brightcove-api</strong></p>
+
+<p>The <a href="https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper">brightcove-api</a> gem was one of the first gems we released after building out <a href="http://tv.majorleaguegaming.com/">MLG.tv</a> and is now a part of the <a href="https://github.com/BrightcoveOS">Brightcove Open Source</a> projects on GitHub. We still actively maintain the library. No functional changes this week, but we did do a conversion from Test::Unit to RSpec.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p>**coffeescript-streak and streak
+ **</p>
+
+<p><a href="https://github.com/czarneckid/coffeescript-streak">coffeescript-streak</a> and <a href="https://github.com/czarneckid/streak">streak</a> both got an update this week. streak was originally developed as a way to collect win/loss streaks using Redis. The update to the libraries this week slightly alters the way the keys are namespaced in Redis. Not a huge change, but one that brings some consistency to how we've namespaced keys in Redis in other libraries.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>GWFSelect-for-jQuery-UI</strong></p>
+
+<p>The <a href="https://github.com/agoragames/GWFSelect-for-jQuery-UI">GWFSelect-for-jQuery-UI</a> project is a jQuery UI widget that provides a Google WebFont selector. It got an update this week wherein it lazily loads the font list from Google's servers when it is first required by a widget.</p>
+
+<p>Contributor(s): Jack Letourneau ( <a href="https://github.com/jletourneau/">GitHub</a>, <a href="https://twitter.com/#!/jlet">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a>, our simple to use client library for interacting with AMQP brokers saw numerous updates this week. The major update was the integration of support for <a href="http://www.rabbitmq.com/blog/2011/02/10/introducing-publisher-confirms/">publisher confirms</a>. This functionality gives "clients a lightweight way of keeping track of which messages have been processed by the broker and which would need re-publishing in case of broker shutdown or network failure."</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>) and Stephen Sugden ( <a href="https://github.com/grncdr/">GitHub</a>)</p>
+
+<p><strong>stache</strong></p>
+
+<p><a href="https://github.com/agoragames/stache">stache</a> is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 0.9.x updates are basically a release candidate before we trim our facial hair and declare 1.0. Support for handlebars was added in addition to using Rails' own template resolution system to find partials. The public API changed slightly, but the README has all the information on the changes you'll need to make in your application(s) using stache.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>) and <a href="https://github.com/ayamomiji">ayaya</a> (GitHub)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 11</div></div><div class="blog-content"><h2><a href="/blog/2012-05-11-game-face-10/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>coffeescript-streak</strong></p>
+
+<p><a href="https://github.com/czarneckid/coffeescript-streak/">coffeescript-streak</a> is a port of the <a href="https://github.com/czarneckid/streak">streak Ruby gem</a> which handles calculating win/loss streaks. It uses Redis as its backend for collecting the data. It has also been uploaded to the <a href="http://search.npmjs.org/#/streak">npm registry</a>.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a>, our client library for interacting with AMQP brokers saw an update to 0.5.1 this past week. You can review the <a href="https://github.com/agoragames/haigha/blob/master/CHANGELOG">CHANGELOG</a> in full. FYI, the <a href="https://github.com/agoragames/haigha/tree/rabbitmq-extensions">rabbitmq-extensions</a> branch of haigha, currently in-development is laying the foundation for <a href="http://www.rabbitmq.com/blog/2011/02/10/introducing-publisher-confirms/">publisher confirms</a>.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 4</div></div><div class="blog-content"><h2><a href="/blog/2012-05-04-game-face-9/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>kairos</strong></p>
+
+<p>GitHub user, Greg Banks, submitted a patch to kairos, our Python library that provides time series storage using a Redis backend, to <a href="https://github.com/agoragames/kairos/pull/1">add Python 2.6 support</a>. Thanks Greg!</p>
+
+<p>Contributor(s): Greg Banks ( <a href="https://github.com/gregbanks">GitHub</a>)</p>
+
+<p><strong>tassadar</strong></p>
+
+<p>We finally got around to pushing a gem of <a href="https://github.com/agoragames/tassadar">tassadar</a>, our pure Ruby library for parsing Starcraft 2 replay files. The 0.0.2 update converts serialized strings ASCII-8BIT =&gt; UTF-8. This was the source of serious encoding problems in replay parsing. Version 1.0 will be out in the next week or so.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 27</div></div><div class="blog-content"><h2><a href="/blog/2012-04-27-game-face-8/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed/">activity_feed</a> is a gem for doing activity feeds (aka activity streams, aka timelines) in Redis. GitHub user, jc00ke, submitted a <a href="https://github.com/agoragames/activity_feed/pull/4">pull request to cleanup the README</a> and remove the irb output.</p>
+
+<p>Contributor(s): Jesse Cooke ( <a href="https://github.com/jc00ke/">GitHub</a>, <a href="https://twitter.com/#!/jc00ke">Twitter</a>)</p>
+
+<p><strong>brightcove-api</strong></p>
+
+<p><a href="https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper">brightcove-api</a> is a gem for interacting with the <a href="http://docs.brightcove.com/en/media/">Brightcove Media API</a>. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha/">haigha</a> is a simple to use client library for interacting with AMQP brokers. The <a href="https://github.com/agoragames/haigha/blob/master/CHANGELOG">0.5.0 release</a> offers a number of enhancements</p>
+
+<ul>
+  <li>Fix message reading in basic.get</li>
+  <li>Added optional open_cb kwarg to Connection constructor</li>
+  <li>Added optional callback to basic.consume for notifications when broker has registered the consumer</li>
+  <li>Moved channel state out of ChannelClass and into Channel to fix access problems after Channel has been cleaned up</li>
+  <li>Added support for Channel open notification listeners</li>
+  <li>All AMQP timestamps are in UTC</li>
+  <li>Most exceptions will now propagate to user code, fixing problems with gevent.GreenletExit and SystemExit</li>
+  <li>Preliminary support for synchronous clients</li>
+</ul>
+
+<p> </p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>hipchat-api</strong></p>
+
+<p><a href="https://github.com/czarneckid/hipchat-api">hipchat-api</a> is a gem for interacting with the HipChat API. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> is a library that provides time series storage using a Redis backend. The <a href="https://github.com/agoragames/kairos/blob/master/CHANGELOG">0.0.6 release</a> added "optional compression on a series which will count unique hits on a value within an interval. Exact time resolution is traded in favor of a (possible) significant reduction in storage requirements. The resolution of the compression is up to the user in how they cast the data on insert."</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard">leaderboard</a> is a gem that allows you to develop leaderboards for your application or game, where the leaderboards are backed by Redis. The <a href="https://github.com/agoragames/leaderboard/blob/master/CHANGELOG.markdown">2.0.6 release</a> adds an "accessor for the reverse option so that you can set reverse after creating a leaderboard to see results in either highest-to-lowest or lowest-to-highest order."</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>silver_spoon</strong></p>
+
+<p><a href="https://github.com/agoragames/silver_spoon">silver_spoon</a> is a new gem for doing entitlements in Redis. It is a "simple semantic wrapper around Redis hashes for adding, removing, retrieving and checking existence of entitlements."</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>strumbar</strong></p>
+
+<p><a href="https://github.com/agoragames/strumbar">strumbar</a> is another new gem that acts as "a wrapper around ActiveSupport::Notifications with pre-configurations for basic instrumentation to be sent to statsd." Current instrumentations exist for ActionController, ActiveRecord and Redis.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>) and Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p><strong>tasty</strong></p>
+
+<p><a href="https://github.com/czarneckid/tasty">tasty</a> is a gem for interacting with the <a href="http://www.delicious.com/help/api/">del.icio.us API</a>. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 27</div></div><div class="blog-content"><h2><a href="/blog/2012-04-27-dont-let-your-community-website-become-a-red-headed-stepchild/">Don't Let Your Community Website Become a Red-headed Stepchild</a></h2><div class="blog-author">By <strong>Mike Jodon</strong></div><div class="blog-body"><p>Each new game project that The Hydra Team at Agora Games works on has us smack dab in the middle of game and web development teams.  Together, these game and web development teams set out to build a game and community website experience that will be very tightly aligned.  We like being in the middle.</p>
+
+<p>Our technology puts us in a unique spot where we integrate directly into the game, and this is when we work directly with the game development teams. A few key examples below:</p>
+
+<ul>
+  <li>Tracking and storing all user profile stats.</li>
+  <li>Tracking and storing all user match stats.</li>
+  <li>Powering in-game MOTDs.</li>
+  <li>Supporting the upload/download of in-game UGC (user generated content).</li>
+</ul>
+
+<p>Our technology also puts us in a spot to then help translate those in-game features onto the web, and this is when we work directly with the web development teams.  A few key examples below:</p>
+
+<ul>
+  <li>Providing the stored game data and APIs to showcase a full user profile.</li>
+  <li>Providing the stored game data and APIs to showcase a user's historical match stats.</li>
+  <li>Providing APIs for a community team to build web tools so they can push new MOTDs in-game.</li>
+  <li>Providing the stored game data and APIs to support a per user UGC queue so that UGC created in-game can be showcased on edited on the web.</li>
+</ul>
+
+<p>The nice one-two punch of awesome in-game integration combining with a spiffy community website package is hard to achieve.  We've helped game projects achieve this game-to-web Nirvana on numerous occasions, but a good majority of the time we see the community website fall very short of its original expectations.  We've been on early project marketing calls where a super excited marketing representative lays out an amazing game and community website combination, with all the bells and whistles that "they must have!"  12 months later an awesome game launches, but the community website is a barren wasteland of a basic user profile and community forums.  We've seen this happen too many times.</p>
+
+<p>I'll preface the next section by saying that Agora Games totally understands that the game is king.  The game is 60 bucks a pop, and all in-game integration gets first dibs at all times.  We understand, and we fall in, we like your business.  With that said, it so deeply saddens us to see community websites fall into the red-headed stepchild role, playing second fiddle, and inevitably hitting the cutting room floor [I think I hit the max on cliches in that last sentence].  This doesn't have to happen.  A community website might not get you 60 bucks every time a user signs on, but a strong community website with solid integration into the ever so popular social networks can keep your user-base playing well into the next fiscal year and buying every single piece of DLC you throw at them.  How do we make it work you ask?</p>
+
+<p>We like being in the middle, we've been in the middle, we HAVE seen it work, and we have 3 easy tips!  <strong>Note:</strong> These tips do not require you work with us – we're not that sneaky.</p>
+
+<p><strong>1.) Don't leave so fast Mr. Marketing</strong> - That same super excited marketing guy that I mentioned above tends to disappear fast.  He/she usually has a really awesome dream scenario of what a game and its community website equivalent should look like, they speak the hell out of it at the beginning of a project, but then they fade out of regular communication with that plan shortly after.  Weekly calls get setup with the engineering team.  Weekly calls get setup with the web team.  Mr. Marketing tends to not show up at either.  This means that the already tight engineering resources and deadlines pummel community website features in the face, slowly knocking them off one-by-one because all in-game features must be there on launch day.  If there was a marketing presence checking in more often throughout the lifetime of the project, there would be many less angry marketing people that cry when they sign onto the community website on launch night (only to see community forums and a "community profile coming soon" message).</p>
+
+<p><strong>2.) Community Managers are smart, let them play early and often</strong> - As I mentioned above, marketing folks tend to have 15 other projects to move onto right after they give their game and community website speech at the beginning of a project.  Since they can't make it to bi-weekly and weekly tech calls as actual development picks up, they should send someone in their place.  Community Managers can fill this role!  Send at least one voice to all weekly calls that fights and reminds the team of that original game and community website plan.  If a community manager can hear there is the possibility that things might get cut (because of deadlines and resources), they can at least go back and report these facts so the top community website features can be re-prioritized and fought for on next week's call.  The best community features WILL actually launch if there is a voice to fight for them.</p>
+
+<p><strong>3.) Don't be afraid to let game developers and web developers mix</strong> - Too often game developers want nothing to do with web developers, and web developers don't particularly enjoy developing a community website if they're dealing with half-assed game code on features that we're deemed as "they can be cut if we don't get to them community website features."  It's almost going to sound too easy, but get a web developer presence on weekly tech calls as early as possible!  Don't force producers to waste time and run two different calls (a weekly game tech call and a weekly web tech call) when they can be easily joined into one.  Get both game and web developers on a weekly call, have a precise agenda that you follow each and every week, and hit the ground running.  Game and web developers will actually know each other, like each other, and will ultimately make Mr. Marketing very happy.  As a third party producer I will now purposely force my will upon the game projects our Agora team works on, because I am so passionate about this particular tip.  We'll run the weekly tech and web calls for you, we'll send out the precise agendas, and we'll keep the communication between all teams open very early on for you.  We do it first and foremost because it helps our development get done on time, but it also makes YOUR game and community website projects successful!</p>
+
+<p><strong>This is what happens when these tips aren't used (I purposely left this in a "ramble-on" format):</strong> Marketing folks disappear, no community voice is on weekly calls, game development teams dig in (concentrating on their in-game features first and foremost), time goes along and things get built – with no one reminding the teams of community website needs on the weekly calls (we bring community needs up the best we can, but ultimately we can only push when a web team has priorities), the web development team gets brought into the fold months later (too late usually), they look at the list of features they should be building onto the community website (handed to the them from Mr. Marketing), they ask the game development team whats ready to go, and the game development team says, "uhhhhhhhhh, not a whole lot,  but you do have a user profile!"  This leads to additional community website feature cuts after the web development team is left scrambling having to re-prioritize the small set of community features they actually can build, wasting time not getting to the actual web development itself.  We've seen it happen too often.</p>
+
+<p>In conclusion, if you're reading this, we want you to take our tips because in-game and community website integration is something we ALL need to see improving on a regular basis – we all need our jobs after all.</p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 20</div></div><div class="blog-content"><h2><a href="/blog/2012-04-20-game-face-7/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p><a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a>, our Nokogiri-based scraper of Battle.net profiles, got an update this week to allow you to <a href="https://github.com/agoragames/bnet_scraper/pull/3">check if Battle.net is online for a given region</a>. This is available in the 0.0.2 release.</p>
+
+<p>Contributor(s): Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/#!/logankoester">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> is one of our newer libraries and is a Python module for storing time-series data in Redis. Version 0.0.5 was released this week which added an optional prefix for time-series keys.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>prometheus</strong></p>
+
+<p><a href="https://github.com/logankoester/prometheus">prometheus</a> is a lightweight, modular framework built on <a href="https://github.com/wycats/thor">Thor</a> to quickly create beautiful command-line interfaces for your gems. It provides a standardized layout with generators, smart configuration, and an interactive console to work with your tasks.</p>
+
+<p>Contributor(s): Logan Koester ( <a href="https://github.com/logankoester/">GitHub</a>, <a href="https://twitter.com/#!/logankoester">Twitter</a>)</p>
+
+<p><strong>rduration</strong></p>
+
+<p><a href="https://github.com/hypomodern/rduration">rduration</a> is a simple utility for parsing durations from strings and comparing them. Basic math is also supported.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p><strong>redistat</strong></p>
+
+<p><a href="https://github.com/jimeh/redistat">redistat</a> is a pretty bad-ass library for doing statistics storage and querying in Redis. David Czarnecki contributed a patch to allow for a <a href="https://github.com/jimeh/redistat/pull/14">configurable group separator</a> when storing and querying statistics in Redis. This is available in the 0.5.0 release of redistat.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>streak</strong></p>
+
+<p><a href="https://github.com/czarneckid/streak">streak</a> is a gem for calculating win/loss streaks. It uses Redis as its backend for collecting the data. streak is configurable with respect to its keys to allow for tracking other positive/negative things in a game like wins and losses, kills and deaths, etc.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 13</div></div><div class="blog-content"><h2><a href="/blog/2012-04-13-game-face-6/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>active_merchant</strong></p>
+
+<p>Remember the <a href="https://github.com/agoragames/vindicia-api">vindicia-api</a> gem from a few weeks ago that we open sourced? One of our ex-interns, Steven Davidovitz, developed a Vindicia Payment Gateway for the active_merchant gem. Check out his <a href="https://github.com/Shopify/active_merchant/pull/332">pull request that adds this functionality</a>.</p>
+
+<p>Contributor(s): Steven Davidovitz ( <a href="https://github.com/steved555">GitHub</a>, <a href="https://twitter.com/#!/steved3298">Twitter</a>), Tom Quackenbush ( <a href="https://github.com/tquackenbush/">GitHub</a>, <a href="https://twitter.com/#%21/tquackenbush">Twitter</a>)</p>
+
+<p><strong>brewscribe</strong></p>
+
+<p>The 0.2.0 release of the brewscribe gem this week adds a number of new classes: Mash, Carbonation, Equipment and Style as well as being able to parse Style listings and Recipe now following the type conversion system. If you use Ruby and Beersmith2, you should be involved with this project.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>constant-redefinition</strong></p>
+
+<p><a href="https://github.com/czarneckid/constant-redefinition">constant-redefinition</a> had its first functional changes in over a year. You can now pass a block when defining or re-defining constants to have them unset or reset to their original value.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">Kairos</a> is a new Python library for performing time-series data storage in Redis. Kairos is intended to replace RRD in situations where the scale of Redis is required, with as few dependencies on other packages as possible. It should work with <a href="http://www.gevent.org/">gevent</a> out of the box.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#!/WashUffize">Twitter</a>)</p>
+
+<p><strong>python-leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/python-leaderboard">python-leaderboard</a> is our port of our ruby <a href="https://github.com/agoragames/leaderboard">leaderboard</a> library. The 1.1.5 release adds support for ascending (low-to-high) leaderboards.</p>
+
+<p>Contributor(s): Vitaly Babiy ( <a href="https://github.com/vbabiy">GitHub</a>, <a href="https://twitter.com/#!/vitaly_babiy">Twitter</a>)</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 6</div></div><div class="blog-content"><h2><a href="/blog/2012-04-06-game-face-5/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>brewscribe</strong></p>
+
+<p><a href="https://github.com/cadwallion/brewscribe/">brewscribe</a>, a Beersmith2 (.bsmx) file parser, saw an update this week with version <a href="https://github.com/cadwallion/brewscribe/blob/master/CHANGELOG.md">0.1.0</a>. Various parts of the API now use a Brewscribe::Document to represent the .bsmx file.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>constant-redefinition</strong></p>
+
+<p>The <a href="https://github.com/czarneckid/constant-redefinition">constant-redefinition</a> Ruby gem allows you to define constants if not defined on an object (or Module) and redefine constants without warning. You might use this when you've got large limits defined as constants in an application that you want to change under test so that you can still test edge cases, but with a smaller limit so that your test suite runs faster. Its test suite was converted from Test::Unit to RSpec.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>gamercard</strong></p>
+
+<p><a href="https://github.com/hypomodern/gamercard">gamercard</a> is a new Ruby gem that can retrieve and parse an Xbox Live Gamercard for a player. It will provide a hash of the relevant data about the player or the raw HTML.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p>The <a href="https://github.com/agoragames/leaderboard">leaderboard</a> Ruby gem allows you create leaderboards backed by Redis. Its test suite was converted from Test::Unit to RSpec.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>tasty</strong></p>
+
+<p><a href="https://github.com/czarneckid/tasty">tasty</a> is a Ruby gem for interacting with the <a href="http://www.delicious.com/help/api/">del.icio.us API</a>. It was originally written to be able to pull bookmarks from del.icio.us when Yahoo announced it would no longer be maintaining the service. Its test suite was converted from Test::Unit to RSpec.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Mar 30</div></div><div class="blog-content"><h2><a href="/blog/2012-03-30-game-face-4/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>coffee_bean</strong></p>
+
+<p>If you're starting a new project in any framework, you always end up generating a lot of boilerplate code. The <a href="https://github.com/czarneckid/coffee_bean">coffee_bean</a> Ruby gem abstracts that for new CoffeeScript projects to help you get your new project started quicker and without you having to necessarily copy and remove "bits" from your other CoffeeScript projects.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>geocoder</strong></p>
+
+<p>If you're doing any geocoding in Ruby, chances are you've come across the <a href="https://github.com/alexreisner/geocoder">geocoder</a> gem. David Czarnecki <a href="https://github.com/alexreisner/geocoder/commit/b418e0e4085ec3adc130ac14d51d96354dc41314">contributed a patch to only load the appropriate code</a> depending on whether you're using geocoder with ActiveRecord, Mongoid or MongoMapper.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p>We do a fair amount with AMQP in our middleware product and so we have written <a href="https://github.com/agoragames/haigha">haigha</a>, a AMQP libevent client in Python. 0.4.2 and 0.4.3 were released this week. These 2 releases encompass a number of important changes with respect to transport requirements, defaulting to gevent, notifications for channel close listeners and sending out heartbeat frames.</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>weary</strong></p>
+
+<p><a href="https://github.com/mwunsch/weary">Weary</a> is a "framework and DSL for building clients for (preferably RESTful) web service APIs" that is built around Rack. However, it only ships with one adapter for Ruby's Net::HTTP library. The Net:HTTP is demonstrably slower than other Ruby HTTP libraries, so Matthew Wilson decided to submit a <a href="https://github.com/mwunsch/weary/pull/2">pull request to add Excon and Typhoeus adapters</a> to Weary.</p>
+
+<p>Contributor(s): Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Mar 23</div></div><div class="blog-content"><h2><a href="/blog/2012-03-23-game-face-3/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>brewscribe</strong></p>
+
+<p>Are you into brewing your own beer? Do you use Beersmith? Want to parse Beersmith2 (.bsmx) files in Ruby? Grab a pint of <a href="https://github.com/cadwallion/brewscribe">brewscribe</a>, or rather the gem, and enjoy!</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>factory-worker</strong></p>
+
+<p><a href="https://github.com/agoragames/factory-worker">Factory Worker</a> is our Node.js library that creates the Factory pattern for object stores. The 0.6.0 release integrates a pull request from GitHub user, <a href="https://github.com/szimek">Szymon Nowak</a>, to return the saved object from the Factory.create method.</p>
+
+<p>Contributor(s): Szymon Nowak ( <a href="https://github.com/szimek">GitHub</a>)</p>
+
+<p><strong>darksky</strong></p>
+
+<p>Gray skies are gonna clear up, put on a happy face! Why? We've got 2 darksky-related releases this week. darksky continues to expand their <a href="http://darkskyapp.com/api/">API</a> and they added two new endpoints: "brief_forecast" and "interesting". The 1.0.4 release of the <a href="https://github.com/czarneckid/darksky">darksky</a> gem adds support for the "brief_forecast" endpoint. The "interesting" endpoint was supported as of the 1.0.3 release.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p>**java-leaderboard **</p>
+
+<p>One of the <a href="https://github.com/agoragames/leaderboard">leaderboard</a> gem's spawn, <a href="https://github.com/agoragames/java-leaderboard">java-leaderboard</a>, saw a release with version 2.0.2 that integrates a pull request from GitHub user, <a href="https://github.com/sneakybeaky">Jon Barber</a>. His pull request added some logic to cope with cases where no such user is in the leaderboard. Thanks again Jon!</p>
+
+<p>Contributor(s): Jon Barber ( <a href="https://github.com/sneakybeaky">GitHub</a>)</p>
+
+<p><strong>node-darksky</strong></p>
+
+<p>You want to integrate the darksky API into your Node.js application? Aaron Westendorf has you covered. He released version 0.1.0 of the <a href="https://github.com/awestendorf/node-darksky">node-darksky</a> package last Saturday. And so, the darksky ecosystem got a little brighter!</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>vindicia-api</strong></p>
+
+<p>We use <a href="http://www.vindicia.com/CashBox">Vincidia's CashBox</a> for SaaS billing in the <a href="http://store.majorleaguegaming.com/">Major League Gaming store</a>. A ruby gem that integrates with the Vincidia CashBox SOAP API doesn't do the development community any good if it's hidden away. So one of our engineers, Tom Quackenbush, polished off some rough edges and released version 0.0.2 of the <a href="https://github.com/agoragames/vindicia-api">vindicia-api</a> gem.</p>
+
+<p>P.S. Totally unrelated, but Tom may also be working on a social network for cats called Kitty City. Stay tuned!</p>
+
+<p>Contributor(s): Tom Quackenbush ( <a href="https://github.com/tquackenbush/">GitHub</a>, <a href="https://twitter.com/#%21/tquackenbush">Twitter</a>)</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Mar 16</div></div><div class="blog-content"><h2><a href="/blog/2012-03-16-game-face-2/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we're swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p>Activity feeds can be complicated to do correctly, which is why we developed the <a href="https://github.com/agoragames/activity_feed">activity_feed</a> gem. The 1.3.0 release adds functionality to update the timestamp for a given activity feed item, which is useful when you want items to "bubble up". You can also remove items from activity feeds.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>amico</strong></p>
+
+<p>It was an exciting week for the <a href="https://github.com/agoragames/amico/">amico</a> project, which allows you to express relationships (e.g. friendships) backed by Redis. The 2.0.1 release adds support for an all call that can return all the relationships for a given relationship type, such as following or followers. We would also like to highlight <a href="https://github.com/mettadore/acts_as_amico">acts_as_amico</a>, developed by GitHub user <a href="https://github.com/mettadore/">John Metta</a>, which is an ActiveRecord injectable version of the Redis-backed friendship system. He originally submitted this as a pull request to amico.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>bettertabs</strong></p>
+
+<p><a href="https://github.com/agoragames/bettertabs">bettertabs</a> is a simple <code>Rails 3.1+ Engine</code> that includes a helper and a jquery plugin to render the needed markup and javascript for a section with tabs in a easy and declarative way, forcing you to keep things simple and ensuring accessibility and usability, no matter if the content is loaded statically or via ajax. The 1.3.6 release this week allows this to be used in Rails 3.2 as well.</p>
+
+<p>Contributor(s): Jeffrey Lee ( <a href="https://github.com/jlee42">GitHub</a>)</p>
+
+<p><strong>bnet_scraper</strong></p>
+
+<p>We released a new gem this week, <a href="https://github.com/agoragames/bnet_scraper">bnet_scraper</a>. This is a Nokogiri-based scraper of Battle.net profiles. Currently this only includes Starcraft 2 data scraping. It has support for scraping profiles, league data, achievements, and match history. Let us know if this gem is useful to you.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p>One of our most popular gems, <a href="https://github.com/agoragames/leaderboard">leaderboard</a>, has a new release this week with version 2.0.5. leaderboard allows you to create leaderboards (aka high score tables, aka scoreboards) in Redis. This releases addresses the first future idea from the README when the gem was released over a year ago to add a method allowing for bulk insert of data into a leaderboard. Performance of the bulk insert indicates this is preferable to individual inserts if you ever need to insert a large amount of data into a leaderboard.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#%21/czarneckid">Twitter</a>)</p>
+
+<p><strong>darksky</strong></p>
+
+<p>The darksky gem saw a couple of releases this week. 1.0.2 removed the default to disable SSL peer verification now that the DarkSky API server has a signed certificate. 1.0.3 added the new "interesting" API endpoint to return a list of interesting storms happening right now. It also fixes a bug in the precipitation API endpoint where multiple locations were not correctly passed to the API.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p>**Upcoming
+ **</p>
+
+<p>We have a number of pull requests that we need to get integrated into various projects. Part of the reason these sat for so long is that we forgot to turn on GitHub notifications for the engineering team for these projects. So, look for releases next week of <a href="https://github.com/agoragames/java-leaderboard/">java-leaderboard</a>, our port of the leaderboard gem to Java, and for <a href="https://github.com/agoragames/errship/">errship</a>, a Rails 3.1 engine for rendering error pages inside your layout.</p>
+
+<p>A special thanks to GitHub user, <a href="https://github.com/vitaly-krugl">vitaly-krugl</a>, for reporting so many issues on <a href="https://github.com/agoragames/haigha/">haigha</a>, our simple to use client library for interacting with AMQP brokers.</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Mar 9</div></div><div class="blog-content"><h2><a href="/blog/2012-03-09-game-face/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we're swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>node-amico</strong></p>
+
+<p><a href="https://github.com/agoragames/node-amico">node-amico</a> is our CoffeeScript port of the <a href="https://github.com/agoragames/amico">amico</a> gem, which handles relationships (e.g. friendships) backed by Redis. Andrew Nordman ( <a href="https://twitter.com/#!/cadwallion">cadwallion</a>) released 0.0.3 to update the package manifest to correctly identify the main file. Hot on his heels, David Czarnecki ( <a href="https://twitter.com/#!/czarneckid">czarneckid</a>), ported over the "scope" functionality from the amico gem to support relationships for any number of things or "scopes" and 0.1.0 was released. Please note that 0.1.0 is API incompatible with previous releases.</p>
+
+<p><strong>stache</strong></p>
+
+<p><a href="https://github.com/agoragames/stache">stache</a> is a Rails 3.x compatible Mustache Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side JavaScript a little easier. Matthew Wilson ( <a href="https://twitter.com/#!/hypomodern">hypomodern</a>) released 0.2.2 which integrated a <a href="https://github.com/agoragames/stache/pull/11">pull request from Jack Lawson</a> ( <a href="https://github.com/ajacksified">ajacksified</a>) to correctly use various stache configuration options instead of being hardcoded values.</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha">haigha</a>, our AMQP libevent client in Python, had a couple of issues opened this week that Aaron Westendorf ( <a href="https://twitter.com/#!/WashUffize/">WashUffize</a>) is managing. Issue #8, <a href="https://github.com/agoragames/haigha/issues/8">test_read_timestamp and test_write_timestamp failure on Mac OS</a>, may be an issue with time zones. YUNO <a href="https://github.com/jtrupiano/timecop">timecop</a> Python? We are also waiting on a pull request for issue #9, <a href="https://github.com/agoragames/haigha/issues/9">haigha/gevent example</a>, which modifies the "hello-world" example to work with <a href="http://www.gevent.org/">gevent</a>.</p>
+
+<p><strong>darksky</strong></p>
+
+<p>One of our ex-system engineers, Jason LaPorte ( <a href="https://twitter.com/#!/ironwallaby/">ironwallaby</a>), left us earlier this year to join the <a href="http://darkskyapp.com">Dark Sky</a> team, and <a href="http://darkskyapp.com/api/">they've got an API</a> for short-term precipitation forecast data at geographical points inside the United States. David Czarnecki ( <a href="https://twitter.com/#!/czarneckid">czarneckid</a>) released the <a href="https://github.com/czarneckid/darksky">darksky gem</a> now that their API is in beta.</p>
+
+<p><strong>punchr</strong></p>
+
+<p>Punchfork is one of the sexiest sites for finding the best new recipes from popular sites like Serious Eats or Simply Recipes. And it should have a sexy API library right? Right. David Czarnecki has a Ruby gem for interacting with the <a href="http://punchfork.com/api">Punchfork API</a> called <a href="https://github.com/punchfork/punchr">punchr</a>. Look for a first release of the gem very soon!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 6</div></div><div class="blog-content"><h2><a href="/blog/2012-02-06-techvalley-startup-weekend/">TechValley Startup Weekend</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>On March 3, 2012 <a href="http://startupweekend.org/">Startup Weekend</a> comes to TechValley. Startup Weekend is a technology focused business competition, where people pitch ideas, form ad-hoc teams, and develop a product idea over the span of a weekend. Despite what a lot of people think, it's not a code competition in the spirit of the <a href="http://nodeknockout.com/">Node Knockout</a> or <a href="http://archive.railsrumble.com/">Rails Rumble</a>; points aren't awarded based on cool tech alone. However, also unlike these other events, Startup Weekend focuses on producing real-life companies with making real money. (Like, for real, yo). Why should you care?</p>
+
+<p><strong>As a resident of the Capital Region, it's good for our economy</strong>
+ There are almost a dozen out of town Venture Capitalists, executives, and engineers travelling here to learn more about what we have to offer. This area has become increasing important due to our local engineering talent and our vicinity to both NYC and Boston. Startup Weekend is the perfect time to show off our entrepreneurial and technical prowess. It's my belief that while this region has all the right raw materials, it needs a grassroots spark to fan the flames.</p>
+
+<p><strong>As a business owner or manager, it's good for your company</strong>
+ Startup Weekend is a great way to let your company and your team think outside the bounds &amp; constraints they work with during the week. It's also a great way to meet other local talent and test your wits against other people in the area. I promise you'll be surprised at all the small startups that exist right here under your nose. Finally, it shows your team, your customers, and your colleagues that you care about their field and our region. Win win!</p>
+
+<p><strong>As a software craftsperson, it's good for your career</strong>
+ No one stays in one place forever (particularly in our field). The opportunities locally aren't as abundant as they might be in a larger metropolitan area,but that itself creates a unique opportunity. Great startups (like all great teams) require the right mix of people. It's exceedingly rare to see a single individual take an idea and develop it into something meaningful on their own. Said another way, its more risky (resulting in a smaller potentially upside) to go it alone. At Startup Weekend you'll meet scores of other people interested in the business of technology. Who knows, maybe that idea you've had kicking around will take root and grow.</p>
+
+<p>Agora is encouraging (and helping to subsidize) attendance by any interested employees. Here's a list of other businesses sponsoring the event (current, as I write this post):</p>
+
+<ul>
+  <li><a href="http://www.1stplayable.com/">1st Playable</a></li>
+  <li><a href="http://www.adirondackbasement.com/">Adirondack Basement</a></li>
+  <li><a href="http://anchoragency.com/">The Anchor Agency</a></li>
+  <li><a href="http://www.arsenalpartnership.com">Arsenal Business &amp; Technology Partnership</a></li>
+  <li><a href="http://www.enablelabs.com">Enable Labs</a></li>
+  <li><a href="http://www.greanetree.com/">GreaneTree Technology</a></li>
+  <li><a href="http://www.greycastlesecurity.com/">GreyCastle Security</a></li>
+  <li><a href="http://www.marvincpa.com">Marvin and Company, P.C.</a></li>
+  <li><a href="http://www.nixonpeabody.com/">Nixon Peabody</a></li>
+  <li><a href="http://outspokenmedia.com/">Outspoken Media</a></li>
+  <li><a href="http://overit.com/">Overit Media</a></li>
+  <li><a href="http://www.pinnaclehrllc.com">Pinnacle HR</a></li>
+  <li><a href="http://www.rpi.edu/about/eve/index.html">Rensselaer Emerging Ventures Ecosystem</a></li>
+  <li><a href="http://www.ceg.org/techconnex/index.htm">TechConnex</a></li>
+  <li><a href="http://www.troywebconsulting.com">Troy Web Consulting</a></li>
+  <li><a href="http://www.unique-minds.com">Unique Minds</a></li>
+</ul>
+
+<p>Sponsorship opportunities are still available (but limited) for anyone else interested in helping out. Check out <a href="http://techvalley.startupweekend.org/">the website</a> for more information!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jan 9</div></div><div class="blog-content"><h2><a href="/blog/2012-01-09-2011-open-source-projects/">2011 Open Source Projects</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>Oh right, it's 2012. Better late than never. In addition to the numerous contributions we make to existing open source projects, we also find the time to release libraries or projects that we extract from our applications. In 2011, those 22 projects were:</p>
+
+<ul>
+  <li>leaderboard - <a href="https://github.com/agoragames/leaderboard">https://github.com/agoragames/leaderboard </a>- Leaderboards backed by Redis in Ruby - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>java-leaderboard - <a href="https://github.com/agoragames/java-leaderboard">https://github.com/agoragames/java-leaderboard </a>- Leaderboards backed by Redis in Java - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>scala-leaderboard - <a href="https://github.com/agoragames/scala-leaderboard">https://github.com/agoragames/scala-leaderboard</a> - Leaderboards backed by Redis in Scala - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>php-leaderboard - <a href="https://github.com/agoragames/php-leaderboard">https://github.com/agoragames/php-leaderboard</a> - Leaderboards backed by Redis in PHP - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>python-leaderboard - <a href="https://github.com/agoragames/python-leaderboard">https://github.com/agoragames/python-leaderboard </a>- Leaderboards backed by Redis in Python - Primary author: Ola Mork ( <a href="https://twitter.com/#!/olamork">@olamork</a>)</li>
+  <li>clojure-leaderboard - <a href="https://github.com/agoragames/clojure-leaderboard">https://github.com/agoragames/clojure-leaderboard</a> - Leaderboards backed by Redis in Clojure - Primary author: Andrew Andkjar ( <a href="https://twitter.com/#!/andkjar">@andkjar</a>)</li>
+  <li>erlang-leaderboard - <a href="https://github.com/agoragames/erlang-leaderboard">https://github.com/agoragames/erlang-leaderboard</a> - Leaderboards backed by Redis in Erlang - Primary author: Armando DiCianno ( <a href="https://twitter.com/#!/greymouser">@greymouser</a>)</li>
+  <li>factory-worker - <a href="https://github.com/agoragames/factory-worker">https://github.com/agoragames/factory-worker</a> - Factories for NodeJS - Primary author: Andrew Nordman ( <a href="https://twitter.com/#!/cadwallion">@cadwallion</a>)</li>
+  <li>stache - <a href="https://github.com/agoragames/stache">https://github.com/agoragames/stache</a> - A Rails 3.x (yes, even Rails <em>3.1</em>) compatible Mustache Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier - Primary author: Matthew Wilson ( <a href="https://twitter.com/#!/hypomodern">@hypomodern</a>)</li>
+  <li>py-event - <a href="https://github.com/agoragames/pyevent">https://github.com/agoragames/pyevent</a> - Python extension module for Niels Provos' libevent - Primary author: Aaron Westendorf ( <a href="https://twitter.com/#!/WashUffize">@WashUffize</a>)</li>
+  <li>chai - <a href="https://github.com/agoragames/chai">https://github.com/agoragames/chai</a> - Chai provides a very easy to use api for mocking/stubbing your python objects, patterned after the <a href="http://mocha.rubyforge.org/">Mocha</a> library for Ruby - Primary author: Aaron Westendorf ( <a href="https://twitter.com/#!/WashUffize">@WashUffize</a>)</li>
+  <li>activity_feed - <a href="https://github.com/agoragames/activity_feed">https://github.com/agoragames/activity_feed</a> - Activity feeds backed by Redis - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>improved_logging - <a href="https://github.com/agoragames/improved_logging">https://github.com/agoragames/improved_logging</a> - Adds improved logging capabilities to the ActiveSupport::BufferedLogger class - Primary author: David Czarnecki ( <a href="https://twitter.com/#!/CzarneckiD">@CzarneckiD</a>)</li>
+  <li>haigha - <a href="https://github.com/agoragames/haigha">https://github.com/agoragames/haigha</a> - AMQP libevent Python client - Primary author: Aaron Westendorf ( <a href="https://twitter.com/#!/WashUffize">@WashUffize</a>)</li>
+  <li>py-eventsocket - <a href="https://github.com/agoragames/py-eventsocket">https://github.com/agoragames/py-eventsocket</a> - Socket wrapper for libevent TCP applications - Primary author: Aaron Westendorf ( <a href="https://twitter.com/#!/WashUffize">@WashUffize</a>)</li>
+  <li>errship - <a href="https://github.com/agoragames/errship">https://github.com/agoragames/errship</a> - Errship is a Rails 3.1 engine for rendering error pages inside your layout. It supports i18n, custom exceptions, and Airbrake (Hoptoad) error tracking - Primary author: Logan Koester ( <a href="https://twitter.com/#!/logankoester">@logankoester</a>)</li>
+  <li>bettertabs - <a href="https://github.com/agoragames/bettertabs">https://github.com/agoragames/bettertabs</a> - Bettertabs is a simple Rails 3.1 Engine that includes a helper and a jquery plugin to render the needed markup and javascript for a section with tabs in a easy and declarative way - Primary author: Mario Izquierdo ( <a href="https://twitter.com/#!/tothemario">@tothemario</a>)</li>
+  <li>seedlings - <a href="https://github.com/agoragames/seedlings">https://github.com/agoragames/seedlings</a> - Make seeding data easier to deal with across multiple ORMs - Primary author: Matthew Wilson ( <a href="https://twitter.com/#!/hypomodern">@hypomodern</a>)</li>
+  <li>tassadar - <a href="https://github.com/agoragames/tassadar">https://github.com/agoragames/tassadar</a> - Starcraft 2 replay parser written in pure Ruby - Primary author: Matt Pruitt ( <a href="https://twitter.com/#!/guitasaru">@guitsaru</a>)</li>
+  <li>mm_sortable_item - <a href="https://github.com/agoragames/mm_sortable_item">https://github.com/agoragames/mm_sortable_item</a> - MongoMapper plugin that provides some basic acts-as-list style functionality on Mongo documents - Primary author: Matthew Wilson ( <a href="https://twitter.com/#!/hypomodern">@hypomodern</a>)</li>
+  <li>soonatra - <a href="https://github.com/agoragames/soonatra">https://github.com/agoragames/soonatra</a> - Sinatra application to show a “Coming Soon” page and collect emails - Primary author: Logan Koester ( <a href="https://twitter.com/#!/logankoester">@logankoester</a>)</li>
+  <li>javascripto - <a href="https://github.com/agoragames/javascripto">https://github.com/agoragames/javascripto</a> - Javascripto helps organize and deliver client-side javascript - Primary author: Blake Taylor ( <a href="https://twitter.com/#!/blakefrost">@blakefrost</a>)</li>
+</ul>
+
+<p>We hope you've found or will find these libraries useful in your own projects.</p>
+</div></div></div></section><aside id="sidebar"><div class="block" id="block-archive"><h2>Blog archives</h2><h3>2013</h3><ul><li><a href="/blog/2013/11/">November 2013</a></li><li><a href="/blog/2013/10/">October 2013</a></li><li><a href="/blog/2013/09/">September 2013</a></li><li><a href="/blog/2013/08/">August 2013</a></li><li><a href="/blog/2013/07/">July 2013</a></li><li><a href="/blog/2013/06/">June 2013</a></li><li><a href="/blog/2013/05/">May 2013</a></li><li><a href="/blog/2013/04/">April 2013</a></li><li><a href="/blog/2013/03/">March 2013</a></li><li><a href="/blog/2013/02/">February 2013</a></li><li><a href="/blog/2013/01/">January 2013</a></li></ul><h3>2012</h3><ul><li><a href="/blog/2012/12/">December 2012</a></li><li><a href="/blog/2012/11/">November 2012</a></li><li><a href="/blog/2012/10/">October 2012</a></li><li><a href="/blog/2012/09/">September 2012</a></li><li><a href="/blog/2012/08/">August 2012</a></li><li><a href="/blog/2012/07/">July 2012</a></li><li><a href="/blog/2012/06/">June 2012</a></li><li><a href="/blog/2012/05/">May 2012</a></li><li><a href="/blog/2012/04/">April 2012</a></li><li><a href="/blog/2012/03/">March 2012</a></li><li><a href="/blog/2012/02/">February 2012</a></li><li><a href="/blog/2012/01/">January 2012</a></li></ul><h3>2011</h3><ul><li><a href="/blog/2011/10/">October 2011</a></li><li><a href="/blog/2011/09/">September 2011</a></li><li><a href="/blog/2011/08/">August 2011</a></li><li><a href="/blog/2011/07/">July 2011</a></li><li><a href="/blog/2011/06/">June 2011</a></li><li><a href="/blog/2011/05/">May 2011</a></li><li><a href="/blog/2011/04/">April 2011</a></li><li><a href="/blog/2011/03/">March 2011</a></li><li><a href="/blog/2011/02/">February 2011</a></li><li><a href="/blog/2011/01/">January 2011</a></li></ul><h3>2010</h3><ul><li><a href="/blog/2010/12/">December 2010</a></li><li><a href="/blog/2010/11/">November 2010</a></li><li><a href="/blog/2010/10/">October 2010</a></li><li><a href="/blog/2010/09/">September 2010</a></li><li><a href="/blog/2010/08/">August 2010</a></li><li><a href="/blog/2010/07/">July 2010</a></li><li><a href="/blog/2010/06/">June 2010</a></li><li><a href="/blog/2010/05/">May 2010</a></li><li><a href="/blog/2010/04/">April 2010</a></li><li><a href="/blog/2010/03/">March 2010</a></li><li><a href="/blog/2010/02/">February 2010</a></li><li><a href="/blog/2010/01/">January 2010</a></li></ul><h3>2009</h3><ul><li><a href="/blog/2009/12/">December 2009</a></li><li><a href="/blog/2009/11/">November 2009</a></li><li><a href="/blog/2009/10/">October 2009</a></li><li><a href="/blog/2009/09/">September 2009</a></li><li><a href="/blog/2009/08/">August 2009</a></li><li><a href="/blog/2009/07/">July 2009</a></li><li><a href="/blog/2009/06/">June 2009</a></li><li><a href="/blog/2009/05/">May 2009</a></li><li><a href="/blog/2009/04/">April 2009</a></li><li><a href="/blog/2009/03/">March 2009</a></li><li><a href="/blog/2009/02/">February 2009</a></li><li><a href="/blog/2009/01/">January 2009</a></li></ul><h3>2008</h3><ul><li><a href="/blog/2008/11/">November 2008</a></li><li><a href="/blog/2008/10/">October 2008</a></li><li><a href="/blog/2008/09/">September 2008</a></li><li><a href="/blog/2008/08/">August 2008</a></li></ul></div></aside></article></div></div></div><footer><div class="outer-wrap"><div class="wrap"><div id="copyright"><img alt="Agora Games" src="../../assets/images/agora-logo-agga-7c1d9a1f.png"> <a href="http://majorleaguegaming.com" target="_blank"><img alt="Major League Gaming" src="../../assets/images/mlg-logo-28545055.png"></a><a href="mailto:info@agoragames.com" id="email-us">Email Us</a><p>359 Broadway, Third Floor, Troy, NY 12180</p><p class="dim">&copy; 2013 Agora Games. All Rights Reserved.</p></div></div></div></footer><div class="hide"><iframe id="wufoo-iframe" src="javascript:void(0)"></iframe><a id="wufoo-thanks" href="/thanks/"></a></div><!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script>
+  if (!window.jQuery) {
+    document.write('<script type="text/javascript" src="../../assets/javascripts/vendor/jquery.min-199fc76d.js"><' + '/script>');
+  }
+</script>
+<script src="../../assets/javascripts/all-7e4f2f03.js" type="text/javascript"></script></body></html>

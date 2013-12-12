@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width" name="viewport"><title>Brain Matters</title><link href="../../../../assets/images/favicon.ico" rel="shortcut icon"><link href="../../../../assets/stylesheets/all-dc5d1bf2.css" media="all" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="../../../../assets/javascripts/vendor/html5shiv-8b3747c5.js" type="text/javascript"></script><![endif]--></head><body><div class="outer-wrap"><div class="inner-wrap"><div class="wrap"><header class="clearfix" id="page"><a href="/"><img alt="Agora Games" id="logo" src="../../../../assets/images/agora-games-logo-e99b2824.png"></a><nav><ul><li><a href="https://hydra.agoragames.com/">Products</a></li><li><a href="/portfolio/">Customers</a></li><li><a href="/us/">Team</a></li><li><a href="/community/">Community</a></li><li><a href="/work-at-agora/">Jobs</a></li><li><a href="/blog/">Blog</a></li></ul></nav></header></div><div class="wrap"><article class="clearfix"><header><h1>April 27, 2012</h1></header><section id="blog-entries"><div class="blog-entry"><div class="date-comments"><div class="date">Apr 27</div></div><div class="blog-content"><h2><a href="/blog/2012-04-27-game-face-8/">Game Face</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our <a href="https://github.com/agoragames/">Agora Games GitHub</a> account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…</p>
+
+<p><strong>activity_feed</strong></p>
+
+<p><a href="https://github.com/agoragames/activity_feed/">activity_feed</a> is a gem for doing activity feeds (aka activity streams, aka timelines) in Redis. GitHub user, jc00ke, submitted a <a href="https://github.com/agoragames/activity_feed/pull/4">pull request to cleanup the README</a> and remove the irb output.</p>
+
+<p>Contributor(s): Jesse Cooke ( <a href="https://github.com/jc00ke/">GitHub</a>, <a href="https://twitter.com/#!/jc00ke">Twitter</a>)</p>
+
+<p><strong>brightcove-api</strong></p>
+
+<p><a href="https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper">brightcove-api</a> is a gem for interacting with the <a href="http://docs.brightcove.com/en/media/">Brightcove Media API</a>. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>haigha</strong></p>
+
+<p><a href="https://github.com/agoragames/haigha/">haigha</a> is a simple to use client library for interacting with AMQP brokers. The <a href="https://github.com/agoragames/haigha/blob/master/CHANGELOG">0.5.0 release</a> offers a number of enhancements</p>
+
+<ul>
+  <li>Fix message reading in basic.get</li>
+  <li>Added optional open_cb kwarg to Connection constructor</li>
+  <li>Added optional callback to basic.consume for notifications when broker has registered the consumer</li>
+  <li>Moved channel state out of ChannelClass and into Channel to fix access problems after Channel has been cleaned up</li>
+  <li>Added support for Channel open notification listeners</li>
+  <li>All AMQP timestamps are in UTC</li>
+  <li>Most exceptions will now propagate to user code, fixing problems with gevent.GreenletExit and SystemExit</li>
+  <li>Preliminary support for synchronous clients</li>
+</ul>
+
+<p> </p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>hipchat-api</strong></p>
+
+<p><a href="https://github.com/czarneckid/hipchat-api">hipchat-api</a> is a gem for interacting with the HipChat API. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>kairos</strong></p>
+
+<p><a href="https://github.com/agoragames/kairos">kairos</a> is a library that provides time series storage using a Redis backend. The <a href="https://github.com/agoragames/kairos/blob/master/CHANGELOG">0.0.6 release</a> added "optional compression on a series which will count unique hits on a value within an interval. Exact time resolution is traded in favor of a (possible) significant reduction in storage requirements. The resolution of the compression is up to the user in how they cast the data on insert."</p>
+
+<p>Contributor(s): Aaron Westendorf ( <a href="https://github.com/awestendorf/">GitHub</a>, <a href="https://twitter.com/#%21/WashUffize">Twitter</a>)</p>
+
+<p><strong>leaderboard</strong></p>
+
+<p><a href="https://github.com/agoragames/leaderboard">leaderboard</a> is a gem that allows you to develop leaderboards for your application or game, where the leaderboards are backed by Redis. The <a href="https://github.com/agoragames/leaderboard/blob/master/CHANGELOG.markdown">2.0.6 release</a> adds an "accessor for the reverse option so that you can set reverse after creating a leaderboard to see results in either highest-to-lowest or lowest-to-highest order."</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>silver_spoon</strong></p>
+
+<p><a href="https://github.com/agoragames/silver_spoon">silver_spoon</a> is a new gem for doing entitlements in Redis. It is a "simple semantic wrapper around Redis hashes for adding, removing, retrieving and checking existence of entitlements."</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+
+<p><strong>strumbar</strong></p>
+
+<p><a href="https://github.com/agoragames/strumbar">strumbar</a> is another new gem that acts as "a wrapper around ActiveSupport::Notifications with pre-configurations for basic instrumentation to be sent to statsd." Current instrumentations exist for ActionController, ActiveRecord and Redis.</p>
+
+<p>Contributor(s): Andrew Nordman ( <a href="https://github.com/Cadwallion/">GitHub</a>, <a href="https://twitter.com/#%21/Cadwallion">Twitter</a>) and Matthew Wilson ( <a href="https://github.com/hypomodern/">GitHub</a>, <a href="https://twitter.com/#%21/hypomodern">Twitter</a>)</p>
+
+<p><strong>tasty</strong></p>
+
+<p><a href="https://github.com/czarneckid/tasty">tasty</a> is a gem for interacting with the <a href="http://www.delicious.com/help/api/">del.icio.us API</a>. The README got a cleanup to remove irb output.</p>
+
+<p>Contributor(s): David Czarnecki ( <a href="https://github.com/czarneckid/">GitHub</a>, <a href="https://twitter.com/#!/czarneckid">Twitter</a>)</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Apr 27</div></div><div class="blog-content"><h2><a href="/blog/2012-04-27-dont-let-your-community-website-become-a-red-headed-stepchild/">Don't Let Your Community Website Become a Red-headed Stepchild</a></h2><div class="blog-author">By <strong>Mike Jodon</strong></div><div class="blog-body"><p>Each new game project that The Hydra Team at Agora Games works on has us smack dab in the middle of game and web development teams.  Together, these game and web development teams set out to build a game and community website experience that will be very tightly aligned.  We like being in the middle.</p>
+
+<p>Our technology puts us in a unique spot where we integrate directly into the game, and this is when we work directly with the game development teams. A few key examples below:</p>
+
+<ul>
+  <li>Tracking and storing all user profile stats.</li>
+  <li>Tracking and storing all user match stats.</li>
+  <li>Powering in-game MOTDs.</li>
+  <li>Supporting the upload/download of in-game UGC (user generated content).</li>
+</ul>
+
+<p>Our technology also puts us in a spot to then help translate those in-game features onto the web, and this is when we work directly with the web development teams.  A few key examples below:</p>
+
+<ul>
+  <li>Providing the stored game data and APIs to showcase a full user profile.</li>
+  <li>Providing the stored game data and APIs to showcase a user's historical match stats.</li>
+  <li>Providing APIs for a community team to build web tools so they can push new MOTDs in-game.</li>
+  <li>Providing the stored game data and APIs to support a per user UGC queue so that UGC created in-game can be showcased on edited on the web.</li>
+</ul>
+
+<p>The nice one-two punch of awesome in-game integration combining with a spiffy community website package is hard to achieve.  We've helped game projects achieve this game-to-web Nirvana on numerous occasions, but a good majority of the time we see the community website fall very short of its original expectations.  We've been on early project marketing calls where a super excited marketing representative lays out an amazing game and community website combination, with all the bells and whistles that "they must have!"  12 months later an awesome game launches, but the community website is a barren wasteland of a basic user profile and community forums.  We've seen this happen too many times.</p>
+
+<p>I'll preface the next section by saying that Agora Games totally understands that the game is king.  The game is 60 bucks a pop, and all in-game integration gets first dibs at all times.  We understand, and we fall in, we like your business.  With that said, it so deeply saddens us to see community websites fall into the red-headed stepchild role, playing second fiddle, and inevitably hitting the cutting room floor [I think I hit the max on cliches in that last sentence].  This doesn't have to happen.  A community website might not get you 60 bucks every time a user signs on, but a strong community website with solid integration into the ever so popular social networks can keep your user-base playing well into the next fiscal year and buying every single piece of DLC you throw at them.  How do we make it work you ask?</p>
+
+<p>We like being in the middle, we've been in the middle, we HAVE seen it work, and we have 3 easy tips!  <strong>Note:</strong> These tips do not require you work with us – we're not that sneaky.</p>
+
+<p><strong>1.) Don't leave so fast Mr. Marketing</strong> - That same super excited marketing guy that I mentioned above tends to disappear fast.  He/she usually has a really awesome dream scenario of what a game and its community website equivalent should look like, they speak the hell out of it at the beginning of a project, but then they fade out of regular communication with that plan shortly after.  Weekly calls get setup with the engineering team.  Weekly calls get setup with the web team.  Mr. Marketing tends to not show up at either.  This means that the already tight engineering resources and deadlines pummel community website features in the face, slowly knocking them off one-by-one because all in-game features must be there on launch day.  If there was a marketing presence checking in more often throughout the lifetime of the project, there would be many less angry marketing people that cry when they sign onto the community website on launch night (only to see community forums and a "community profile coming soon" message).</p>
+
+<p><strong>2.) Community Managers are smart, let them play early and often</strong> - As I mentioned above, marketing folks tend to have 15 other projects to move onto right after they give their game and community website speech at the beginning of a project.  Since they can't make it to bi-weekly and weekly tech calls as actual development picks up, they should send someone in their place.  Community Managers can fill this role!  Send at least one voice to all weekly calls that fights and reminds the team of that original game and community website plan.  If a community manager can hear there is the possibility that things might get cut (because of deadlines and resources), they can at least go back and report these facts so the top community website features can be re-prioritized and fought for on next week's call.  The best community features WILL actually launch if there is a voice to fight for them.</p>
+
+<p><strong>3.) Don't be afraid to let game developers and web developers mix</strong> - Too often game developers want nothing to do with web developers, and web developers don't particularly enjoy developing a community website if they're dealing with half-assed game code on features that we're deemed as "they can be cut if we don't get to them community website features."  It's almost going to sound too easy, but get a web developer presence on weekly tech calls as early as possible!  Don't force producers to waste time and run two different calls (a weekly game tech call and a weekly web tech call) when they can be easily joined into one.  Get both game and web developers on a weekly call, have a precise agenda that you follow each and every week, and hit the ground running.  Game and web developers will actually know each other, like each other, and will ultimately make Mr. Marketing very happy.  As a third party producer I will now purposely force my will upon the game projects our Agora team works on, because I am so passionate about this particular tip.  We'll run the weekly tech and web calls for you, we'll send out the precise agendas, and we'll keep the communication between all teams open very early on for you.  We do it first and foremost because it helps our development get done on time, but it also makes YOUR game and community website projects successful!</p>
+
+<p><strong>This is what happens when these tips aren't used (I purposely left this in a "ramble-on" format):</strong> Marketing folks disappear, no community voice is on weekly calls, game development teams dig in (concentrating on their in-game features first and foremost), time goes along and things get built – with no one reminding the teams of community website needs on the weekly calls (we bring community needs up the best we can, but ultimately we can only push when a web team has priorities), the web development team gets brought into the fold months later (too late usually), they look at the list of features they should be building onto the community website (handed to the them from Mr. Marketing), they ask the game development team whats ready to go, and the game development team says, "uhhhhhhhhh, not a whole lot,  but you do have a user profile!"  This leads to additional community website feature cuts after the web development team is left scrambling having to re-prioritize the small set of community features they actually can build, wasting time not getting to the actual web development itself.  We've seen it happen too often.</p>
+
+<p>In conclusion, if you're reading this, we want you to take our tips because in-game and community website integration is something we ALL need to see improving on a regular basis – we all need our jobs after all.</p>
+
+<p> </p>
+</div></div></div></section><aside id="sidebar"><div class="block" id="block-archive"><h2>Blog archives</h2><h3>2013</h3><ul><li><a href="/blog/2013/11/">November 2013</a></li><li><a href="/blog/2013/10/">October 2013</a></li><li><a href="/blog/2013/09/">September 2013</a></li><li><a href="/blog/2013/08/">August 2013</a></li><li><a href="/blog/2013/07/">July 2013</a></li><li><a href="/blog/2013/06/">June 2013</a></li><li><a href="/blog/2013/05/">May 2013</a></li><li><a href="/blog/2013/04/">April 2013</a></li><li><a href="/blog/2013/03/">March 2013</a></li><li><a href="/blog/2013/02/">February 2013</a></li><li><a href="/blog/2013/01/">January 2013</a></li></ul><h3>2012</h3><ul><li><a href="/blog/2012/12/">December 2012</a></li><li><a href="/blog/2012/11/">November 2012</a></li><li><a href="/blog/2012/10/">October 2012</a></li><li><a href="/blog/2012/09/">September 2012</a></li><li><a href="/blog/2012/08/">August 2012</a></li><li><a href="/blog/2012/07/">July 2012</a></li><li><a href="/blog/2012/06/">June 2012</a></li><li><a href="/blog/2012/05/">May 2012</a></li><li><a href="/blog/2012/04/">April 2012</a></li><li><a href="/blog/2012/03/">March 2012</a></li><li><a href="/blog/2012/02/">February 2012</a></li><li><a href="/blog/2012/01/">January 2012</a></li></ul><h3>2011</h3><ul><li><a href="/blog/2011/10/">October 2011</a></li><li><a href="/blog/2011/09/">September 2011</a></li><li><a href="/blog/2011/08/">August 2011</a></li><li><a href="/blog/2011/07/">July 2011</a></li><li><a href="/blog/2011/06/">June 2011</a></li><li><a href="/blog/2011/05/">May 2011</a></li><li><a href="/blog/2011/04/">April 2011</a></li><li><a href="/blog/2011/03/">March 2011</a></li><li><a href="/blog/2011/02/">February 2011</a></li><li><a href="/blog/2011/01/">January 2011</a></li></ul><h3>2010</h3><ul><li><a href="/blog/2010/12/">December 2010</a></li><li><a href="/blog/2010/11/">November 2010</a></li><li><a href="/blog/2010/10/">October 2010</a></li><li><a href="/blog/2010/09/">September 2010</a></li><li><a href="/blog/2010/08/">August 2010</a></li><li><a href="/blog/2010/07/">July 2010</a></li><li><a href="/blog/2010/06/">June 2010</a></li><li><a href="/blog/2010/05/">May 2010</a></li><li><a href="/blog/2010/04/">April 2010</a></li><li><a href="/blog/2010/03/">March 2010</a></li><li><a href="/blog/2010/02/">February 2010</a></li><li><a href="/blog/2010/01/">January 2010</a></li></ul><h3>2009</h3><ul><li><a href="/blog/2009/12/">December 2009</a></li><li><a href="/blog/2009/11/">November 2009</a></li><li><a href="/blog/2009/10/">October 2009</a></li><li><a href="/blog/2009/09/">September 2009</a></li><li><a href="/blog/2009/08/">August 2009</a></li><li><a href="/blog/2009/07/">July 2009</a></li><li><a href="/blog/2009/06/">June 2009</a></li><li><a href="/blog/2009/05/">May 2009</a></li><li><a href="/blog/2009/04/">April 2009</a></li><li><a href="/blog/2009/03/">March 2009</a></li><li><a href="/blog/2009/02/">February 2009</a></li><li><a href="/blog/2009/01/">January 2009</a></li></ul><h3>2008</h3><ul><li><a href="/blog/2008/11/">November 2008</a></li><li><a href="/blog/2008/10/">October 2008</a></li><li><a href="/blog/2008/09/">September 2008</a></li><li><a href="/blog/2008/08/">August 2008</a></li></ul></div></aside></article></div></div></div><footer><div class="outer-wrap"><div class="wrap"><div id="copyright"><img alt="Agora Games" src="../../../../assets/images/agora-logo-agga-7c1d9a1f.png"> <a href="http://majorleaguegaming.com" target="_blank"><img alt="Major League Gaming" src="../../../../assets/images/mlg-logo-28545055.png"></a><a href="mailto:info@agoragames.com" id="email-us">Email Us</a><p>359 Broadway, Third Floor, Troy, NY 12180</p><p class="dim">&copy; 2013 Agora Games. All Rights Reserved.</p></div></div></div></footer><div class="hide"><iframe id="wufoo-iframe" src="javascript:void(0)"></iframe><a id="wufoo-thanks" href="/thanks/"></a></div><!--[if lt IE 9]>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+<!--[if gte IE 9]><!-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!--<![endif]-->
+<script>
+  if (!window.jQuery) {
+    document.write('<script type="text/javascript" src="../../../../assets/javascripts/vendor/jquery.min-199fc76d.js"><' + '/script>');
+  }
+</script>
+<script src="../../../../assets/javascripts/all-7e4f2f03.js" type="text/javascript"></script></body></html>
