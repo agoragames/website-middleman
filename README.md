@@ -15,3 +15,4 @@ You may see this warning in your shell while Middleman is running its server on 
 ## Deploying the site
 
 Run `rake publish`
+
