@@ -45,15 +45,16 @@ id: home
         | our
         em< blog
       #latest.box
+        - article = blog.articles.first
         h3
-          a href="http://blog.agoragames.com/blog/2013/11/18/hack-a-thon-12-showcase/"
-            | Hack-a-thon 12 Showcase
+          = link_to article.title, article.url
         p
-          | Agora Games recently held its 12th Hack-a-thon, Thursday, November 7th – Friday, November 8th, a 24 hour period in which employees may work on anything they want so long as it relates to Agora....
-          a< href="http://blog.agoragames.com/blog/2013/11/18/hack-a-thon-12-showcase/"
-            | read on &raquo;
+          = truncate_words(article.body, length: 35)
+          = link_to ' Read on &raquo;', article.url
         #latest-author
-          span#posted-by.hand Posted By Sam Toews
+          span#posted-by.hand
+            | Posted by 
+            = article.data.author
     .col-three
       h4.laurel
         | featured
