@@ -6,7 +6,10 @@ set :fonts_dir, 'assets/fonts'
 set :layouts_dir, 'templates/layouts'
 set :partials_dir, 'templates/partials'
 
-set :relative_links, true
+# This causes too many problems, e.g. when visiting /blog instead of
+# /blog/ (the relative links to blog posts resolve differently)
+#
+# set :relative_links, true
 
 activate :asset_hash
 activate :relative_assets

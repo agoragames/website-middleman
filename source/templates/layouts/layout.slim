@@ -3,7 +3,7 @@ html lang='en'
   head
     == partial 'metadata'
     == yield_content :head
-  body id=data.page.id
+  body id=current_page.data.id
     .outer-wrap
       .inner-wrap
         .wrap

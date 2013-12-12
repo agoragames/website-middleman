@@ -14,7 +14,7 @@
             h2= current_page.title
             .blog-author
               | By
-              strong<= data.page.author
+              strong<= current_page.data.author
             .blog-body
               == yield
       aside#sidebar
