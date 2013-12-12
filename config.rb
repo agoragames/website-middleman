@@ -27,8 +27,13 @@ end
 # See https://coderwall.com/p/qgnwzw
 activate :directory_indexes
 activate :asset_hash
-activate :relative_assets
 activate :automatic_image_sizes
+
+# The relative_assets setting doesn't play particularly nicely with
+# directory_indexes, but we don't really need it, since we're hosting
+# the site at a domain root.
+#
+# activate :relative_assets
 
 Slim::Engine.set_default_options :format => :html5
 Slim::Engine.set_default_options :pretty => true
