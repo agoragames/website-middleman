@@ -11,21 +11,24 @@ set :partials_dir, 'templates/partials'
 #
 # set :relative_links, true
 
-activate :asset_hash
-activate :relative_assets
-activate :automatic_image_sizes
-
 activate :blog do |blog|
   blog.prefix = "blog"
-  blog.permalink = ":year-:month-:day-:title.html"
+  blog.permalink = ":year-:month-:day-:title"
   blog.layout = "blog"
   blog.default_extension = ".markdown"
 
-  blog.year_link = "{year}.html"
-  blog.month_link = "{year}/{month}.html"
-  blog.day_link = "{year}/{month}/{day}.html"
+  blog.year_link = "{year}/index.html"
+  blog.month_link = "{year}/{month}/index.html"
+  blog.day_link = "{year}/{month}/{day}/index.html"
   blog.calendar_template = "blog/calendar.html"
 end
+
+# This has to go AFTER the blog config section.
+# See https://coderwall.com/p/qgnwzw
+activate :directory_indexes
+activate :asset_hash
+activate :relative_assets
+activate :automatic_image_sizes
 
 Slim::Engine.set_default_options :format => :html5
 Slim::Engine.set_default_options :pretty => true
