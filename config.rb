@@ -29,6 +29,9 @@ activate :directory_indexes
 activate :asset_hash
 activate :automatic_image_sizes
 
+# GitHub Pages wants 404.html, not 404/index.html
+page '/404.html', :directory_index => false
+
 # The relative_assets setting doesn't play particularly nicely with
 # directory_indexes, but we don't really need it, since we're hosting
 # the site at a domain root.
