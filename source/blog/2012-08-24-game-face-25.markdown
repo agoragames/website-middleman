@@ -8,22 +8,22 @@ author: David Czarnecki
 
  [activity_feed](https://github.com/agoragames/activity_feed) is our Ruby gem for storing and managing activity feeds in Redis. In the 2.2.0 update, we added expire_feed and expire_feed_at methods to be able to set an expiration on a feed after a given number of seconds or at a given timestamp, respectively.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **amico**
 
  [amico](https://github.com/agoragames/amico) is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. We added a couple of convenience methods, count and page_count, to retrieve the count or the page count for the various types of relationships. This  functionality is available in the 2.1.0 release.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **php-bracket_tree**
 
  [php-bracket_tree](https://github.com/agoragames/php-bracket_tree) is a PHP port of our [bracket_tree](https://github.com/agoragames/bracket_tree) project. bracket_tree is a bracketing system built around the BracketTree Data Specification, which uses a three-section data structure built on top of JSON to convey the visual representation, progression logic, and seed mapping in a serializable format. For more information on the data specification, please read the [BracketTree Data Specification](https://github.com/agoragames/bracket_tree/wiki/BracketTree-Data-Specification).
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))
 
  **seed_list**
 
  [seed_list](https://github.com/agoragames/seed_list) is a new Ruby gem we released this week that provides seed management for tournament brackets. SeedList is designed for Rails-powered tournament engines that need to persist a 1-indexed ordered list of players (ranked low-to-high by skill or past performance) and then match them up appropriately in the first round of a bracket. Players are then matched up according to a strategy specified on a per-instance basis.
 
- Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))
+ Contributor(s): Logan Koester ([GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))

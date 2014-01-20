@@ -8,13 +8,13 @@ author: David Czarnecki
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. We released 0.5.9 this week with [support for array lists in headers](https://github.com/agoragames/haigha/pull/28).
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize)) and Joey Imbasciano ( [GitHub](https://github.com/joeyimbasciano))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize)) and Joey Imbasciano ([GitHub](https://github.com/joeyimbasciano))
 
  **hipchat-api**
 
  [hipchat-api](https://github.com/czarneckid/hipchat-api) is a Ruby gem for interacting with the HipChat API. In the 1.0.5 release, support was added for the rooms_topic and users_undelete API methods.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **leaderboard**
 
@@ -35,16 +35,16 @@ author: David Czarnecki
 
  A version jump to 3.0.0 was required since the storage of optional member data for a leaderboard was backwards incompatible with the 2.x release.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **leaderboard-python**
 
  [leaderboard-python](https://github.com/agoragames/leaderboard-python) is our leaderboard project, originally written in Ruby, ported to Python. We released version 2.2.0 this week, which has functional parity with the Ruby library. You would be able to use either library to interact with leaderboard data in Redis. Going forward, we will try as best we can to always maintain functional parity between the Ruby and Python implementations.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **stache**
 
  [stache](https://github.com/agoragames/stache) is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. We integrated a pull request to be able to [use template files without format in extension for mustache](https://github.com/agoragames/stache/pull/22).
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Kate Gengler ( [GitHub](https://github.com/kategengler))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Kate Gengler ([GitHub](https://github.com/kategengler))

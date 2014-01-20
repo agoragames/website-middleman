@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [amico-python](https://github.com/agoragames/amico-python) is our amico project, originally written in Ruby, ported to Python. Amico allows you to create relationships (e.g. friendships) backed by Redis. This version has 100% feature parity with the [original Ruby library](https://github.com/agoragames/amico).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **tassadar**
 
  [tassadar](https://github.com/agoragames/tassadar) is our Starcraft 2 replay parser written in pure Ruby. [A pull request was submitted](https://github.com/agoragames/tassadar/pull/2) to eliminate one of the native gems used in previous versions of tassadar. This would allow tassadar to be used with other Ruby implementations such as JRuby.
 
- Contributor(s): Emmanuel Hadoux ( [GitHub](https://github.com/EHadoux))
+ Contributor(s): Emmanuel Hadoux ([GitHub](https://github.com/EHadoux))

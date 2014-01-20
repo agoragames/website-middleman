@@ -8,28 +8,28 @@ author: David Czarnecki
 
  [CHAP links library](https://github.com/almende/chap-links-library) is a web based visualization library for displaying graphs, networks, and timelines. A pull request was submitted and integrated to [fix a bug where timeline events shift position when updated](https://github.com/almende/chap-links-library/pull/43).
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
 
  **leaderboard-python**
 
  [leaderboard-python](https://github.com/agoragames/leaderboard-python) is our leaderboard project, originally written in Ruby, ported to Python. The 2.0.0 release of leaderboard-python brings the Python library up to feature party with the Ruby library. Internal code documentation and code samples in the README were also added.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **spinel**
 
  [Spinel](https://github.com/cadwallion/spinel) is a new free and open source game engine under development that utilizes [mruby](https://github.com/mruby/mruby/) as its integral scripting layer. Under the hood is C/C++, however wherever possible the engine uses Ruby. It is in _EARLY DEVELOPMENT_. What you see is the result of initial research taken place during an Agora Games Hackathon in 24 hours.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
  **sure**
 
  [sure](https://github.com/gabrielfalcao/sure) is a utility belt for automated testing in python (inspired by [should.js](https://github.com/visionmedia/should.js/)). A pull request was submitted and integrated to [add {X}.should.be.greater_than_or_equal_to(Y) and {Y}.should.be.lower_than_or_equal_to(X) methods](https://github.com/gabrielfalcao/sure/pull/21).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **timecop**
 
  [timecop](https://github.com/travisjeffery/timecop) is a gem providing "time travel" and "time freezing" capabilities, making it dead simple to test time-dependent code. A pull request was submitted and integrated to [update the homepage and rubyforge_project values](https://github.com/travisjeffery/timecop/pull/48) in the gemspec. Just tidying up a bit.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

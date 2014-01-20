@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. This week we started a [series-collapse](https://github.com/agoragames/kairos/tree/series-collapse) branch with a work-in-progress implementation for a collapse function on retrieval of a given series.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

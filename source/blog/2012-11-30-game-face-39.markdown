@@ -8,13 +8,13 @@ author: David Czarnecki
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. In the 3.0.0.rc2 release, we are no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard. Work was also started on the 3.0.0.rc3 release which will add the rank_member_if and rank_member_if_in methods to allow you to rank a member in the leaderboard based on execution of a lambda.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **leaderboard-python**
 
  [leaderboard-python](https://github.com/agoragames/leaderboard-python) is our leaderboard project, originally written in Ruby, ported to Python. The 2.1 release of leaderboard-python fixes a bug when requesting a list with an unknown member from the ranked_in_list method as well as no longer casting scores to a floating point automatically, which was not appropriate for members not ranked in the leaderboard.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **stache**
 
@@ -28,4 +28,4 @@ author: David Czarnecki
 
 Backwards compatibility should be fine; any regressions are bugs and should be reported. Huge thanks to all contributors!
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Kate Gengler ( [GitHub](https://github.com/kategengler))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Kate Gengler ([GitHub](https://github.com/kategengler))

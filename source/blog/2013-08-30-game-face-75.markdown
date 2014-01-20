@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. As of the 0.4.0 release of chai, the library now supports Python 3!
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **kairos**
 
  [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. This week we integrated a [pull request to pin the MonthDelta library requirement](https://github.com/agoragames/kairos/pull/22) to avoid a potential issue with naming.
 
- Contributor(s): Titusz ( [GitHub](https://github.com/titusz))
+ Contributor(s): Titusz ([GitHub](https://github.com/titusz))

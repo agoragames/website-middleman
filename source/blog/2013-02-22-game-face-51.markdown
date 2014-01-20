@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. This week saw a slew of updates related to fixtures and test updates.
 
- Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))

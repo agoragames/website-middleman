@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. The 0.3.0 and 0.3.1 releases encompass changes to add portrait name scraping to ProfileScraper as well as to throw BnetScraper::InvalidProfileError when instantiating a scraper with a poorly formatted profile URL.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion)) and Marian Rudzynski ( [GitHub](https://github.com/fx)).
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion)) and Marian Rudzynski ([GitHub](https://github.com/fx)).
 
  **gem_repackager**
 
  [gem_repackager](https://github.com/cadwallion/gem_repackager) packages one or more of your installed gems back into .gem files for easy transportation. You might use this if you ever been without internet and needed a gem but it's in the wrong RVM gemset? How about attempting to correct a problem with a production environment and need to clone the exact gems available? Perhaps you are attempting a full app stack backup for compliance purposes?
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))

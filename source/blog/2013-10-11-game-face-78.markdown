@@ -8,34 +8,34 @@ author: David Czarnecki
 
  [authy-ruby](https://github.com/authy/authy-ruby) is a Ruby library to access the Authy API. Our [pull request to simplify the gem](https://github.com/authy/authy-ruby/pull/7) as well as to fix some warnings with newer versions of RSpec when running the test suite has been integrated.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **batsir**
 
  [batsir](https://github.com/jwkoelewijn/batsir) is an execution platform for stage based filter queue execution. It’s built around the excellent [Sidekiq](https://github.com/mperham/sidekiq) project. Our [pull request to fix conditional notifiers](https://github.com/jwkoelewijn/batsir/pull/19) has been accepted and integrated. The 0.3.6 release of batsir incorporates this fix.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **kairos**
 
  [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends. From our last larger point release, 0.5.0, in which we introduced the ability to provide callers with the ability to customize the fetching of data from a timeseries, we've released 0.6.2. This includes a new API for fully customized data reading as well as a number of fixes for various method arguments.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **salt**
 
  [Salt](https://github.com/saltstack/salt) delivers a dynamic communication bus for infrastructures that can be used for orchestration, remote execution, configuration management and much more. We've contributed a number of pull requests to [be more explicit about versioning and changes within salt formula](https://github.com/saltstack/salt/pull/7473) as well as to fix a few issues ( [#1](https://github.com/saltstack-formulas/nginx-formula/pull/7), [#2](https://github.com/saltstack-formulas/nginx-formula/pull/6)) with using the nginx salt formula.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **stripe-ruby**
 
  [stripe-ruby](https://github.com/stripe/stripe-ruby) is a gem for interacting with the [Stripe](https://stripe.com/) payment service. About 7 months ago, we submitted [a pull request to breakup the tests into smaller files](https://github.com/stripe/stripe-ruby/pull/62). This has finally been integrated and we can all rejoice at leaner and focused tests.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **torus**
 
  [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. With the 0.5.0 release, we have renamed "condensed" parameter in "/series" to "condense" to match latest [kairos](https://github.com/agoragames/kairos) as well as adding support for macros, which are the basis for exposing [kairos](https://github.com/agoragames/kairos)' custom read functionality. Again, [kairos](https://github.com/agoragames/kairos) provides time series storage using Redis or Mongo backends.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

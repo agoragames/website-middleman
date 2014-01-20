@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [gevent](https://github.com/SiteSupport/gevent) is a coroutine-based Python networking library. In the 1.0rc1 release this week, [a patch originally contributed](https://github.com/SiteSupport/gevent/commit/3834eac242403eae261be30a8c6737af2f8a5dab) by one of our engineers, Aaron Westendorf, was integrated into the pywysgi component.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **homebrew**
 
  homebrew is the missing package manager for OS X. This week, [a small patch was contributed](https://github.com/mxcl/homebrew/commit/c31fdf1825d1c7154416a4083a1aa8a68cf7c420) to bump the Redis version to 2.6.2.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **snake_skin**
 
  [SnakeSkin](https://github.com/cadwallion/snake_skin) is a Python package skeleton tool designed to bootstrap new Python libraries. If you come from the Ruby world, this is built after the bundle gem command in Bundler.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))

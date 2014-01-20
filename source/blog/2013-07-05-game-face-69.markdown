@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [forecast-ruby](https://github.com/darkskyapp/forecast-ruby) is a [forecast.io](https://developer.darkskyapp.com/docs/v2) API wrapper in Ruby. This week we released 2 versions: 1.2.0 adds the ability to define default parameters that get sent along with each request, while 2.0.0 changes the namespace for the library from Forecast::IO to ForecastIO. All development going forward will be done in the 2.0.0 branch.
 
- Contributor(s): Pat Allan ( [GitHub](https://github.com/pat))
+ Contributor(s): Pat Allan ([GitHub](https://github.com/pat))
 
  **torus**
 
  [torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. We made a number of significant updates in the 0.4.0 release. Stat queries can be comma-separated values to join multiple timeseries. A "collapse" parameter was added to "/series" which supports collapsing all of the data in the date range into a single result. This supports easy computation of aggregates across a time range, such as "maximum value in the last 7 days". Schemas can include "TRANSFORMS" stanza for defining a named map of data transforms that will be used when querying torus. hiredis is now a requirement as redis is not performant enough without it. Finally, a number of command-line and configuration changes were made as detailed in the [CHANGELOG](https://github.com/agoragames/torus/blob/master/CHANGELOG).
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
   

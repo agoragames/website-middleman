@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The leaderboard (Ruby), [leaderboard-python](https://github.com/agoragames/leaderboard-python) and [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) libraries all saw updates this week. In leaderboard 3.4.0, we added a method to be able to calculate the score for a given percentile value in the leaderboard. This same functionality was ported to leaderboard-python 2.6.0 and leaderboard-coffeescript 1.4.0.
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))

@@ -8,24 +8,24 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. In 0.6.0, we added a GrandmasterScraper to pull all grandmasters by region, improved the portrait code as well as updating portrait names for anniversary.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
  **confirm-with-reveal**
 
  [confirm-with-reveal](https://github.com/agoragames/confirm-with-reveal) is a replacement for window.confirm() using the Reveal modal popup plugin from Zurb Foundation. The latest release this week addresses form confirmation on submit, not on click. You can also check out the plugin in action on the [project page](http://agoragames.github.io/confirm-with-reveal/).
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
 
  **leaderboard_factory**
 
  [leaderboard_factory](https://github.com/agoragames/leaderboard_factory) is a gem to help you define and work with a bunch of leaderboards, from, e.g. an ActiveModel object. The latest release fixes the specs to work with the leaderboard 3.0+ gem.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
 
  **stache**
 
  [stache](https://github.com/agoragames/stache) is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 1.0.1 release fixes a regression in mustache layout handling.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
 
   

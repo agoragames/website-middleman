@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [activity_feed](https://github.com/agoragames/activity_feed) is our library for doing activity feeds in Redis. You might know activity feeds by its other aliases, news feeds or timelines. This week saw a major rewrite of the library to make the code cleaner, more modular and offer more functionality in fewer lines of code. A release candidate, 2.0.0.rc1, has been made [available on RubyGems](https://rubygems.org/gems/activity_feed/versions/2.0.0.rc1). You can also follow along with the [2.0.0 branch on GitHub](https://github.com/agoragames/activity_feed/tree/2.0.0) for a short while before that will eventually become the master branch. The major changes are a difference in namespacing for the library as well as supporting the [loading of activity feed items from any ORM (e.g. ActiveRecord) or ODM (e.g. Mongoid) using plain-old Ruby](https://github.com/agoragames/activity_feed/tree/2.0.0#advanced-configuration-options). The library supports activity feeds, aggregate activity feeds, feeds between timestamps, trimming feeds, removing feeds and more. Any feedback on the 2.0.0 branch is appreciated.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **kairos**
 
  [kairos](https://github.com/agoragames/kairos) provides time-series storage using a Redis backend. During our Hack-A-Thon this week, we spent time on the [beta-refactor branch](https://github.com/agoragames/kairos/tree/beta-refactor). This is a major refactor to abstract various time-series types such as series, histogram and count. We are currently working on a release candidate and updated end-user documentation for this branch. We have had an uptick in interest in this library, so any feedback you have on it is welcomed.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
 
  **leaderboard**
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. This week we added functionality to retrieve members from the leaderboard that fall within a given score range as well as to retrieve a given member from the leaderboard at a specified position.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid)) and John Gadbois ( [GitHub](https://github.com/jgadbois), [Twitter](https://twitter.com/#%21/johngadbois))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid)) and John Gadbois ([GitHub](https://github.com/jgadbois), [Twitter](https://twitter.com/#%21/johngadbois))

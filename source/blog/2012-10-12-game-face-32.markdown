@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. The 0.5.8 release merges a number of pull requests for some example code as well as supressing a DeprecationWarning with the latest gevent.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize)) and Vitaly Krugl ( [GitHub](https://github.com/vitaly-krugl))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize)) and Vitaly Krugl ([GitHub](https://github.com/vitaly-krugl))
 
  **leaderboard**
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. In the 2.5.0 release, we added members_from_rank_range and members_from_rank_range_in methods to be able to retrieve members from the leaderboard in a given rank range.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

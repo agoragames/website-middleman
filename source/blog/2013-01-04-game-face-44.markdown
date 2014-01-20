@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [amico](https://github.com/agoragames/amico) is our Ruby gem for managing relationships (e.g. friendships) backed by Redis. The 2.3.2 release fixed an issue where the call to reciprocated? in the internal method add_following_followers_reciprocated was not passing along the scope.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **strumbar**
 
  [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. We updated the library to use the latest statsd-ruby library, since we were using an out-of-date version. A new release of strumbar will be cut shortly.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **tassadar-server**
 
  [tassadar-server](https://github.com/agoragames/tassadar-server) is a new project released in 2013! This simple rack-based web service uses the pure-ruby [Tassadar](https://github.com/agoragames/tassadar) library to parse uploaded Starcraft II replay files and send a JSON response. This service is designed to enable Tassadar in polyglot or browser-based projects where Ruby may not be the significant language.
 
- Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))
+ Contributor(s): Logan Koester ([GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/logankoester))

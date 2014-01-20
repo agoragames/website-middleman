@@ -8,13 +8,13 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. In the 0.4.0 release, a revamped profile scraper API is available in addition to pulling of achievements, match history and league information. Finally, Heart of the Swarm information is now available.
 
- Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
  **leaderboard**** (and leaderboard-python and leaderboard-coffeescript)
  **
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. We released version 3.0.2 this past week to fix a data leak in `expire_leaderboard` and `expire_leaderboard_at` to also set expiration on the member data hash. We also fixed this data leak with the 2.2.2 release of [ leaderboard-python](https://github.com/agoragames/leaderboard-python), our Python port of the leaderboard project. Finally, we released version 1.0.0 of [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) since it had been at full feature parity with the Ruby and Python implementations since it was started. And don't worry, the data leak was fixed in that project as well.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
   

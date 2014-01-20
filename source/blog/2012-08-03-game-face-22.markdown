@@ -10,18 +10,18 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper) is a Nokogiri-based scraper of Battle.net profile information. The release this week adds a number of fixes and features: Adds domain remapping to regions, Fixes bug with EU profile scraping due to language selection, Parses new player stats (Career Wins, Most Played Type, Games This Season) and Parses new league stats (Current/Highest Solo/Team Leagues).
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **leaderboard**
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. We added all_leaders and all_leaders_from methods to retrieve all members from a leaderboard. You may also use the aliases all_members or all_members_from. These methods may be helpful for situations in which you have a smaller leaderboard that you don't necessarily want to page through to display all the data.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
 
  **leaderboard_factory**
 
  [leaderboard_factory](https://github.com/agoragames/leaderboard_factory) is a new gem that we extracted from one of our projects this week that helps you define and work with a bunch of leaderboards, from, e.g. an ActiveModel object. You can use it to define, for example, leaderboards available from a Player object where a few leaderboards are scoped to the player and one is scoped to the entire collection of players.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
 
   

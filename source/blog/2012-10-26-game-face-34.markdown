@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. Another version 3 feature proposal pull request was added to add a :sort_by option to that would be appropriate for the ranked_in_list call to sort by either score (:score) or rank (:rank) when returning results. This may be useful when you're retrieving a list of ranked friends and would like them sorted in a particular way.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

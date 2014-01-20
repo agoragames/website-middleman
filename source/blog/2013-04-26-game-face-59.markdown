@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [confirm-with-reveal](https://github.com/agoragames/confirm-with-reveal) is a replacement for window.confirm() using the Reveal modal popup plugin from Zurb Foundation. See [example jsFiddle](http://jsfiddle.net/PtVNW/) for a demo.
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
 
  **Ruby-MAPI-Wrapper**
 
  [brightcove-api](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper) is a Ruby gem for interacting with the Brightcove Media API. This week we integrated a pull request to [ allow an UploadIO object to be passed to the post_io_streaming method](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper/pull/9).
 
- Contributor(s): Mihail Szabolcs ( [GitHub](https://github.com/icebreaker/) )
+ Contributor(s): Mihail Szabolcs ([GitHub](https://github.com/icebreaker/) )
 
   

@@ -8,29 +8,29 @@ author: David Czarnecki
 
  The [brightcove-api](https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper) gem was one of the first gems we released after building out [MLG.tv](http://tv.majorleaguegaming.com/) and is now a part of the [Brightcove Open Source](https://github.com/BrightcoveOS) projects on GitHub. We still actively maintain the library. No functional changes this week, but we did do a conversion from Test::Unit to RSpec.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **coffeescript-streak and streak
  **
 
  [coffeescript-streak](https://github.com/czarneckid/coffeescript-streak) and [streak](https://github.com/czarneckid/streak) both got an update this week. streak was originally developed as a way to collect win/loss streaks using Redis. The update to the libraries this week slightly alters the way the keys are namespaced in Redis. Not a huge change, but one that brings some consistency to how we've namespaced keys in Redis in other libraries.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **GWFSelect-for-jQuery-UI**
 
  The [GWFSelect-for-jQuery-UI](https://github.com/agoragames/GWFSelect-for-jQuery-UI) project is a jQuery UI widget that provides a Google WebFont selector. It got an update this week wherein it lazily loads the font list from Google's servers when it is first required by a widget.
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/#!/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/#!/jlet))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha), our simple to use client library for interacting with AMQP brokers saw numerous updates this week. The major update was the integration of support for [publisher confirms](http://www.rabbitmq.com/blog/2011/02/10/introducing-publisher-confirms/). This functionality gives "clients a lightweight way of keeping track of which messages have been processed by the broker and which would need re-publishing in case of broker shutdown or network failure."
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize)) and Stephen Sugden ( [GitHub](https://github.com/grncdr/))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize)) and Stephen Sugden ([GitHub](https://github.com/grncdr/))
 
  **stache**
 
  [stache](https://github.com/agoragames/stache) is our Rails 3.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 0.9.x updates are basically a release candidate before we trim our facial hair and declare 1.0. Support for handlebars was added in addition to using Rails' own template resolution system to find partials. The public API changed slightly, but the README has all the information on the changes you'll need to make in your application(s) using stache.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern)) and [ayaya](https://github.com/ayamomiji) (GitHub)
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern)) and [ayaya](https://github.com/ayamomiji) (GitHub)

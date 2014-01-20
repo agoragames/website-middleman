@@ -8,7 +8,7 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. The 0.2.1 release fixes a race condition for profile scraping for accounts playing in their first season.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **litmus_mailer**
 
@@ -20,10 +20,10 @@ author: David Czarnecki
 
  [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. This week we've fixed a critical issue in the built-in Redis instrumentation and added configuration options to explicitly load the desired built-in or custom instrumentations, as well as set the desired sample rate for each.
 
- Contributor(s): Logan Koester ( [GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/#%21/logankoester))
+ Contributor(s): Logan Koester ([GitHub](https://github.com/logankoester/), [Twitter](https://twitter.com/#%21/logankoester))
 
  **tassadar**
 
  [tassadar](https://github.com/agoragames/tassadar) is a Starcraft 2 replay parser written in pure Ruby. Version 0.1.0 was released this week and updates the serialization strategy for Starcraft 2 release 1.5 compliance.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))

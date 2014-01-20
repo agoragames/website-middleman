@@ -8,7 +8,7 @@ author: David Czarnecki
 
  [kairos](https://github.com/agoragames/kairos) provides time series storage using a Redis backend. kairos is intended to replace RRD in situations where the scale of Redis is required, with as few dependencies on other packages as possible. In the 0.1.2 release, we added support for relative time in terms of hours, days, weeks, months and years, support for simple transforms and an API for generic transforms to support statistics packages.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **torus**
 
@@ -22,4 +22,4 @@ author: David Czarnecki
 
  
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

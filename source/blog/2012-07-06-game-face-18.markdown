@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper) is our Nokogiri-based scraper of Battle.net profiles. 0.1.0 was released today and replaces open-uri with Faraday. The other change is that a BnetScraper::InvalidProfileError is raised when unsuccessfully scraping.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **streak**
 
  [streak](https://github.com/czarneckid/streak) is a gem for calculating win/loss streaks. The most recent 0.3.0 release encompasses a number of changes to use Redis hashes to store its data as well as being able to pass a custom set of keys to be used in the aggregate call if you want to track streaks on a different set of positive/negative things than what is setup in the configuration.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

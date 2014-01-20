@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. This past week saw 0.3.5 and subsequently 0.3.6 releases. We fixed only closing a non-matching expectation if its counts have been met as well as fixing the logic of raising UnexpectedCall when calling a stub and an unclosed, non-matching, in-order expectation does not have its counts met (got all that?).
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **factory_worker**
 
  [factory-worker](https://github.com/agoragames/factory-worker) is a node.js library that creates the Factory pattern for object stores. We integrated a [patch to provide a clearer error when a parent is not defined](https://github.com/agoragames/factory-worker/pull/6). We'll get a formal release out shortly.
 
- Contributor(s): Brandon Mason ( [GitHub](https://github.com/bitmage/))
+ Contributor(s): Brandon Mason ([GitHub](https://github.com/bitmage/))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In the 0.5.10 release, we fixed an unexpected indent error. Thanks to Chris Erway for [pointing that out to us](https://github.com/agoragames/haigha/pull/29#discussion_r4605967).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

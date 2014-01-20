@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. The 0.2.4 release this week fixes a bug in stubs on types by preventing secondary initialization in addition to fixing global namespace manipulation on deeply nested chai subclasses. Finally, mock objects will report parameters and method name when raising UnexpectedCall.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

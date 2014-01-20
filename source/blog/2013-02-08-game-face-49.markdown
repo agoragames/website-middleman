@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. In the 0.2.0 and 0.3.0 releases, we added an instrument to start exploring stats gathering with Mongoid as well as adding a wrapper for gauge, set, and count and fixing a bug with `Strumbar::Client.decrement` .
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))

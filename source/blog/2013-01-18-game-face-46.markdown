@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [gamertag](https://github.com/barisbalic/gamertag) is an interface for accessing your XBOX Live profile and game data. In the 1.1.0 release, support was added to retrieve friend information for a given gamertag.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Andrew Nesbitt ( [GitHub](https://github.com/andrew))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Andrew Nesbitt ([GitHub](https://github.com/andrew))
 
  **tassadar**
 
  tassadar is our fast Starcraft 2 replay parser written in pure Ruby. The 0.2.0 release incorporates a [pull request to add JRuby support](https://github.com/agoragames/tassadar/pull/2).
 
- Contributor(s): Emmanuel Hadoux ( [GitHub](https://github.com/EHadoux))
+ Contributor(s): Emmanuel Hadoux ([GitHub](https://github.com/EHadoux))

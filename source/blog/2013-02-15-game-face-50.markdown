@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [errship](https://github.com/agoragames/errship) is a Rails 3.1 engine for rendering error pages inside your layout. It supports i18n, custom exceptions, and Airbrake (Hoptoad) error tracking. This past week we integrated a number of [pull](https://github.com/agoragames/errship/pull/14) [requests](https://github.com/agoragames/errship/pull/13) with some fixes for template format and OmniAuth.
 
- Contributor(s): Fabian Schwahn ( [GitHub](https://github.com/fschwahn)) and Phuong Nguyen ( [GitHub](https://github.com/phuong-nguyen))
+ Contributor(s): Fabian Schwahn ([GitHub](https://github.com/fschwahn)) and Phuong Nguyen ([GitHub](https://github.com/phuong-nguyen))
 
  **strumbar**
 
  [strumbar](https://github.com/agoragames/strumbar) is a wrapper around ActiveSupport::Notifications with preconfigurations for basic instrumentation to be sent to statsd. With the release of 0.4.0, instrumentation is no longer loaded by default, there is a different configuration mechanism and default values for options are now stored on the configuration object instead of the `Strumbar` module.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
   

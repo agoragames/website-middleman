@@ -8,7 +8,7 @@ author: David Czarnecki
 
  [activity_feed](https://github.com/agoragames/activity_feed) is our Ruby gem for storing and managing activity feeds in Redis. In the 2.2.1 update, we added total_pages and total_items methods as aliases for total_pages_in_feed and total_items_in_feed, respectively.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **amico**
 
@@ -29,16 +29,16 @@ In addition, the  following methods were added for the pending with relationshi
 
 Thanks to [Skip Baney](https://github.com/twelvelabs) for all the work on this releases.
 
- Contributor(s): Skip Baney ( [GitHub](https://github.com/twelvelabs))
+ Contributor(s): Skip Baney ([GitHub](https://github.com/twelvelabs))
 
  **chai**
 
  [chai](https://github.com/agoragames/chai) – provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. The 0.2.0 release integrates a pull request from GitHub user, [Jason Baker](https://github.com/jasonbaker), to add a  __wrapped__ attribute to chai decorated test methods. This is useful as it allows someone to get at the wrapped test method to do introspection.
 
- Contributor(s): Jason Baker ( [GitHub](https://github.com/jasonbaker))
+ Contributor(s): Jason Baker ([GitHub](https://github.com/jasonbaker))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In the 0.5.6 release, we only catch Exception subclasses in Connection and Channel. Thanks to GitHub user, [Vitaly Krugl](https://github.com/vitaly-krugl), for the issue that this release addresses and the discussion.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize)) and Vitaly Krugl ( [GitHub](https://github.com/vitaly-krugl))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize)) and Vitaly Krugl ([GitHub](https://github.com/vitaly-krugl))

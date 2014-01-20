@@ -10,34 +10,34 @@ author: David Czarnecki
 
  BracketTree builds upon the specification by providing Ruby classes for programmatically generating templates for brackets and generating brackets from those templates. It also contains a number of common bracket template types like Single Elimination and Double Elimination, with the ability to put your own extensions on their logic and representation.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **kairos**
 
  [kairos](https://github.com/agoragames/kairos) provides time series storage using a Redis backend. It's still under development and this week, version 0.0.7 was released which fixes an issue handling an interval without data.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
 
  **oembedr**
 
  [oembedr](https://github.com/agoragames/oembedr) is our Lightweight, Flexible OEmbed Consumer Library. At least we think it's all those things. This week we [added speakerdeck.com as an OEmbed endpoint](https://github.com/agoragames/oembedr/pull/2). We'll get a new release out soon enough.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **redis-namespace**
 
  [redis-namespace](https://github.com/defunkt/redis-namespace) is a gem which can be used to namespace Redis keys. However, the configuration of the current release's gemspec is incompatible with the 3.0.0 release of the [redis](https://github.com/redis/redis-rb) gem. One of our engineers submitted a [pull request to test compatibility under the latest redis gem](https://github.com/defunkt/redis-namespace/pull/39) and the current stable and forthcoming release of the Redis server. And hey, it looks like that pull request was integrated and is available in the redis-namespace 1.2.0 release.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **streak-python**
 
  [streak-python](https://github.com/czarneckid/streak-python) is a port of the [streak](https://github.com/czarneckid/streak) Ruby gem, which is a library for calculating win/loss streak using Redis. streak-python is [available on PyPI](http://pypi.python.org/pypi/streak) for inclusion as a library in your own Python applications.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **vines**
 
  [vines](https://github.com/negativecode/vines) is an XMPP chat server for Ruby. It can use a number of different storage backends such as CouchDB, MongoDB, or Redis, to store its internal data. We've been playing around with [Riak](http://wiki.basho.com/Riak.html) internally and figured this would be a chance to contribute some Riak code back to the community, so a [pull request was opened to add a Riak storage adapter](https://github.com/negativecode/vines/pull/15).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

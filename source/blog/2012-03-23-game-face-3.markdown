@@ -8,31 +8,31 @@ author: David Czarnecki
 
  Are you into brewing your own beer? Do you use Beersmith? Want to parse Beersmith2 (.bsmx) files in Ruby? Grab a pint of [brewscribe](https://github.com/cadwallion/brewscribe), or rather the gem, and enjoy!
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **factory-worker**
 
  [Factory Worker](https://github.com/agoragames/factory-worker) is our Node.js library that creates the Factory pattern for object stores. The 0.6.0 release integrates a pull request from GitHub user, [Szymon Nowak](https://github.com/szimek), to return the saved object from the Factory.create method.
 
- Contributor(s): Szymon Nowak ( [GitHub](https://github.com/szimek))
+ Contributor(s): Szymon Nowak ([GitHub](https://github.com/szimek))
 
  **darksky**
 
  Gray skies are gonna clear up, put on a happy face! Why? We've got 2 darksky-related releases this week. darksky continues to expand their [API](http://darkskyapp.com/api/) and they added two new endpoints: "brief_forecast" and "interesting". The 1.0.4 release of the [darksky](https://github.com/czarneckid/darksky) gem adds support for the "brief_forecast" endpoint. The "interesting" endpoint was supported as of the 1.0.3 release.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **java-leaderboard **
 
  One of the [leaderboard](https://github.com/agoragames/leaderboard) gem's spawn, [java-leaderboard](https://github.com/agoragames/java-leaderboard), saw a release with version 2.0.2 that integrates a pull request from GitHub user, [Jon Barber](https://github.com/sneakybeaky). His pull request added some logic to cope with cases where no such user is in the leaderboard. Thanks again Jon!
 
- Contributor(s): Jon Barber ( [GitHub](https://github.com/sneakybeaky))
+ Contributor(s): Jon Barber ([GitHub](https://github.com/sneakybeaky))
 
  **node-darksky**
 
  You want to integrate the darksky API into your Node.js application? Aaron Westendorf has you covered. He released version 0.1.0 of the [node-darksky](https://github.com/awestendorf/node-darksky) package last Saturday. And so, the darksky ecosystem got a little brighter!
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
 
  **vindicia-api**
 
@@ -40,7 +40,7 @@ author: David Czarnecki
 
  P.S. Totally unrelated, but Tom may also be working on a social network for cats called Kitty City. Stay tuned!
 
- Contributor(s): Tom Quackenbush ( [GitHub](https://github.com/tquackenbush/), [Twitter](https://twitter.com/#%21/tquackenbush))
+ Contributor(s): Tom Quackenbush ([GitHub](https://github.com/tquackenbush/), [Twitter](https://twitter.com/#%21/tquackenbush))
 
   
 

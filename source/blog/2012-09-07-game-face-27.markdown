@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [chai](https://github.com/agoragames/chai) – provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. The 0.2.1 release this week allows variables in returns(), effectively treating the variable as a regular expression capture.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))

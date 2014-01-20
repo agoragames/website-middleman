@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper/) is our Nokogiri-based scraper of Battle.net profiles. We released 0.7.0 and this will most likely be our last release before 1.0.0. We added date formatting support for dd/mm/yyyy formats, a Profile#account method, a scrape method on Profile and League objects for re-scraping these domain models, fixed league scraping via league_id instead of url, adding the clan name and tag to the Profile object and finally a slew of documentation updates with proper usage.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In the 0.6.0 release, we fixed a bug so that we only accept str, unicode, or bytearray as Message body types.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [homebrew](https://github.com/mxcl/homebrew/) is called the missing package manager for OS X. It's a great way to install software like git, MySQL, Riak, and more. We submitted a [pull request to update the Redis formula to 2.4.14](https://github.com/mxcl/homebrew/pull/12488).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **redis-namespace**
 
  [redis-namespace](https://github.com/defunkt/redis-namespace) is a gem which can be used to namespace Redis keys. Although Redis 2.6 is still in-development, one of our engineers submitted a [pull request to add the new Redis 2.6 commands that should be namespaced](https://github.com/defunkt/redis-namespace/pull/40).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
   

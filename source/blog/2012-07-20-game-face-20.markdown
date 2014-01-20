@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper) is a Nokogiri-based scraper of Battle.net profile information. The release this week adds a method to determine if the supplied profile is valid.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **hipchat-api**
 
  [hipchat-api](https://github.com/czarneckid/hipchat-api) is a Ruby gem for interacting with the HipChat API. This past week saw a couple of releases to add support to the new message_format parameter when publishing messages to a room and to fix an issue in creating new users.
 
- Contributor(s): Bradley Buda ( [GitHub](https://github.com/bradleybuda)) and Rodrigo Tassinari de Oliveira ( [GitHub](https://github.com/rtopitt)).
+ Contributor(s): Bradley Buda ([GitHub](https://github.com/bradleybuda)) and Rodrigo Tassinari de Oliveira ([GitHub](https://github.com/rtopitt)).
 
  **redis_pagination**
 
  [redis_pagination](https://github.com/czarneckid/redis_pagination) is a new Ruby gem released this week that provides simple pagination for Redis lists and sorted sets.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

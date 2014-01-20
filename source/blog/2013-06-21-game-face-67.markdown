@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [confirm-with-reveal](https://github.com/agoragames/confirm-with-reveal) is a replacement for window.confirm() using the Reveal modal popup plugin from Zurb Foundation. In the release we did on 2013-06-18, we added localization for the UI text via configuration variable.
 
- Contributor(s): Jack Letourneau ( [GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+ Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. We addressed an issue in the 0.5.11 release of writing headers if the type of a field is a subclass of the supported native types.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))

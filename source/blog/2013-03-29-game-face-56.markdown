@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [forecast-ruby](https://github.com/darkskyapp/forecast-ruby) is a [forecast.io](https://developer.darkskyapp.com/docs/v2) API wrapper in Ruby. [forecast.io](https://developer.darkskyapp.com/docs/v2) is the best weather service out there today and we're happy to have helped bring the Ruby wrapper to life.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **hipchat-rb**
 
  [hipchat-rb](https://github.com/hipchat/hipchat-rb/) is the official Ruby gem for interacting with the HipChat service. This past week [a pull request was integrated](https://github.com/hipchat/hipchat-rb/pull/30) to only send HipChat notifications on capistrano deploys if the --dry-run (-n) was not passed.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
   

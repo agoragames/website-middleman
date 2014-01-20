@@ -1,0 +1,32 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+“Game Face” will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+We're playing a bit of catch up since migrating our blog.
+
+**chai**
+
+[chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. A couple of important issues have been addressed in the 0.4.6 and 0.4.7 releases. As of 0.4.6, immediately after running a test, we teardown the stubs. This fixes any problems with exception handling, such as UnexpectedCall, when methods involved in exception handling, such as `open`, have been stubbed. In 0.4.7, we addressed a regression in 0.4.6, so that [reporting on unmet expectations is correct](https://github.com/agoragames/chai/pull/16).
+
+Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize)) and Owen Smith ([GitHub](https://github.com/ods94065)).
+
+**confirm-with-reveal**
+
+[confirm-with-reveal](https://github.com/agoragames/confirm-with-reveal) is a replacement for window.confirm() using the Reveal modal popup plugin from Zurb Foundation. In the release we did on 2014-01-16, we made the [jQuery plugin compatible with jQuery.noConflict();](https://github.com/agoragames/confirm-with-reveal/issues/2).
+
+Contributor(s): Jack Letourneau ([GitHub](https://github.com/jletourneau/), [Twitter](https://twitter.com/jlet))
+
+**stache**
+
+[stache](https://github.com/agoragames/stache) is our Rails 3.x and Rails 4.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. As of stache 1.0.3, the library is now compatible with Rails 4.x and you can now [access RSpec-assigned instance variables in view classes](https://github.com/agoragames/stache/pull/31).
+
+Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern)) and kianw ([GitHub](https://github.com/kianw)).
+
+**torus**
+
+[torus](https://github.com/agoragames/torus) is a service implementing the Carbon protocol to store time series data using [kairos](https://github.com/agoragames/kairos) and an HTTP server to query and analyze the data. As of the 0.6.2 release, we've added support for SQL and Cassandra databases in schemas, added a tool for migrating data betwen schemas, fixed a significant performance issue in all endpoints, improved the "Quick Start" documentation, as well addressing a number of smaller issues. The [CHANGELOG](https://github.com/agoragames/torus/blob/master/CHANGELOG) goes into more detail on the 0.6.0 through 0.6.2 releases.
+
+Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+

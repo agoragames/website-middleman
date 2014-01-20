@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [coffeescript-streak](https://github.com/czarneckid/coffeescript-streak/) is a port of the [streak Ruby gem](https://github.com/czarneckid/streak) which handles calculating win/loss streaks. It uses Redis as its backend for collecting the data. It has also been uploaded to the [npm registry](http://search.npmjs.org/#/streak).
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **haigha**
 
  [haigha](https://github.com/agoragames/haigha), our client library for interacting with AMQP brokers saw an update to 0.5.1 this past week. You can review the [CHANGELOG](https://github.com/agoragames/haigha/blob/master/CHANGELOG) in full. FYI, the [rabbitmq-extensions](https://github.com/agoragames/haigha/tree/rabbitmq-extensions) branch of haigha, currently in-development is laying the foundation for [publisher confirms](http://www.rabbitmq.com/blog/2011/02/10/introducing-publisher-confirms/).
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/#%21/WashUffize))

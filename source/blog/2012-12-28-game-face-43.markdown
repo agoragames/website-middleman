@@ -8,6 +8,6 @@ author: David Czarnecki
 
  [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) is our leaderboard project, originally written in Ruby, ported to CoffeeScript. Both this version and the [leaderboard-python](https://github.com/agoragames/leaderboard-python) port have 100% feature parity with the [original Ruby library](https://github.com/agoragames/leaderboard). We will do a formal 1.0.0 release of this library once we work out what to do with respect to naming since there is an existing leaderboard library available from the Node Package Manager.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
   

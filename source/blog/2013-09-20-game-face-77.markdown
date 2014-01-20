@@ -8,10 +8,10 @@ author: David Czarnecki
 
  [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. chai 0.4.3 fixes a regression in stubbing functions introduced in Python 3 changes.
 
- Contributor(s): Aaron Westendorf ( [GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+ Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
 
  **saltstack-sandbox**
 
  [saltstack-sandbox](https://github.com/agoragames/saltstack-sandbox) is a [Vagrant](http://www.vagrantup.com/)-based sandbox environment for experimenting with [SaltStack](http://saltstack.com/). The initial release has been made available for others to experiment with SaltStack in an isolated environment.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

@@ -8,18 +8,18 @@ author: David Czarnecki
 
  [bnet_scraper](https://github.com/agoragames/bnet_scraper) is a Nokogiri-based scraper of Battle.net profile information. The release this week adds checks to prevent parse issues with accounts that don't ladder.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **oembedr**
 
  [oembedr](https://github.com/agoragames/oembedr) is our Lightweight, Flexible OEmbed Consumer Library. This release encompasses pull requests that add Soundcloud as an OEmbed provider as well as to fix the endpoint for Vimeo.
 
- Contributor(s): Paul Gallagher ( [GitHub](https://github.com/tardate)) and Seb Jacobs ( [GitHub](https://github.com/sebjacobs))
+ Contributor(s): Paul Gallagher ([GitHub](https://github.com/tardate)) and Seb Jacobs ([GitHub](https://github.com/sebjacobs))
 
  **redis_pagination**
 
  [redis_pagination](https://github.com/czarneckid/redis_pagination) is a simple pagination library for Redis lists and sorted sets. Version 1.0.0 has been released, which adds a NonePaginator to handle non-existent keys.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
   

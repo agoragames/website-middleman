@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The leaderboard (Ruby), [leaderboard-python](https://github.com/agoragames/leaderboard-python) and [leaderboard-coffeescript](https://github.com/agoragames/leaderboard-coffeescript) libraries all saw updates this week. In leaderboard 3.2.0, we added a method to be able to remove members from the leaderboard outside a given rank . This same functionality was ported to leaderboard-coffeescript 1.2.0 and leaderboard-python 2.4.0.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Simon Zimmerman ( [GitHub](https://github.com/simonz05/)).
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Simon Zimmerman ([GitHub](https://github.com/simonz05/)).

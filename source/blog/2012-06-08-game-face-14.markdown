@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [capistrano](https://github.com/capistrano/capistrano) is one of those great tools that can help you simplify and automate deployment of web applications in distributed environments. However, it's default version control system is set to Subversion. Not that there aren't developers out there using Subversion, but when was the last time you used Subversion? We couldn't remember, so we submitted a [pull request to have the default SCM changed from Subversion to git](https://github.com/capistrano/capistrano/pull/218). It looks like this should get merged in with some other work. Fingers crossed!
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

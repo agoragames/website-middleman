@@ -8,12 +8,12 @@ author: David Czarnecki
 
  [factory-worker](https://github.com/agoragames/factory-worker) is a node.js library that creates the Factory pattern for object stores. The 0.7.0 release integrates a pull request to [allow inheritance from already-defined models in Factory.create](https://github.com/agoragames/factory-worker/pull/5). We also updated the jessie library as well as cleaning up the npm contact information.
 
- Contributor(s): Joseph Kenneth ( [GitHub](https://github.com/ranweiler/)) and Andrew Nordman ( [GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
+ Contributor(s): Joseph Kenneth ([GitHub](https://github.com/ranweiler/)) and Andrew Nordman ([GitHub](https://github.com/cadwallion), [Twitter](https://twitter.com/cadwallion))
 
  **tassadar**
 
  [tassadar](https://github.com/agoragames/tassadar) is our fast Starcraft 2 replay parser written in pure Ruby. We will cut a new release soon, but we integrated a pull request to [remove random <sp/> in player names that have clan tags](https://github.com/agoragames/tassadar/pull/11).
 
- Contributor(s): Robert Ross ( [GitHub](https://github.com/bobbytables/))
+ Contributor(s): Robert Ross ([GitHub](https://github.com/bobbytables/))
 
   

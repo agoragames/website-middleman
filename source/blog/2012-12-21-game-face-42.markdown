@@ -8,16 +8,16 @@ author: David Czarnecki
 
  [gamertag](https://github.com/barisbalic/gamertag) is an interface for accessing your XBOX Live profile and game data. In the 1.0.3 release, we removed the version numbers in the dependencies and development dependencies for the gem. We also merged a pull request to escape user input when creating an URI.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Pedro Nascimento ( [GitHub](https://github.com/lunks))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid)) and Pedro Nascimento ([GitHub](https://github.com/lunks))
 
  **leaderboard**
 
  [leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. We released version 3.0.1 this week to fix a bug in remove_member that would remove all of the optional member data.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
 
  **leaderboard-python**
 
  [leaderboard-python](https://github.com/agoragames/leaderboard-python) is our leaderboard project, originally written in Ruby, ported to Python. We released 2.2.1 that updates the remove_member method to also remove the optional member data for the member being removed.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))

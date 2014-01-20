@@ -8,28 +8,28 @@ author: David Czarnecki
 
  [brewscribe](https://github.com/cadwallion/brewscribe/), a Beersmith2 (.bsmx) file parser, saw an update this week with version [0.1.0](https://github.com/cadwallion/brewscribe/blob/master/CHANGELOG.md). Various parts of the API now use a Brewscribe::Document to represent the .bsmx file.
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/#%21/Cadwallion))
 
  **constant-redefinition**
 
  The [constant-redefinition](https://github.com/czarneckid/constant-redefinition) Ruby gem allows you to define constants if not defined on an object (or Module) and redefine constants without warning. You might use this when you've got large limits defined as constants in an application that you want to change under test so that you can still test edge cases, but with a smaller limit so that your test suite runs faster. Its test suite was converted from Test::Unit to RSpec.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **gamercard**
 
  [gamercard](https://github.com/hypomodern/gamercard) is a new Ruby gem that can retrieve and parse an Xbox Live Gamercard for a player. It will provide a hash of the relevant data about the player or the raw HTML.
 
- Contributor(s): Matthew Wilson ( [GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
+ Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/#%21/hypomodern))
 
  **leaderboard**
 
  The [leaderboard](https://github.com/agoragames/leaderboard) Ruby gem allows you create leaderboards backed by Redis. Its test suite was converted from Test::Unit to RSpec.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
 
  **tasty**
 
  [tasty](https://github.com/czarneckid/tasty) is a Ruby gem for interacting with the [del.icio.us API](http://www.delicious.com/help/api/). It was originally written to be able to pull bookmarks from del.icio.us when Yahoo announced it would no longer be maintaining the service. Its test suite was converted from Test::Unit to RSpec.
 
- Contributor(s): David Czarnecki ( [GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))
+ Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/#%21/czarneckid))

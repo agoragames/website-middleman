@@ -8,4 +8,4 @@ author: David Czarnecki
 
  [blackjack](https://github.com/cadwallion/blackjack) is the classic card game written using Gosu. It is being developed as part of a talk being given at RubyConf 2012, "Game Development and Ruby".
 
- Contributor(s): Andrew Nordman ( [GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))
+ Contributor(s): Andrew Nordman ([GitHub](https://github.com/Cadwallion/), [Twitter](https://twitter.com/Cadwallion))
