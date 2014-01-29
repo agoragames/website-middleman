@@ -1,0 +1,42 @@
+---
+title: Hackathon 13
+author: Sam Toews
+---
+
+Agora's most recent 24 hour Hackathon kicked off Thursday, January 16th and concluded Friday, January 17th. Check out the link of each project for the full presentation. 
+
+
+**REST API DOCUMENTATION & DEMO** - [Presentation](http://youtu.be/kBIYZc_tVEU)
+
+Steve added public facing Rest API documentation for Hydra studio, including references for each available endpoint. 
+
+* [REST Integration Guide](https://hydra.agoragames.com/documentation/rest/overview.html)
+* [API Reference Guide](https://hydra.agoragames.com/documentation/rest/reference.html)
+
+He also worked on a sample website that is using our Rest API. The website interacts with our Accounts (sign in/registration), Profiles, Achievements, Broadcasts, Leaderboards and Friends features. 
+
+**ANALYTICS FRAMEWORK** - [Presentation](http://youtu.be/2ejFGG_AfP0)
+
+Aaron worked on a "real world" example of how to use the analytics framework he recently started.
+
+* [Pluto Analytics Engine](https://github.com/agoragames/pluto/tree/example)
+
+**HYDRA STUDIO SERVER-SIDE CODE** - [Presentation](http://youtu.be/KR1ba2zFxGk)
+
+Brad worked on and demonstrated Hydra Studio's server-side code working with real code. 
+
+**SINGLE-PAGE BROWSER APP WITH HYDRA BACKEND** - [Presentation](http://youtu.be/4tOKX50CMug)
+
+Andrew experimented with a single-page browser app communicating with Hydra via XHR requests in Javascript. It was compiled from Clojurescript with DOM updates via the Reagent library built on the React library. 
+
+**REDIS LEADERBOARDS** - [Presentation](http://youtu.be/B_asjeIp4d8)
+
+David C. worked on extracting out various bits of logic from our leaderboard library that retrieves leader data and trying to create Lua functions in Redis from them. This would allow us to have a more complete transaction when retrieving leaderboard data from Redis.
+
+**ZURB FOUNDATION 5**
+
+Jack attempted to migrate Agora's front-end framework from ZURB Foundation version 4 to version 5. For now, he decided to put off merging it into master, since he ran into some obstacles with the JavaScript migration, and the new features of version 5 didn't include anything that he felt we urgently needed. For the time being, he considers it an exploratory project.
+
+**OUYA GAME ANDROID DEMO**
+
+David A. worked on porting a demo OUYA game to android, and added Hydra Studio Matchmaking and Realtime features. By the end of Agora's Hackathon, he was able to demonstrate a mobile to mobile realtime match.
