@@ -150,6 +150,41 @@
 <p>Here's an example:</p>
 
 <p>{% gist 709399 %}</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 19</div></div><div class="blog-content"><h2><a href="/blog/2010/11/19/ssh-on-os-x-mounting-a-remote-directory-easily/">SSH on OS X: mounting a remote directory easily</a></h2><div class="blog-author">By <strong>Armando DiCianno</strong></div><div class="blog-body"><p>There are many things you can do quickly, and easily, once you have your ssh keys automatically added to your keychain on OSX. One of the more fun things is using MacFUSE to allow you to automatically mount a directory on a remote machine, as if it was a remote share in Finder. This post will show you how.</p>
+
+<p><strong>CAVEAT</strong>: before attempting the steps in this post, please reference <a href="http://blog.agoragames.com/2010/11/17/ssh-keys-agents-and-automation/">my last post</a> about how to setup your ssh keys on OS X.</p>
+
+<hr />
+<p>First, dowload and install <a href="http://code.google.com/p/macfuse/">MacFuse</a> if you don't have it yet. You may have it if you've installed 3rd party products like VMware. A good place to check is System Preferences — if you see a control panel for it, click on it, and if it's above version 2.0, then you're good to go. You can download MacFUSE <a href="http://code.google.com/p/macfuse/downloads/list">here</a>, if you don't have it yet.</p>
+
+<p>For the rest of this document, I've generally followed the instructions laid out <a href="http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS">here</a>, which you may want to referenced.</p>
+
+<p>Run the following sequence of commands in Terminal. Note that you can change the location of "MYDIR", to a spot you prefer. You will need Subversion (svn) installed. The installation of svn is beyond the scope of this post, but consider installing it via <a href="http://www.macports.org/">MacPorts</a>. <strong>UPDATE</strong>: It was pointed out to me that subversion actually ships with OS X, at /usr/bin/svn, so you probably have it installed already.</p>
+
+<p>{% gist 705731 %}</p>
+
+<p>That was pretty straightforward. Now you're ready to test mounting the remote directory. You're going to need a remote server that you can already ssh into. I use the Bash variables VOLNAME and SRVNAME as the name of the folder I want to create locally, and the remote server name, respectively. You'll need to edit these to your liking and needs.</p>
+
+<p>{% gist 705741 %}</p>
+
+<p>Awesomesauce, looks like everything worked. Now, let's automate things a bit, and make a little GUI app that you can click on to mount the share in AppleScript. I've not made this AppleScript too advanced, so make sure to use the fully expanded commands from above. Open "AppleScript Editor", and enter the following code.</p>
+
+<p>{% gist 705745 %}</p>
+
+<p>After you've entered that code into "AppleScript Editor", you're going to want to save it twice.
+- Save As -&gt; File Format: Script , for reference.
+- Save As -&gt; File Formar: Applicaiton (to run)</p>
+
+<p>Save the application version to somewhere handy for you, such as your Desktop.</p>
+
+<p>For extra bonus points, here's what I do:
+- Find a small image, via screen shot, or otherwise, and save it to your Desktop.
+- Open the image in Preview, Select All, and Copy.
+- Context-click on your AppleScript-saved-as-Application, and select "Get Info"
+- Click once on the small icon at the top of the pane that opens.
+- Paste.
+… and <em>voilà!</em>, you have a handy, easily referencable application-type icon, that you can click on to mount your remote share.
+Enjoy, my friends!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 19</div></div><div class="blog-content"><h2><a href="/blog/2010/11/19/html-and-css-horizontal-delimited-navigation-done-right/">HTML and CSS Horizontal Delimited Navigation Done Right</a></h2><div class="blog-author">By <strong>Joshua Childs</strong></div><div class="blog-body"><p>When we, as front-end developers, set out to build a horizontal site navigation, what markup come to mind? Thoughts of a standard semantic design pattern, an unordered list (UL) with list items (LI) floated to one side, possibly with delimited items to help visually separate each link.</p>
 
 <p>This design pattern generally produces markup that looks something like:</p>
@@ -206,41 +241,6 @@
 <p>Some of you may be saying that this won't work in all browsers (&lt; IE9pr3, &lt; FF3, &lt; Safari4, ect). This is true, it won't work in all browsers, but when you're thinking about doing something like this, ask yourself, "Do I need this for users to be able to use my site?" If yes, then by all means put those load bearing delimiters in your markup. If no, enjoy the knowledge that you can have a more semantic html document, a stylesheet file that takes advantage of modern implementations of css, and a flexible user experience that degrades gracefully in older browsers. Make the move to more cleanly separated content and presentation layers.</p>
 
 <p>You can find more of my musings on the Twitters,  <a href="http://twitter.com/JoshuaChilds">@JoshuaChilds</a>.</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 19</div></div><div class="blog-content"><h2><a href="/blog/2010/11/19/ssh-on-os-x-mounting-a-remote-directory-easily/">SSH on OS X: mounting a remote directory easily</a></h2><div class="blog-author">By <strong>Armando DiCianno</strong></div><div class="blog-body"><p>There are many things you can do quickly, and easily, once you have your ssh keys automatically added to your keychain on OSX. One of the more fun things is using MacFUSE to allow you to automatically mount a directory on a remote machine, as if it was a remote share in Finder. This post will show you how.</p>
-
-<p><strong>CAVEAT</strong>: before attempting the steps in this post, please reference <a href="http://blog.agoragames.com/2010/11/17/ssh-keys-agents-and-automation/">my last post</a> about how to setup your ssh keys on OS X.</p>
-
-<hr />
-<p>First, dowload and install <a href="http://code.google.com/p/macfuse/">MacFuse</a> if you don't have it yet. You may have it if you've installed 3rd party products like VMware. A good place to check is System Preferences — if you see a control panel for it, click on it, and if it's above version 2.0, then you're good to go. You can download MacFUSE <a href="http://code.google.com/p/macfuse/downloads/list">here</a>, if you don't have it yet.</p>
-
-<p>For the rest of this document, I've generally followed the instructions laid out <a href="http://code.google.com/p/macfuse/wiki/MACFUSE_FS_SSHFS">here</a>, which you may want to referenced.</p>
-
-<p>Run the following sequence of commands in Terminal. Note that you can change the location of "MYDIR", to a spot you prefer. You will need Subversion (svn) installed. The installation of svn is beyond the scope of this post, but consider installing it via <a href="http://www.macports.org/">MacPorts</a>. <strong>UPDATE</strong>: It was pointed out to me that subversion actually ships with OS X, at /usr/bin/svn, so you probably have it installed already.</p>
-
-<p>{% gist 705731 %}</p>
-
-<p>That was pretty straightforward. Now you're ready to test mounting the remote directory. You're going to need a remote server that you can already ssh into. I use the Bash variables VOLNAME and SRVNAME as the name of the folder I want to create locally, and the remote server name, respectively. You'll need to edit these to your liking and needs.</p>
-
-<p>{% gist 705741 %}</p>
-
-<p>Awesomesauce, looks like everything worked. Now, let's automate things a bit, and make a little GUI app that you can click on to mount the share in AppleScript. I've not made this AppleScript too advanced, so make sure to use the fully expanded commands from above. Open "AppleScript Editor", and enter the following code.</p>
-
-<p>{% gist 705745 %}</p>
-
-<p>After you've entered that code into "AppleScript Editor", you're going to want to save it twice.
-- Save As -&gt; File Format: Script , for reference.
-- Save As -&gt; File Formar: Applicaiton (to run)</p>
-
-<p>Save the application version to somewhere handy for you, such as your Desktop.</p>
-
-<p>For extra bonus points, here's what I do:
-- Find a small image, via screen shot, or otherwise, and save it to your Desktop.
-- Open the image in Preview, Select All, and Copy.
-- Context-click on your AppleScript-saved-as-Application, and select "Get Info"
-- Click once on the small icon at the top of the pane that opens.
-- Paste.
-… and <em>voilà!</em>, you have a handy, easily referencable application-type icon, that you can click on to mount your remote share.
-Enjoy, my friends!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Nov 18</div></div><div class="blog-content"><h2><a href="/blog/2010/11/18/working-at-agora-binary_review-1/">Working at Agora #binary_review 1</a></h2><div class="blog-author">By <strong>An Intern</strong></div><div class="blog-body"><p>The following is a (long) binary review of Henryk's experience while working as an intern on the platform team at Agora:</p>
 
 <blockquote>
@@ -740,11 +740,6 @@ ruby-1.9.2-p0 &gt;
 </ul>
 
 <p>What else am I missing? What should I be playing? What are you playing?</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 5</div></div><div class="blog-content"><h2><a href="/blog/2010/08/05/hackaton/">Hackathon</a></h2><div class="blog-author">By <strong>Mike DelPrete</strong></div><div class="blog-body"><p>Working at MLG/Agora is pretty inspiring, and having the Wall Of Fame located directly opposite the door to my office continually reinforces my opinion. The wall's best feature is the newest team photo taken just after our recent Hackathon.</p>
-
-<p>What's a Hackathon you ask? It's eight teams, 24 hours, and the requirement to work on something, anything, so long as you have a working demo by the end of the event. The results? Four software products, three internal tools, two infrastructure improvements, one video-enabled conference room and a theme song for Hydra.  A good time was had by all.</p>
-
-<p><img alt="image" alt="" width="500" height="282" src="/assets/images/uploads/2010/08/wpid-2010-08-05_14-41-34_674-692ffd55.jpg" /></p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 5</div></div><div class="blog-content"><h2><a href="/blog/2010/08/05/the-strophe-js-echobot/">The Strophe.js Echobot</a></h2><div class="blog-author">By <strong>Armando DiCianno</strong></div><div class="blog-body"><p>I'm toying around with in-browser XMPP in order to publish information to our users in real time.  To start, I wanted to get the strophe.js echobot demo working.  I found the posted steps a bit lacking, and thus I present a more detailed procedure for how to get nginx+ejabberd+strophe.js up and running on Ubuntu 10.04 Workstation.  When we're finished, we'll test using Firefox and Empathy.</p>
 
 <p>Note: The process should be the same for a Ubuntu server, though you'll have to futz with hostnames and test using your workstation or something like irssi+bitlbee.</p>
@@ -938,6 +933,11 @@ Pass: admin</p>
 </ol>
 
 <p>Done!</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Aug 5</div></div><div class="blog-content"><h2><a href="/blog/2010/08/05/hackaton/">Hackathon</a></h2><div class="blog-author">By <strong>Mike DelPrete</strong></div><div class="blog-body"><p>Working at MLG/Agora is pretty inspiring, and having the Wall Of Fame located directly opposite the door to my office continually reinforces my opinion. The wall's best feature is the newest team photo taken just after our recent Hackathon.</p>
+
+<p>What's a Hackathon you ask? It's eight teams, 24 hours, and the requirement to work on something, anything, so long as you have a working demo by the end of the event. The results? Four software products, three internal tools, two infrastructure improvements, one video-enabled conference room and a theme song for Hydra.  A good time was had by all.</p>
+
+<p><img alt="image" alt="" width="500" height="282" src="/assets/images/uploads/2010/08/wpid-2010-08-05_14-41-34_674-692ffd55.jpg" /></p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jul 29</div></div><div class="blog-content"><h2><a href="/blog/2010/07/29/brightercove/">Brightercove</a></h2><div class="blog-author">By <strong>David Czarnecki</strong></div><div class="blog-body"><p>We're using <a href="http://www.brightcove.com/en/">Brightcove</a> here at Agora Games for some video platform work. In our group chats, we've talked about, "It would be nice if we had a Ruby API for interacting with Brightcove."</p>
 
 <p>And so I did just that, <a href="http://github.com/agoragames/brightcove">http://github.com/agoragames/brightcove</a></p>
