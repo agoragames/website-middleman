@@ -26,6 +26,9 @@ body
 select, input, textarea
   color: #272727
 
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 10px
+
 h1
   color: #000
   font-size: 64px
@@ -43,7 +46,6 @@ h2
     font-size: 48px
     font-family: "Gibson-Light", sans-serif
     line-height: 1.2em
-    margin: 0
     text-transform: none
   font-family: "LeagueGothic", sans-serif
   font-size: 38px
@@ -53,7 +55,6 @@ h3
   font-family: "LeagueGothic", sans-serif
   font-size: 28px
   text-transform: uppercase
-  margin-bottom: 10px
 
 h4
   font-size: 18px
@@ -61,6 +62,12 @@ h4
   em
     font-family: "Gibson-SemiBold", sans-serif
     color: #e9480e
+
+h5
+  font-weight: bold
+
+h6
+  font-style: italic
 
 ul
   list-style: square image-url('bullet-spade.png') outside
@@ -791,12 +798,11 @@ article .last
     text-transform: none
     font-weight: 200
     font-size: 32px
-    margin-bottom: 0.5em
-  p
+  p, ul, ol
     line-height: 1.5
-    margin: 1em 0
-  li
-    line-height: 1.5
+    margin:
+      top: 1em
+      bottom: 1em
   img, iframe, embed, object
     max-width: 100%
   .date-comments
@@ -827,47 +833,14 @@ article .last
   .blog-content
     width: 540px
     float: left
+    > h2
+      margin-bottom: 0
     .meta
       min-height: 80px
       clear: both
       margin-bottom: 20px
-      .author-name
-        position: absolute
-        left: 85px
-        bottom: 73px
-        font-family: "CasinoHand", sans-serif
-        font-size: 14px
-        color: #000
-        strong
-          text-transform: uppercase
-      .author-arrow
-        position: absolute
-        left: 80px
-        bottom: 48px
-      .author-avatar
-        position: absolute
-        left: 0
-        bottom: 0
-      .categories
-        font-size: 12px
-        list-style: none
-        margin: 0 0 3px 220px
-        float: left
-        border-bottom: 1px solid #efefef
-        padding-bottom: 5px
-        li
-          &.heading
-            font-weight: bold
-            display: block
-            float: none
-          float: left
-          margin-right: 10px
-          line-height: 135%
-      .like-tweet
-        float: left
-        margin: 5px 0 0 220px
-        .facebook-like
-          margin-bottom: -1px
+    .blog-author
+      margin: 0 0 10px
     .blog-body
       text-align: justify
   .more
