@@ -141,44 +141,6 @@ result
 <p><code>
 load 'config/recipes/notification
 </code></p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automagically-managing-merges-with-svn/">Automagically Managing Merges with SVN</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>For each Guitar Hero game we have a full trunk/branches/tags structure. Most of the trunks are copied off of their predecessor's trunk. This works pretty well for us, but it can be hairy to merge changes made to the original ( <code>game-1</code> ) trunk down to each of its descendants. I found that I was often forgetting to merge to *all* of the relevant branches. To mitigate the effects of my amnesia I wrote this, <code>chmod +x</code> 'd it and dropped it into my <code>~/bin</code> (which happens to be in my <code>PATH</code> ):</p>
-
-<p>```ruby
-#! /usr/bin/env ruby
-repository_host = 'your.svn.repository.host'
-working_dirs = ['~/Documents/game-2/trunk',
-'~/Documents/game-3/trunk',
-'~/Documents/game-4/trunk']</p>
-
-<p>p "usage: $ gh-merge revision [revision revision revision …]" if ARGV.empty?</p>
-
-<p>ARGV.each do |revision|
-  working_dirs.each do |working_dir|
-    p "merging #{working_dir}, revision #{revision}"
-    <code>svn merge -c #{revision} \
-    svn+ssh://#{repository_host}/agora/game-1/trunk \
-    #{working_dir}</code>
-  end
-end</p>
-
-<p>working_dirs.each do |working_dir|
-  p "committing #{working_dir}"
-  <code>svn ci -m "svn merge -c #{ARGV.join(', ')} \
-  svn+ssh://#{repository_host}/agora/game-1/trunk" \
-  #{working_dir}</code>
-end
-```</p>
-
-<p>The <code>working_dirs</code> represent the paths to my working dirs for each branch I want to merge my trunk changes to.</p>
-
-<p>To use I just pass the revisions I want to push to each branch like so:</p>
-
-<p><code>
-ola$ gh-merge 31774 31775 31780
-</code></p>
-
-<p>and it merges and commits those revisions to each branch. It assumes you're caching your authentication for svn.</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/python-is-mocking-me-a-ruby-programmers-adventures-with-pythonmox/">Python Is Mocking Me: A Ruby Programmer's Adventures With Python/Mox</a></h2><div class="blog-author">By <strong>Tim Jones</strong></div><div class="blog-body"><p><strong>Overview</strong></p>
 
 <p>Much of Agora's work over the last few years has been done in Ruby. Recently though, we're migrating major components to Python in order to enjoy the benefits of cross platform compatibility with Windows. The purpose of this post is to discuss testing in Python; specifically mocking.</p>
@@ -398,7 +360,45 @@ self.mox.ReplayAll()</p>
   <li>If you do this and you have your own setUp method declaration be sure to call the parent class implementation!</li>
   <li>Don't forget to call self.mox.ReplayAll() before you actually kick off the replay portion of your test</li>
 </ul>
-</div></div></div></section><aside id="sidebar"><div class="block" id="block-archive"><h2>Blog archives</h2><h3>2014</h3><ul><li><a href="/blog/2014/01/">January 2014</a></li></ul><h3>2013</h3><ul><li><a href="/blog/2013/11/">November 2013</a></li><li><a href="/blog/2013/10/">October 2013</a></li><li><a href="/blog/2013/09/">September 2013</a></li><li><a href="/blog/2013/08/">August 2013</a></li><li><a href="/blog/2013/07/">July 2013</a></li><li><a href="/blog/2013/06/">June 2013</a></li><li><a href="/blog/2013/05/">May 2013</a></li><li><a href="/blog/2013/04/">April 2013</a></li><li><a href="/blog/2013/03/">March 2013</a></li><li><a href="/blog/2013/02/">February 2013</a></li><li><a href="/blog/2013/01/">January 2013</a></li></ul><h3>2012</h3><ul><li><a href="/blog/2012/12/">December 2012</a></li><li><a href="/blog/2012/11/">November 2012</a></li><li><a href="/blog/2012/10/">October 2012</a></li><li><a href="/blog/2012/09/">September 2012</a></li><li><a href="/blog/2012/08/">August 2012</a></li><li><a href="/blog/2012/07/">July 2012</a></li><li><a href="/blog/2012/06/">June 2012</a></li><li><a href="/blog/2012/05/">May 2012</a></li><li><a href="/blog/2012/04/">April 2012</a></li><li><a href="/blog/2012/03/">March 2012</a></li><li><a href="/blog/2012/02/">February 2012</a></li><li><a href="/blog/2012/01/">January 2012</a></li></ul><h3>2011</h3><ul><li><a href="/blog/2011/10/">October 2011</a></li><li><a href="/blog/2011/09/">September 2011</a></li><li><a href="/blog/2011/08/">August 2011</a></li><li><a href="/blog/2011/07/">July 2011</a></li><li><a href="/blog/2011/06/">June 2011</a></li><li><a href="/blog/2011/05/">May 2011</a></li><li><a href="/blog/2011/04/">April 2011</a></li><li><a href="/blog/2011/03/">March 2011</a></li><li><a href="/blog/2011/02/">February 2011</a></li><li><a href="/blog/2011/01/">January 2011</a></li></ul><h3>2010</h3><ul><li><a href="/blog/2010/12/">December 2010</a></li><li><a href="/blog/2010/11/">November 2010</a></li><li><a href="/blog/2010/10/">October 2010</a></li><li><a href="/blog/2010/09/">September 2010</a></li><li><a href="/blog/2010/08/">August 2010</a></li><li><a href="/blog/2010/07/">July 2010</a></li><li><a href="/blog/2010/06/">June 2010</a></li><li><a href="/blog/2010/05/">May 2010</a></li><li><a href="/blog/2010/04/">April 2010</a></li><li><a href="/blog/2010/03/">March 2010</a></li><li><a href="/blog/2010/02/">February 2010</a></li><li><a href="/blog/2010/01/">January 2010</a></li></ul><h3>2009</h3><ul><li><a href="/blog/2009/12/">December 2009</a></li><li><a href="/blog/2009/11/">November 2009</a></li><li><a href="/blog/2009/10/">October 2009</a></li><li><a href="/blog/2009/09/">September 2009</a></li><li><a href="/blog/2009/08/">August 2009</a></li><li><a href="/blog/2009/07/">July 2009</a></li><li><a href="/blog/2009/06/">June 2009</a></li><li><a href="/blog/2009/05/">May 2009</a></li><li><a href="/blog/2009/04/">April 2009</a></li><li><a href="/blog/2009/03/">March 2009</a></li><li><a href="/blog/2009/02/">February 2009</a></li><li><a href="/blog/2009/01/">January 2009</a></li></ul><h3>2008</h3><ul><li><a href="/blog/2008/11/">November 2008</a></li><li><a href="/blog/2008/10/">October 2008</a></li><li><a href="/blog/2008/09/">September 2008</a></li><li><a href="/blog/2008/08/">August 2008</a></li></ul></div></aside></article></div></div></div><footer><div class="outer-wrap"><div class="wrap"><div id="copyright"><img alt="Agora Games" src="/assets/images/agora-logo-agga-5548a56c.png"> <a href="http://majorleaguegaming.com" target="_blank"><img alt="Major League Gaming" src="/assets/images/mlg-logo-70241e5b.png"></a><a href="mailto:info@agoragames.com" id="email-us">Email Us</a><p>359 Broadway, Third Floor, Troy, NY 12180</p><p class="dim">&copy; 2013 Agora Games. All Rights Reserved.</p></div></div></div></footer><div class="hide"><iframe id="wufoo-iframe" src="javascript:void(0)"></iframe><a id="wufoo-thanks" href="/thanks/"></a></div><!--[if lt IE 9]>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automagically-managing-merges-with-svn/">Automagically Managing Merges with SVN</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>For each Guitar Hero game we have a full trunk/branches/tags structure. Most of the trunks are copied off of their predecessor's trunk. This works pretty well for us, but it can be hairy to merge changes made to the original ( <code>game-1</code> ) trunk down to each of its descendants. I found that I was often forgetting to merge to *all* of the relevant branches. To mitigate the effects of my amnesia I wrote this, <code>chmod +x</code> 'd it and dropped it into my <code>~/bin</code> (which happens to be in my <code>PATH</code> ):</p>
+
+<p>```ruby
+#! /usr/bin/env ruby
+repository_host = 'your.svn.repository.host'
+working_dirs = ['~/Documents/game-2/trunk',
+'~/Documents/game-3/trunk',
+'~/Documents/game-4/trunk']</p>
+
+<p>p "usage: $ gh-merge revision [revision revision revision …]" if ARGV.empty?</p>
+
+<p>ARGV.each do |revision|
+  working_dirs.each do |working_dir|
+    p "merging #{working_dir}, revision #{revision}"
+    <code>svn merge -c #{revision} \
+    svn+ssh://#{repository_host}/agora/game-1/trunk \
+    #{working_dir}</code>
+  end
+end</p>
+
+<p>working_dirs.each do |working_dir|
+  p "committing #{working_dir}"
+  <code>svn ci -m "svn merge -c #{ARGV.join(', ')} \
+  svn+ssh://#{repository_host}/agora/game-1/trunk" \
+  #{working_dir}</code>
+end
+```</p>
+
+<p>The <code>working_dirs</code> represent the paths to my working dirs for each branch I want to merge my trunk changes to.</p>
+
+<p>To use I just pass the revisions I want to push to each branch like so:</p>
+
+<p><code>
+ola$ gh-merge 31774 31775 31780
+</code></p>
+
+<p>and it merges and commits those revisions to each branch. It assumes you're caching your authentication for svn.</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
+</div></div></div></section><aside id="sidebar"><div class="block" id="block-archive"><h2>Blog archives</h2><h3>2014</h3><ul><li><a href="/blog/2014/02/">February 2014</a></li><li><a href="/blog/2014/01/">January 2014</a></li></ul><h3>2013</h3><ul><li><a href="/blog/2013/11/">November 2013</a></li><li><a href="/blog/2013/10/">October 2013</a></li><li><a href="/blog/2013/09/">September 2013</a></li><li><a href="/blog/2013/08/">August 2013</a></li><li><a href="/blog/2013/07/">July 2013</a></li><li><a href="/blog/2013/06/">June 2013</a></li><li><a href="/blog/2013/05/">May 2013</a></li><li><a href="/blog/2013/04/">April 2013</a></li><li><a href="/blog/2013/03/">March 2013</a></li><li><a href="/blog/2013/02/">February 2013</a></li><li><a href="/blog/2013/01/">January 2013</a></li></ul><h3>2012</h3><ul><li><a href="/blog/2012/12/">December 2012</a></li><li><a href="/blog/2012/11/">November 2012</a></li><li><a href="/blog/2012/10/">October 2012</a></li><li><a href="/blog/2012/09/">September 2012</a></li><li><a href="/blog/2012/08/">August 2012</a></li><li><a href="/blog/2012/07/">July 2012</a></li><li><a href="/blog/2012/06/">June 2012</a></li><li><a href="/blog/2012/05/">May 2012</a></li><li><a href="/blog/2012/04/">April 2012</a></li><li><a href="/blog/2012/03/">March 2012</a></li><li><a href="/blog/2012/02/">February 2012</a></li><li><a href="/blog/2012/01/">January 2012</a></li></ul><h3>2011</h3><ul><li><a href="/blog/2011/10/">October 2011</a></li><li><a href="/blog/2011/09/">September 2011</a></li><li><a href="/blog/2011/08/">August 2011</a></li><li><a href="/blog/2011/07/">July 2011</a></li><li><a href="/blog/2011/06/">June 2011</a></li><li><a href="/blog/2011/05/">May 2011</a></li><li><a href="/blog/2011/04/">April 2011</a></li><li><a href="/blog/2011/03/">March 2011</a></li><li><a href="/blog/2011/02/">February 2011</a></li><li><a href="/blog/2011/01/">January 2011</a></li></ul><h3>2010</h3><ul><li><a href="/blog/2010/12/">December 2010</a></li><li><a href="/blog/2010/11/">November 2010</a></li><li><a href="/blog/2010/10/">October 2010</a></li><li><a href="/blog/2010/09/">September 2010</a></li><li><a href="/blog/2010/08/">August 2010</a></li><li><a href="/blog/2010/07/">July 2010</a></li><li><a href="/blog/2010/06/">June 2010</a></li><li><a href="/blog/2010/05/">May 2010</a></li><li><a href="/blog/2010/04/">April 2010</a></li><li><a href="/blog/2010/03/">March 2010</a></li><li><a href="/blog/2010/02/">February 2010</a></li><li><a href="/blog/2010/01/">January 2010</a></li></ul><h3>2009</h3><ul><li><a href="/blog/2009/12/">December 2009</a></li><li><a href="/blog/2009/11/">November 2009</a></li><li><a href="/blog/2009/10/">October 2009</a></li><li><a href="/blog/2009/09/">September 2009</a></li><li><a href="/blog/2009/08/">August 2009</a></li><li><a href="/blog/2009/07/">July 2009</a></li><li><a href="/blog/2009/06/">June 2009</a></li><li><a href="/blog/2009/05/">May 2009</a></li><li><a href="/blog/2009/04/">April 2009</a></li><li><a href="/blog/2009/03/">March 2009</a></li><li><a href="/blog/2009/02/">February 2009</a></li><li><a href="/blog/2009/01/">January 2009</a></li></ul><h3>2008</h3><ul><li><a href="/blog/2008/11/">November 2008</a></li><li><a href="/blog/2008/10/">October 2008</a></li><li><a href="/blog/2008/09/">September 2008</a></li><li><a href="/blog/2008/08/">August 2008</a></li></ul></div></aside></article></div></div></div><footer><div class="outer-wrap"><div class="wrap"><div id="copyright"><img alt="Agora Games" src="/assets/images/agora-logo-agga-5548a56c.png"> <a href="http://majorleaguegaming.com" target="_blank"><img alt="Major League Gaming" src="/assets/images/mlg-logo-70241e5b.png"></a><a href="mailto:info@agoragames.com" id="email-us">Email Us</a><p>359 Broadway, Third Floor, Troy, NY 12180</p><p class="dim">&copy; 2013 Agora Games. All Rights Reserved.</p></div></div></div></footer><div class="hide"><iframe id="wufoo-iframe" src="javascript:void(0)"></iframe><a id="wufoo-thanks" href="/thanks/"></a></div><!--[if lt IE 9]>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <![endif]-->
 <!--[if gte IE 9]><!-->
