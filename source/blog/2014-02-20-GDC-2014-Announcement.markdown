@@ -28,7 +28,7 @@ It is that time of year again, the annual migration of game developers to GDC in
 
 #### **Schedule a Meeting** ####
 
-Simply send an email to <hydra@​agoragames.com> and tell us when you will be available. Our production team will reach out to you shortly and schedule an official meeting. 
+Simply send an email to <hydra@agoragames.com> and tell us when you will be available. Our production team will reach out to you shortly and schedule an official meeting. 
 
 ---
 
