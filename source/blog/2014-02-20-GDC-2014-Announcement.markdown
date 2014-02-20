@@ -1,8 +1,7 @@
 ---
-title: Let's Get Together: GDC 2014
+title: GDC 2014
 author: Sam Toews
 ---
-
 
 ![](http://i821.photobucket.com/albums/zz136/agoragames/00ce8784-a5db-411e-80c3-261e68c84648_zps84a8fab8.jpg)
 
