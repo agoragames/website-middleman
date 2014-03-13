@@ -179,6 +179,8 @@ header#page
     &.box
       height: 240px
       overflow: auto
+    img, object, embed
+      max-width: 100%
   #stats
     ul
       margin: 0
@@ -200,6 +202,8 @@ header#page
           float: right
           text-align: right
   #latest
+    img, object, embed
+      display: none
     h3
       text-align: center
       padding: 15px 0
@@ -220,12 +224,9 @@ header#page
       right: 2px
       bottom: 0
   #project
-    img
-      float: left
-      margin-right: 10px
     h2
-      line-height: 60px
       font-size: 32px
+      margin-top: 16px
     p
       font-weight: bold
     a
@@ -235,9 +236,8 @@ header#page
       &:hover
         color: #e9480e
     #project-logo
-      text-align: center
-      display: block
-      margin: 20px auto 5px
+      float: left
+      margin: 20px 10px 40px 0
     #github
       position: absolute
       bottom: 15px
