@@ -3,13 +3,13 @@ title: Agora Games is Hiring!
 author: Sam Toews
 ---
 
-![](http://i821.photobucket.com/albums/zz136/agoragames/jobs_zpsdc93cd80.jpg)
+![](http://i821.photobucket.com/albums/zz136/agoragames/61d1c60a-4cc1-486e-8239-3a55a3e23d89_zpsa307acc1.jpg)
 
 #### **Software Engineer** ####
 
-As a Software Engineer at Agora Games, you will be working on our online game service platform called "Hydra Studio". You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry's biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform.
+As a Software Engineer at Agora Games, you will be working on our online game service platform called "Hydra Studio". You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry's biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform. 
 
-**We are looking for developers, both Junior and Senior candidates, with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don't expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!**
+**We are looking for candidates with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don't expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them! Junior and Senior candidates are welcome to apply.**
 
 ---
 
@@ -17,7 +17,7 @@ As a Software Engineer at Agora Games, you will be working on our online game se
 
 * Experience delivering large, complex, highly available software systems
 * Experience developing and operating distributed systems
-* Knowledge and practical application of design patterns, SOA, refactoring and software testing
+* Knowledge of design patterns, SOA, refactoring and unit testing
 * Experience with web application servers, web development frameworks, proxy servers and relational databases
 * A detail-oriented, organized thought process and the ability to act decisively under stressful conditions
 * A proactive mindset and the ability to multitask and prioritize requirements
@@ -31,7 +31,7 @@ As a Software Engineer at Agora Games, you will be working on our online game se
 * Languages: Ruby, C++, Python, C#, Java, Objective-C
 * OS: Linux, Windows, OSX
 * Databases: MySQL, MongoDB, Redis, PostgreSQL, RabbitMQ, ZeroMQ
-* Web: Rails, CSS, HTML, JavaScript, node.js
+* Web: Ruby on Rails, CSS, HTML, Javascript, node.js
 * Misc: Chef, Git, Runit, SaltStack
 
 **Employee Benefits:**
