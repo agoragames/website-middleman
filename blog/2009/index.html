@@ -331,64 +331,6 @@ Read the entire article here:  <a href="http://kotaku.com/5303025/autobots-fans
 <p>And this:
  &gt; "The conflicts are waged by players connecting their DS online to activate daily single-player challenges and then uploading their point tallies. Those challenges are associated with regions on a world map, and the battle continues until a faction claims all regions."
 From this article:  <a href="http://kotaku.com/5308747/decepticon-owners-turn-tables-on-autobot-gamers">http://kotaku.com/5308747/decepticon-owners-turn-tables-on-autobot-gamers</a></p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/javascript-continuations-make-callback-chains-easy/">Javascript Continuations Make Callback Chains Easy</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>The problem: I define hooks for callbacks in my javascript libraries. The functions for these hooks could be defined anywhere and tend to overwrite each other. When you want to write a callback you have to understand what the entire system is doing.</p>
-
-<p>The solution: Instead of defining single functions for callbacks, maintain a list of them and then build a chain of continuations. Here is the completed code for managing our callbacks: <a href="http://gist.github.com/136525">http://gist.github.com/136525</a>. This expands on Jason's continuations: <a href="http://lonelypinkelephants.com/continuing.html">http://lonelypinkelephants.com/continuing.html</a>.</p>
-
-<p>The old way was to do something like this:</p>
-
-<p><code>javascript
- // file 1
- Controllers.Hydra = {
- on_load : function() {
- do_whatever_is_defined_by_default()
- }
- }
-</code></p>
-
-<p><code>javascript
- // file 2
- Controllers.Hydra = {
- on_load : function() {
- do_something()
- do_this_other_thing()
- do_whatever_is_defined_by_default()
- }
- }
-</code></p>
-
-<p>And then in the code that actually cares:</p>
-
-<p><code>html
-onload="Controllers.Hydra.on_load()"
-</code></p>
-
-<p>This means the overloading method must know about what the default behavior is and it can only be overloaded once.</p>
-
-<p>The new (awesome) way:</p>
-
-<p><code>javascript
- // file 1
- Callbacks.add(Callbacks.Hydra.on_load, do_whatever_is_defined_by_default)
-</code></p>
-
-<p>And:</p>
-
-<p><code>javascript
- // file 2
- Callbacks.add(Callbacks.Hydra.on_load, do_something)
- Callbacks.add(Callbacks.Hydra.on_load, do_this_other_thing)
-</code></p>
-
-<p>And in the code that actually fires the callback:</p>
-
-<p><code>html
- onload="Callbacks.start(Callbacks.Hydra.on_load)"
-</code></p>
-
-<p>The callbacks are called in order.</p>
-
-<p>What else can we do with this? One of the features I like about Rails is that if a callback or filter returns false the rest of the chain is halted. We've included that behavior too (This doesn't necessarily affect what ever called start on the callback chain).</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/advanced-page-caching-hacks-in-nginx/">Advanced Page Caching Hacks in NGINX</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>Those of you in the Rails community who use NGINX may have come across <a href="http://brainspl.at/nginx.conf.txt">this</a> before: Ezra Zygmuntowicz's NGINX config. It bears some similarity to the ones we use at Agora. Specifically, the section relating to serving page-cached files. The relevant lines (pulled from one of our configs) looks like this:</p>
 
 <p><code>
@@ -462,6 +404,64 @@ onload="Controllers.Hydra.on_load()"
 ```</p>
 
 <p>As you can see, sometimes, making NGINX play nice requires some lateral thinking, but you can generally always get it to do what you need to.</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/javascript-continuations-make-callback-chains-easy/">Javascript Continuations Make Callback Chains Easy</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>The problem: I define hooks for callbacks in my javascript libraries. The functions for these hooks could be defined anywhere and tend to overwrite each other. When you want to write a callback you have to understand what the entire system is doing.</p>
+
+<p>The solution: Instead of defining single functions for callbacks, maintain a list of them and then build a chain of continuations. Here is the completed code for managing our callbacks: <a href="http://gist.github.com/136525">http://gist.github.com/136525</a>. This expands on Jason's continuations: <a href="http://lonelypinkelephants.com/continuing.html">http://lonelypinkelephants.com/continuing.html</a>.</p>
+
+<p>The old way was to do something like this:</p>
+
+<p><code>javascript
+ // file 1
+ Controllers.Hydra = {
+ on_load : function() {
+ do_whatever_is_defined_by_default()
+ }
+ }
+</code></p>
+
+<p><code>javascript
+ // file 2
+ Controllers.Hydra = {
+ on_load : function() {
+ do_something()
+ do_this_other_thing()
+ do_whatever_is_defined_by_default()
+ }
+ }
+</code></p>
+
+<p>And then in the code that actually cares:</p>
+
+<p><code>html
+onload="Controllers.Hydra.on_load()"
+</code></p>
+
+<p>This means the overloading method must know about what the default behavior is and it can only be overloaded once.</p>
+
+<p>The new (awesome) way:</p>
+
+<p><code>javascript
+ // file 1
+ Callbacks.add(Callbacks.Hydra.on_load, do_whatever_is_defined_by_default)
+</code></p>
+
+<p>And:</p>
+
+<p><code>javascript
+ // file 2
+ Callbacks.add(Callbacks.Hydra.on_load, do_something)
+ Callbacks.add(Callbacks.Hydra.on_load, do_this_other_thing)
+</code></p>
+
+<p>And in the code that actually fires the callback:</p>
+
+<p><code>html
+ onload="Callbacks.start(Callbacks.Hydra.on_load)"
+</code></p>
+
+<p>The callbacks are called in order.</p>
+
+<p>What else can we do with this? One of the features I like about Rails is that if a callback or filter returns false the rest of the chain is halted. We've included that behavior too (This doesn't necessarily affect what ever called start on the callback chain).</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 29</div></div><div class="blog-content"><h2><a href="/blog/2009/05/29/railsconf-wrap-up/">RailsConf Wrap Up</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>Well, we're back from Vegas! And have been, for a couple weeks… I've been meaning to put up some follow-up resources for my talk (<em>PWN Your Infrastructure: Behind Call of Duty: World at War</em>), but there was just so much work to do when I got back… such is the life of a system administrator!</p>
 
 <p>That said, I've got some free moments, so I'm putting up some reference materials.</p>
@@ -731,7 +731,6 @@ server {
 <p>You won't be disappointed!</p>
 
 <p>\m/</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/python-is-mocking-me-a-ruby-programmers-adventures-with-pythonmox/">Python Is Mocking Me: A Ruby Programmer's Adventures With Python/Mox</a></h2><div class="blog-author">By <strong>Tim Jones</strong></div><div class="blog-body"><p><strong>Overview</strong></p>
 
 <p>Much of Agora's work over the last few years has been done in Ruby. Recently though, we're migrating major components to Python in order to enjoy the benefits of cross platform compatibility with Windows. The purpose of this post is to discuss testing in Python; specifically mocking.</p>
@@ -1131,6 +1130,7 @@ ola$ gh-merge 31774 31775 31780
 </code></p>
 
 <p>and it merges and commits those revisions to each branch. It assumes you're caching your authentication for svn.</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jan 12</div></div><div class="blog-content"><h2><a href="/blog/2009/01/12/porting-legacy-applications-to-modern-systems/">Porting Legacy Applications to Modern Systems</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p><em>(Or, an adventure in pain!)</em></p>
 
 <p>Let me preface this little article by saying I did <strong>not</strong> write the app I am now porting to our new network. I know noting about its specific intricacies, and furthermore, I know nothing specifically about gettext, file_column, or attachment_fu. So, I dove into this project with a sort of wanton abandon that is fairly characteristic of much of the work I do. Any obviously stupid mistakes below thus really happened.</p>

@@ -1,4 +1,103 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width" name="viewport"><title>Brain Matters</title><link href="/assets/images/favicon.ico" rel="shortcut icon"><link href="/assets/stylesheets/all-e03354ba.css" media="all" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/assets/javascripts/vendor/html5shiv-8b3747c5.js" type="text/javascript"></script><![endif]--></head><body><div class="outer-wrap"><div class="inner-wrap"><div class="wrap"><header class="clearfix" id="page"><a href="/"><img alt="Agora Games" id="logo" src="/assets/images/agora-games-logo-be83adf8.png"></a><nav><ul><li><a href="https://hydra.agoragames.com/">Products</a></li><li><a href="/portfolio/">Customers</a></li><li><a href="/us/">Team</a></li><li><a href="/community/">Community</a></li><li><a href="/work-at-agora/">Jobs</a></li><li><a href="/blog/">Blog</a></li></ul></nav></header></div><div class="wrap"><article class="clearfix"><header><h1>2014</h1></header><section id="blog-entries"><div class="blog-entry"><div class="date-comments"><div class="date">Mar 13</div></div><div class="blog-content"><h2><a href="/blog/2014/03/13/work-at-agora/">Agora Games is Hiring!</a></h2><div class="blog-author">By <strong>Sam Toews</strong></div><div class="blog-body"><p><img alt="" src="http://i821.photobucket.com/albums/zz136/agoragames/61d1c60a-4cc1-486e-8239-3a55a3e23d89_zpsa307acc1.jpg" /></p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width" name="viewport"><title>Brain Matters</title><link href="/assets/images/favicon.ico" rel="shortcut icon"><link href="/assets/stylesheets/all-e03354ba.css" media="all" rel="stylesheet" type="text/css" /><!--[if lt IE 9]><script src="/assets/javascripts/vendor/html5shiv-8b3747c5.js" type="text/javascript"></script><![endif]--></head><body><div class="outer-wrap"><div class="inner-wrap"><div class="wrap"><header class="clearfix" id="page"><a href="/"><img alt="Agora Games" id="logo" src="/assets/images/agora-games-logo-be83adf8.png"></a><nav><ul><li><a href="https://hydra.agoragames.com/">Products</a></li><li><a href="/portfolio/">Customers</a></li><li><a href="/us/">Team</a></li><li><a href="/community/">Community</a></li><li><a href="/work-at-agora/">Jobs</a></li><li><a href="/blog/">Blog</a></li></ul></nav></header></div><div class="wrap"><article class="clearfix"><header><h1>2014</h1></header><section id="blog-entries"><div class="blog-entry"><div class="date-comments"><div class="date">Mar 20</div></div><div class="blog-content"><h2><a href="/blog/2014/03/20/new-hydra-studio-features-winter-2014/">New Hydra Studio Features</a></h2><div class="blog-author">By <strong>Sam Toews</strong></div><div class="blog-body"><p><img alt="" src="http://i821.photobucket.com/albums/zz136/agoragames/Hydra_zpse71a8af5.jpg" /></p>
+
+<p>It has been a few months since our last Hydra Studio Features post. This is in part because the Hydra Studio Team has been hard at work developing a lot of new features, all of which are available to our users now! </p>
+
+<p>Below is an overview of the new features that have been released. Please take a moment to review, and then head to the Hydra Studio dashboard and give everything a test run. Make sure to share your thoughts on the <a href="http://support.agoragames.com/">Beta Support Forum</a> as your feedback is extremely valuable.</p>
+
+<hr />
+
+<h4 id="usernamepassword-auth"><strong>Username/Password Auth</strong></h4>
+
+<p>One of our major enhancements was the expansion of our Authentication System. Made available late fall, Hydra Studio now supports a variety of authentication schemes to fit your game's needs. </p>
+
+<ul>
+  <li><strong>UUID</strong> - Given a unique identifier, Hydra will map it to a game account</li>
+  <li><strong>Facebook</strong> - Given a valid Facebook auth token, Hydra will map it to a game account</li>
+  <li><strong>Anonymous</strong> - A one time, pass-through, scheme which will return a valid auth token for a new account every time it is used</li>
+  <li><strong>Hydra</strong> -  A username/password account per the environment of your API key</li>
+  <li><strong>Windows Live</strong> - Given a valid Windows Live auth token, Hydra will map it to a game account</li>
+  <li><strong>Google</strong> - Given a valid Google auth token, Hydra will map it to a game account</li>
+  <li><strong>Steam</strong> - Given a valid, hex encoded, encrypted app ticket for a user of your Steam game, Hydra will map it to a game account</li>
+  <li><strong>Custom</strong> - Tells Hydra to use an existing authentication system. Given a token that is accepted by your custom authentication url, Hydra will map it to a game account. If a game account does not exist for this token, Hydra will crete a new game account and associate it with the account in your system. </li>
+</ul>
+
+<p>Additionally, we now provide a way for user to recover an account in case they cannot access it by any other authentication method. However, this requires an email being set on their account. If there is no email set, their account cannot be recovered. </p>
+
+<p>Technical notes may be found in the <a href="https://hydra.agoragames.com/documentation/authentication.html">Authentication Documentation page</a>. </p>
+
+<hr />
+
+<h4 id="realtime-networking"><strong>Realtime Networking</strong></h4>
+
+<p>Early February, we deployed a number of important infrastructure improvements to Hydra Studio. These enhancements included an update to a new Realtime protocol. Our platform now provides the following:</p>
+
+<ul>
+  <li>Added support for UDP realtime connection - full reliable/unreliable support</li>
+  <li>Added support for multiple realtime connections for the same account</li>
+  <li>Realtime Connected and Disconnected events now pass the protocol of the underlying connection that was connected or disconnected</li>
+</ul>
+
+<p>More detailed information may be found in the <a href="https://hydra.agoragames.com/documentation/realtime.html">Realtime Networking Documentation page</a>.</p>
+
+<hr />
+
+<h4 id="rest-api"><strong>REST API</strong></h4>
+
+<p>We recently added REST API documentation to our Hydra Studio <a href="https://hydra.agoragames.com/documentation/">Game Integration Docs</a>. The Guide provides a general overview of the Hydra REST API, a Getting Started section for those beginning the process, and a <a href="https://hydra.agoragames.com/documentation/rest/reference.html">REST Endpoint Reference</a>. </p>
+
+<p>For an example of how Hydra REST API may be used, visit our <a href="http://hydra-rest-api-demo.herokuapp.com/">Demo site</a>. </p>
+
+<hr />
+
+<h4 id="agorasaurus"><strong>AgoraSaurus</strong></h4>
+
+<p><img alt="" src="http://i821.photobucket.com/albums/zz136/agoragames/ScreenShot2014-03-16at60626PM_zps4a8fe404.png" /></p>
+
+<p>Meet AgoraSaurus, the official mascot of Agora Games, now starring in his very own continuous run mobile game. Available for download on <a href="https://play.google.com/store/apps/details?id=com.agoragames.agorasaurus">Google Play</a>, AgoraSaurus is an in-house developed, sample application of a Hydra Studio integrated game.</p>
+
+<p>In-game features include:</p>
+
+<ul>
+  <li>User account creation and login</li>
+  <li>Top 10 global leaderboard</li>
+  <li>Achievement listing and live pop-up notification</li>
+</ul>
+
+<p>Coming soon, we will be adding player-vs-player challenges, an iOS app, and providing source code. </p>
+
+<hr />
+
+<h4 id="everything-else"><strong>Everything Else</strong></h4>
+
+<p>In addition to the top level features above, we released a number of smaller updates during the last few months.</p>
+
+<ul>
+  <li><strong>Matchmaking service</strong> - Added ability to cancel pending matchmaking requests, cancel events</li>
+  <li><strong>Achievements</strong> - Added methods to load progress for one achievement</li>
+  <li><strong>Matches service</strong> - Added match expiration warning</li>
+  <li><strong>Notifications</strong> - Broadcast messaging over push notifications</li>
+  <li><strong>Better error reporting</strong></li>
+</ul>
+
+<hr />
+
+<h4 id="still-to-come"><strong>Still To Come</strong></h4>
+
+<p>Here is a list of the features that are currently under development, or will be in the near future, and that you will be able to get your hands on soon.</p>
+
+<ul>
+  <li><strong>Cloud/Title Storage</strong> - Provides secured access to stored user content</li>
+  <li><strong>Clans</strong> - Allows for multiple players to be voluntarily grouped together for social and competitive online experiences</li>
+  <li><strong>Xbox One &amp; PS4 Support</strong> - C++ SDK support for next-gen consoles</li>
+  <li><strong>User-Generated Content</strong> - Provides secure, cross-device storage of player information, content, game saves and other data</li>
+</ul>
+
+<p>Those who want to stay informed of the very latest developments are encouraged to follow our <a href="http://support.agoragames.com/discussions">Hydra Studio Announcements Forum</a> and the <a href="http://www.agoragames.com/blog/">Agora Games Blog</a>.</p>
+
+<p>If you have questions, comments, or suggestions, please post them in our <a href="http://support.agoragames.com/discussions/hydra-mobile-closed-beta-general-discussion">Beta Support Forum</a>, and continue to put our platform to the test. Thanks a ton!</p>
+
+<p><strong>- The Hydra Team</strong></p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Mar 13</div></div><div class="blog-content"><h2><a href="/blog/2014/03/13/work-at-agora/">Agora Games is Hiring!</a></h2><div class="blog-author">By <strong>Sam Toews</strong></div><div class="blog-body"><p><img alt="" src="http://i821.photobucket.com/albums/zz136/agoragames/61d1c60a-4cc1-486e-8239-3a55a3e23d89_zpsa307acc1.jpg" /></p>
 
 <h4 id="software-engineer"><strong>Software Engineer</strong></h4>
 
