@@ -9,8 +9,8 @@ We are happy to report that interest in the Hydra platform was once again very s
 
 We want to take this opportunity to thank all of the individuals who met with the Agora Games team at GDC 2014.  Your support and feedback is greatly appreciated, and we look forward to another exciting year working with our development partners.
 
-![](http://i821.photobucket.com/albums/zz136/agoragames/2014-03-191_zpsdf3b08c1.jpeg)
+![](uploads/2014/03/gdc-2014-01-large.jpg)
 
-![](http://i821.photobucket.com/albums/zz136/agoragames/IMG_20140318_120854_zpse4022682.jpg)
+![](uploads/2014/03/gdc-2014-02-large.jpg)
 
-![](http://i821.photobucket.com/albums/zz136/agoragames/photo1_zps03ce4e19.jpg)
+![](uploads/2014/03/gdc-2014-03-large.jpg)
