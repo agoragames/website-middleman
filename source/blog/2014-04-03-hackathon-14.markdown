@@ -1,0 +1,40 @@
+---
+title: Hackathon 14
+author: Sam Toews
+---
+
+Friday, March 28th, Agora completed our 14th Hackathon. As always, the team delivered great projects. 
+
+![](http://i821.photobucket.com/albums/zz136/agoragames/photo3_zpscb96e080.jpg)
+
+**Open Source Updates/Plugin Work** - [Presentation](http://youtu.be/ao-TzdjR4Fk)
+
+Jack updated Agora's open-source [confirm-with-reveal plugin](https://github.com/agoragames/confirm-with-reveal) with some new features, including additional customization options for the HTML UI, and JavaScript events hooks on confirmation and cancellation of user prompts. 
+
+**OAuth Support and Misc. Repo Updates** - [Presentation](http://youtu.be/fF5o7GPbjzU)
+
+Aaron used Lua to integrate Google Apps OAuth into nginx so that Agora has centralized authentication for all of our tools. 
+
+**Load Test Chart Enhancements** - [Presentation](http://youtu.be/BbX4D50K3xI)
+
+David A. worked on a javascript wrapper around the Google Visualization API to better support overlaying multiple data sets, available [here](http://mvdavid7.github.io/google-viz-plus/). It allows users to hide and show lines after the graph is rendered and to group lines by any number of axes. 
+
+**Hydra Support Website** - [Presentation](http://youtu.be/cPSvNRww4Qk)
+
+Elliott completed the next evolution of the Hydra Support website. With the Hydra Studio platform becoming more popular and well known to game developers, the amount of Hydra Studio support tickets that come into Agora on a weekly basis have greatly increased. Where as prior to the March 28th Hackathon, our support website was heavily weighted towards Hydra Pro support (with a small amount of Hydra Studio support), Elliott's Hackathon work moved to strike a more suitable balance between Hydra Pro & Hydra Studio support. Hydra Studio now has it's own dedicated discussion forums (broken out by features), and our knowledge-base has been updated to include all of the most relevant Hydra Studio feature & documentation updates from the past four months. We still have the base level Hydra Pro support that clients have used up to this point, but overall Hydra Studio now has the proper real-estate it deserves on the support website.   
+
+**Django Auth and PyCharm Integration** - [Presentation](http://youtu.be/q4Pwk40Zpvw)
+
+Vitaly worked on a Django auth back for the hydra service, available [here](https://github.com/vbabiy/django-hydra-auth-backend). It allows people to quickly build a site that ties user auth on the site to a hydra user account.
+
+**Leaderboard Updates: Ranking** - [Presentation](http://youtu.be/8GjZrkFY_sY)
+
+David C. worked on two alternate styles of ranking for Hydra's leaderboard library. 
+
+**Storm**
+
+Andrew spent his time becoming acquainted with Storm. He had hoped to do some real useful data processing, but instead spent the time familiarizing himself with the technologies involved. 
+
+![](http://i821.photobucket.com/albums/zz136/agoragames/photo2_zps734760b0.jpg)
+
+![](http://i821.photobucket.com/albums/zz136/agoragames/photo1_zps795eebb7.jpg)
