@@ -11,7 +11,7 @@ Andrew implemented a simple utility allowing users to view filtered subsets of H
 
 **Oculus Unity Demo + Hydra**
 
-John worked on getting familiar with Agora's Hydra Studio features as well as our Unity SDK. Looking through the Unity store there's a lot of services similar to ours integrated into the Unity demo projects to help developers get an idea of how to use them. Following this pattern he took the 2D example project and started integrating Hydra features into it. 
+John worked on getting familiar with Agora's Hydra Studio features as well as our Unity SDK. Looking through the Unity store there's a lot of services similar to ours integrated into the Unity demo projects to help developers get an idea of how to use them. Following this pattern he took the 2D example project and started integrating Hydra features into it.
 
 ![](http://i821.photobucket.com/albums/zz136/agoragames/99799ec4-18d2-4f36-b8be-7f2382e9a8d9_zps1559babe.png)
 
@@ -53,6 +53,10 @@ It uses the following Hydra features:
 **Lua for OAuth**
 
 Aaron finished extracting last hack-a-thon hacks into a legit project, adding most of the features and documentation a user would need to add Google OAuth to their nginx hosts, available [here](https://github.com/agoragames/nginx-google-oauth).
+
+**Tie Handling in Leaderboard Libraries**
+
+David Cz. worked on tie handling in the [Ruby](https://github.com/agoragames/leaderboard), [Python](https://github.com/agoragames/leaderboard-python) and [JavaScript](https://github.com/agoragames/leaderboard-coffeescript) leaderboard libraries. Two types of tie handling are now supported, Tie Ranking and Competition Ranking. In Tie Ranking, you define a leaderboard where members with the same score are given the same rank. In Competition Ranking, you define a leaderboard where members with the same score will have the same rank, and then a gap is left in the ranking numbers. The documentation for each of the libraries goes into more detail on what the tie rankings look like.
 
 **Confirm with Reveal Bug**
 
