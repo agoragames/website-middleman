@@ -1,0 +1,24 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+**chai**
+
+[chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. This week we released chai 1.0.0. chai 1.0.0 added spies, a variation of an expectation that asserts a call has happened.
+
+Contributor(s): Aaron Westendorf ([GitHub](https://github.com/awestendorf/), [Twitter](https://twitter.com/WashUffize))
+
+**sidekiq-failures**
+
+[sidekiq-failures](https://github.com/mhfs/sidekiq-failures) "keeps track of Sidekiq failed jobs and adds a tab to the Web UI to let you browse them." We submitted a pull request to [add the paging links to the bottom of a page of failures](https://github.com/mhfs/sidekiq-failures/pull/89).
+
+Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+**stache**
+
+[stache](https://github.com/agoragames/stache) is our Rails 3.x and Rails 4.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. In the stache 1.1.0 release, we accepted a pull request to [cache compiled templates between requests](https://github.com/agoragames/stache/pull/43). You may see a 200-300% boost in rendering performance.
+
+Contributor(s): Markus Harmsen ([GitHub](https://github.com/MarkusHarmsen/).
+
