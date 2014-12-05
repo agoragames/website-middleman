@@ -8,7 +8,7 @@ author: David Czarnecki
 
 [chai](https://github.com/agoragames/chai) provides a very easy to use api for mocking/stubbing your python objects, patterned after the [Mocha](http://mocha.rubyforge.org/) library for Ruby. This week we released chai 1.0.1. chai 1.0.1 fixes tests and unbound method support in Python 3.
 
-Contributor(s): Graylin Kim ([GitHub](https://github.com/graylinkim/), [Twitter](https://twitter.com/graylinkim)) and Pierre-Yves Chibon ([GitHub](https://github.com/pypingou))
+Contributor(s): Graylin Kim ([GitHub](https://github.com/graylinkim/)) and Pierre-Yves Chibon ([GitHub](https://github.com/pypingou))
 
 **haigha**
 
