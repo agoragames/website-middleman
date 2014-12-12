@@ -1,0 +1,11 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+**globalize**
+
+[globalize](https://github.com/globalize/globalize) builds on the I18n API in Ruby on Rails to add model translations to ActiveRecord models. A [pull request](https://github.com/globalize/globalize/pull/352) to fix a problem with dup and instance variables was recently integrated.
+
+Contributor(s): Matthew Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
