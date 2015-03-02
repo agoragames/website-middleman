@@ -11,23 +11,18 @@ set :partials_dir, 'templates/partials'
 #
 # set :relative_links, true
 
-activate :blog do |blog|
-  blog.prefix = "blog"
-  blog.permalink = ":year/:month/:day/:title"
-  blog.layout = "blog"
-  blog.default_extension = ".markdown"
-
-  blog.year_link = "{year}/index.html"
-  blog.month_link = "{year}/{month}/index.html"
-  blog.day_link = "{year}/{month}/{day}/index.html"
-  blog.calendar_template = "blog/calendar.html"
-end
-
-# This has to go AFTER the blog config section.
-# See https://coderwall.com/p/qgnwzw
-activate :directory_indexes
-activate :asset_hash
-activate :automatic_image_sizes
+# We don't yet have any designs or anything for the blog, so ignore it for now
+ignore 'blog/*'
+# activate :blog do |blog|
+#   blog.prefix = "blog"
+#   blog.permalink = ":year/:month/:day/:title"
+#   blog.layout = "blog"
+#   blog.default_extension = ".markdown"
+#   blog.year_link = "{year}/index.html"
+#   blog.month_link = "{year}/{month}/index.html"
+#   blog.day_link = "{year}/{month}/{day}/index.html"
+#   blog.calendar_template = "blog/calendar.html"
+# end
 
 # GitHub Pages wants 404.html, not 404/index.html
 page '/404.html', :directory_index => false
@@ -38,21 +33,31 @@ page '/404.html', :directory_index => false
 #
 # activate :relative_assets
 
-Slim::Engine.set_default_options :format => :html5
-Slim::Engine.set_default_options :pretty => true
+sprockets.append_path(File.join(root, 'bower_components'))
 
 compass_config do |config|
   config.output_style = :nested
+  config.add_import_path(
+    File.join(root, 'bower_components', 'foundation', 'scss'))
 end
 
 configure :build do
 
-  ignore "templates/layouts/*"
-  ignore "templates/partials/*"
+  ignore 'templates/layouts/*'
+  ignore 'templates/partials/*'
 
-  Slim::Engine.set_default_options :pretty => false
+  # Quicker to render HTML without proper indenting, and since we're going to
+  # minify it anyway, there's no reason to bother with it.
+  set :haml, ugly: true
+
+  activate :minify_html do |html|
+    # Foundation has specific styles for inputs with type="text", so we don't
+    # want to remove that (even though it's the default input type).
+    html.remove_input_attributes = false
+  end
 
   activate :minify_css
   activate :minify_javascript
+  activate :asset_hash
 
 end

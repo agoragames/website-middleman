@@ -1,0 +1,435 @@
+---
+title: Agora Games
+---
+
+.fixed.raised
+
+  %nav.top-bar{ role: 'navigation', data: { topbar: true } }
+    %ul.title-area
+      %li.name
+        %h1
+          %a{ href: '/' }
+            = image_tag 'agoragames-new.svg', alt: 'Agora Games', class: 'main-logo'
+      %li.toggle-topbar.menu-icon
+        %a{ href: 'javascript:void(0)' }
+          %span Menu
+
+    %section.top-bar-section
+      %ul.right
+        %li
+          %a{ href: '#about', data: { anchor: true } } About
+        %li
+          %a{ href: '#team', data: { anchor: true } } Team
+        %li
+          %a{ href: '#' } Blog
+        %li
+          %a{ href: '#contact', data: { anchor: true } } Contact
+        %li.hydra-theme
+          %a{ href: '#' }
+            = image_tag 'hydra-wordmark.svg', alt: 'Hydra', width: 92
+
+%ul.hero{ data: { orbit: true, options: 'slide_number: false' } }
+
+  %li.centered-slide.active.invert{ style: "background-image: url('#{image_path('slides/bg1.jpg') }')" }
+    .centered-slide__caption
+      %h3 We’re heading to GDC. Are you?
+      %a.button.button--arrows{ href: '#' } Schedule a Time
+
+  %li{ style: "background-image: url('#{image_path('slides/bg2.jpg') }')" }
+    .left-caption.left-caption--hydra
+      %p
+        <a href='#'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
+      %a.button.button--hydra.button--arrows{ href: '#' } Check out Hydra
+
+  %li{ style: "background-image: url('#{image_path('slides/bg3.jpg') }')" }
+    .left-caption.left-caption--team
+      %p
+        Join
+        %strong Agora Games
+        on our quest for challenging adventures.
+      %a.button.button--arrows{ href: '#' }
+        %span.graded-text Meet the team
+
+%a#about
+.snow{ data: { magellan: { destination: 'about' } } }
+
+  .agora-intro.text-center
+    .row
+      .columns.large-6.large-push-3.medium-6.medium-push-3
+        %h1
+          = image_tag 'agoragames-new.svg', alt: 'Agora Games', width: 128
+        %p Agora Games works with game developers to build online features and web-based communities for video games. It has worked with publishers such as Activision, Konami, RedOctane, and Nintendo, and with game studios such as Vicarious Visions, Neversoft, Splash Damage, id Software, Vicious Cycle Software, 1st Playable Productions, and Gas Powered Games.
+
+  .agora-stats.text-center
+    .row
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Profiles Supported
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 100 } } 100
+            %span.jumbo-stat__measure.graded-text M
+        %p 100 million players have played a game that has a Hydra-intergrated feature on either next-gen consoles, PC, or mobile devices.
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Monthly Bandwidth
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 42 } } 42
+            %span.jumbo-stat__measure
+              %span.graded-text M
+              %small.graded-text Megabytes
+        %p Hydra processes over 42 million megabytes (or 42 terabytes) of player generated data every month.
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Players Tracked
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 120 } } 120
+            %span.jumbo-stat__measure.graded-text M
+        %p Developers who intergrated Agora’s Product, Hydra, have tracked more than 12 million players worldwide.
+
+.bright.agora-partners.text-center
+  .row
+    .columns.large-12
+      %h2 A few of our Partners
+      %ul.partners
+        %li= image_tag 'namco.svg', alt: 'Namco', width: 220
+        %li= image_tag 'nintendo.svg', alt: 'Nintendo', width: 220
+        %li= image_tag 'wbgames.svg', alt: 'WB Games', width: 75
+        %li= image_tag 'bethesda.svg', alt: 'Bethesda', width: 300
+        %li= image_tag '2kgames.svg', alt: '2K Games', width: 100
+        %li= image_tag 'activision.svg', alt: 'Activision', width: 260
+        %li= image_tag 'sony.svg', alt: 'Sony', width: 230
+        %li= image_tag 'microsoft.svg', alt: 'Microsoft', width: 280
+        %li= image_tag 'madglory.svg', alt: 'MadGlory', width: 300
+
+.snow.agora-about.text-center
+  .row
+    .columns
+
+      %ul.tabs.tabs--center{ data: { tab: true } }
+        %li.tab-title.active
+          %a{ href: '#about-panel' }
+            %h2 About
+        %li.tab-title
+          %a{ href: '#os-panel' }
+            %h2 Open Source
+
+      .tabs-content.tabs-content--anim
+        #about-panel.content.active
+          .timeline
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  September
+                  %strong 2005
+                .timeline-item__label Users served: 100k
+                .timeline-item__image
+                  = image_tag 'agoragames-old.svg', alt: '', width: 170
+                %h5 Agora Games Founded
+                %hr
+                %p
+                  We started the quest of building online gaming communities, both in-game and on the web.
+                  %a{ href: '#' } See our Growth
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  October
+                  %strong 2005
+                .timeline-item__label Users served: 200k
+                .timeline-item__image
+                  = image_tag 'hydra-old.svg', alt: '', width: 75
+                %h5 Hydra STUDIO Launched
+                %hr
+                %p Hydra appears on its first game, “Tony Hawk’s American Skateland” with its first client, Vicarious Visions
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  August
+                  %strong 2009
+                .timeline-item__label Users served: 22.3m
+                .timeline-item__image
+                  = image_tag 'mlg.svg', alt: '', width: 140
+                %h5 MLG Acquisition
+                %hr
+                %p
+                  Sensing the potential with Hydra and Agora Games, MLG makes a move to acquire the company.
+                  %a{ href: '#' } Read the full story
+
+            .timeline__item
+              .timeline-item.timeline-item--last
+                .label.round
+                  January
+                  %strong 2015
+                .timeline-item__label Users served: 250m
+                .timeline-item__image
+                  = image_tag 'hydra-new.svg', alt: '', width: 70
+                %h5 Hydra keeps growing
+                %hr
+                %p Adding to its total monthly, Hydra is powering 30 AAA game titles, appearing in front of hundreds of millions of gamers.
+
+        #os-panel.content
+          .oss
+
+            .oss__col.oss__col--intro
+              .jumbo-stat.graded-text
+                19
+              %h5 Open Source Projects
+              %p Oh yeah, we open source all day long. We’ve currently got nineteen open source projects out there, and that number is growing bigger all the time
+              %h5
+                %a.cta{ href: '#' } Visit Our GitHub
+
+            .oss__col.oss__col--list
+              %ul.oss-list
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } Chai
+                  %p Mocking framework in Python patterned after Mocha
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } Halo Reach API
+                  %p Ruby Gem for interacting with the Halo: Reach API
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } Leaderboard
+                  %p Ruby Gem for creating leaderboards backed by Redis in Ruby
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } HAIGHA
+                  %p Simple to use client library for interacting with AMQP brokers
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } Brightcove API
+                  %p Ruby gem for interacting with Brightcove Media API
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } ERRship
+                  %p Errship is a Rails 3.1 engine for rendering error pages in your layout
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } bettatabs
+                  %p Helper for Rails that renders the markup for a tabbed area
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } improved_logging
+                  %p Improved Logging capabilities for ActiveSupport::BufferedLogger
+                %li
+                  %h5
+                    %a.graded-text{ href: '#' } stache
+                  %p Mustache template handling in Rails 3.x
+
+%a#team
+.agora-team.text-center{ data: { magellan: { destination: 'team' } } }
+  .row
+    .columns
+
+      %ul.tabs.tabs--center{ data: { tab: true } }
+        %li.tab-title.active
+          %a{ href: '#team-panel' }
+            %h2 Team
+        %li.tab-title
+          %a{ href: '#careers-panel' }
+            %h2 Careers
+
+      .tabs-content.tabs-content--anim
+        #team-panel.content.active
+          .team
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:awestendorf@agoragames.com' }
+                %span.force-square= image_tag 'team/aaron.png', alt: 'Aaron'
+                %h4 Aaron
+                %h5 Senior Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:aandkjar@agoragames.com' }
+                %span.force-square= image_tag 'team/andrew.png', alt: 'Andrew'
+                %h4 Andrew
+                %h5 Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:blafountain@agoragames.com' }
+                %span.force-square= image_tag 'team/brad.png', alt: 'Brad'
+                %h4 Brad
+                %h5 Tech Director
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:bmcneff@agoragames.com' }
+                %span.force-square= image_tag 'team/brett.png', alt: 'Brett'
+                %h4 Brett
+                %h5 Production Coordinator
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:dandrade@agoragames.com' }
+                %span.force-square= image_tag 'team/davida.png', alt: 'David A'
+                %h4 David A
+                %h5 Senior Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:dczarnecki@agoragames.com' }
+                %span.force-square= image_tag 'team/davidc.png', alt: 'David C'
+                %h4 David C
+                %h5 Senior Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:elliott@agoragames.com' }
+                %span.force-square= image_tag 'team/elliott.png', alt: 'Elliott'
+                %h4 Elliott
+                %h5 Executive Producer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:gkim@agoragames.com' }
+                %span.force-square= image_tag 'team/graylin.png', alt: 'Graylin'
+                %h4 Graylin
+                %h5 Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:jletourneau@agoragames.com' }
+                %span.force-square= image_tag 'team/jack.png', alt: 'Jack'
+                %h4 Jack
+                %h5 Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:jgibson@agoragames.com' }
+                %span.force-square= image_tag 'team/john.png', alt: 'John'
+                %h4 John
+                %h5 Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:jdipierro@agoragames.com' }
+                %span.force-square= image_tag 'team/justin.png', alt: 'Justin'
+                %h4 Justin
+                %h5 Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:mwilson@agoragames.com' }
+                %span.force-square= image_tag 'team/matt.png', alt: 'Matt'
+                %h4 Matt
+                %h5 Senior Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:ncesare@agoragames.com' }
+                %span.force-square= image_tag 'team/nick.png', alt: 'Nick'
+                %h4 Nick
+                %h5 Associate Producer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:pventura@agoragames.com' }
+                %span.force-square= image_tag 'team/paul.png', alt: 'Paul'
+                %h4 Paul
+                %h5 Senior Software Engineer
+
+            .team__item
+              %a.team-member.team-member--emailable{ href: 'mailto:steven@agoragames.com' }
+                %span.force-square= image_tag 'team/steve.png', alt: 'Steve'
+                %h4 Steve
+                %h5 Studio Director
+
+            -#
+              .team__item
+                .team-member.team-member--available
+                  %span.force-square= image_tag 'job-available.jpg', alt: 'Job Available'
+                  %h4 Software Engineer
+                  %p
+                    %a{ href: '#' } Submit an Application
+
+        #careers-panel.content
+          .career
+
+            .career__col
+              %h4 Software Engineer
+              %p As a Software Engineer at Agora Games, you will be working on our online game services platform called "Hydra Studio”. You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry's biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform.
+              %p We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
+              %h5 Job Requirements:
+              %ul
+                %li Experience delivering large, complex, highly available software systems
+                %li Experience developing and operating distributed systems
+                %li Knowledge and practical application of design patterns, SOA, refactoring and software testing
+                %li Experience with web application servers, web development frameworks, proxy servers and relational databases
+                %li A detail-oriented, organized thought process and the ability to act decisively under stressful conditions
+                %li A proactive mindset and the ability to multitask and prioritize requirements
+                %li A self-motivated work process and excellent communication skills
+                %li An understanding of system optimization issues
+                %li Experience with system monitoring tools
+                %li Interest in working on-site at our office in Troy, NY or in an awesome remote office
+              %h5 Technologies we use:
+              %ul
+                %li Languages: Ruby, C++, Python, C#, Java, Objective-C
+                %li OS: Linux, Windows, OS X
+                %li Databases: MySQL, MongoDB, Redis, PostgreSQL, RabbitMQ, ZeroMQ
+                %li Web: Rails, CSS, HTML, JavaScript, node.js
+                %li Misc: Chef, Git, Runit, SaltStack
+
+            .career__col
+              %h5 Perks and Advantages:
+              %ul
+                %li Competitive salaries
+                %li Benefits: medical, dental, and vision programs for you and your dependents
+                %li Company-matching 401(k) retirement program
+                %li Flexible work hours
+                %li A brand-new computer when you start
+                %li An open and collaborative work space
+                %li We value a good work-life balance
+                %li Work on some of the biggest video games in the industry!
+                %li
+                  Located in historic downtown Troy, New York, close to several premier universities including
+                  %a{ href: '#' } Rensselaer Polytechnic Institute
+              %hr
+              %form
+                .field
+                  %label Full Name
+                  %input{ type: 'text' }
+                .field
+                  %label Email Address
+                  %input{ type: 'email' }
+                .field
+                  %label Cover Letter or Introduction
+                  %textarea{ rows: '10' }
+                %button{ type: 'submit' } Submit
+
+%a#contact
+.agora-contact{ data: { magellan: { destination: 'contact' } } }
+
+  .row
+    .columns
+      %header.text-center
+        %h2 Contact
+        %p
+          %a.graded-text{ href: 'mailto:info@agoragames.com' } INFO@AGORAGAMES.COM
+        %p 359 Broadway, Third Floor, Troy, NY 12180
+
+  .row
+    .columns.large-6.large-push-6
+      %form
+        %label
+          Full Name
+          %input{ name: 'fullname', type: 'text' }
+        %label
+          Email Address
+          %input{ name: 'email', type: 'email' }
+        %label
+          Tell us about your project
+          %textarea{ name: 'info', rows: '7' }
+        %button.button.bright.button--arrows Contact Agora Games
+    .columns.large-6.large-pull-6
+      = image_tag 'map.jpg', alt: 'Map'
+
+%footer.snow.text-center
+  .row
+    .columns.large-12
+
+      %ul.logos-list
+        %li
+          = image_tag 'agoragames-new.svg', alt: 'Agora Games'
+        %li
+          = image_tag 'mlg.svg', alt: 'Major League Gaming'
+
+      %hr
+      %p
+        © 2015 Agora Games.
+        %br.show-for-small-only
+        All Rights Reserved.
