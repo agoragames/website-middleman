@@ -1,8 +1,0 @@
-.block#block-archive
-  h2 Blog archives
-  - blog.articles.group_by { |a| a.date.year }.each do |year, articles|
-    h3= year
-    ul
-      - articles.group_by { |a| a.date.month }.each do |month, month_articles|
-        li
-          = link_to "#{Date.new(year, month, 1).strftime('%B')} #{year}", blog_month_path(year, month)
