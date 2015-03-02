@@ -33,6 +33,10 @@ page '/404.html', :directory_index => false
 #
 # activate :relative_assets
 
+# This has to go AFTER the blog config section.
+# See https://coderwall.com/p/qgnwzw
+activate :directory_indexes
+
 sprockets.append_path(File.join(root, 'bower_components'))
 
 compass_config do |config|
