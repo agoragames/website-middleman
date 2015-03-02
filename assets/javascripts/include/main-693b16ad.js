@@ -1,1 +1,0 @@
-$(function(){$(".slides").slides({effect:"fade",fadeSpeed:750,autoHeight:!0,play:5e3,container:"slides-container"}),$("#positions").slides({effect:"fade",fadeSpeed:200,autoHeight:!0,container:"jobs-container",generatePagination:!1,paginationClass:"inline-buttons"}),$("#perks .box").equalHeights(),$("#home .box").equalHeights(),$("#what-we-do-blocks .pad").equalHeights()});
