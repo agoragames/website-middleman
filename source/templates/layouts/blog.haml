@@ -1,0 +1,26 @@
+= wrap_layout :layout do
+  .row
+    .columns
+      %h1.blog-page-title
+        = link_to '/blog' do
+          The
+          %strong Blog
+
+  .row
+    .columns.large-9
+
+      - if content_for?(:blog_title)
+        .blog-page-subtitle
+          %h2= yield_content :blog_title
+
+      .blog-entry-list= yield
+
+      - if paginate && (num_pages > 1)
+        = partial 'blog_pagination',
+          locals: { page_number: page_number,
+                    num_pages: num_pages,
+                    prev_page: prev_page,
+                    next_page: next_page }
+
+    .columns.large-3
+      = partial 'blog_archive'

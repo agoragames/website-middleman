@@ -11,18 +11,17 @@ set :partials_dir, 'templates/partials'
 #
 # set :relative_links, true
 
-# We don't yet have any designs or anything for the blog, so ignore it for now
-ignore 'blog/*'
-# activate :blog do |blog|
-#   blog.prefix = "blog"
-#   blog.permalink = ":year/:month/:day/:title"
-#   blog.layout = "blog"
-#   blog.default_extension = ".markdown"
-#   blog.year_link = "{year}/index.html"
-#   blog.month_link = "{year}/{month}/index.html"
-#   blog.day_link = "{year}/{month}/{day}/index.html"
-#   blog.calendar_template = "blog/calendar.html"
-# end
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = ":year/:month/:day/:title"
+  blog.layout = "blog_post"
+  blog.default_extension = ".markdown"
+  blog.year_link = "{year}/index.html"
+  blog.month_link = "{year}/{month}/index.html"
+  blog.day_link = "{year}/{month}/{day}/index.html"
+  blog.calendar_template = "blog/calendar.html"
+  blog.paginate = true
+end
 
 # GitHub Pages wants 404.html, not 404/index.html
 page '/404.html', :directory_index => false
