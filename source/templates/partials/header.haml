@@ -1,0 +1,23 @@
+.fixed.raised
+
+  %nav.top-bar{ role: 'navigation', data: { topbar: true } }
+    %ul.title-area
+      %li.name
+        %h1
+          %a{ href: '/' }
+            = image_tag 'agoragames-new.svg', alt: 'Agora Games', class: 'main-logo'
+      %li.toggle-topbar.menu-icon
+        %a{ href: 'javascript:void(0)' }
+          %span Menu
+
+    %section.top-bar-section
+      %ul.right
+        %li
+          %a{ href: '#about', data: { anchor: true } } About
+        %li
+          %a{ href: '#team', data: { anchor: true } } Team
+        %li
+          %a{ href: '#contact', data: { anchor: true } } Contact
+        %li.hydra-theme
+          %a{ href: '#' }
+            = image_tag 'hydra-wordmark.svg', alt: 'Hydra', width: 92

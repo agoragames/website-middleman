@@ -2,30 +2,6 @@
 title: Agora Games
 ---
 
-.fixed.raised
-
-  %nav.top-bar{ role: 'navigation', data: { topbar: true } }
-    %ul.title-area
-      %li.name
-        %h1
-          %a{ href: '/' }
-            = image_tag 'agoragames-new.svg', alt: 'Agora Games', class: 'main-logo'
-      %li.toggle-topbar.menu-icon
-        %a{ href: 'javascript:void(0)' }
-          %span Menu
-
-    %section.top-bar-section
-      %ul.right
-        %li
-          %a{ href: '#about', data: { anchor: true } } About
-        %li
-          %a{ href: '#team', data: { anchor: true } } Team
-        %li
-          %a{ href: '#contact', data: { anchor: true } } Contact
-        %li.hydra-theme
-          %a{ href: '#' }
-            = image_tag 'hydra-wordmark.svg', alt: 'Hydra', width: 92
-
 %ul.hero{ data: { orbit: true, options: 'slide_number: false' } }
 
   %li.centered-slide.active.invert{ style: "background-image: url('#{image_path('slides/bg1.jpg') }')" }
@@ -377,16 +353,22 @@ title: Agora Games
                   Located in historic downtown Troy, New York, close to several premier universities including
                   %a{ href: '#' } Rensselaer Polytechnic Institute
               %hr
-              %form
+              %form{ action: 'https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public',
+                     method: 'post', autocomplete: 'off', enctype: 'multipart/form-data' }
+                %input#idstamp{ name: 'idstamp', type: 'hidden', value: 'cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw=' }
+                %div{ style: 'display: none' }
+                  %label
+                    Do not fill in this field:
+                    %textarea#comment{ name: 'comment', rows: '1', cols: '1' }
                 .field
                   %label Full Name
-                  %input{ type: 'text' }
+                  %input{ name: 'Field4', type: 'text', placeholder: 'Full Name' }
                 .field
                   %label Email Address
-                  %input{ type: 'email' }
+                  %input{ name: 'Field5', type: 'email', placeholder: 'Email Address' }
                 .field
                   %label Cover Letter or Introduction
-                  %textarea{ rows: '10' }
+                  %textarea{ name: 'Field9', rows: '10' }
                 %button{ type: 'submit' } Submit
 
 %a#contact
@@ -402,16 +384,22 @@ title: Agora Games
 
   .row
     .columns.large-6.large-push-6
-      %form
+      %form{ action: 'https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public',
+             method: 'post', autocomplete: 'off', enctype: 'multipart/form-data' }
+        %input#idstamp{ name: 'idstamp', type: 'hidden', value: 'cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw=' }
+        %div{ style: 'display: none' }
+          %label
+            Do not fill in this field:
+            %textarea#comment{ name: 'comment', rows: '1', cols: '1' }
         %label
           Full Name
-          %input{ name: 'fullname', type: 'text' }
+          %input{ name: 'Field4', type: 'text', placeholder: 'Name' }
         %label
           Email Address
-          %input{ name: 'email', type: 'email' }
+          %input{ name: 'Field5', type: 'email', placeholder: 'Email' }
         %label
           Tell us about your project
-          %textarea{ name: 'info', rows: '7' }
+          %textarea{ name: 'Field9' }
         %button.button.bright.button--arrows Contact Agora Games
     .columns.large-6.large-pull-6
       = image_tag 'map.jpg', alt: 'Map'
