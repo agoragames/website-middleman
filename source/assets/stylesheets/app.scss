@@ -1,6 +1,9 @@
 @import 'normalize';
 @import 'settings';
-@import 'owl.carousel';
+
+// This does not appear to be used; the home page carousel is styled with
+// the classes used by Foundation's "Orbit" carousel widget.
+// @import 'owl.carousel';
 
 @import 'compass/css3/images';
 @import 'compass/css3/background-size';
