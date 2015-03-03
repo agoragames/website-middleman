@@ -1,0 +1,8 @@
+---
+title: Brain Matters
+pageable: true
+layout: blog
+---
+
+- page_articles.each do |article|
+  = partial 'blog_entry', locals: { article: article }

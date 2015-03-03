@@ -1,0 +1,11 @@
+.blog-entry
+  .blog__date
+    = article.date.strftime('%b %-d')
+  .blog__contents
+    %h2.blog__title
+      = link_to article.title, article.url
+    .blog__author
+      By
+      %strong= article.data.author
+    .blog__body
+      = article.body

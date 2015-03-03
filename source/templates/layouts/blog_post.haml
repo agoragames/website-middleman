@@ -1,0 +1,23 @@
+= wrap_layout :layout do
+  .row
+    .columns
+      %h1.blog-page-title
+        = link_to '/blog' do
+          The
+          %strong Blog
+
+  .row
+    .columns.large-9
+
+      %h2.blog__title
+        = link_to current_page.title, current_page.url
+      .blog__author
+        By
+        %strong= current_page.data.author
+      .blog__date
+        = current_page.date.strftime('%A, %B %-d, %Y')
+      .blog__body
+        = current_page.body
+
+    .columns.large-3
+      = partial 'blog_archive'

@@ -56,6 +56,7 @@ if(!Modernizr.touch) {
   var scrollSpy = function() {
     $('[data-anchor]').each(function() {
       var $panel = $('a[id=' + $(this).attr('href').replace('#', '') + ']');
+      if ($panel.length == 0) { return; }
       if(scrollTop > $panel.offset().top - 100) {
         $('[data-anchor]').not(this).parent().removeClass('active');
         $(this).parent().addClass('active');

@@ -1,0 +1,11 @@
+.blog-pagination
+  %ul.inline-list
+    - if next_page
+      %li
+        = link_to next_page do
+          « Older entries
+    %li Page #{page_number} of #{num_pages}
+    - if prev_page
+      %li
+        = link_to prev_page do
+          Newer entries »
