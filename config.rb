@@ -35,6 +35,7 @@ page '/404.html', :directory_index => false
 # This has to go AFTER the blog config section.
 # See https://coderwall.com/p/qgnwzw
 activate :directory_indexes
+activate :automatic_image_sizes
 
 sprockets.append_path(File.join(root, 'bower_components'))
 
