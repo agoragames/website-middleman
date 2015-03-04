@@ -42,6 +42,7 @@
   color: $brand_gradient_from;
   background: -webkit-linear-gradient($brand_gradient_from, $brand_gradient_to);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .hydra-theme.hydra-theme {
@@ -69,10 +70,12 @@
 .top-bar-section li.active.active.active a {
   background: -webkit-linear-gradient($brand_gradient_from, $brand_gradient_to);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   &:hover {
     background: -webkit-linear-gradient($brand_gradient_to, $brand_gradient_from);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
@@ -90,6 +93,9 @@
 code {
   background-color: rgba(black, 0.1);
   border-color: rgba(black, 0.2);
+}
+.nowrap {
+  white-space: nowrap;
 }
 
 /*==========  CAROUSEL  ==========*/
@@ -160,7 +166,7 @@ code {
   top: 22%;
   padding: 0 1.875rem; // Match .top-bar padding
   p {
-      @media #{$medium-up} {
+    @media #{$medium-up} {
       font-size: 1.25rem;
       margin-bottom: 1.6em;
     }
@@ -253,7 +259,7 @@ code {
 
 /*==========  BLOCKGRID  ==========*/
 
-@import 'foundation/components/block-grid';
+// @import 'foundation/components/block-grid';
 
 /*==========  INLINE LISTS  ==========*/
 
