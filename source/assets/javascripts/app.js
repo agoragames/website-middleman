@@ -2,7 +2,6 @@
 //= require 'foundation/js/foundation'
 //= require '_countup'
 //= require '_waypoints'
-//= require '_owl.carousel'
 //= require '_jquery.easing'
 //= require '_polyfill.requestanimationframe'
 
@@ -22,12 +21,6 @@ $('[data-countup]').each(function(i) {
       }, 100*i);
     }
   }, { offset: '90%' });
-});
-
-$('[data-owl]').each(function() {
-  $(this).owlCarousel({
-    items: 4
-  });
 });
 
 /** Animated navigation window scrolling */
