@@ -11,4 +11,4 @@
   %body.f-topbar-fixed{ class: page_classes }
     = partial 'header'
     = yield
-    = javascript_include_tag 'app'
+    = javascript_include_tag 'app', async: true
