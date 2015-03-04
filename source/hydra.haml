@@ -8,9 +8,9 @@ stylesheet: "hydra"
 
 %section.section.section--dark.hydra-platforms
   .row
-    .columns.columns--middle.large-6.text-center
+    .columns.columns--middle.large-6.text-center<>
       = image_tag 'hydra/hydra-platforms.jpg', alt: 'Hydra Platforms; Apple, Playstation, XBox, ?, Unity, Android, Nintendo Wii, Steam and Windows'
-    .columns.columns--middle.large-6
+    .columns.columns--middle.large-6<>
       %h2.graded-text Powering all your platforms, devices, and networks with one backend
       %p Hydra is a cloud based gaming backend that allows developers to quickly add online features to their games on almost any platform. It frees developers from the hassle of managing online servers so they can focus on making great games.
       %a.button.bright.button--arrows{ href: '#' }
@@ -36,9 +36,9 @@ stylesheet: "hydra"
       .tabs-content.tabs-content--anim
 
         #overview-panel.content.active
-          .columns.columns--middle.large-6
+          .columns.columns--middle.large-6<>
             = image_tag 'hydra/robot.jpg', alt: 'Robot'
-          .columns.columns--middle.large-6.text-left
+          .columns.columns--middle.large-6.text-left<>
             %h3.graded-text Designed from the ground up to minimize integration time, support all game types and scale dynamically
             %ul
               %li Proven technology designed to handle billions of transactions
@@ -49,9 +49,9 @@ stylesheet: "hydra"
               %li Support for global, multi-datacenter deployment of real-time services
 
         #sdk-panel.content
-          .columns.columns--middle.large-6
+          .columns.columns--middle.large-6<>
             = image_tag 'hydra/robot2.jpg', alt: 'Robot'
-          .columns.columns--middle.large-6.text-left
+          .columns.columns--middle.large-6.text-left<>
             %h3.graded-text Available today:
             %ul
               %li C# SDK (Unity[PC, Mac, Web Player, iOS, Android], raw C#)
@@ -65,9 +65,9 @@ stylesheet: "hydra"
               %li C++ SDK (support for Xbox One and PS4)
 
         #features-panel.content
-          .columns.columns--middle.large-6
+          .columns.columns--middle.large-6<>
             = image_tag 'hydra/features.jpg', alt: 'Over 10x growth'
-          .columns.columns--middle.large-6.text-left
+          .columns.columns--middle.large-6.text-left<>
             %h3.graded-text Lotsa Features
             %p Ut enim ad minim veniam, quis nostrud exercitation. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Idque Caesaris facere voluntate liceret: sese habere.
             %ul
@@ -155,22 +155,23 @@ stylesheet: "hydra"
 
 %footer.section.section--dark.hydra-footer
   .row
-    .columns.columns--middle.large-6.text-left
+    .columns.large-6.text-left
       %p
         %a.graded-text.uc-link{ href: '#' } info@agoragames.com
         %br
         359 Broadway, Third Floor, Troy, NY 12180
-    .columns.columns--middle.large-6.text-right
+    .columns.columns--middle.large-6.text-right<>
     %hr
-    .columns.columns--middle.large-6.text-left
+  .row
+    .columns.columns--middle.large-6.text-left<>
       %ul.logos-list
         %li
           = image_tag 'agoragames-new.svg', alt: 'Agora Games', width: '95'
         %li
           = image_tag 'mlg.svg', alt: 'Major League Gaming', width: '120'
-    .columns.columns--middle.large-6.text-right
+    .columns.columns--middle.large-6.text-right<>
       %p{ style: 'margin-bottom: 0' }
         %span.nowrap
           © 2015
-          %a.graded-text{ href: '#' } Agora Games
+          %a.graded-text{ href: '#' } Agora Games.
         %span.nowrap All Rights Reserved.
