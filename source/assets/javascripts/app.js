@@ -1,5 +1,7 @@
 //= require 'foundation/js/vendor/jquery'
-//= require 'foundation/js/foundation'
+//= require 'foundation/js/foundation/foundation'
+//= require 'foundation/js/foundation/foundation.orbit'
+//= require 'foundation/js/foundation/foundation.topbar'
 //= require '_countup'
 //= require '_waypoints'
 //= require '_jquery.easing'
