@@ -7,6 +7,14 @@
 //= require '_jquery.easing'
 //= require '_polyfill.requestanimationframe'
 
+$('[data-orbit]').each(function () {
+  $(this).find('[data-background]').each(function () {
+    slide = $(this);
+    // Need to write directly to the 'style' attribute to work with Orbit plugin
+    slide.attr('style', 'background-image: url("' + slide.data('background') + '")');
+  });
+});
+
 $(document).foundation();
 
 $('[data-countup]').each(function(i) {
