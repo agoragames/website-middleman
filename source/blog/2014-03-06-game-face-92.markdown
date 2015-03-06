@@ -1,0 +1,17 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+"Game Face" will be our (mostly) weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+**haigha**
+
+[haigha](https://github.com/agoragames/haigha) is our simple to use client library for interacting with AMQP brokers. In 0.7.3, we added IPv6 support.
+
+Contributor(s): Maxim Mitroshin ([GitHub](https://github.com/rocco66))
+
+**leaderboard**
+
+[leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The [leaderboard](https://github.com/agoragames/leaderboard) and [leaderboard-python](https://github.com/agoragames/leaderboard-python) libraries all saw updates this past week. We added a global member data option that allows multiple leaderboards to share the same set of member data as well as a helper method to retrieve a top # of players.
+
+Contributor(s): Roberto Miranda ([GitHub](https://github.com/robertomiranda)) and Davy Campano ([GitHub](https://github.com/dcampano))
