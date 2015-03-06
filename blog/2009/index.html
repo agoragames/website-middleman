@@ -331,6 +331,64 @@ Read the entire article here:  <a href="http://kotaku.com/5303025/autobots-fans
 <p>And this:
  &gt; "The conflicts are waged by players connecting their DS online to activate daily single-player challenges and then uploading their point tallies. Those challenges are associated with regions on a world map, and the battle continues until a faction claims all regions."
 From this article:  <a href="http://kotaku.com/5308747/decepticon-owners-turn-tables-on-autobot-gamers">http://kotaku.com/5308747/decepticon-owners-turn-tables-on-autobot-gamers</a></p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/javascript-continuations-make-callback-chains-easy/">Javascript Continuations Make Callback Chains Easy</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>The problem: I define hooks for callbacks in my javascript libraries. The functions for these hooks could be defined anywhere and tend to overwrite each other. When you want to write a callback you have to understand what the entire system is doing.</p>
+
+<p>The solution: Instead of defining single functions for callbacks, maintain a list of them and then build a chain of continuations. Here is the completed code for managing our callbacks: <a href="http://gist.github.com/136525">http://gist.github.com/136525</a>. This expands on Jason's continuations: <a href="http://lonelypinkelephants.com/continuing.html">http://lonelypinkelephants.com/continuing.html</a>.</p>
+
+<p>The old way was to do something like this:</p>
+
+<p><code>javascript
+ // file 1
+ Controllers.Hydra = {
+ on_load : function() {
+ do_whatever_is_defined_by_default()
+ }
+ }
+</code></p>
+
+<p><code>javascript
+ // file 2
+ Controllers.Hydra = {
+ on_load : function() {
+ do_something()
+ do_this_other_thing()
+ do_whatever_is_defined_by_default()
+ }
+ }
+</code></p>
+
+<p>And then in the code that actually cares:</p>
+
+<p><code>html
+onload="Controllers.Hydra.on_load()"
+</code></p>
+
+<p>This means the overloading method must know about what the default behavior is and it can only be overloaded once.</p>
+
+<p>The new (awesome) way:</p>
+
+<p><code>javascript
+ // file 1
+ Callbacks.add(Callbacks.Hydra.on_load, do_whatever_is_defined_by_default)
+</code></p>
+
+<p>And:</p>
+
+<p><code>javascript
+ // file 2
+ Callbacks.add(Callbacks.Hydra.on_load, do_something)
+ Callbacks.add(Callbacks.Hydra.on_load, do_this_other_thing)
+</code></p>
+
+<p>And in the code that actually fires the callback:</p>
+
+<p><code>html
+ onload="Callbacks.start(Callbacks.Hydra.on_load)"
+</code></p>
+
+<p>The callbacks are called in order.</p>
+
+<p>What else can we do with this? One of the features I like about Rails is that if a callback or filter returns false the rest of the chain is halted. We've included that behavior too (This doesn't necessarily affect what ever called start on the callback chain).</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/advanced-page-caching-hacks-in-nginx/">Advanced Page Caching Hacks in NGINX</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>Those of you in the Rails community who use NGINX may have come across <a href="http://brainspl.at/nginx.conf.txt">this</a> before: Ezra Zygmuntowicz's NGINX config. It bears some similarity to the ones we use at Agora. Specifically, the section relating to serving page-cached files. The relevant lines (pulled from one of our configs) looks like this:</p>
 
 <p><code>
@@ -404,64 +462,6 @@ From this article:  <a href="http://kotaku.com/5308747/decepticon-owners-turn-t
 ```</p>
 
 <p>As you can see, sometimes, making NGINX play nice requires some lateral thinking, but you can generally always get it to do what you need to.</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jun 26</div></div><div class="blog-content"><h2><a href="/blog/2009/06/26/javascript-continuations-make-callback-chains-easy/">Javascript Continuations Make Callback Chains Easy</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>The problem: I define hooks for callbacks in my javascript libraries. The functions for these hooks could be defined anywhere and tend to overwrite each other. When you want to write a callback you have to understand what the entire system is doing.</p>
-
-<p>The solution: Instead of defining single functions for callbacks, maintain a list of them and then build a chain of continuations. Here is the completed code for managing our callbacks: <a href="http://gist.github.com/136525">http://gist.github.com/136525</a>. This expands on Jason's continuations: <a href="http://lonelypinkelephants.com/continuing.html">http://lonelypinkelephants.com/continuing.html</a>.</p>
-
-<p>The old way was to do something like this:</p>
-
-<p><code>javascript
- // file 1
- Controllers.Hydra = {
- on_load : function() {
- do_whatever_is_defined_by_default()
- }
- }
-</code></p>
-
-<p><code>javascript
- // file 2
- Controllers.Hydra = {
- on_load : function() {
- do_something()
- do_this_other_thing()
- do_whatever_is_defined_by_default()
- }
- }
-</code></p>
-
-<p>And then in the code that actually cares:</p>
-
-<p><code>html
-onload="Controllers.Hydra.on_load()"
-</code></p>
-
-<p>This means the overloading method must know about what the default behavior is and it can only be overloaded once.</p>
-
-<p>The new (awesome) way:</p>
-
-<p><code>javascript
- // file 1
- Callbacks.add(Callbacks.Hydra.on_load, do_whatever_is_defined_by_default)
-</code></p>
-
-<p>And:</p>
-
-<p><code>javascript
- // file 2
- Callbacks.add(Callbacks.Hydra.on_load, do_something)
- Callbacks.add(Callbacks.Hydra.on_load, do_this_other_thing)
-</code></p>
-
-<p>And in the code that actually fires the callback:</p>
-
-<p><code>html
- onload="Callbacks.start(Callbacks.Hydra.on_load)"
-</code></p>
-
-<p>The callbacks are called in order.</p>
-
-<p>What else can we do with this? One of the features I like about Rails is that if a callback or filter returns false the rest of the chain is halted. We've included that behavior too (This doesn't necessarily affect what ever called start on the callback chain).</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">May 29</div></div><div class="blog-content"><h2><a href="/blog/2009/05/29/railsconf-wrap-up/">RailsConf Wrap Up</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p>Well, we're back from Vegas! And have been, for a couple weeks… I've been meaning to put up some follow-up resources for my talk (<em>PWN Your Infrastructure: Behind Call of Duty: World at War</em>), but there was just so much work to do when I got back… such is the life of a system administrator!</p>
 
 <p>That said, I've got some free moments, so I'm putting up some reference materials.</p>
@@ -731,187 +731,6 @@ server {
 <p>You won't be disappointed!</p>
 
 <p>\m/</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automatic-deploy-notifications/">Automatic Deploy Notifications</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>When we make a deploy to our staging or production environments there are about 5 people who <strong>need</strong> to know and about 25 who <strong>want</strong> to know. Often someone is forgotten or the email doesn't go out at all and we get a phone call (which no one likes).</p>
-
-<p>The solution? Capistrano recipes to the rescue!</p>
-
-<p><code>ruby
-before 'deploy', 'deploy:notify'
-</code></p>
-
-<p>No matter what happens, if we're deploying people are going to know about it.</p>
-
-<p>Here's that task:</p>
-
-<p>```ruby
-namespace :deploy do
-  desc "sends a notification email letting everyone know we're deploying"
-  task :notify do
-    deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
-    stage_name = stage.to_s.upcase
-    action_mailer_with_temporary_delivery_method do
-      mail = TMail::Mail.new
-      mail.subject = "Super Fantastic Project Pending Deploy [#{deployment_name} #{stage}]"
-      mail.to      = "superproject-deploy@lists.yourcompany.com"
-      mail.from    = ActionMailer::Base.smtp_settings[:user_name]
-      mail.date    = Time.now
-      mail.body    = ActionMailer::Utils.normalize_new_lines(%Q(
-Hello everyone,</p>
-
-<p>We're making a deploy to the #{stage} environment. The #{stage} site may (or may not) be
-unavailable for a few minutes sometime within the next 30 minutes (depending on how long
-it takes to upload the changes).</p>
-
-<p>This message is automated.</p>
-
-<p>———————- debugging information ———————-
-#{variables}
-))
-      ActionMailer::Base.deliver(mail)
-      # puts mail.body
-    end
-  end
-end
-```</p>
-
-<p>Now, what's going on here? First, apologies to DHH but I'm not smart enough to figure out how to make the Rails email system work so we just use TMail directly. Which is fine, but we use ARMailer which puts all of our email in a queue and it gets delivered by a cron job every 5 minutes or so. This usually works pretty well but in this case we have two problems though. The first is this is run on the deployer's machine, which may not have access to the database where it needs to queue up the email. Plus, when we deploy we disable the crons and we don't turn them back on until we're satisfied everything is working. If we used ARMailer for this particular email, the site may be down and no one would know; defeats the purpose of the notification.</p>
-
-<p>action_mailer_with_temporary_delivery_method addresses this problem:</p>
-
-<p><code>ruby
-def action_mailer_with_temporary_delivery_method
-  existing_delivery_method = ActionMailer::Base.delivery_method
-  existing_smtp_settings = ActionMailer::Base.smtp_settings
-  begin
-    ActionMailer::Base.delivery_method = :smtp
-    ActionMailer::Base.smtp_settings = {
-      :address =&gt; "smtp.gmail.com",
-      :port =&gt; "587",
-      :domain =&gt; "your.domain.com",
-      :authentication =&gt; :plain,
-      :user_name =&gt; "do-not-reply@your.domain.com",
-      :password =&gt; "PASSword"
-    }
-    yield
-  ensure
-    ActionMailer::Base.delivery_method = existing_delivery_method
-    ActionMailer::Base.smtp_settings = existing_smtp_settings
-  end
-end
-</code></p>
-
-<p><code>action_mailer_with_temporary_delivery_method</code> temporarily sets up ActionMailer to use SMTP (with gmail) to send out our notification. When we're done, it sets it back to whatever it was set to before.</p>
-
-<p>We've hurdled the actual message delivery, but how can we make that notification message itself more useful to the internal group? We do two things. The first is to sort out exactly what we're deploying and where we're deploying it to:</p>
-
-<p><code>ruby
-  deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
-  stage_name      = stage.to_s.upcase
-</code></p>
-
-<p>application and stage are set in our regular deploy script with:</p>
-
-<p><code>ruby
-  set :application, 'superproject-staging'
-</code></p>
-
-<p><code>:stage</code>  is more complicated but essentially the same (in this example it would be 'staging')</p>
-
-<p>The second pieces is  <code>variables</code> . Capistrano 2.3 has an instance variable available to all tasks named  <code>@variables</code> . We were just inspecting that for a while but it has a lot of procs for determining some of the values. Now we do this:</p>
-
-<p><code>ruby
-def variables
-  result = []
-  @variables.reject { |k,v| k.to_s.downcase.eql?('password') }.each_pair do |key, value|
-    # since we're going to be printing this out, we don't want to see garbage like
-    # "#"
-value = value.is_a?(Proc) ? value.call : value
-value = value.is_a?(Array) ? value.join(", ") : value
-result
-</code></p>
-
-<p>Which gives you some better output:</p>
-
-<p><code>
----------------------- debugging information ----------------------
- application : superproject-staging
- available_stages : staging, production, qa
- cron_file : config/cron/staging_cron.conf
- cron_role : utility
- cron_role_only_clause :
- current_dir : current
- current_path : /home/www-data/superproject-staging/current
- current_release : /home/www-data/superproject-staging/releases/20090220155729
- current_revision : 32024
- default_environment :
- default_run_options : ptytrue
- deploy_to : /home/www-data/superproject-staging
- deploy_via : checkout
- keep_releases : 7
- latest_release : /home/www-data/superproject-staging/releases/20090220162352
- latest_revision : 32024
- logger : #&lt;Capistrano::Logger:0x1214e30&gt;
- memcache_extra_options :
- memcache_memory : 64
- memcache_pid_file : /home/www-data/superproject-staging/shared/log/memcache.pid
- memcache_port : 20109
- memcache_role : app
- memcache_user : root
- migrate_plugin_role : db
- migrate_plugin_role_only_clause : primarytrue
- mongrel_address : 0.0.0.0
- mongrel_environment : staging
- mongrel_instances : 8
- .
- .
- .
- .
- etc
-</code></p>
-
-<p>Prettier examples are available at <a href="http://pastie.org/395233">pastie</a>. Drop that in <code>config/recipes/notification.rb</code> and in your normal <code>config/deploy.rb</code> include this:</p>
-
-<p><code>
-load 'config/recipes/notification
-</code></p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automagically-managing-merges-with-svn/">Automagically Managing Merges with SVN</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>For each Guitar Hero game we have a full trunk/branches/tags structure. Most of the trunks are copied off of their predecessor's trunk. This works pretty well for us, but it can be hairy to merge changes made to the original ( <code>game-1</code> ) trunk down to each of its descendants. I found that I was often forgetting to merge to *all* of the relevant branches. To mitigate the effects of my amnesia I wrote this, <code>chmod +x</code> 'd it and dropped it into my <code>~/bin</code> (which happens to be in my <code>PATH</code> ):</p>
-
-<p>```ruby
-#! /usr/bin/env ruby
-repository_host = 'your.svn.repository.host'
-working_dirs = ['~/Documents/game-2/trunk',
-'~/Documents/game-3/trunk',
-'~/Documents/game-4/trunk']</p>
-
-<p>p "usage: $ gh-merge revision [revision revision revision …]" if ARGV.empty?</p>
-
-<p>ARGV.each do |revision|
-  working_dirs.each do |working_dir|
-    p "merging #{working_dir}, revision #{revision}"
-    <code>svn merge -c #{revision} \
-    svn+ssh://#{repository_host}/agora/game-1/trunk \
-    #{working_dir}</code>
-  end
-end</p>
-
-<p>working_dirs.each do |working_dir|
-  p "committing #{working_dir}"
-  <code>svn ci -m "svn merge -c #{ARGV.join(', ')} \
-  svn+ssh://#{repository_host}/agora/game-1/trunk" \
-  #{working_dir}</code>
-end
-```</p>
-
-<p>The <code>working_dirs</code> represent the paths to my working dirs for each branch I want to merge my trunk changes to.</p>
-
-<p>To use I just pass the revisions I want to push to each branch like so:</p>
-
-<p><code>
-ola$ gh-merge 31774 31775 31780
-</code></p>
-
-<p>and it merges and commits those revisions to each branch. It assumes you're caching your authentication for svn.</p>
-</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/python-is-mocking-me-a-ruby-programmers-adventures-with-pythonmox/">Python Is Mocking Me: A Ruby Programmer's Adventures With Python/Mox</a></h2><div class="blog-author">By <strong>Tim Jones</strong></div><div class="blog-body"><p><strong>Overview</strong></p>
 
 <p>Much of Agora's work over the last few years has been done in Ruby. Recently though, we're migrating major components to Python in order to enjoy the benefits of cross platform compatibility with Windows. The purpose of this post is to discuss testing in Python; specifically mocking.</p>
@@ -1131,6 +950,187 @@ self.mox.ReplayAll()</p>
   <li>If you do this and you have your own setUp method declaration be sure to call the parent class implementation!</li>
   <li>Don't forget to call self.mox.ReplayAll() before you actually kick off the replay portion of your test</li>
 </ul>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automatic-deploy-notifications/">Automatic Deploy Notifications</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>When we make a deploy to our staging or production environments there are about 5 people who <strong>need</strong> to know and about 25 who <strong>want</strong> to know. Often someone is forgotten or the email doesn't go out at all and we get a phone call (which no one likes).</p>
+
+<p>The solution? Capistrano recipes to the rescue!</p>
+
+<p><code>ruby
+before 'deploy', 'deploy:notify'
+</code></p>
+
+<p>No matter what happens, if we're deploying people are going to know about it.</p>
+
+<p>Here's that task:</p>
+
+<p>```ruby
+namespace :deploy do
+  desc "sends a notification email letting everyone know we're deploying"
+  task :notify do
+    deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
+    stage_name = stage.to_s.upcase
+    action_mailer_with_temporary_delivery_method do
+      mail = TMail::Mail.new
+      mail.subject = "Super Fantastic Project Pending Deploy [#{deployment_name} #{stage}]"
+      mail.to      = "superproject-deploy@lists.yourcompany.com"
+      mail.from    = ActionMailer::Base.smtp_settings[:user_name]
+      mail.date    = Time.now
+      mail.body    = ActionMailer::Utils.normalize_new_lines(%Q(
+Hello everyone,</p>
+
+<p>We're making a deploy to the #{stage} environment. The #{stage} site may (or may not) be
+unavailable for a few minutes sometime within the next 30 minutes (depending on how long
+it takes to upload the changes).</p>
+
+<p>This message is automated.</p>
+
+<p>———————- debugging information ———————-
+#{variables}
+))
+      ActionMailer::Base.deliver(mail)
+      # puts mail.body
+    end
+  end
+end
+```</p>
+
+<p>Now, what's going on here? First, apologies to DHH but I'm not smart enough to figure out how to make the Rails email system work so we just use TMail directly. Which is fine, but we use ARMailer which puts all of our email in a queue and it gets delivered by a cron job every 5 minutes or so. This usually works pretty well but in this case we have two problems though. The first is this is run on the deployer's machine, which may not have access to the database where it needs to queue up the email. Plus, when we deploy we disable the crons and we don't turn them back on until we're satisfied everything is working. If we used ARMailer for this particular email, the site may be down and no one would know; defeats the purpose of the notification.</p>
+
+<p>action_mailer_with_temporary_delivery_method addresses this problem:</p>
+
+<p><code>ruby
+def action_mailer_with_temporary_delivery_method
+  existing_delivery_method = ActionMailer::Base.delivery_method
+  existing_smtp_settings = ActionMailer::Base.smtp_settings
+  begin
+    ActionMailer::Base.delivery_method = :smtp
+    ActionMailer::Base.smtp_settings = {
+      :address =&gt; "smtp.gmail.com",
+      :port =&gt; "587",
+      :domain =&gt; "your.domain.com",
+      :authentication =&gt; :plain,
+      :user_name =&gt; "do-not-reply@your.domain.com",
+      :password =&gt; "PASSword"
+    }
+    yield
+  ensure
+    ActionMailer::Base.delivery_method = existing_delivery_method
+    ActionMailer::Base.smtp_settings = existing_smtp_settings
+  end
+end
+</code></p>
+
+<p><code>action_mailer_with_temporary_delivery_method</code> temporarily sets up ActionMailer to use SMTP (with gmail) to send out our notification. When we're done, it sets it back to whatever it was set to before.</p>
+
+<p>We've hurdled the actual message delivery, but how can we make that notification message itself more useful to the internal group? We do two things. The first is to sort out exactly what we're deploying and where we're deploying it to:</p>
+
+<p><code>ruby
+  deployment_name = application.to_s.gsub(/(-.*)?/, '').upcase
+  stage_name      = stage.to_s.upcase
+</code></p>
+
+<p>application and stage are set in our regular deploy script with:</p>
+
+<p><code>ruby
+  set :application, 'superproject-staging'
+</code></p>
+
+<p><code>:stage</code>  is more complicated but essentially the same (in this example it would be 'staging')</p>
+
+<p>The second pieces is  <code>variables</code> . Capistrano 2.3 has an instance variable available to all tasks named  <code>@variables</code> . We were just inspecting that for a while but it has a lot of procs for determining some of the values. Now we do this:</p>
+
+<p><code>ruby
+def variables
+  result = []
+  @variables.reject { |k,v| k.to_s.downcase.eql?('password') }.each_pair do |key, value|
+    # since we're going to be printing this out, we don't want to see garbage like
+    # "#"
+value = value.is_a?(Proc) ? value.call : value
+value = value.is_a?(Array) ? value.join(", ") : value
+result
+</code></p>
+
+<p>Which gives you some better output:</p>
+
+<p><code>
+---------------------- debugging information ----------------------
+ application : superproject-staging
+ available_stages : staging, production, qa
+ cron_file : config/cron/staging_cron.conf
+ cron_role : utility
+ cron_role_only_clause :
+ current_dir : current
+ current_path : /home/www-data/superproject-staging/current
+ current_release : /home/www-data/superproject-staging/releases/20090220155729
+ current_revision : 32024
+ default_environment :
+ default_run_options : ptytrue
+ deploy_to : /home/www-data/superproject-staging
+ deploy_via : checkout
+ keep_releases : 7
+ latest_release : /home/www-data/superproject-staging/releases/20090220162352
+ latest_revision : 32024
+ logger : #&lt;Capistrano::Logger:0x1214e30&gt;
+ memcache_extra_options :
+ memcache_memory : 64
+ memcache_pid_file : /home/www-data/superproject-staging/shared/log/memcache.pid
+ memcache_port : 20109
+ memcache_role : app
+ memcache_user : root
+ migrate_plugin_role : db
+ migrate_plugin_role_only_clause : primarytrue
+ mongrel_address : 0.0.0.0
+ mongrel_environment : staging
+ mongrel_instances : 8
+ .
+ .
+ .
+ .
+ etc
+</code></p>
+
+<p>Prettier examples are available at <a href="http://pastie.org/395233">pastie</a>. Drop that in <code>config/recipes/notification.rb</code> and in your normal <code>config/deploy.rb</code> include this:</p>
+
+<p><code>
+load 'config/recipes/notification
+</code></p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/automagically-managing-merges-with-svn/">Automagically Managing Merges with SVN</a></h2><div class="blog-author">By <strong>Ola Mork</strong></div><div class="blog-body"><p>For each Guitar Hero game we have a full trunk/branches/tags structure. Most of the trunks are copied off of their predecessor's trunk. This works pretty well for us, but it can be hairy to merge changes made to the original ( <code>game-1</code> ) trunk down to each of its descendants. I found that I was often forgetting to merge to *all* of the relevant branches. To mitigate the effects of my amnesia I wrote this, <code>chmod +x</code> 'd it and dropped it into my <code>~/bin</code> (which happens to be in my <code>PATH</code> ):</p>
+
+<p>```ruby
+#! /usr/bin/env ruby
+repository_host = 'your.svn.repository.host'
+working_dirs = ['~/Documents/game-2/trunk',
+'~/Documents/game-3/trunk',
+'~/Documents/game-4/trunk']</p>
+
+<p>p "usage: $ gh-merge revision [revision revision revision …]" if ARGV.empty?</p>
+
+<p>ARGV.each do |revision|
+  working_dirs.each do |working_dir|
+    p "merging #{working_dir}, revision #{revision}"
+    <code>svn merge -c #{revision} \
+    svn+ssh://#{repository_host}/agora/game-1/trunk \
+    #{working_dir}</code>
+  end
+end</p>
+
+<p>working_dirs.each do |working_dir|
+  p "committing #{working_dir}"
+  <code>svn ci -m "svn merge -c #{ARGV.join(', ')} \
+  svn+ssh://#{repository_host}/agora/game-1/trunk" \
+  #{working_dir}</code>
+end
+```</p>
+
+<p>The <code>working_dirs</code> represent the paths to my working dirs for each branch I want to merge my trunk changes to.</p>
+
+<p>To use I just pass the revisions I want to push to each branch like so:</p>
+
+<p><code>
+ola$ gh-merge 31774 31775 31780
+</code></p>
+
+<p>and it merges and commits those revisions to each branch. It assumes you're caching your authentication for svn.</p>
+</div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Feb 23</div></div><div class="blog-content"><h2><a href="/blog/2009/02/23/agora-in-print/">Agora in print</a></h2><div class="blog-author">By <strong>Brian Corrigan</strong></div><div class="blog-body"><p>Our CTO Brian Corrigan was quoted in an article in this month's ComputerWorld magazine. Check it out <a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;taxonomyName=Default&amp;articleId=333530&amp;taxonomyId=0&amp;pageNumber=2">here</a>!</p>
 </div></div></div><div class="blog-entry"><div class="date-comments"><div class="date">Jan 12</div></div><div class="blog-content"><h2><a href="/blog/2009/01/12/porting-legacy-applications-to-modern-systems/">Porting Legacy Applications to Modern Systems</a></h2><div class="blog-author">By <strong>Jason LaPorte</strong></div><div class="blog-body"><p><em>(Or, an adventure in pain!)</em></p>
 
 <p>Let me preface this little article by saying I did <strong>not</strong> write the app I am now porting to our new network. I know noting about its specific intricacies, and furthermore, I know nothing specifically about gettext, file_column, or attachment_fu. So, I dove into this project with a sort of wanton abandon that is fairly characteristic of much of the work I do. Any obviously stupid mistakes below thus really happened.</p>
