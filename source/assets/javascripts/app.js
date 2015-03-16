@@ -36,6 +36,7 @@ $('[data-countup]').each(function(i) {
 
 /** Animated navigation window scrolling */
 $('[data-anchor]').on('click', function(e) {
+  if ($(this).attr('href').indexOf('#') != 0) { return; }
   e.preventDefault();
   var $panel = $('a[id=' + $(this).attr('href').replace('#', '') + ']');
   // Wait for mobile nav to close.
@@ -63,6 +64,7 @@ if(!Modernizr.touch) {
 
     function scrollSpy() {
       $('[data-anchor]').each(function() {
+        if ($(this).attr('href').indexOf('#') != 0) { return; }
         var $panel = $('a[id=' + $(this).attr('href').replace('#', '') + ']');
         if ($panel.length == 0) {
           return;

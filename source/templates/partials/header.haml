@@ -13,11 +13,14 @@
     %section.top-bar-section
       %ul.right
         %li
-          %a{ href: '#about', data: { anchor: true } } About
+          %a{ href: (locals[:home] ? '#about' : '/#about'),
+              data: { anchor: true } } About
         %li
-          %a{ href: '#team', data: { anchor: true } } Team
+          %a{ href: (locals[:home] ? '#team' : '/#team'),
+              data: { anchor: true } } Team
         %li
-          %a{ href: '#contact', data: { anchor: true } } Contact
+          %a{ href: (locals[:home] ? '#contact' : '/#contact'),
+              data: { anchor: true } } Contact
         %li
           %a{ href: '/blog' } Blog
         %li.hydra-theme
