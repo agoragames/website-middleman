@@ -7,8 +7,8 @@ title: Agora Games
   %li{ data: { background: image_path('slides/bg2.jpg') } }
     .left-caption.left-caption--hydra
       %p
-        <a href='#'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
-      %a.button.button--hydra.button--arrows{ href: 'http://hydra.agoragames.com' } Check out Hydra
+        <a href='http://hydra.agoragames.com/'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
+      %a.button.button--hydra.button--arrows{ href: 'http://hydra.agoragames.com/' } Check out Hydra
 
   %li{ data: { background: image_path('slides/bg3.jpg') } }
     .left-caption.left-caption--team
@@ -206,23 +206,23 @@ title: Agora Games
           .team
 
             .team__item
-              .team-member
-                %span.force-square= image_tag 'team/steve.jpg', alt: 'Steve'
+              %a.team-member.team-member--emailable{ href: 'mailto:steven@agoragames.com' }
+                %span.force-square= image_tag 'team/steve.png', alt: 'Steve'
                 %h4 Steve
                 %h5 Studio Director
- 
+
             .team__item
-              .team-member
-                %span.force-square= image_tag 'team/elliott.jpg', alt: 'Elliott'
+              %a.team-member.team-member--emailable{ href: 'mailto:elliott@agoragames.com' }
+                %span.force-square= image_tag 'team/elliott.png', alt: 'Elliott'
                 %h4 Elliott
                 %h5 Executive Producer
 
             .team__item
-              .team-member
-                %span.force-square= image_tag 'team/brad.jpg', alt: 'Brad'
+              %a.team-member.team-member--emailable{ href: 'mailto:blafountain@agoragames.com' }
+                %span.force-square= image_tag 'team/brad.png', alt: 'Brad'
                 %h4 Brad
                 %h5 Technical Director
-                                            
+
             .team__item
               .team-member
                 %span.force-square= image_tag 'team/aaron.jpg', alt: 'Aaron'
