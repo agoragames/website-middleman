@@ -4,16 +4,11 @@ title: Agora Games
 
 %ul.hero{ data: { orbit: true, options: 'slide_number: false' } }
 
-  %li.centered-slide.active.invert{ style: "background-image: url('#{image_path('slides/bg1.jpg') }')" }
-    .centered-slide__caption
-      %h3 We’re heading to GDC. Are you?
-      %a.button.button--arrows{ href: '#' } Schedule a Time
-
   %li{ data: { background: image_path('slides/bg2.jpg') } }
     .left-caption.left-caption--hydra
       %p
         <a href='#'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
-      %a.button.button--hydra.button--arrows{ href: '#' } Check out Hydra
+      %a.button.button--hydra.button--arrows{ href: 'http://hydra.agoragames.com' } Check out Hydra
 
   %li{ data: { background: image_path('slides/bg3.jpg') } }
     .left-caption.left-caption--team
@@ -21,7 +16,7 @@ title: Agora Games
         Join
         %strong Agora Games
         on our quest for challenging adventures.
-      %a.button.button--arrows{ href: '#' }
+      %a.button.button--arrows{ href: '#team' }
         %span.graded-text Meet the team
 
 %a#about
@@ -38,12 +33,12 @@ title: Agora Games
     .row
       .columns.large-4.medium-4
         %span.label.round
-          %span.graded-text Profiles Supported
+          %span.graded-text Games Launched
         .stat-wrapper
           .jumbo-stat
-            %span.jumbo-stat__value.graded-text{ data: { countup: 100 } } 100
-            %span.jumbo-stat__measure.graded-text M
-        %p 100 million players have played a game that has a Hydra-intergrated feature on either next-gen consoles, PC, or mobile devices.
+            %span.jumbo-stat__value.graded-text{ data: { countup: 40 } } 40
+            %span.jumbo-stat__measure.graded-text +
+        %p Over 40 AAA games have integrated Hydra to power the online gaming services.
       .columns.large-4.medium-4
         %span.label.round
           %span.graded-text Monthly Bandwidth
@@ -52,16 +47,15 @@ title: Agora Games
             %span.jumbo-stat__value.graded-text{ data: { countup: 42 } } 42
             %span.jumbo-stat__measure
               %span.graded-text M
-              %small.graded-text Megabytes
         %p Hydra processes over 42 million megabytes (or 42 terabytes) of player generated data every month.
       .columns.large-4.medium-4
         %span.label.round
           %span.graded-text Players Tracked
         .stat-wrapper
           .jumbo-stat
-            %span.jumbo-stat__value.graded-text{ data: { countup: 120 } } 120
+            %span.jumbo-stat__value.graded-text{ data: { countup: 150 } } 150
             %span.jumbo-stat__measure.graded-text M
-        %p Developers who intergrated Agora’s Product, Hydra, have tracked more than 12 million players worldwide.
+        %p 150 million players have played a game that has a Hydra-intergrated feature on either next-gen consoles, PC, or mobile devices.
 
 .bright.agora-partners.text-center
   .row
@@ -99,14 +93,13 @@ title: Agora Games
                 .label.round
                   September
                   %strong 2005
-                .timeline-item__label Users served: 100k
+                .timeline-item__label Users served: 50k
                 .timeline-item__image
                   = image_tag 'agoragames-old.svg', alt: '', width: 170
                 %h5 Agora Games Founded
                 %hr
                 %p
                   We started the quest of building online gaming communities, both in-game and on the web.
-                  %a{ href: '#' } See our Growth
 
             .timeline__item
               .timeline-item
@@ -118,7 +111,7 @@ title: Agora Games
                   = image_tag 'hydra-old.svg', alt: '', width: 75
                 %h5 Hydra STUDIO Launched
                 %hr
-                %p Hydra appears on its first game, “Tony Hawk’s American Skateland” with its first client, Vicarious Visions
+                %p Hydra appears on its first game, “Guitar Hero III: Legends of Rock” with its first client, Activision
 
             .timeline__item
               .timeline-item
@@ -132,19 +125,19 @@ title: Agora Games
                 %hr
                 %p
                   Sensing the potential with Hydra and Agora Games, MLG makes a move to acquire the company.
-                  %a{ href: '#' } Read the full story
+                  %a{ href: 'http://www.majorleaguegaming.com/news/major-league-gaming-acquires-agora-games' } Read the full story
 
             .timeline__item
               .timeline-item.timeline-item--last
                 .label.round
                   January
                   %strong 2015
-                .timeline-item__label Users served: 250m
+                .timeline-item__label Users served: 150m
                 .timeline-item__image
                   = image_tag 'hydra-new.svg', alt: '', width: 70
                 %h5 Hydra keeps growing
                 %hr
-                %p Adding to its total monthly, Hydra is powering 30 AAA game titles, appearing in front of hundreds of millions of gamers.
+                %p Adding to its total monthly, Hydra is powering 40 AAA game titles, appearing in front of hundreds of millions of gamers.
 
         #os-panel.content
           .oss
@@ -215,6 +208,24 @@ title: Agora Games
 
             .team__item
               .team-member
+                %span.force-square= image_tag 'team/steve.jpg', alt: 'Steve'
+                %h4 Steve
+                %h5 Studio Director
+ 
+            .team__item
+              .team-member
+                %span.force-square= image_tag 'team/elliott.jpg', alt: 'Elliott'
+                %h4 Elliott
+                %h5 Executive Producer
+
+            .team__item
+              .team-member
+                %span.force-square= image_tag 'team/brad.jpg', alt: 'Brad'
+                %h4 Brad
+                %h5 Technical Director
+                                            
+            .team__item
+              .team-member
                 %span.force-square= image_tag 'team/aaron.jpg', alt: 'Aaron'
                 %h4 Aaron
                 %h5 Senior Software Engineer
@@ -224,12 +235,6 @@ title: Agora Games
                 %span.force-square= image_tag 'team/andrew.jpg', alt: 'Andrew'
                 %h4 Andrew
                 %h5 Software Engineer
-
-            .team__item
-              .team-member
-                %span.force-square= image_tag 'team/brad.jpg', alt: 'Brad'
-                %h4 Brad
-                %h5 Tech Director
 
             .team__item
               .team-member
@@ -248,12 +253,6 @@ title: Agora Games
                 %span.force-square= image_tag 'team/davidc.jpg', alt: 'David C'
                 %h4 David C
                 %h5 Senior Software Engineer
-
-            .team__item
-              .team-member
-                %span.force-square= image_tag 'team/elliott.jpg', alt: 'Elliott'
-                %h4 Elliott
-                %h5 Executive Producer
 
             .team__item
               .team-member
@@ -290,18 +289,6 @@ title: Agora Games
                 %span.force-square= image_tag 'team/nick.jpg', alt: 'Nick'
                 %h4 Nick
                 %h5 Associate Producer
-
-            .team__item
-              .team-member
-                %span.force-square= image_tag 'team/paul.jpg', alt: 'Paul'
-                %h4 Paul
-                %h5 Senior Software Engineer
-
-            .team__item
-              .team-member
-                %span.force-square= image_tag 'team/steve.jpg', alt: 'Steve'
-                %h4 Steve
-                %h5 Studio Director
 
             -#
               .team__item
