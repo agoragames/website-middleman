@@ -329,6 +329,7 @@ code {
 }
 
 .jumbo-stat {
+  line-height: 1;
   font-weight: 100;
   position: relative;
   margin: 0 auto;
@@ -343,38 +344,18 @@ code {
   }
 }
 .jumbo-stat__value {
-  padding-right: 70px;
   line-height: 1;
-  display: block;
-  @media #{$large-only} {
-    padding-right: 90px;
-  }
-  @media #{$xlarge-up} {
-    padding-right: 110px;
-  }
+  vertical-align: top;
 }
 .jumbo-stat__measure {
   line-height: 1;
-  position: absolute;
-  top: 0.4rem; // TODO - try not to use magic numbers
-  right: 0;
-  small {
-    display: block;
-    font-size: rem-calc(5);
-    text-transform: uppercase;
-    @media #{$large-only} {
-      font-size: rem-calc(13);
-    }
-    @media #{$xlarge-up} {
-      font-size: rem-calc(15);
-    }
-  }
-  font-size: rem-calc(80);
+  font-size: rem-calc(70);
+  vertical-align: top;
   @media #{$large-only} {
-    font-size: rem-calc(100);
+    font-size: rem-calc(85);
   }
   @media #{$xlarge-up} {
-    font-size: rem-calc(130);
+    font-size: rem-calc(115);
   }
 }
 
