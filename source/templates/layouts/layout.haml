@@ -9,6 +9,6 @@
     = javascript_include_tag 'modernizr'
     %link{ rel: 'shortcut icon', href: image_path('favicon.ico') }
   %body.f-topbar-fixed{ class: page_classes }
-    = partial 'header', locals: { home_page: current_page.data.home || nil }
+    = partial 'header', locals: { home: current_page.data.home || nil }
     = yield
     = javascript_include_tag 'app', async: true
