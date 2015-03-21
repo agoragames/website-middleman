@@ -1,0 +1,29 @@
+---
+title: Game Face
+author: David Czarnecki
+---
+"Game Face" will be our weekly round-up of our internal and external open source work here at Agora Games. Internal open source refers to our public projects that you can find over at our [Agora Games GitHub](https://github.com/agoragames/) account. External open source work refers to projects that we contribute to in off-hours and may or may not have anything to do with video games because we’re swell folks like that. Pretty simple right? Here goes…
+
+**handlebars.rb**
+
+[handlebars.rb](https://github.com/cowboyd/handlebars.rb) is a set of Ruby bindings for Handlebars.js. One of our engineers, Matt Wilson, is now a maintainer of the project.
+
+Contributor(s): Matt Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
+
+**leaderboard**
+
+[leaderboard](https://github.com/agoragames/leaderboard/) allows you to build leaderboards using Redis. The leaderboard (Ruby) and [leaderboard-python](https://github.com/agoragames/leaderboard-python) libraries were updated this week to fix an issue with the `TieRankingLeaderboard` class, to allow for member data to be passed to the `change_score_for(...)` method, and to add an `:include_missing` option in leaderboard request options to change whether or not to include missing members in the result.
+
+Contributor(s): David Czarnecki ([GitHub](https://github.com/czarneckid/), [Twitter](https://twitter.com/czarneckid))
+
+**nginx Google OAuth**
+
+[nginx-google-oauth](https://github.com/agoragames/nginx-google-oauth) is a Lua module to add Google OAuth to nginx. We released version 1.1.0 this week which integrates a pull request for security and usability enhancements.
+
+Contributor(s): Eric Schwimmer ([GitHub](https://github.com/eschwim/))
+
+**stache**
+
+[stache](https://github.com/agoragames/stache) is our Rails 3.x and Rails 4.x compatible Mustache/Handlebars Template Handler, with support for partials and a couple extra niceties to make sharing the raw templates with client-side javascript a little easier. The 1.1.1 release includes gugfixes from many new contributors and some expanded test coverage!
+
+Contributor(s): Matt Wilson ([GitHub](https://github.com/hypomodern/), [Twitter](https://twitter.com/hypomodern))
