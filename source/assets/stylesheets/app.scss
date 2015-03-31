@@ -218,7 +218,7 @@ code {
     }
   }
   @media #{$large-up} {
-    background: url(image-path('intro-bg.jpg')) center center no-repeat;
+    background: url(image_path('intro-bg.jpg')) center center no-repeat;
     p {
       margin: rem-calc(30) 0 rem-calc(100);
     }
