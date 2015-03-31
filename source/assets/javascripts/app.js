@@ -26,7 +26,7 @@ $('[data-countup]').each(function(i) {
   var position = $(this).position();
   $(this).waypoint(function() {
     $(this).addClass('is-counting');
-    if(numAnim.remaining == null) {
+    if (numAnim.remaining == null) {
       setTimeout(function() {
         numAnim.start();
       }, 100*i);
@@ -50,7 +50,7 @@ $('[data-anchor]').on('click', function(e) {
   }, 30);
 });
 
-if(!Modernizr.touch) {
+if (!Modernizr.touch) {
 
   var scrollTop = $(window).scrollTop();
 
