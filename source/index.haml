@@ -6,19 +6,21 @@ home: true
 %ul.hero{ data: { orbit: true, options: 'slide_number: false' } }
 
   %li{ style: "background-image: url('#{image_path('slides/bg2.jpg')}')" }
-    .left-caption.left-caption--hydra
-      %p
-        <a href='http://hydra.agoragames.com/'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
-      %a.button.button--hydra.button--arrows{ href: 'http://hydra.agoragames.com/' } Check out Hydra
+    .row
+      .left-caption.left-caption--hydra
+        %p
+          <a href='http://hydra.agoragames.com/'>Hydra</a>, an Agora Games product, evolving the game industry's best titles.
+        %a.button.button--hydra.button--arrows{ href: 'http://hydra.agoragames.com/' } Check out Hydra
 
   %li{ data: { background: image_path('slides/bg3.jpg') } }
-    .left-caption.left-caption--team
-      %p
-        Join
-        %strong Agora Games
-        on our quest for challenging adventures.
-      %a.button.button--arrows{ href: '#team' }
-        %span.graded-text Meet the team
+    .row
+      .left-caption.left-caption--team
+        %p
+          Join
+          %strong Agora Games
+          on our quest for challenging adventures.
+        %a.button.button--arrows{ href: '#team' }
+          %span.graded-text Meet the team
 
 %a#about
 .snow{ data: { magellan: { destination: 'about' } } }

@@ -135,10 +135,13 @@ code {
 
 .left-caption {
   position: relative;
-  top: 17%;
+  margin-top: 10%;
   padding: 0 1.875rem; // Match .top-bar padding
   width: 20em;
   font-weight: medium;
+  @media #{$small-only} {
+    margin-top: 5%;
+  }
   .button {
     width: 100%;
     max-width: 240px;
@@ -161,10 +164,6 @@ code {
 }
 
 .left-caption--team {
-  width: 22em;
-  position: absolute;
-  top: 22%;
-  padding: 0 1.875rem; // Match .top-bar padding
   p {
     @media #{$medium-up} {
       font-size: 1.25rem;
