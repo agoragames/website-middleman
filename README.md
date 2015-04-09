@@ -10,9 +10,6 @@ Template files in the `source` directory are automatically mapped to the equival
 
 Middleman will watch for changes made to any of these files and show the updates after a reload in your browser.
 
-You may see this warning in your shell while Middleman is running its server on localhost: _Option :locals is not supported by Slim::Engine_; this can safely be ignored. See [middleman#612](https://github.com/middleman/middleman/issues/612).
-
 ## Deploying the site
 
 Run `rake publish`
-
