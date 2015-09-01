@@ -58,6 +58,8 @@ configure :build do
     # Foundation has specific styles for inputs with type="text", so we don't
     # want to remove that (even though it's the default input type).
     html.remove_input_attributes = false
+    html.remove_http_protocol = false
+    html.remove_https_protocol = false
   end
 
   activate :minify_css
