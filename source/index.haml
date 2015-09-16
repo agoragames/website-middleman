@@ -310,28 +310,85 @@ home: true
           .career
 
             .career__col
-              %h4 Software Engineer
-              %p As a Software Engineer at Agora Games, you will be working on our online game services platform called "Hydra Studio”. You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry's biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform.
-              %p We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
-              %h5 Job Requirements:
-              %ul
-                %li Experience delivering large, complex, highly available software systems
-                %li Experience developing and operating distributed systems
-                %li Knowledge and practical application of design patterns, SOA, refactoring and software testing
-                %li Experience with web application servers, web development frameworks, proxy servers and relational databases
-                %li A detail-oriented, organized thought process and the ability to act decisively under stressful conditions
-                %li A proactive mindset and the ability to multitask and prioritize requirements
-                %li A self-motivated work process and excellent communication skills
-                %li An understanding of system optimization issues
-                %li Experience with system monitoring tools
-                %li Interest in working on-site at our office in Troy, NY or in an awesome remote office
-              %h5 Technologies we use:
-              %ul
-                %li Languages: Ruby, C++, Python, C#, Java, Objective-C
-                %li OS: Linux, Windows, OS X
-                %li Databases: MySQL, MongoDB, Redis, PostgreSQL, RabbitMQ, ZeroMQ
-                %li Web: Rails, CSS, HTML, JavaScript, node.js
-                %li Misc: Chef, Git, Runit, SaltStack
+
+              .text-center
+                %h3 Open Positions:
+
+                %ul.tabs.tabs--center.tabs--compact{ data: { tab: true } }
+                  %li.tab-title.active
+                    %a{ href: '#job-sweng' }
+                      %strong Software Engineer
+                  %li.tab-title
+                    %a{ href: '#job-devops' }
+                      %strong DevOps Engineer
+                  %li.tab-title
+                    %a{ href: '#job-jreng' }
+                      %strong Junior Engineer
+
+              .tabs-content.tabs-content--anim
+                #job-sweng.content.active
+                  %p As a Software Engineer at Agora Games, you will be working on our online game services platform, called “Hydra Studio”. You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry’s biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform.
+
+                  %p
+                    %strong We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
+
+                  %h5 Job Requirements:
+                  %ul
+                    %li Experience delivering large, complex, highly available software systems
+                    %li Experience developing and operating distributed systems
+                    %li Knowledge of design patterns, SOA, refactoring and unit testing
+                    %li Experience with web application servers, web development frameworks, proxy servers and relational databases
+                    %li A detail-oriented, organized thought process and the ability to act decisively under pressure
+                    %li A proactive mindset and the ability to multitask and prioritize requirements
+                    %li A self-motivated work process and excellent communication skills
+                    %li An understanding of system optimization issues
+                    %li Experience with system monitoring tools
+                    %li Interest in working on-site at our office in Troy, NY
+
+                #job-devops.content
+
+                  %p As a DevOps Engineer at Agora Games, you will be working on our online game services platform, called “Hydra Studio”. You will be responsible for managing the infrastructure behind very complex data processing and presentation tools that integrate tightly with some of the industry’s biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform, and ensure an efficient and stable environment.
+
+                  %p
+                    %strong We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
+
+                  %h5 Job Duties:
+                  %ul
+                    %li Own automation of the infrastructure platform
+                    %li Work on incorporating Agora Games’ engineering practices into infrastructure operations
+                    %li Write and review code, develop documentation and capacity plans, and debug problems, live, on very complex systems
+                    %li Together with your engineering team, you will share an on-call rotation and be an escalation contact for service incidents
+
+                  %h5 Job Requirements:
+                  %ul
+                    %li Experience delivering large, complex, highly available software systems
+                    %li Experience developing and operating distributed systems
+                    %li Knowledge of design patterns, SOA, refactoring and unit testing
+                    %li Experience with web application servers, web development frameworks, proxy servers, and relational databases
+                    %li A detail-oriented, organized thought process and the ability to act decisively under stressful conditions
+                    %li A proactive mindset and the ability to multitask and prioritize requirements
+                    %li A self-motivated work process and excellent communication skills
+                    %li An understanding of system optimization issues
+                    %li Experience with system monitoring tools
+                    %li Interest in working on-site at our office in Troy, NY
+
+                #job-jreng.content
+
+                  %p As a Junior Software Engineer at Agora Games, you will be working on our online game services platform called “Hydra Studio”. You will be responsible for creating complex data processing and presentation tools that integrate tightly with some of the industry’s biggest game franchises. You will work as part of a highly talented team of producers, engineers, and business specialists to expand the Hydra platform. For this position, we would be looking for individuals who may not have extensive professional experience, but are excited to learn new technologies and be challenged!
+
+                  %p
+                    %strong We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
+
+                  %h5 Job Requirements:
+                  %ul
+                    %li Experience with web application servers, web development frameworks, proxy servers and relational databases
+                    %li Knowledge of design patterns, SOA, refactoring and unit testing
+                    %li A detail-oriented, organized thought process and the ability to act decisively under pressure
+                    %li A proactive mindset and the ability to multitask and prioritize requirements
+                    %li A self-motivated work process and excellent communication skills
+                    %li An understanding of system optimization issues
+                    %li Experience with system monitoring tools
+                    %li Interest in working on-site at our office in Troy, NY
 
             .career__col
               %h5 Perks and Advantages:
@@ -340,14 +397,22 @@ home: true
                 %li Benefits: medical, dental, and vision programs for you and your dependents
                 %li Company-matching 401(k) retirement program
                 %li Flexible work hours
-                %li A brand-new computer when you start
                 %li An open and collaborative work space
                 %li We value a good work-life balance
-                %li Work on some of the biggest video games in the industry!
-                %li
-                  Located in historic downtown Troy, New York, close to several premier universities including
-                  %a{ href: 'http://www.rpi.edu/' } Rensselaer Polytechnic Institute
+                %li The code and systems you work on will be in production and used by millions of gamers all around the world, within some of the most popular IP in the video game industry.
+
               %hr
+
+              %h5 Technologies we use:
+              %ul
+                %li Languages: Python, C++, Ruby, C#, Java, JavaScript, TypeScript
+                %li OS: Linux, Windows, OS X
+                %li Databases: MongoDB, MySQL, Redis
+                %li Frameworks: Rails, Node.js, Flask
+                %li Misc: SaltStack, Git, RabbitMQ, ZeroMQ, Munin, Sensu, Sentry
+
+              %hr
+
               %form{ action: 'https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public',
                      method: 'post', autocomplete: 'off', enctype: 'multipart/form-data' }
                 %input#idstamp{ name: 'idstamp', type: 'hidden', value: 'cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw=' }
@@ -364,6 +429,12 @@ home: true
                 .field
                   %label Cover Letter or Introduction
                   %textarea{ name: 'Field9', rows: '10' }
+                .field
+                  %label Attach a Résumé
+                  .file-wrapper
+                    .button.expand.no-file Select file…
+                    .button.expand.file.hide
+                    %input{ name: 'Field18', type: 'file' }
                 %button{ type: 'submit' } Submit
 
 %a#contact
