@@ -35,6 +35,30 @@
   }
 }
 
+.file-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: $form-spacing;
+  input[type="file"] {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+  }
+  .button {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    &.hide {
+      display: none;
+    }
+  }
+}
 
 /*==========  THEMES  ==========*/
 
@@ -291,6 +315,14 @@ code {
       font-size: rem-calc(20);
     }
   }
+  // Shitty hack
+  &.tabs--compact li a {
+    padding: 0 rem-calc(10) !important;
+  }
+}
+
+.tabs--compact {
+  padding-bottom: 0;
 }
 
 // Hack for side scrolling tabs
@@ -305,12 +337,7 @@ code {
     white-space: normal;
     position: absolute;
     @include transition(all 0.5s ease);
-    &:first-child {
-      @include transform(translateX(-100%));
-    }
-    &:last-child {
-      @include transform(translateX(100%));
-    }
+    @include transform(translateX(100%));
     display: block !important;
   }
   .content.active {

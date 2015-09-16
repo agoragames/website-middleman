@@ -6,6 +6,7 @@
 //= require '_countup'
 //= require '_waypoints'
 //= require '_jquery.easing'
+//= require '_file_inputs'
 //= require '_polyfill.requestanimationframe'
 
 $('[data-orbit]').each(function () {
