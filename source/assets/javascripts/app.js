@@ -13,7 +13,8 @@ $('[data-orbit]').each(function () {
   $(this).find('[data-background]').each(function () {
     slide = $(this);
     // Need to write directly to the 'style' attribute to work with Orbit plugin
-    slide.attr('style', 'background-image: url("' + slide.data('background') + '")');
+    var oldstyle = slide.attr('style') || '';
+    slide.attr('style', oldstyle + '; background-image: url("' + slide.data('background') + '")');
   });
 });
 
