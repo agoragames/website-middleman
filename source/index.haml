@@ -5,7 +5,15 @@ home: true
 
 %ul.hero{ data: { orbit: true, options: 'slide_number: false' } }
 
-  %li{ style: "background-image: url('#{image_path('slides/bg2.jpg')}')" }
+  %li{ style: "background-image: url('#{image_path('slides/arkham.jpg')}'); background-position: left center" }
+    .row
+      .left-caption.left-caption--arkham
+        %p
+          %strong Batman: Arkham Knight
+          is powered by Hydra.
+        %a.button.button--arrows{ href: 'https://hydra.agoragames.com/clients/' } View our games
+
+  %li{ data: { background: image_path('slides/bg2.jpg') } }
     .row
       .left-caption.left-caption--hydra
         %p
@@ -21,14 +29,6 @@ home: true
           on our quest for challenging adventures.
         %a.button.button--arrows{ href: '#team' }
           %span.graded-text Meet the team
-
-  %li{ style: 'background-position: left center', data: { background: image_path('slides/arkham.jpg') } }
-    .row
-      .left-caption.left-caption--arkham
-        %p
-          %strong Batman: Arkham Knight
-          is powered by Hydra.
-        %a.button.button--arrows{ href: 'https://hydra.agoragames.com/clients/' } View our games
 
 %a#about
 .snow{ data: { magellan: { destination: 'about' } } }
