@@ -1,0 +1,19 @@
+.career.row
+
+  .career__col.columns.medium-6
+    = partial 'job_intro'
+    = partial 'job_perks'
+    = partial 'job_technology'
+
+  .career__col.columns.medium-6
+    %h5 Available job opportunities
+    %ul.no-bullet
+      %li
+        = link_to '/careers/software-engineer', class: 'button expand' do
+          Software Engineer
+      %li
+        = link_to '/careers/devops-engineer', class: 'button expand' do
+          DevOps Engineer
+      %li
+        = link_to '/careers/junior-engineer', class: 'button expand' do
+          Junior Engineer
