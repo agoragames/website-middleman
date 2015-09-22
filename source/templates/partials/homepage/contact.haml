@@ -1,0 +1,32 @@
+%a#contact
+.agora-contact{ data: { magellan: { destination: 'contact' } } }
+
+  .row
+    .columns
+      %header.text-center
+        %h2 Contact
+        %p
+          %a.graded-text{ href: 'mailto:info@agoragames.com' } INFO@AGORAGAMES.COM
+        %p 359 Broadway, Third Floor, Troy, NY 12180
+
+  .row
+    .columns.large-6.large-push-6
+      %form{ action: 'https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public',
+             method: 'post', autocomplete: 'off', enctype: 'multipart/form-data' }
+        %input#idstamp{ name: 'idstamp', type: 'hidden', value: 'cT5HWqIRe+CokuX7DS7vYBfHnD5HjUXEBxePrGCd1sw=' }
+        %div{ style: 'display: none' }
+          %label
+            Do not fill in this field:
+            %textarea#comment{ name: 'comment', rows: '1', cols: '1' }
+        %label
+          Full Name
+          %input{ name: 'Field4', type: 'text', placeholder: 'Name' }
+        %label
+          Email Address
+          %input{ name: 'Field5', type: 'email', placeholder: 'Email' }
+        %label
+          Tell us about your project
+          %textarea{ name: 'Field9' }
+        %button.button.bright.button--arrows Contact Agora Games
+    .columns.large-6.large-pull-6
+      = image_tag 'map.jpg', alt: 'Map'

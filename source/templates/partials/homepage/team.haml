@@ -1,0 +1,132 @@
+%a#team
+.agora-team.text-center{ data: { magellan: { destination: 'team' } } }
+  .row
+    .columns
+
+      %h2 Team
+
+      .team
+
+        .team__item
+          %a.team-member.team-member--emailable{ href: 'mailto:steven@agoragames.com' }
+            %span.force-square= image_tag 'team/steve.png', alt: 'Steve'
+            %h4 Steve
+            %h5 Studio Director
+
+        .team__item
+          %a.team-member.team-member--emailable{ href: 'mailto:elliott@agoragames.com' }
+            %span.force-square= image_tag 'team/elliott.png', alt: 'Elliott'
+            %h4 Elliott
+            %h5 Executive Producer
+
+        .team__item
+          %a.team-member.team-member--emailable{ href: 'mailto:blafountain@agoragames.com' }
+            %span.force-square= image_tag 'team/brad.png', alt: 'Brad'
+            %h4 Brad
+            %h5 Technical Director
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/aaron.jpg', alt: 'Aaron'
+            %h4 Aaron
+            %h5 Senior Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/andrew.jpg', alt: 'Andrew'
+            %h4 Andrew
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/brett.jpg', alt: 'Brett'
+            %h4 Brett
+            %h5 Production Coordinator
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/davida.jpg', alt: 'David A'
+            %h4 David A
+            %h5 Senior Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/davidc.jpg', alt: 'David C'
+            %h4 David C
+            %h5 Senior Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/graylin.jpg', alt: 'Graylin'
+            %h4 Graylin
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/jack.jpg', alt: 'Jack'
+            %h4 Jack
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/john.jpg', alt: 'John'
+            %h4 John
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/justin.jpg', alt: 'Justin'
+            %h4 Justin
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/matt.jpg', alt: 'Matt'
+            %h4 Matt
+            %h5 Senior Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/mike.jpg', alt: 'Mike'
+            %h4 Mike
+            %h5 Software Engineer
+
+        .team__item
+          .team-member
+            %span.force-square= image_tag 'team/nick.jpg', alt: 'Nick'
+            %h4 Nick
+            %h5 Associate Producer
+
+      %br
+      %h2
+        = link_to '/careers' do
+          Career Opportunities
+
+      .team
+
+        .team__item
+          .team-member.team-member--available
+            = link_to '/careers/software-engineer' do
+              %span.force-square= image_tag 'team/silhouette.png', alt: ''
+            %h4 Software<br>Engineer
+            %p
+              = link_to '/careers/software-engineer' do
+                Read More
+
+        .team__item
+          .team-member.team-member--available
+            = link_to '/careers/devops-engineer' do
+              %span.force-square= image_tag 'team/silhouette.png', alt: ''
+            %h4 DevOps<br>Engineer
+            %p
+              = link_to '/careers/devops-engineer' do
+                Read More
+
+        .team__item
+          .team-member.team-member--available
+            = link_to '/careers/junior-engineer' do
+              %span.force-square= image_tag 'team/silhouette.png', alt: ''
+            %h4 Junior<br>Engineer
+            %p
+              = link_to '/careers/junior-engineer' do
+                Read More

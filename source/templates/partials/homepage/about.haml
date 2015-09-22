@@ -1,0 +1,36 @@
+%a#about
+.snow{ data: { magellan: { destination: 'about' } } }
+
+  .agora-intro.text-center
+    .row
+      .columns.large-6.large-push-3.medium-6.medium-push-3
+        %h1
+          = image_tag 'agoragames-new.svg', alt: 'Agora Games', width: 131, height: 51
+        %p Agora Games works with game developers to build online features and web-based communities for video games. It has worked with publishers such as Activision, Konami, RedOctane, and Nintendo, and with game studios such as Vicarious Visions, Neversoft, Splash Damage, id Software, Vicious Cycle Software, 1st Playable Productions, and Gas Powered Games.
+
+  .agora-stats.text-center
+    .row
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Games Launched
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 40 } }<> 40
+            %span.jumbo-stat__measure.graded-text<> +
+        %p Over 40 AAA games have integrated Hydra to power the online gaming services.
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Monthly Bandwidth
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 42 } }<> 42
+            %span.jumbo-stat__measure.graded-text<> TB
+        %p Hydra processes over 42 terabytes of player generated data every month.
+      .columns.large-4.medium-4
+        %span.label.round
+          %span.graded-text Players Tracked
+        .stat-wrapper
+          .jumbo-stat
+            %span.jumbo-stat__value.graded-text{ data: { countup: 150 } }<> 150
+            %span.jumbo-stat__measure.graded-text<> M
+        %p 150 million players have played a game that has a Hydra-integrated feature on either next-gen consoles, PC, or mobile devices.

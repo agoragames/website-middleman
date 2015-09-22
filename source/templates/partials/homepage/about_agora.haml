@@ -1,0 +1,116 @@
+.snow.agora-about.text-center
+  .row
+    .columns
+
+      %ul.tabs.tabs--center{ data: { tab: true } }
+        %li.tab-title.active
+          %a{ href: '#about-panel' }
+            %h2 About
+        %li.tab-title
+          %a{ href: '#os-panel' }
+            %h2 Open Source
+
+      .tabs-content.tabs-content--anim
+        #about-panel.content.active
+          .timeline
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  September
+                  %strong 2005
+                .timeline-item__label Users served: 50k
+                .timeline-item__image
+                  = image_tag 'agoragames-old.svg', alt: '', width: 170
+                %h5 Agora Games Founded
+                %hr
+                %p
+                  We started the quest of building online gaming communities, both in-game and on the web.
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  October
+                  %strong 2005
+                .timeline-item__label Users served: 200k
+                .timeline-item__image
+                  = image_tag 'hydra-old.svg', alt: '', width: 75
+                %h5 Hydra STUDIO Launched
+                %hr
+                %p Hydra appears on its first game, “Guitar Hero III: Legends of Rock” with its first client, Activision
+
+            .timeline__item
+              .timeline-item
+                .label.round
+                  August
+                  %strong 2009
+                .timeline-item__label Users served: 22.3m
+                .timeline-item__image
+                  = image_tag 'mlg.svg', alt: '', width: 140
+                %h5 MLG Acquisition
+                %hr
+                %p
+                  Sensing the potential with Hydra and Agora Games, MLG makes a move to acquire the company.
+                  %a{ href: 'http://www.majorleaguegaming.com/news/major-league-gaming-acquires-agora-games' } Read the full story
+
+            .timeline__item
+              .timeline-item.timeline-item--last
+                .label.round
+                  January
+                  %strong 2015
+                .timeline-item__label Users served: 150m
+                .timeline-item__image
+                  = image_tag 'hydra-new.svg', alt: '', width: 70
+                %h5 Hydra keeps growing
+                %hr
+                %p Adding to its total monthly, Hydra is powering 40 AAA game titles, appearing in front of hundreds of millions of gamers.
+
+        #os-panel.content
+          .oss
+
+            .oss__col.oss__col--intro
+              .jumbo-stat.graded-text
+                19
+              %h5 Open Source Projects
+              %p Oh yeah, we open source all day long. We’ve currently got nineteen open source projects out there, and that number is growing bigger all the time
+              %h5
+                %a.cta{ href: 'https://github.com/agoragames' } Visit Our GitHub
+
+            .oss__col.oss__col--list
+              %ul.oss-list
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/chai' } Chai
+                  %p Mocking framework in Python patterned after Mocha
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/halo-reach-api' } Halo Reach API
+                  %p Ruby Gem for interacting with the Halo: Reach API
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/leaderboard' } Leaderboard
+                  %p Ruby Gem for creating leaderboards backed by Redis in Ruby
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/haigha' } HAIGHA
+                  %p Simple to use client library for interacting with AMQP brokers
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/BrightcoveOS/Ruby-MAPI-Wrapper' } Brightcove API
+                  %p Ruby gem for interacting with Brightcove Media API
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/errship' } ERRship
+                  %p Errship is a Rails 3.1 engine for rendering error pages in your layout
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/bettertabs' } Bettertabs
+                  %p Helper for Rails that renders the markup for a tabbed area
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/improved_logging' } improved_logging
+                  %p Improved Logging capabilities for ActiveSupport::BufferedLogger
+                %li
+                  %h5
+                    %a.graded-text{ href: 'https://github.com/agoragames/stache' } stache
+                  %p Mustache template handling in Rails 3.x
