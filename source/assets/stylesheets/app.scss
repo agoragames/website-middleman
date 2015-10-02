@@ -12,6 +12,7 @@
 @import 'compass/css3/box-sizing';
 
 @import 'foundation/components/visibility';
+@import 'foundation/components/panels';
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500');
 
 .button--arrows {
@@ -742,6 +743,13 @@ code {
   margin-top: 1rem;
   p {
     margin: 0 0 0.5rem;
+  }
+  pre.highlight {
+    @extend .panel;
+    code {
+      background: transparent;
+      border: 0;
+    }
   }
 }
 
