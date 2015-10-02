@@ -36,6 +36,10 @@ page '/404.html', :directory_index => false
 # See https://coderwall.com/p/qgnwzw
 activate :directory_indexes
 activate :automatic_image_sizes
+activate :syntax
+
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
 
 sprockets.append_path(File.join(root, 'bower_components'))
 
