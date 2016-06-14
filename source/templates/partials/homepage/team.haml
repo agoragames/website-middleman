@@ -106,6 +106,15 @@
 
         .team__item
           .team-member.team-member--available
+            = link_to '/careers/senior-software-engineer' do
+              %span.force-square= image_tag 'team/silhouette.png', alt: ''
+            %h4 Senior Software<br>Engineer
+            %p
+              = link_to '/careers/junior-software-engineer' do
+                Read More
+
+        .team__item
+          .team-member.team-member--available
             = link_to '/careers/software-engineer' do
               %span.force-square= image_tag 'team/silhouette.png', alt: ''
             %h4 Software<br>Engineer
@@ -120,13 +129,4 @@
             %h4 DevOps<br>Engineer
             %p
               = link_to '/careers/devops-engineer' do
-                Read More
-
-        .team__item
-          .team-member.team-member--available
-            = link_to '/careers/junior-software-engineer' do
-              %span.force-square= image_tag 'team/silhouette.png', alt: ''
-            %h4 Junior Software<br>Engineer
-            %p
-              = link_to '/careers/junior-software-engineer' do
                 Read More

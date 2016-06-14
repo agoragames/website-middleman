@@ -108,10 +108,14 @@
   }
 }
 
+.wb-agora {
+  position: relative;
+  top: -0.2rem;
+}
 .main-logo {
-  width: 90px;
+  width: 180px;
   @media #{$large-up} {
-    width: 120px;
+    width: 240px;
   }
 }
 
