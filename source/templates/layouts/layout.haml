@@ -4,10 +4,10 @@
     %meta{ charset: 'utf-8' }
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0' }
     %meta{ 'content' => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible' }
-    %title= current_page.data.title || 'Agora Games'
+    %title= current_page.data.title || 'Agora'
     = stylesheet_link_tag 'app'
     = javascript_include_tag 'modernizr'
-    %link{ rel: 'shortcut icon', href: image_path('favicon.ico') }
+    %link{ rel: 'icon', sizes: '128x128', type: 'image/png', href: image_path('agora-a.png') }
   %body.f-topbar-fixed{ class: page_classes }
     = partial 'header', locals: { home: current_page.data.home || nil }
     = yield

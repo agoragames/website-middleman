@@ -5,7 +5,7 @@
       %li.name
         %h1
           %a{ href: '/' }
-            = image_tag 'agoragames-new.svg', alt: 'Agora Games', class: 'main-logo'
+            = image_tag 'wb-agora.svg', alt: 'Agora', class: 'wb-agora main-logo'
       %li.toggle-topbar.menu-icon
         %a{ href: 'javascript:void(0)' }
           %span Menu
@@ -19,12 +19,10 @@
           %a{ href: (locals[:home] ? '#team' : '/#team'),
               data: { anchor: true } } Team
         %li
-          %a{ href: (locals[:home] ? '#contact' : '/#contact'),
-              data: { anchor: true } } Contact
-        %li
           %a{ href: '/careers'} Careers
         %li
-          %a{ href: '/blog' } Blog
+          %a{ href: (locals[:home] ? '#contact' : '/#contact'),
+              data: { anchor: true } } Contact
         %li.hydra-theme
           %a{ href: 'http://hydra.agoragames.com' }
             = image_tag 'hydra-wordmark.svg', alt: 'Hydra', width: 92
