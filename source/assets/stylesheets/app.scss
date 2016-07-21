@@ -136,7 +136,8 @@ code {
 
 .hero {
   li {
-    height: 725px;
+    height: 600px;
+    height: 75vh;
     background-position: center center;
     background-repeat: no-repeat;
     color: #282828;
@@ -169,7 +170,7 @@ code {
   position: relative;
   margin-top: 10%;
   padding: 0 1.875rem; // Match .top-bar padding
-  width: 20em;
+  width: 30em;
   font-weight: medium;
   @media #{$small-only} {
     margin-top: 5%;
