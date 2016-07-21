@@ -19,11 +19,6 @@ home: false
     %p
       We are looking for a candidate with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
 
-    %div
-      = link_to 'https://careers.timewarner.com/tgwebhost/jobdetails.aspx?partnerid=391&siteid=36&jobid=758431', class: 'button' do
-        Apply at careers.timewarner.com
-
-  .columns.medium-6
     %h5 Job Requirements
     %ul
       %li 5 or more years of relevant experience
@@ -37,7 +32,12 @@ home: false
       %li An understanding of system optimization issues
       %li Experience with system monitoring tools
       %li Interest in working on-site at our office in Troy, NY
+
     %hr
     = partial 'job_perks'
+
     %hr
     = partial 'job_technology'
+
+  .columns.medium-6
+    = partial 'job_form', locals: { job: 'Senior Software Engineer' }

@@ -1,4 +1,4 @@
-%h5 Submit your résumé
+%h5 Apply for this job
 
 %form{ action: 'https://agoragames1.wufoo.com/forms/syqh5bw113il90/#public',
        method: 'post', autocomplete: 'off', enctype: 'multipart/form-data' }
@@ -9,14 +9,14 @@
       Do not fill in this field:
       %textarea#comment{ name: 'comment', rows: '1', cols: '1' }
   .field
-    %label Full Name
+    -# %label Full Name
     %input{ name: 'Field4', type: 'text', placeholder: 'Full Name' }
   .field
-    %label Email Address
+    -# %label Email Address
     %input{ name: 'Field5', type: 'email', placeholder: 'Email Address' }
   .field
-    %label Cover Letter or Introduction
-    %textarea{ name: 'Field9', rows: '10' }
+    -# %label Phone Number
+    %input{ name: 'Field8', type: 'text', placeholder: 'Phone Number' }
   .field
     %label Attach a Résumé
     .file-wrapper

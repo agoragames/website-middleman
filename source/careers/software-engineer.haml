@@ -19,22 +19,6 @@ home: false
     %p
       We are looking for candidates with the ability to quickly learn new platforms. We use many different technologies within Hydra, and while we don’t expect you to know them all coming in, we need a candidate who can quickly learn and be proficient with them!
 
-    %h5 Agora has three current openings for this position…
-
-    %div
-      = link_to 'https://careers.timewarner.com/tgwebhost/jobdetails.aspx?partnerid=391&siteid=36&jobid=758438', class: 'button' do
-        Apply at careers.timewarner.com
-
-    %div
-      = link_to 'https://careers.timewarner.com/tgwebhost/jobdetails.aspx?partnerid=391&siteid=36&jobid=758439', class: 'button' do
-        Apply at careers.timewarner.com
-
-    %div
-      = link_to 'https://careers.timewarner.com/tgwebhost/jobdetails.aspx?partnerid=391&siteid=36&jobid=758440', class: 'button' do
-        Apply at careers.timewarner.com
-
-  .columns.medium-6
-
     %h5 Job Requirements
     %ul
       %li 3–5 years of relevant experience
@@ -51,5 +35,9 @@ home: false
 
     %hr
     = partial 'job_perks'
+
     %hr
     = partial 'job_technology'
+
+  .columns.medium-6
+    = partial 'job_form', locals: { job: 'Software Engineer' }
