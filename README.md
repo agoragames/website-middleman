@@ -12,4 +12,4 @@ Middleman will watch for changes made to any of these files and show the updates
 
 ## Deploying the site
 
-Run `rake publish`
+This repository is on continuous deploy, so it is not necessary to publish changes manually once they are pushed to master on GitHub. For the record, however, the invocation is `rake publish`.
