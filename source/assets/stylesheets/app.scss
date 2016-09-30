@@ -628,7 +628,7 @@ code {
     top: 0; left: 0;
     width: 100%;
     padding-bottom: 100%;
-    background: url(image_path('team-email.png')) center center no-repeat;
+    background: url(image_path('team-email.png')) 50% 95% no-repeat;
     opacity: 0;
   }
   .no-touch &:hover {
