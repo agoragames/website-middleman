@@ -2,7 +2,6 @@
 %html.no-js{ lang: 'en' }
   %head
     = partial 'head_contents'
-  %body.f-topbar-fixed{ class: page_classes }
-    = partial 'header', locals: { home: current_page.data.home || nil }
+  %body{ class: page_classes }
     = yield
     = javascript_include_tag 'app', async: true
